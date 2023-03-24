@@ -83,7 +83,7 @@
   "main": "src/components/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwnTheHub/cwn-storybook-ui.git"
+    "url": "https://github.com/cwnTheHub/cwn-storybook-ui.git"
   },
   "author": "",
   "license": "ISC",
