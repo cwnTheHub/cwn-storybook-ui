@@ -82,7 +82,7 @@ const Input = ({
   const renderIcon = () => {
     if (type === "password") {
       return (
-        <EyeIcon onClick={toggleShowPassword}>
+        <EyeIcon onClick={toggleShowPassword} data-testid="show-password-icon">
           {showPassword ? <FaEyeSlash /> : <FaEye />}
         </EyeIcon>
       );
@@ -118,7 +118,7 @@ const Input = ({
 
   return (
     <>
-      <Label>{label}</Label>
+      <Label data-testid="label">{label}</Label>
       {required && error && !value && <DangerMessage>{error}</DangerMessage>}
       {!isEmailValid && !focused && <DangerMessage>{error}</DangerMessage>}
       {!checkPwdComplexity && !focused && (
@@ -140,6 +140,7 @@ const Input = ({
           placeholder={placeholder}
           icon={icon}
           {...rest}
+          data-testid="input"
         />
         {!error && value && renderIcon()}
         {error && required && !value && !focused && renderDangerIcon()}
