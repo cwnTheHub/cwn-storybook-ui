@@ -87,7 +87,7 @@
   },
   "homepage": "https://github.com/cwnTheHub/cwn-storybook-ui#readme",
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "release": {
     "branches": [
