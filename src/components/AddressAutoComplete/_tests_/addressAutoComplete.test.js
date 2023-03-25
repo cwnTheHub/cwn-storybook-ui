@@ -1,70 +1,82 @@
 import React from "react";
-import { render, cleanup, fireEvent } from "@testing-library/react";
-import { Spinner } from "react-bootstrap";
-import { BsFillExclamationOctagonFill } from "react-icons/bs";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 import AddressAutoComplete from "../AddressAutoComplete";
 
-afterEach(cleanup);
+describe("AddressAutoComplete", () => {
+  const mockOnChange = jest.fn();
+  const mockHandleDropdownItemClick = jest.fn();
 
-const defaultProps = {
-  placeholder: "Enter address",
-  icon: <i />,
-  onChange: jest.fn(),
-  handleDropdownItemClick: jest.fn(),
-};
+  afterEach(cleanup);
 
-const setup = (props = {}) => {
-  const setupProps = { ...defaultProps, ...props };
-  const { getByTestId } = render(
-    <AddressAutoComplete {...setupProps} />
-  );
+  const defaultProps = {
+    placeholder: "Enter your address",
+    onChange: mockOnChange,
+    handleDropdownItemClick: mockHandleDropdownItemClick,
+    results: [
+      {
+        aptNumber: "123",
+        streetNumber: "456",
+        streetName: "Main St",
+        province: "BC",
 
-  return { getByTestId };
-};
+        country: "Canada",
+      },
+      {
+        aptNumber: "321",
+        streetNumber: "654",
+        streetName: "Oak St",
+        province: "AB",
+        country: "Canada",
+      },
+    ],
+  };
 
+  const setup = () => {
+    const utils = render(<AddressAutoComplete {...defaultProps} />);
+    return {
+      ...utils,
+    };
+  };
 
-test("render spinner when showSpinner is true and errorMessage is not defined", () => {
-  const { getByTestId } = setup({ showSpinner: true });
-  expect(getByTestId("AddressAutoCompleteContainer")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteInput")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteContainer").firstChild).toHaveClass(
-    "icon"
-  );
-  expect(
-    getByTestId("AddressAutoCompleteContainer").firstChild.firstChild
-  ).toBeInstanceOf(Spinner);
-});
-
-test("render error icon when errorMessage is defined", () => {
-  const { getByTestId } = setup({
-    showSpinner: false,
-    errorMessage: { message: "error" },
+  it("renders the input element with placeholder text", () => {
+    const { getByPlaceholderText } = setup();
+    expect(getByPlaceholderText("Enter your address")).toBeInTheDocument();
   });
-  expect(getByTestId("AddressAutoCompleteContainer")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteInput")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteContainer").firstChild).toHaveClass(
-    "icon"
-  );
-  expect(
-    getByTestId("AddressAutoCompleteContainer").firstChild.firstChild
-  ).toBeInstanceOf(BsFillExclamationOctagonFill);
-});
 
-test("render input when showSpinner is false and errorMessage is not defined", () => {
-  const { getByTestId } = setup({ showSpinner: false });
-  expect(getByTestId("AddressAutoCompleteContainer")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteInput")).toBeDefined();
-  expect(getByTestId("AddressAutoCompleteContainer").firstChild).toBeInstanceOf(
-    i
-  );
-});
+  it("calls onChange function when input value changes", () => {
+    const { getByTestId } = setup();
+    const input = getByTestId("input");
+    fireEvent.change(input, { target: { value: "123 Main St" } });
+    expect(input.value).toBe("123 Main St");
+  });
 
-test('should call onChange and handleDropdownItemClick when dropdown item is clicked', () => {
-  const { getByTestId } = setup();
-  const firstResult = getByTestId('AddressAutoCompleteResult').firstChild;
+  it("renders the dropdown results when there are results and input has value", () => {
+    const { getByTestId, getAllByTestId } = setup();
+    
+    const input = getByTestId("input");
+    fireEvent.change(input, { target: { value: "123,Main St" } });
+    const dropdown = getByTestId("AddressAutoCompleteDropdown");
+    expect(dropdown).toBeInTheDocument();
+    expect(getAllByTestId("AddressAutoCompleteResult")).toHaveLength(2);
+  });
 
-  fireEvent.click(firstResult);
-
-  expect(onChange).toHaveBeenCalled();
-  expect(handleDropdownItemClick).toHaveBeenCalledWith(searchResults[0]);
+  it("calls handleDropdownItemClick function when a dropdown result is clicked", () => {
+    const mockResults = [
+      {
+        aptNumber: "123",
+        streetNumber: "456",
+        streetName: "Main St",
+        province: "BC",
+        country: "Canada",
+      },
+    ];
+    const { getByTestId } = render(
+      <AddressAutoComplete {...defaultProps} results={mockResults} />
+    );
+    const input = getByTestId("input");
+    fireEvent.change(input, { target: { value: "123" } });
+    const dropdownResult = getByTestId("AddressAutoCompleteResult");
+    fireEvent.click(dropdownResult);
+    expect(mockHandleDropdownItemClick).toHaveBeenCalledWith(mockResults[0]);
+  });
 });

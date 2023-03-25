@@ -20,7 +20,7 @@ const AddressAutoComplete = ({
   errorMessage,
   ...rest
 }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(rest?.value || "");
   const [danger, setDanger] = useState(false);
 
   const renderSpinner = () => {
@@ -37,10 +37,9 @@ const AddressAutoComplete = ({
       return icon;
     }
   };
-  const handleChange = (event) => {
-    const { value } = event.target;
-    setValue(value);
-    onChange(value);
+  const handleChange = (ev) => {
+    setValue(ev);
+    onChange(ev);
   };
 
   return (
@@ -57,23 +56,20 @@ const AddressAutoComplete = ({
           icon={renderSpinner()}
           errorMessage={errorMessage}
           value={
-            selectedValue?.city?.length && !value?.length
+            selectedValue?.city?.length
               ? `${selectedValue?.city}, ${selectedValue?.country}`
               : value
           }
           onChange={handleChange}
-          data-test-id="AddressAutoCompleteInput"
         />
       </div>
       {results && value && (
-        <AddressAutoCompleteDropdown
-          data-test-id="AddressAutoCompleteDropdown"
-        >
+        <AddressAutoCompleteDropdown data-testid="AddressAutoCompleteDropdown">
           {results?.map((item, key) => (
             <Line
               key={key}
               onClick={() => handleDropdownItemClick(item)}
-              data-test-id="AddressAutoCompleteResult"
+              data-testid="AddressAutoCompleteResult"
             >
               <span>
                 {item?.aptNumber}-{item?.streetNumber} {item?.streetName}

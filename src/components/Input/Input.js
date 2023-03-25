@@ -29,7 +29,7 @@ const Input = ({
   const [error, setError] = useState(null);
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [checkPwdComplexity, setCheckPwdComplexity] = useState(true);
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(rest?.value || "");
 
   const handleFocus = () => {
     setFocused(true);
@@ -51,6 +51,7 @@ const Input = ({
   };
 
   const handleInputChange = (event) => {
+    event.preventDefault();
     const { value } = event?.target;
     setValue(value);
     onChange(value);
