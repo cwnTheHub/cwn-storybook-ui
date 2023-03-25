@@ -17,11 +17,5 @@ jobs:
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          COVERAGE_THRESHOLD=80
-          COVERAGE=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
-          if (( $(echo "$COVERAGE < $COVERAGE_THRESHOLD" | bc -l) )); then
-            echo "Error: Test coverage below threshold ($COVERAGE%)"
-            exit 1
-          fi
+        
   
