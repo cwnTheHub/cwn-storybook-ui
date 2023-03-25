@@ -20,7 +20,7 @@ const AddressAutoComplete = ({
   errorMessage,
   ...rest
 }) => {
-  const [value, setValue] = useState(rest?.value || "");
+  const [value, setValue] = useState("");
   const [danger, setDanger] = useState(false);
 
   const renderSpinner = () => {

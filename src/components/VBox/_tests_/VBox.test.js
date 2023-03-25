@@ -1,8 +1,8 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
-import Box from "../Box";
+import VBox from "../VBox";
 
-describe("Simple Box", () => {
+describe("Vertical VBox", () => {
   afterEach(cleanup);
 
   const defaultProps = {
@@ -10,7 +10,7 @@ describe("Simple Box", () => {
   };
 
   const setup = () => {
-    const utils = render(<Box {...defaultProps} />);
+    const utils = render(<VBox {...defaultProps} />);
     return {
       ...utils,
     };
@@ -18,14 +18,12 @@ describe("Simple Box", () => {
 
   it("renders the box element ", () => {
     const { getByTestId } = setup();
-    const Box = getByTestId("box-container");
-    expect(Box).toBeInTheDocument();
+    const VBox = getByTestId("box-container");
+    expect(VBox).toBeInTheDocument();
   });
   it("renders the children", () => {
     const { getByTestId } = setup();
     const child = getByTestId("content");
     expect(child).toBeInTheDocument();
   });
-
-
 });

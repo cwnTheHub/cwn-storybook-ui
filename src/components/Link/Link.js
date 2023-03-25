@@ -15,15 +15,11 @@ import {
 
 const Link = ({
   right,
-  to,
   isButton,
-  withIcon,
   dropdownLink,
-  children,
   linkTxtColor,
   linkBackgroundColor,
   theLink,
-  linkHoverColor,
   icon,
   activeLink,
   currentLink,
@@ -64,25 +60,24 @@ const Link = ({
               onClick(theLink);
             }
           }}
-          linkTxtColor={linkTxtColor}
-          linkBackgroundColor={linkBackgroundColor}
-          isOpen={isOpen}
-          isActive={isactive}
+          data-testid="dropdown-link"
+          open={isOpen}
+          actived={isactive}
         >
           {icon || null}
           {activeLink?.title || theLink?.title}
           <BsChevronDown size={12} />
         </DropdownLink>
-        <DropdownMenu isOpen={isOpen} ref={ref} right={right}>
-          <div className={"active"}>
+        <DropdownMenu open={isOpen} ref={ref} right={right}>
+          <div>
             {theLink?.categories?.map((link, index) => (
               <>
                 <LinkWithDecoration
                   to={link?.to}
                   key={index}
-                  linkTxtColor={linkTxtColor}
-                  linkBackgroundColor={linkBackgroundColor}
-                  isActive={link?.to?.toLowerCase() === pathname?.toLowerCase()}
+                  actived={
+                    link?.to?.toLowerCase() === pathname?.toLowerCase() ? 1 : 0
+                  }
                   onClick={() => onSelectActiveLink(link)}
                 >
                   {link?.title}
@@ -99,13 +94,12 @@ const Link = ({
     return (
       <LinkButton
         to={theLink?.to}
-        linkTxtColor={linkTxtColor}
-        linkBackgroundColor={linkBackgroundColor}
-        isActive={theLink?.to?.toLowerCase() === pathname?.toLowerCase()}
+        actived={theLink?.to?.toLowerCase() === pathname?.toLowerCase() ? 1 : 0}
         onClick={() => {
           onClick(theLink);
           onSelectActiveLink(theLink);
         }}
+        data-testid="button-link"
       >
         {theLink?.title}
       </LinkButton>
@@ -114,13 +108,12 @@ const Link = ({
   return (
     <LinkWithoutDecoration
       to={theLink?.to}
-      linkTxtColor={linkTxtColor}
-      linkBackgroundColor={linkBackgroundColor}
-      isActive={theLink?.to?.toLowerCase() === pathname?.toLowerCase()}
+      actived={theLink?.to?.toLowerCase() === pathname?.toLowerCase() ? 1 : 0}
       onClick={() => {
         onClick(theLink);
         onSelectActiveLink(theLink);
       }}
+      data-testid="normal-link"
     >
       {icon || null}
       <span>{theLink?.title}</span>
