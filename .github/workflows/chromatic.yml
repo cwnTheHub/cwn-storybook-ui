@@ -2,9 +2,12 @@
 name: 'Chromatic'
 
 # Event for the workflow
-on: 
+on:
   schedule:
   - cron: 0 0 * * 2,5
+  push:
+    branches:
+      - main
 
 # List of jobs
 jobs:
