@@ -83,7 +83,7 @@
     "webpack": ">=5.76.0"
   },
   "description": "cwn packages",
-  "main": "index.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cwnTheHub/cwn-storybook-ui.git"

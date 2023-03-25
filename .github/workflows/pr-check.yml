@@ -12,13 +12,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm run test
-
-      - name: Test Coverage
-        run: npm run coverage
+      - name: run  Test Coverage
+        run: npm run test -- --coverage
 
       - name: Check Test Coverage
+      - uses: actions/checkout@v2
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
