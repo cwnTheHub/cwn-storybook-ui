@@ -15,9 +15,6 @@ jobs:
       - name: run  Test Coverage
         run: npm run test -- --coverage
 
-      - name: Check Test Coverage
-      - uses: actions/checkout@v2
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
