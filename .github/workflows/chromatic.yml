@@ -7,7 +7,7 @@ name: "Chromatic"
 on:
   push:
     branches-ignore:
-      - develop
+      - 'develop'
 
 # List of jobs
 jobs:
