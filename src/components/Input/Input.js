@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import VBox from "../VBox/VBox";
 import {
   DangerIcon,
   DangerMessage,
@@ -117,7 +118,7 @@ const Input = ({
   };
 
   return (
-    <>
+    <VBox>
       <Label data-testid="label">{label}</Label>
       {required && error && !value && <DangerMessage>{error}</DangerMessage>}
       {!isEmailValid && !focused && <DangerMessage>{error}</DangerMessage>}
@@ -150,7 +151,7 @@ const Input = ({
           checkEmailValid &&
           renderDangerIcon()}
       </InputContainer>
-    </>
+    </VBox>
   );
 };
 
