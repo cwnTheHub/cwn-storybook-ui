@@ -151,6 +151,11 @@ const Input = ({
           checkEmailValid &&
           renderDangerIcon()}
       </InputContainer>
+      {rest?.forgotUsername || rest?.forgotPwd ? (
+        <Label data-testid="label">
+          {rest?.forgotUsername || rest?.forgotPwd}
+        </Label>
+      ) : null}
     </VBox>
   );
 };

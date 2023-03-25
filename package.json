@@ -84,9 +84,9 @@
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cwnTheHub/cwn-storybook-ui.git"
+    "url": "git+https://github.com/cwnTheHub/cwn-storybook-ui.git"
   },
-  "author": "",
+  "author": "oidohou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cwnTheHub/cwn-storybook-ui/issues"
