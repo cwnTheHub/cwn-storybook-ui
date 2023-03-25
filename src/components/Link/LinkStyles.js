@@ -15,7 +15,7 @@ export const LinkWithoutDecoration = styled(Link)`
   padding: 0.8rem;
   font-weight: 100;
   color: ${({ linkTxtColor }) => linkTxtColor} !important;
-  border-bottom: ${({ isActive }) => isActive && "4px solid black"}!important;
+  border-bottom: ${({ actived }) => actived && "4px solid black"}!important;
 
   &:hover {
     text-decoration: underline;
@@ -70,7 +70,7 @@ export const DropdownLink = styled.div`
   gap: 0.3rem;
   font-weight: light;
   color: ${({ linkTxtColor }) => linkTxtColor} !important;
-  border-bottom: ${({ isActive }) => isActive && "3px solid black"}!important;
+  border-bottom: ${({ actived }) => actived && "3px solid black"}!important;
   &:hover {
     text-decoration: underline;
   }
@@ -104,13 +104,13 @@ export const DropdownMenu = styled.div`
   padding: 0.5rem 0.2rem;
   z-index: 200;
   box-sizing: border-box;
-  display: ${(props) => (props.isOpen ? "flex" : "none")};
+  display: ${(props) => (props.open ? "flex" : "none")};
   flex-direction: column;
   gap: 0.3rem;
   border-bottom-radius: 4px !important;
   border-top: 1px solid rgba(216, 216, 216, 1);
   overflow: hidden;
-  animation: ${(props) => props.isOpen && slideDown} 0.8s ease-in-out;
+  animation: ${(props) => props.open && slideDown} 0.8s ease-in-out;
   @media (min-width: 768px) {
     overflow: hidden;
     box-shadow: 0 0 16px 0 hsl(0deg 0% 84% / 50%);
@@ -135,10 +135,10 @@ export const LinkWithDecoration = styled(Link)`
   box-sizing: border-box;
   padding: 0.8rem;
   font-weight: 100;
-  border-left: ${({ isActive }) => isActive && "3px solid black"}!important;
+  border-left: ${({ actived }) => actived && "3px solid black"}!important;
   &:hover {
     text-decoration: underline;
     
-    border-left: ${({ isActive }) => isActive && "3px solid black"}!important;
+    border-left: ${({ actived }) => actived && "3px solid black"}!important;
   }
 `;

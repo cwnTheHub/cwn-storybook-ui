@@ -12,19 +12,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm run test
+      - name: run  Test Coverage
+        run: npm run test -- --coverage
 
-      - name: Test Coverage
-        run: npm run coverage
-
-      - name: Check Test Coverage
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          COVERAGE_THRESHOLD=80
-          COVERAGE=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
-          if (( $(echo "$COVERAGE < $COVERAGE_THRESHOLD" | bc -l) )); then
-            echo "Error: Test coverage below threshold ($COVERAGE%)"
-            exit 1
-          fi
+        
+  

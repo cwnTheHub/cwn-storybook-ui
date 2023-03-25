@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const AddressAutoCompleteDropdown = styled.div`
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
   border-radius: 4px !important;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.6rem;
   display: flex;
   flex-direction: column;
   gap: 2;
+  overflow-y: auto;
+  max-height: 50vh;
   box-shadow: rgb(84 89 95) 0px 0px 4px 1px;
   border-color: transparent;
   background-color: rgb(255, 255, 255);
@@ -29,4 +31,12 @@ export const Line = styled.span`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &:hover {
+    box-shadow: rgb(84 89 95) 0px 0px 2px 1px;
+  }
 `;

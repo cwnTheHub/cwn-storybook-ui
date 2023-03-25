@@ -8,7 +8,7 @@ const Box = ({
   children,
   borderRadius,
   centered,
-  onEnd,
+  end,
 }) => {
   return (
     <BoxContainer
@@ -16,8 +16,9 @@ const Box = ({
       height={height}
       width={width}
       centered={centered}
-      onEnd={onEnd}
+      end={end}
       backgroundColor={backgroundColor}
+      data-testid= "box-container"
     >
       {children}
     </BoxContainer>
