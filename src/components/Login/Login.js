@@ -51,7 +51,9 @@ const Login = ({
               checkEmailValid={true}
               errorMessage={loginEmailErrorMessage}
             />
-            {loginForgotEmailLinkCTA && <Box>{loginForgotEmailLinkCTA}</Box>}
+            {loginForgotEmailLinkCTA && (
+              <Box onEnd={true}>{loginForgotEmailLinkCTA}</Box>
+            )}
           </VBox>
           <VBox>
             <Input
@@ -61,7 +63,9 @@ const Login = ({
               onChange={loginPwdHandleChange}
               errorMessage={loginPwdErrorMessage}
             />
-            {loginForgotPwdLinkCTA && <Box>{loginForgotPwdLinkCTA}</Box>}
+            {loginForgotPwdLinkCTA && (
+              <Box onEnd={true}>{loginForgotPwdLinkCTA}</Box>
+            )}
           </VBox>
           {isSecureByCode && accountFoundResponse && (
             <VBox>

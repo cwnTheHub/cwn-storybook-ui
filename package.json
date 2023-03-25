@@ -1,7 +1,7 @@
 {
-  "name": "cwn-storybook-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@cwn_ui/ui",
+  "version": "0.0.0-development",
+  "private": false,
   "dependencies": {
     "@testing-library/dom": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -26,7 +26,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=bae806dca166"
+    "deploy-storybook": "npm publish --access public",
+    "chromatic": "npx chromatic --project-token=9cbb2dc3f3ae",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -68,10 +70,7 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "chromatic": "^6.17.2",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "cwn-storybook-ui@0.1.0"
+  }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import VBox from "../VBox/VBox";
 import {
   DangerIcon,
   DangerMessage,
@@ -82,7 +83,7 @@ const Input = ({
   const renderIcon = () => {
     if (type === "password") {
       return (
-        <EyeIcon onClick={toggleShowPassword}>
+        <EyeIcon onClick={toggleShowPassword} data-testid="show-password-icon">
           {showPassword ? <FaEyeSlash /> : <FaEye />}
         </EyeIcon>
       );
@@ -117,8 +118,8 @@ const Input = ({
   };
 
   return (
-    <>
-      <Label>{label}</Label>
+    <VBox>
+      <Label data-testid="label">{label}</Label>
       {required && error && !value && <DangerMessage>{error}</DangerMessage>}
       {!isEmailValid && !focused && <DangerMessage>{error}</DangerMessage>}
       {!checkPwdComplexity && !focused && (
@@ -140,6 +141,7 @@ const Input = ({
           placeholder={placeholder}
           icon={icon}
           {...rest}
+          data-testid="input"
         />
         {!error && value && renderIcon()}
         {error && required && !value && !focused && renderDangerIcon()}
@@ -149,7 +151,7 @@ const Input = ({
           checkEmailValid &&
           renderDangerIcon()}
       </InputContainer>
-    </>
+    </VBox>
   );
 };
 

@@ -1,9 +1,8 @@
 import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
-import PropTypes from "prop-types";
 import { Spinner } from "react-bootstrap";
 import { BsFillExclamationOctagonFill } from "react-icons/bs";
-import AddressAutoComplete from "..";
+import AddressAutoComplete from "../AddressAutoComplete";
 
 afterEach(cleanup);
 
@@ -16,17 +15,13 @@ const defaultProps = {
 
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };
-  const { getByTestId, container } = render(
+  const { getByTestId } = render(
     <AddressAutoComplete {...setupProps} />
   );
 
-  return { getByTestId, container };
+  return { getByTestId };
 };
 
-test("render AddressAutoComplete component", () => {
-  const { container } = setup();
-  expect(container).toBeDefined();
-});
 
 test("render spinner when showSpinner is true and errorMessage is not defined", () => {
   const { getByTestId } = setup({ showSpinner: true });
