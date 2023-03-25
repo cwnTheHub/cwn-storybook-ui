@@ -33,16 +33,14 @@ const Login = ({
   loginBtnCTADisable,
   loginBtnCTAWidth,
   loginBtnCTAHeight,
-
-  loginHeadingRight,
-  loginSubHeadingRight,
+  children,
 }) => {
   return (
     <LoginContainer>
       <HBox>
         <VBox>
+          <HeaderTitle txtColor={txtColor}>{loginHeading}</HeaderTitle>
           <VBox>
-            <HeaderTitle txtColor={txtColor}>{loginHeading}</HeaderTitle>
             <Input
               type="email"
               required={required}
@@ -50,10 +48,8 @@ const Login = ({
               onChange={loginEmailHandleChange}
               checkEmailValid={true}
               errorMessage={loginEmailErrorMessage}
+              forgotUsername={loginForgotEmailLinkCTA}
             />
-            {loginForgotEmailLinkCTA && (
-              <Box onEnd={true}>{loginForgotEmailLinkCTA}</Box>
-            )}
           </VBox>
           <VBox>
             <Input
@@ -62,10 +58,8 @@ const Login = ({
               label={loginPwdLabel}
               onChange={loginPwdHandleChange}
               errorMessage={loginPwdErrorMessage}
+              forgotPwd={loginForgotPwdLinkCTA}
             />
-            {loginForgotPwdLinkCTA && (
-              <Box onEnd={true}>{loginForgotPwdLinkCTA}</Box>
-            )}
           </VBox>
           {isSecureByCode && accountFoundResponse && (
             <VBox>
@@ -90,27 +84,8 @@ const Login = ({
             />
           </VBox>
         </VBox>
-        <Line />
-        {showConnectWithoutPwd && (
-          <VBox>
-            <VBox>
-              <HeaderTitle txtColor={txtColor}>
-                <Text>{loginHeadingRight}</Text>
-              </HeaderTitle>
-              <HeaderTitle txtColor={txtColor}>
-                <SubText>{loginSubHeadingRight}</SubText>
-              </HeaderTitle>
-            </VBox>
-            <VBox>
-              <Button
-                btnTxtColor={loginBtnCTABgColor}
-                onClick={() => console.log("click")}
-                disabled={false}
-                buttonTxt={"Button"}
-              />
-            </VBox>
-          </VBox>
-        )}
+        {showConnectWithoutPwd && <Line />}
+        {showConnectWithoutPwd && <VBox>{children}</VBox>}
       </HBox>
     </LoginContainer>
   );
