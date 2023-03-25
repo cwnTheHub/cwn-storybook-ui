@@ -3,8 +3,6 @@ name: 'Chromatic'
 
 # Event for the workflow
 on:
-  schedule:
-  - cron: 0 0 * * 2,5
   push:
     branches:
       - main
