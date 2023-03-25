@@ -1,3 +1,5 @@
+# .github/workflows/chromatic.yml
+
 # Workflow name
 name: 'Chromatic'
 
@@ -6,18 +8,12 @@ on:
  push:
     branches:
       - main
-  
 
 # List of jobs
 jobs:
   chromatic-deployment:
     # Operating System
-    runs-on: ${{matrix.os}}
-    
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x , 14.x]
-        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ubuntu-latest
     # Job steps
     steps:
       - uses: actions/checkout@v1
