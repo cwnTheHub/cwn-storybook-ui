@@ -99,6 +99,16 @@
     "branches": [
       "main",
       "next"
-    ]
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
+    "tagFormat": "v${version}",
+    "dryRun": false,
+    "ci": true,
+    "repositoryUrl": "https://github.com/cwnTheHub/cwn-storybook-ui.git"
   }
 }
