@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ModalOverlay = styled.div`
-  background-color: rgba(216, 216, 216, .3);
+  background-color: rgba(216, 216, 216, 0.3);
   bottom: 0;
   left: 0;
   position: fixed;
@@ -18,7 +18,8 @@ export const ModalOverlay = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  background-color: ${(backgroundColor)=> backgroundColor || 'rgba(126, 116, 166, 1)'};
+  background-color: ${(backgroundColor) =>
+    backgroundColor || "rgba(126, 116, 166, 1)"};
   border-radius: 4px;
   box-shadow: 0 0 16px 0 hsl(0deg 0% 84% / 50%);
   max-width: 100%;
@@ -40,7 +41,6 @@ export const ModalWrapper = styled.div`
     transition: transform 0.3s ease-in-out;
   }
 `;
-
 
 export const ModalButtons = styled.div`
   display: flex;

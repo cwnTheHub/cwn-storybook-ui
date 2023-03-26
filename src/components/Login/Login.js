@@ -1,11 +1,10 @@
 import React from "react";
-import Box from "../Box/Box";
 import Button from "../Button/Button";
 import HBox from "../HBox/HBox";
 import HeaderTitle from "../HeaderTitle/HeaderTitle";
 import Input from "../Input/Input";
 import VBox from "../VBox/VBox";
-import { Line, LoginContainer, SubText, Text } from "./LoginStyles";
+import { Line, LoginContainer} from "./LoginStyles";
 
 const Login = ({
   required,
@@ -35,6 +34,9 @@ const Login = ({
   loginBtnCTAHeight,
   children,
 }) => {
+  const handleEmail = (ev) => {
+    loginEmailHandleChange(ev);
+  };
   return (
     <LoginContainer>
       <HBox>
@@ -45,7 +47,7 @@ const Login = ({
               type="email"
               required={required}
               label={loginEmailLabel}
-              onChange={loginEmailHandleChange}
+              onChange={handleEmail}
               checkEmailValid={true}
               errorMessage={loginEmailErrorMessage}
               forgotUsername={loginForgotEmailLinkCTA}
@@ -84,8 +86,8 @@ const Login = ({
             />
           </VBox>
         </VBox>
-        {showConnectWithoutPwd && <Line />}
-        {showConnectWithoutPwd && <VBox>{children}</VBox>}
+        {showConnectWithoutPwd && <Line data-testid="line-divider"/>}
+        {showConnectWithoutPwd && <VBox data-testid="noPwd-container">{children}</VBox>}
       </HBox>
     </LoginContainer>
   );

@@ -1,10 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 import {
-  Arrow,
-  DecoratedLinkButton,
-  DropdownArrow,
   DropdownContainer,
   DropdownLink,
   DropdownMenu,
@@ -17,8 +14,6 @@ const Link = ({
   right,
   isButton,
   dropdownLink,
-  linkTxtColor,
-  linkBackgroundColor,
   theLink,
   icon,
   activeLink,
@@ -34,18 +29,18 @@ const Link = ({
   const ref = useRef();
 
   useEffect(() => {
-    if (theLink?.to === currentLink?.to) {
-      function handleClickOutside(event) {
+    function handleClickOutside(event) {
+      if (theLink?.to === currentLink?.to) {
         if (ref.current && !ref.current.contains(event.target)) {
           setIsDropdownOpen(false);
         }
       }
-
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
     }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [ref, currentLink]);
 
   if (dropdownLink) {

@@ -1,7 +1,5 @@
-import React from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { FaAngleDown } from "react-icons/fa";
 
 // Option 1: Link without decoration, on hover underline
 export const LinkWithoutDecoration = styled(Link)`
@@ -83,23 +81,11 @@ const slideDown = keyframes`
     max-height:50vh;
   } 
 `;
-const slideUp = keyframes`
-   from {
-    max-height:50vh;
-  }
-  to {
-    max-height:0px;
-  } 
-`;
 
 export const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
-  ${({ right }) =>
-    right
-      ? `right: 0;
-  `
-      : `left: 0;`}
+  ${({ right }) => (right ? "right: 0;" : "left: 0;")}
   min-width: 300px;
   padding: 0.5rem 0.2rem;
   z-index: 200;
@@ -138,7 +124,7 @@ export const LinkWithDecoration = styled(Link)`
   border-left: ${({ actived }) => actived && "3px solid black"}!important;
   &:hover {
     text-decoration: underline;
-    
+
     border-left: ${({ actived }) => actived && "3px solid black"}!important;
   }
 `;

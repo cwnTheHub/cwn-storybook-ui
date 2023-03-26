@@ -18,7 +18,6 @@ const AddressAutoComplete = ({
   showSpinner,
   selectedValue,
   errorMessage,
-  ...rest
 }) => {
   const [value, setValue] = useState("");
   const [danger, setDanger] = useState(false);
@@ -30,7 +29,7 @@ const AddressAutoComplete = ({
       !errorMessage?.message &&
       !results
     ) {
-      return <FaSpinner />;
+      return <FaSpinner ></FaSpinner>;
     } else if (errorMessage?.message) {
       setDanger(true);
     } else {

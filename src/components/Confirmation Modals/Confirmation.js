@@ -10,10 +10,7 @@ import {
 const Confirmation = ({
   message,
   applyChanges,
-  cancel,
-  warning,
-  error,
-  confirm,
+  cancel
 }) => {
   const handleApplyChanges = () => {
     applyChanges();

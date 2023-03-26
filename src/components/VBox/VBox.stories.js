@@ -8,7 +8,10 @@ export default {
 
 const Template = (args) => {
   return (
-    <VBox backgroundColor={"red"} borderRadius={"10px"}>
+    <VBox
+      backgroundColor={args.backgroundColor}
+      borderRadius={args.borderRadius}
+    >
       <p>child 1</p>
     </VBox>
   );
