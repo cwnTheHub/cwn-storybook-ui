@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/public
+/.storybook
+/.github
+.npmrc
+build-storybook.log
+package-lock.json
