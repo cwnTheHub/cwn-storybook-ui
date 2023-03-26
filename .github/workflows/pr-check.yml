@@ -12,8 +12,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: run  Test Coverage
-        run: npm run test -- --coverage
+      - name: Eslint
+        run: npm run lint  
+
+      - name: run Tests
+        run: npm run test
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -3,15 +3,12 @@ import PropTypes from "prop-types";
 import { ButtonContainer, ButtonField } from "./ButtonStyles";
 
 const Button = ({
-  icon,
   outlined,
   btnBackgroundColor,
   btnTxtColor,
   onClick,
   disabled,
-  buttonTxt,
-  height,
-  width,
+  buttonTxt
 }) => {
   return (
     <ButtonContainer>

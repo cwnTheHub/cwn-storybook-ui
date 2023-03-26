@@ -14,7 +14,7 @@ const Template = (args) => {
     disabled,
     height,
     width,
-    buttonTxt
+    buttonTxt,
   } = args;
   return (
     <Button
@@ -37,5 +37,5 @@ Primary.args = {
   disabled: false,
   height: "50px",
   width: "250px",
-  buttonTxt:'Button'
+  buttonTxt: "Button",
 };

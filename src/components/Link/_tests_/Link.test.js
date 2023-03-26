@@ -1,7 +1,7 @@
 import React from "react";
-import { render, fireEvent, cleanup } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import Link from "../Link";
-import { useLocation, BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Link tests", () => {
   const setup = (defaultProps) => {

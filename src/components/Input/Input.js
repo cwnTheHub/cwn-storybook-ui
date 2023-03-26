@@ -52,7 +52,7 @@ const Input = ({
 
   const handleInputChange = (event) => {
     event.preventDefault();
-    const { value } = event?.target;
+    const { value } = event.target;
     setValue(value);
     onChange(value);
     if (type === "email" && value && !validateEmail(value) & checkEmailValid) {
@@ -82,6 +82,14 @@ const Input = ({
   };
 
   const renderIcon = () => {
+    if (
+      type === "password" &&
+      value &&
+      !validatePassword(value) &&
+      checkPasswordComplexity
+    ) {
+      return <DangerIcon data-testid="the-danger-icon" />;
+    }
     if (type === "password") {
       return (
         <EyeIcon onClick={toggleShowPassword} data-testid="show-password-icon">
@@ -90,45 +98,47 @@ const Input = ({
       );
     }
     if (type === "email" && value && !validateEmail(value) && checkEmailValid) {
-      return <DangerIcon />;
+      return <DangerIcon data-testid="the-danger-icon" />;
     }
-    if (
+    /* if (
       type === "password" &&
       value &&
       !validatePassword(value) &&
       checkPasswordComplexity
     ) {
-      return <DangerIcon />;
-    }
+      return <DangerIcon data-testid="the-danger-icon" />;
+    } */
 
     return null;
   };
   const renderDangerIcon = () => {
     if (required && error && !focused) {
-      return <DangerIcon />;
+      return <DangerIcon data-testid="the-danger-icon" />;
     }
-
-    return null;
   };
 
   const renderDetailIcon = () => {
     if (icon) {
-      return <DetailIcon>{icon}</DetailIcon>;
+      return <DetailIcon data-testid="the-icon">{icon}</DetailIcon>;
     }
-    return null;
   };
 
   return (
     <VBox>
-      <Label data-testid="label">{label}</Label>
-      {required && error && !value && <DangerMessage>{error}</DangerMessage>}
-      {!isEmailValid && !focused && <DangerMessage>{error}</DangerMessage>}
-      {!checkPwdComplexity && !focused && (
-        <DangerMessage>{error}</DangerMessage>
+      {label && <Label data-testid="label">{label}</Label>}
+      {required && error && !value && (
+        <DangerMessage data-testid="error-message">{error}</DangerMessage>
       )}
-      <InputContainer>
+      {!isEmailValid && !focused && (
+        <DangerMessage data-testid="error-message">{error}</DangerMessage>
+      )}
+      {!checkPwdComplexity && !focused && (
+        <DangerMessage data-testid="error-message">{error}</DangerMessage>
+      )}
+      <InputContainer data-testid="input-container">
         {icon && renderDetailIcon()}
         <InputField
+          aria-label={label}
           type={type === "password" && showPassword ? "text" : type}
           required={required}
           onFocusCapture={handleFocus}

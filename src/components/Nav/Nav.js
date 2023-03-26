@@ -7,34 +7,30 @@ import {
   LogoSection,
 } from "./styles";
 
-const Nav = ({ menu_links, bgColor, responsiveBtnColor }) => {
+const Nav = ({ menu_links, bgColor }) => {
   const [childrenIsActive, setChildrenIsActive] = useState(false);
-  const [activeChildLink, setActiveChildLink] = useState("");
+  const [activeChildLink] = useState("");
 
-  const toggleChildren = (link) => {
+  const toggleChildren = () => {
     setChildrenIsActive(!childrenIsActive);
   };
 
   const ref = useRef();
 
   useEffect(() => {
-    if (childrenIsActive && activeChildLink) {
-      function handleClickOutside(event) {
+    function handleClickOutside(event) {
+      if (childrenIsActive && activeChildLink) {
         if (ref.current && !ref.current.contains(event.target)) {
           setChildrenIsActive(false);
         }
       }
-
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
     }
-  }, [ref, activeChildLink]);
 
-  const onSelectCurrent = (currentLink) => {
-    setActiveChildLink(currentLink);
-  };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref, activeChildLink]);
 
   return (
     <ChildrenNavContainer bgColor={bgColor} ref={ref}>
