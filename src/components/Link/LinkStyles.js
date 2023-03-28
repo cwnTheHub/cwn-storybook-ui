@@ -83,6 +83,8 @@ const slideDown = keyframes`
 `;
 
 export const DropdownMenu = styled.div`
+  display: ${(props) =>
+    props.open ? "flex" : "none"};
   position: absolute;
   top: 100%;
   ${({ right }) => (right ? "right: 0;" : "left: 0;")}
@@ -90,7 +92,6 @@ export const DropdownMenu = styled.div`
   padding: 0.5rem 0.2rem;
   z-index: 200;
   box-sizing: border-box;
-  display: ${(props) => (props.open ? "flex" : "none")};
   flex-direction: column;
   gap: 0.3rem;
   border-bottom-radius: 4px !important;

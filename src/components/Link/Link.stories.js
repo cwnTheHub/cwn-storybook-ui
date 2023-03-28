@@ -1,4 +1,5 @@
 import React from "react";
+import { FiHelpCircle, FiUser } from "react-icons/fi";
 import Link from "./Link";
 
 export default {
@@ -11,40 +12,54 @@ const Template = (args) => {
     <Link
       button={args.button}
       dropdownLink={args.dropdownLink}
-      primary={args.primary}
-      withArrow={args.withArrow}
-      children={args.children}
-      linkTxtColor={args.linkTxtColor}
-      linkBackgroundColor={args.linkBackgroundColor}
-      title={args.title}
+      theLink={args.theLink}
+      onClick={args.onClick}
     />
   );
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  title: "le lien prim",
-  color: "",
-  hoverColor: "",
-};
 export const DropdownLink = Template.bind({});
 DropdownLink.args = {
   dropdownLink: true,
-  title: "le lien",
-  linkTxtColor: "",
-  linkBackgroundColor: "",
-};
-export const ButtonLink = Template.bind({});
-ButtonLink.args = {
-  button: true,
-  title: "le lien",
-  linkTxtColor: "",
-  linkBackgroundColor: "",
-};
-export const DecoratedLink = Template.bind({});
-DecoratedLink.args = {
-  withArrow: true,
-  title: "le lien",
-  color: "",
-  hoverColor: "",
+  onClick:(param)=>console.log(param),
+  theLink: {
+    title: "Business",
+    to: "/toBusiness",
+    categories: [
+      {
+        title: "Small & medium business",
+        to: "/toSmall",
+        logo: "NEMETON Business",
+        menu_right: [
+          {
+            title: "Log in",
+            to: "/toLogin",
+            icon: <FiUser size={14} />,
+            type: "isDropdown",
+            categories: [
+              {
+                title: "My NEMETON",
+                to: "/profile",
+              },
+              {
+                title: "NEMETON Business Connect",
+                to: "/businessConnect",
+              },
+              {
+                title: "NewsLetter Marketplace",
+                to: "/newletter",
+              },
+            ],
+          },
+          {
+            title: "Support",
+            to: "/toSupport",
+            icon: <FiHelpCircle size={14} />,
+          },
+          { title: "Language", to: "/toLanguage", type: "isDropdown" },
+        ],
+      },
+    ],
+    type: "isDropdown",
+  },
 };

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 import {
@@ -17,59 +17,48 @@ const Link = ({
   theLink,
   icon,
   activeLink,
-  currentLink,
   onClick,
-  isOpen,
   onSelectActiveLink,
   isactive,
-  setIsDropdownOpen,
 }) => {
   const { pathname } = useLocation();
+  const [isDropdownClicked, setIsDropdownClicked] = useState(false);
 
-  const ref = useRef();
+  const handleClickOnDropdown = (ev) => {
+    ev.preventDefault();
+    setIsDropdownClicked(!isDropdownClicked);
+  };
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (theLink?.to === currentLink?.to) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setIsDropdownOpen(false);
-        }
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [ref, currentLink]);
+  const handleBlurOnDropdown = (ev) => {
+    ev.preventDefault();
+    setIsDropdownClicked(!isDropdownClicked);
+  };
 
   if (dropdownLink) {
     return (
-      <DropdownContainer>
+      <DropdownContainer data-testid="dropdown-container">
         <DropdownLink
-          onClick={() => {
-            if (theLink?.to === currentLink?.to) {
-              setIsDropdownOpen(false);
-              onClick(null);
-            } else {
-              onClick(theLink);
-            }
-          }}
+          onClick={handleClickOnDropdown}
           data-testid="dropdown-link"
-          open={isOpen}
+          open={isDropdownClicked}
           actived={isactive}
         >
           {icon || null}
           {activeLink?.title || theLink?.title}
           <BsChevronDown size={12} />
         </DropdownLink>
-        <DropdownMenu open={isOpen} ref={ref} right={right}>
-          <div>
+        {isDropdownClicked && (
+          <DropdownMenu
+            open={isDropdownClicked}
+            right={right}
+            data-testid="dropdown-menu"
+            tabindex="0"
+            onBlur={handleBlurOnDropdown}
+          >
             {theLink?.categories?.map((link, index) => (
-              <>
+              <div key={index}>
                 <LinkWithDecoration
                   to={link?.to}
-                  key={index}
                   actived={
                     link?.to?.toLowerCase() === pathname?.toLowerCase() ? 1 : 0
                   }
@@ -78,10 +67,10 @@ const Link = ({
                   {link?.title}
                 </LinkWithDecoration>
                 {index > 0 && index % 3 === 0 && <span>tst</span>}
-              </>
+              </div>
             ))}
-          </div>
-        </DropdownMenu>
+          </DropdownMenu>
+        )}
       </DropdownContainer>
     );
   }
