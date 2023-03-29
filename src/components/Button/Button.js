@@ -1,24 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ButtonContainer, ButtonField } from "./ButtonStyles";
+import { ButtonContainer, ButtonField } from "./styles";
 
 const Button = ({
-  outlined,
-  btnBackgroundColor,
-  btnTxtColor,
+  variant,
+  ctaBgColor,
+  ctaTxtColor,
   onClick,
   disabled,
-  buttonTxt
+  buttonTxt,
+  ctaWidth,
+  ctaHeight,
 }) => {
   return (
-    <ButtonContainer>
+    <ButtonContainer data-testid="btn-container">
       <ButtonField
-        data-testid="Click Me"
+        data-testid="click-me"
         onClick={onClick}
         disabled={disabled}
-        btnBackgroundColor={btnBackgroundColor}
-        btnTxtColor={btnTxtColor}
-        outlined={outlined}
+        ctaBgColor={ctaBgColor}
+        ctaTxtColor={ctaTxtColor}
+        variant={variant}
+        ctaWidth={ctaWidth}
+        ctaHeight={ctaHeight}
       >
         {buttonTxt}
       </ButtonField>
@@ -28,14 +32,14 @@ const Button = ({
 
 Button.propTypes = {
   icon: PropTypes.element,
-  backgroundColor: PropTypes.string,
-  btnTxtColor: PropTypes.string,
+  ctaBgColor: PropTypes.string,
+  ctaTxtColor: PropTypes.string,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
   buttonTxt: PropTypes.string,
-  height: PropTypes.string,
-  width: PropTypes.string,
+  variant: PropTypes.string,
+  ctaHeight: PropTypes.string,
+  ctaWidth: PropTypes.string,
 };
 
 export default Button;
-

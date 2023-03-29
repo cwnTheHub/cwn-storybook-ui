@@ -1,31 +1,87 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import Button from "../Button";
+import userEvent from "@testing-library/user-event";
 
 describe("Button tests", () => {
-  test("Button should call the click handler function when clicked", () => {
-    const onClick = jest.fn();
-    const { getByTestId } = render(<Button onClick={onClick} />);
-    const button = getByTestId("Click Me");
-    fireEvent.click(button);
-    expect(onClick).toBeCalledTimes(1);
-    expect(onClick).toHaveBeenCalled();
+  const setup = (defaultProps) => {
+    const utils = render(
+      <Button
+        variant={defaultProps?.variant}
+        disabled={defaultProps?.disabled}
+      />
+    );
+    return { ...utils };
+  };
 
-    fireEvent.click(button);
-    fireEvent.click(button);
-    expect(onClick).toBeCalledTimes(3);
+  it("should display component", () => {
+    const props = {};
+    const { getByTestId } = setup(props);
+    const button = getByTestId("click-me");
+    expect(button).toBeInTheDocument();
   });
 
-  test("Button should be disabled when the isDisabled prop is true", () => {
+  it("should display Button disabled", () => {
+    const onClick = jest.fn();
+    const props = {
+      disabled: true,
+    };
+    const { getByTestId } = setup(props);
+    const container = getByTestId("btn-container");
+    const btn = getByTestId("click-me");
+    expect(container).toContainElement(btn);
+
+    expect(btn).toBeDisabled();
+  });
+  it("should display Button not disabled", () => {
+    const onClick = jest.fn();
+    const props = {
+      disabled: false,
+    };
+    const { getByTestId } = setup(props);
+    const container = getByTestId("btn-container");
+    const btn = getByTestId("click-me");
+    expect(container).toContainElement(btn);
+    expect(btn).toBeEnabled();
+  });
+
+  it("should display Button based on variant", () => {
     const onClick = jest.fn();
     const { getByTestId } = render(
-      <Button onClick={onClick} disabled={true} />
+      <Button
+        onClick={onClick}
+        ctaBgColor="green"
+        ctaTxtColor={"white"}
+        variant="outline"
+        disabled={true}
+      />
+    );
+    const container = getByTestId("btn-container");
+    const btn = getByTestId("click-me");
+    expect(container).toContainElement(btn);
+    expect(btn).toBeDisabled();
+  });
+
+  it("should have bgColor and TxtColor  and reacts on click action", () => {
+    const onClick = jest.fn();
+    const { getByTestId } = render(
+      <Button
+        onClick={onClick}
+        ctaBgColor="green"
+        ctaTxtColor="white"
+        variant="regular"
+      />
     );
 
-    const button = getByTestId("Click Me");
-    expect(button).toBeDisabled();
-    fireEvent.click(button);
-    expect(onClick).toBeCalledTimes(0);
+    const regularBtn = getByTestId("click-me");
+    expect(regularBtn).toHaveStyle("background-color: green");
+    expect(regularBtn).toHaveStyle("color: white");
 
+    fireEvent.click(regularBtn);
+    expect(onClick).toBeCalledTimes(1);
+
+    fireEvent.click(regularBtn);
+    fireEvent.click(regularBtn);
+    expect(onClick).toBeCalledTimes(3);
   });
 });
