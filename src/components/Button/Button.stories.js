@@ -8,34 +8,57 @@ export default {
 
 const Template = (args) => {
   const {
-    btnBackgroundColor,
-    btnTxtColor,
+    ctaBgColor,
+    ctaTxtColor,
     onClick,
     disabled,
-    height,
-    width,
+    ctaHeight,
+    ctaWidth,
     buttonTxt,
+    variant,
   } = args;
   return (
     <Button
-      btnBackgroundColor={btnBackgroundColor}
-      btnTxtColor={btnTxtColor}
+      ctaBgColor={ctaBgColor}
+      ctaTxtColor={ctaTxtColor}
       onClick={onClick}
       disabled={disabled}
-      height={height}
-      width={width}
+      ctaHeight={ctaHeight}
+      ctaWidth={ctaWidth}
       buttonTxt={buttonTxt}
+      variant={variant}
     />
   );
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  btnBackgroundColor: "green",
-  btnTxtColor: "white",
+export const Regular = Template.bind({});
+Regular.args = {
+  variant: "regular",
+  ctaBgColor: "green",
+  ctaTxtColor: "white",
   onClick: () => console.log("click"),
   disabled: false,
-  height: "50px",
-  width: "250px",
+  ctaWidth: "50%",
+  buttonTxt: "Button",
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  variant: "outline",
+  ctaBgColor: "green",
+  ctaTxtColor: "white",
+  onClick: () => console.log("click"),
+  disabled: false,
+  ctaWidth: "50%",
+  buttonTxt: "Button",
+};
+
+export const Empty = Template.bind({});
+Empty.args = {
+  ctaBgColor: "green",
+  ctaTxtColor: "white",
+  onClick: () => console.log("click"),
+  disabled: false,
+  ctaWidth: "50%",
   buttonTxt: "Button",
 };
