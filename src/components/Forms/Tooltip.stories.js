@@ -18,6 +18,7 @@ const Template = (args) => {
           direction={args.direction}
           tooltipId={args.tooltipId}
           connectedFieldLabel={args.connectedFieldLabel}
+          content={args.content}
         >
           A quadcoptor is a flying drone with 4 propellors.
         </Tooltip>
@@ -30,5 +31,6 @@ export const MinimalUsage = Template.bind({});
 MinimalUsage.args = {
   tooltipId: "jfkhdf",
   copy: "en",
-  direction: "left",
+  direction: "auto",
+  content:"This is a tooltip"
 };

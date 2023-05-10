@@ -106,7 +106,8 @@ class T extends React.Component {
     }
   };
 
-  toggleBubble = () => {
+  toggleBubble = (e) => {
+    e?.stopPropagation();
     this.updatePageWidth();
     this.setState(({ open }) => {
       return { open: !open };
