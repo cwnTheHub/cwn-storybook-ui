@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import componentWithName from "../../utils/componentWithName";
-
 import Box from "../core-box/Box";
 import InputFeedback from "../core-input-feedback/InputFeedback";
 import Text from "../core-text/Text";
@@ -15,6 +13,7 @@ import {
   StyledLabelContainer,
 } from "./styles";
 import generateId from "../../utils/generateId";
+import { componentWithName } from "../../util-prop-types";
 
 const showFeedbackIcon = (feedback) =>
   feedback === "error" || feedback === "success";

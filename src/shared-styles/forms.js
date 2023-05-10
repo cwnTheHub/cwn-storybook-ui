@@ -10,6 +10,7 @@ export const font = {
 };
 
 export const baseButton = {
+  boxSixing: "border-box",
   margin: 0,
   padding: "0 2rem",
   cursor: "pointer",
