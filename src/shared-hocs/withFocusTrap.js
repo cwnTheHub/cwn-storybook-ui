@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 // Returns an array of focusable elements in the order they are found in c
 const selector =
-  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"]), audio[controls], video[controls], [contenteditable]:not([contenteditable=false])';
+  "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1']), audio[controls], video[controls], [contenteditable]:not([contenteditable=false])";
 const getFocusable = (c) => c.querySelectorAll(selector);
 
 const withFocusTrap = (Component) => {
