@@ -99,13 +99,13 @@
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwnTheHub/cwn-storybook-ui.git"
+    "url": "git+https://github.com/cwnTheHub/nds-core.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cwnTheHub/cwn-storybook-ui/issues"
+    "url": "https://github.com/cwnTheHub/nds-core./issues"
   },
-  "homepage": "https://github.com/cwnTheHub/cwn-storybook-ui#readme",
+  "homepage": "https://github.com/cwnTheHub/nds-core.#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -123,6 +123,6 @@
     "tagFormat": "v${version}",
     "dryRun": false,
     "ci": true,
-    "repositoryUrl": "https://github.com/cwnTheHub/cwn-storybook-ui.git"
+    "repositoryUrl": "https://github.com/cwnTheHub/nds-core.git"
   }
 }
