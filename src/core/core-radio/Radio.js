@@ -13,9 +13,9 @@ import {
 } from "../core-colours/colours";
 import Text from "../core-text/Text";
 import { safeRest } from "../../util-helpers";
-import ColoredTextProvider from "../../utils/ColoredTextProvider";
 import { borders } from "../../shared-styles";
 import Box from "../core-box/Box";
+import ColoredTextProvider from "../../utils/components/ColoredTextProvider/ColoredTextProvider";
 
 const FakeRadio = styled.span({
   height: "1.25rem",

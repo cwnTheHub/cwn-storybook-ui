@@ -61,7 +61,6 @@ const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
 
     ...(iconStyle === "checkmark" && {
       content: "'\f101'",
-      fontWeight: 900,
       fontSize: "1rem",
       width: "0.75rem",
       color: colorPrimary,

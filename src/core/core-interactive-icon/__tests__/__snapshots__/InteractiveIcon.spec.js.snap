@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InteractiveIcon renders 1`] = `ReactWrapper {}`;
+
+exports[`InteractiveIcon renders Dependent icon with Link 1`] = `ReactWrapper {}`;

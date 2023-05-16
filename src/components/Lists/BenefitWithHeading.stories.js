@@ -1,4 +1,5 @@
 import React from "react";
+import Ambulance from "../../core/core-decorative-icon/svgs/Ambulance";
 import { BenefitWithHeading } from "../../core/core-benefit";
 
 export default {
@@ -18,6 +19,6 @@ const Template = (args) => {
 
 export const Usage = Template.bind({});
 Usage.args = {
-  icon: "Checkmark",
+  icon: Ambulance,
   heading: "This is a heading",
 };

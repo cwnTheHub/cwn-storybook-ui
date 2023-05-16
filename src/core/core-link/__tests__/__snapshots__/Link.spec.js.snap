@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link can be displayed with the default styles 1`] = `
+Object {
+  "link": ReactWrapper {},
+  "wrapper": ReactWrapper {},
+}
+`;
+
+exports[`Link can be inverted 1`] = `
+Object {
+  "link": ReactWrapper {},
+  "wrapper": ReactWrapper {},
+}
+`;
+
+exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] = `ReactWrapper {}`;
+
+exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] = `ReactWrapper {}`;
+
+exports[`Link renders 1`] = `ShallowWrapper {}`;

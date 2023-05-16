@@ -10,7 +10,7 @@ export const colorLightRaja = "#FFF9EE";
 
 // brand
 export const colorNemetonGreen = "#6c0";
-export const colorNemetonPurple = "#03045e";
+export const colorNemetonPurple = "#019cfd";
 export const colorAccessibleGreen = "#2B8000";
 export const colorWhite = "#fff";
 
