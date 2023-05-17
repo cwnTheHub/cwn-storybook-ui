@@ -1,43 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputFeedback can have a feedback state 1`] = `ReactWrapper {}`;
+exports[`InputFeedback can have a feedback state 1`] = `
+<div
+  className="sc-beqWaB hjHWHa sc-gueYoa jTWAqr sc-gueYoa jTWAqr"
+  role={null}
+>
+  Some feedback text.
+</div>
+`;
 
-exports[`InputFeedback can have a feedback state 2`] = `ReactWrapper {}`;
+exports[`InputFeedback can have a feedback state 2`] = `
+<div
+  className="sc-beqWaB hjHWHa sc-gueYoa eNRbUU sc-gueYoa eNRbUU"
+  role={null}
+>
+  Some feedback text.
+</div>
+`;
 
 exports[`InputFeedback renders 1`] = `
-LoadedCheerio {
-  "0": <div
-    class="sc-beqWaB hjHWHa sc-gueYoa jTWAqr sc-gueYoa jTWAqr"
-  >
-    Some inputFeedback text.
-  </div>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+<div
+  class="sc-beqWaB hjHWHa sc-gueYoa jTWAqr sc-gueYoa jTWAqr"
+>
+  Some inputFeedback text.
+</div>
 `;

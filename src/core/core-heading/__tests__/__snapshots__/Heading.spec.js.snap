@@ -1,40 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading renders 1`] = `
-LoadedCheerio {
-  "0": <h2
-    class="sc-beqWaB gBSKow"
-    data-testid="heading"
-  >
-    The heading
-  </h2>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+<h2
+  class="sc-beqWaB gBSKow"
+  data-testid="heading"
+>
+  The heading
+</h2>
 `;

@@ -1,130 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button can be presented as one of the allowed variants 1`] = `
-LoadedCheerio {
-  "0": <button
-    class="sc-beqWaB etEeBB"
-    type="button"
+<button
+  class="sc-beqWaB etEeBB"
+  type="button"
+>
+  <span
+    class="sc-gueYoa htAACu"
   >
-    <span
-      class="sc-gueYoa htAACu"
-    >
-      Submit
-    </span>
-  </button>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+    Submit
+  </span>
+</button>
 `;
 
 exports[`Button can be presented as one of the new allowed variants 1`] = `
-LoadedCheerio {
-  "0": <button
-    class="sc-beqWaB dWrusy"
-    type="button"
+<button
+  class="sc-beqWaB dWrusy"
+  type="button"
+>
+  <span
+    class="sc-gueYoa bJKfsr"
   >
-    <span
-      class="sc-gueYoa bJKfsr"
-    >
-      Submit
-    </span>
-  </button>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+    Submit
+  </span>
+</button>
 `;
 
 exports[`Button renders 1`] = `
-LoadedCheerio {
-  "0": <button
-    class="sc-beqWaB iJOUxQ"
-    type="button"
+<button
+  class="sc-beqWaB iJOUxQ"
+  type="button"
+>
+  <span
+    class="sc-gueYoa htAACu"
   >
-    <span
-      class="sc-gueYoa htAACu"
-    >
-      Submit
-    </span>
-  </button>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+    Submit
+  </span>
+</button>
 `;

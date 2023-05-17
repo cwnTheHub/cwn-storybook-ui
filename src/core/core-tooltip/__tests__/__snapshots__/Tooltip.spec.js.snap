@@ -1,0 +1,1799 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip accessibility accepts custom copy 1`] = `
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c2 {
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c2:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c4 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+.c0 {
+  line-height: 1;
+  position: relative;
+  width: 1rem;
+  height: 1.3rem;
+}
+
+.c1 {
+  position: absolute;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 25vw;
+  }
+}
+
+<Tooltip
+  copy={
+    Object {
+      "a11yText": "This is custom copy.",
+    }
+  }
+  direction="auto"
+  inverted={false}
+>
+  <WithForwardedRef(T)
+    copy={
+      Object {
+        "a11yText": "This is custom copy.",
+      }
+    }
+    direction="auto"
+    inverted={false}
+  >
+    <T
+      copy={
+        Object {
+          "a11yText": "This is custom copy.",
+        }
+      }
+      direction="auto"
+      forwardedRef={null}
+      inverted={false}
+    >
+      <styled.div
+        inverted={false}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div
+            data-testid="tooltipContainer"
+          >
+            <div
+              className="c1"
+              data-testid="tooltipContainer"
+            >
+              <Bubble
+                direction="right"
+                id="standalone-tooltip-tooltip10_tooltip"
+                open={false}
+                width={
+                  Object {
+                    "width": "calc(1008px - 1rem - 0.5rem)",
+                  }
+                }
+              >
+                <Styled(Component)
+                  aria-hidden="true"
+                  aria-live="assertive"
+                  bubbleDimensions={
+                    Object {
+                      "bubbleOffset": "7px",
+                      "bubbleTriangleHeight": "10px",
+                      "bubbleTrianglePosition": "12px",
+                      "bubbleTriangleWidth": "7px",
+                      "bubbleTriggerSize": "24px",
+                    }
+                  }
+                  direction="right"
+                  horizontal={3}
+                  id="standalone-tooltip-tooltip10_tooltip"
+                  open={false}
+                  role="tooltip"
+                  vertical={2}
+                >
+                  <Component
+                    aria-hidden="true"
+                    aria-live="assertive"
+                    bubbleDimensions={
+                      Object {
+                        "bubbleOffset": "7px",
+                        "bubbleTriangleHeight": "10px",
+                        "bubbleTrianglePosition": "12px",
+                        "bubbleTriangleWidth": "7px",
+                        "bubbleTriggerSize": "24px",
+                      }
+                    }
+                    className="c2"
+                    data-testid="bubble"
+                    direction="right"
+                    horizontal={3}
+                    id="standalone-tooltip-tooltip10_tooltip"
+                    open={false}
+                    role="tooltip"
+                    vertical={2}
+                  >
+                    <Box
+                      aria-hidden="true"
+                      aria-live="assertive"
+                      className="c2"
+                      data-testid="bubble"
+                      horizontal={3}
+                      id="standalone-tooltip-tooltip10_tooltip"
+                      inline={false}
+                      role="tooltip"
+                      tag="div"
+                      vertical={2}
+                    >
+                      <styled.div
+                        aria-hidden="true"
+                        aria-live="assertive"
+                        className="c2"
+                        data-testid="bubble"
+                        horizontal={3}
+                        id="standalone-tooltip-tooltip10_tooltip"
+                        inline={false}
+                        role="tooltip"
+                        tag="div"
+                        vertical={2}
+                      >
+                        <div
+                          aria-hidden="true"
+                          aria-live="assertive"
+                          className="c3 c2 sc-fbJfA c2"
+                          data-testid="bubble"
+                          id="standalone-tooltip-tooltip10_tooltip"
+                          role="tooltip"
+                        >
+                          <styled.div
+                            bubbleWidth={
+                              Object {
+                                "width": "calc(1008px - 1rem - 0.5rem)",
+                              }
+                            }
+                          >
+                            <div
+                              className="c4"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="small"
+                              >
+                                <styled.span
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="small"
+                                >
+                                  <span
+                                    className="c5"
+                                    size="small"
+                                  >
+                                    Tooltip text
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                    </Box>
+                  </Component>
+                </Styled(Component)>
+              </Bubble>
+              <TooltipButton
+                a11yText="This is custom copy."
+                aria-controls="standalone-tooltip-tooltip10_tooltip"
+                aria-expanded="false"
+                aria-haspopup="true"
+                icon={[Function]}
+                id="standalone-tooltip-tooltip10_trigger"
+                inverted={false}
+                onClick={[Function]}
+              >
+                <styled.button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="c6"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <A11yContent>
+                      <styled.span>
+                        <span
+                          className="c7"
+                        >
+                          This is custom copy.
+                        </span>
+                      </styled.span>
+                    </A11yContent>
+                    <Dependent
+                      color="greyShark"
+                    >
+                      <Dependent
+                        color="greyShark"
+                      >
+                        <styled.svg
+                          color="greyShark"
+                          data-testid="dependentSvg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <svg
+                            aria-hidden={true}
+                            className="c8"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            focusable={false}
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path
+                              clipRule="evenodd"
+                              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </styled.svg>
+                      </Dependent>
+                    </Dependent>
+                  </button>
+                </styled.button>
+              </TooltipButton>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </T>
+  </WithForwardedRef(T)>
+</Tooltip>
+`;
+
+exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] = `
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c2 {
+  border-radius: 4px;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c2:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c4 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+.c0 {
+  line-height: 1;
+  position: relative;
+  width: 1rem;
+  height: 1.3rem;
+}
+
+.c1 {
+  position: absolute;
+}
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (max-width:575px) {
+  .c2 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 25vw;
+  }
+}
+
+<Tooltip
+  copy="en"
+  direction="auto"
+  inverted={false}
+>
+  <WithForwardedRef(T)
+    copy="en"
+    direction="auto"
+    inverted={false}
+  >
+    <T
+      copy="en"
+      direction="auto"
+      forwardedRef={null}
+      inverted={false}
+    >
+      <styled.div
+        inverted={false}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div
+            data-testid="tooltipContainer"
+          >
+            <div
+              className="c1"
+              data-testid="tooltipContainer"
+            >
+              <Bubble
+                direction="right"
+                id="standalone-tooltip-tooltip6_tooltip"
+                open={true}
+                width={
+                  Object {
+                    "width": "calc(1008px - 1rem - 0.5rem)",
+                  }
+                }
+              >
+                <Styled(Component)
+                  aria-hidden="false"
+                  aria-live="assertive"
+                  bubbleDimensions={
+                    Object {
+                      "bubbleOffset": "7px",
+                      "bubbleTriangleHeight": "10px",
+                      "bubbleTrianglePosition": "12px",
+                      "bubbleTriangleWidth": "7px",
+                      "bubbleTriggerSize": "24px",
+                    }
+                  }
+                  direction="right"
+                  horizontal={3}
+                  id="standalone-tooltip-tooltip6_tooltip"
+                  open={true}
+                  role="tooltip"
+                  vertical={2}
+                >
+                  <Component
+                    aria-hidden="false"
+                    aria-live="assertive"
+                    bubbleDimensions={
+                      Object {
+                        "bubbleOffset": "7px",
+                        "bubbleTriangleHeight": "10px",
+                        "bubbleTrianglePosition": "12px",
+                        "bubbleTriangleWidth": "7px",
+                        "bubbleTriggerSize": "24px",
+                      }
+                    }
+                    className="c2"
+                    data-testid="bubble"
+                    direction="right"
+                    horizontal={3}
+                    id="standalone-tooltip-tooltip6_tooltip"
+                    open={true}
+                    role="tooltip"
+                    vertical={2}
+                  >
+                    <Box
+                      aria-hidden="false"
+                      aria-live="assertive"
+                      className="c2"
+                      data-testid="bubble"
+                      horizontal={3}
+                      id="standalone-tooltip-tooltip6_tooltip"
+                      inline={false}
+                      role="tooltip"
+                      tag="div"
+                      vertical={2}
+                    >
+                      <styled.div
+                        aria-hidden="false"
+                        aria-live="assertive"
+                        className="c2"
+                        data-testid="bubble"
+                        horizontal={3}
+                        id="standalone-tooltip-tooltip6_tooltip"
+                        inline={false}
+                        role="tooltip"
+                        tag="div"
+                        vertical={2}
+                      >
+                        <div
+                          aria-hidden="false"
+                          aria-live="assertive"
+                          className="c3 c2 sc-fbJfA c2"
+                          data-testid="bubble"
+                          id="standalone-tooltip-tooltip6_tooltip"
+                          role="tooltip"
+                        >
+                          <styled.div
+                            bubbleWidth={
+                              Object {
+                                "width": "calc(1008px - 1rem - 0.5rem)",
+                              }
+                            }
+                          >
+                            <div
+                              className="c4"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="small"
+                              >
+                                <styled.span
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="small"
+                                >
+                                  <span
+                                    className="c5"
+                                    size="small"
+                                  >
+                                    Tooltip text
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                    </Box>
+                  </Component>
+                </Styled(Component)>
+              </Bubble>
+              <TooltipButton
+                a11yText="Reveal additional information."
+                aria-controls="standalone-tooltip-tooltip6_tooltip"
+                aria-expanded="true"
+                aria-haspopup="true"
+                icon={[Function]}
+                id="standalone-tooltip-tooltip6_trigger"
+                inverted={false}
+                onClick={[Function]}
+              >
+                <styled.button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="c6"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <A11yContent>
+                      <styled.span>
+                        <span
+                          className="c7"
+                        >
+                          Reveal additional information.
+                        </span>
+                      </styled.span>
+                    </A11yContent>
+                    <Dependent
+                      color="greyShark"
+                    >
+                      <Dependent
+                        color="greyShark"
+                      >
+                        <styled.svg
+                          color="greyShark"
+                          data-testid="dependentSvg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <svg
+                            aria-hidden={true}
+                            className="c8"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            focusable={false}
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path
+                              clipRule="evenodd"
+                              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </styled.svg>
+                      </Dependent>
+                    </Dependent>
+                  </button>
+                </styled.button>
+              </TooltipButton>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </T>
+  </WithForwardedRef(T)>
+</Tooltip>
+`;
+
+exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] = `
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c2 {
+  border-radius: 4px;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c2:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c4 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+.c0 {
+  line-height: 1;
+  position: relative;
+  width: 1rem;
+  height: 1.3rem;
+}
+
+.c1 {
+  position: absolute;
+}
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (max-width:575px) {
+  .c2 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 25vw;
+  }
+}
+
+<Tooltip
+  copy="en"
+  direction="auto"
+  inverted={false}
+>
+  <WithForwardedRef(T)
+    copy="en"
+    direction="auto"
+    inverted={false}
+  >
+    <T
+      copy="en"
+      direction="auto"
+      forwardedRef={null}
+      inverted={false}
+    >
+      <styled.div
+        inverted={false}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div
+            data-testid="tooltipContainer"
+          >
+            <div
+              className="c1"
+              data-testid="tooltipContainer"
+            >
+              <Bubble
+                direction="right"
+                id="standalone-tooltip-tooltip6_tooltip"
+                open={true}
+                width={
+                  Object {
+                    "width": "calc(1008px - 1rem - 0.5rem)",
+                  }
+                }
+              >
+                <Styled(Component)
+                  aria-hidden="false"
+                  aria-live="assertive"
+                  bubbleDimensions={
+                    Object {
+                      "bubbleOffset": "7px",
+                      "bubbleTriangleHeight": "10px",
+                      "bubbleTrianglePosition": "12px",
+                      "bubbleTriangleWidth": "7px",
+                      "bubbleTriggerSize": "24px",
+                    }
+                  }
+                  direction="right"
+                  horizontal={3}
+                  id="standalone-tooltip-tooltip6_tooltip"
+                  open={true}
+                  role="tooltip"
+                  vertical={2}
+                >
+                  <Component
+                    aria-hidden="false"
+                    aria-live="assertive"
+                    bubbleDimensions={
+                      Object {
+                        "bubbleOffset": "7px",
+                        "bubbleTriangleHeight": "10px",
+                        "bubbleTrianglePosition": "12px",
+                        "bubbleTriangleWidth": "7px",
+                        "bubbleTriggerSize": "24px",
+                      }
+                    }
+                    className="c2"
+                    data-testid="bubble"
+                    direction="right"
+                    horizontal={3}
+                    id="standalone-tooltip-tooltip6_tooltip"
+                    open={true}
+                    role="tooltip"
+                    vertical={2}
+                  >
+                    <Box
+                      aria-hidden="false"
+                      aria-live="assertive"
+                      className="c2"
+                      data-testid="bubble"
+                      horizontal={3}
+                      id="standalone-tooltip-tooltip6_tooltip"
+                      inline={false}
+                      role="tooltip"
+                      tag="div"
+                      vertical={2}
+                    >
+                      <styled.div
+                        aria-hidden="false"
+                        aria-live="assertive"
+                        className="c2"
+                        data-testid="bubble"
+                        horizontal={3}
+                        id="standalone-tooltip-tooltip6_tooltip"
+                        inline={false}
+                        role="tooltip"
+                        tag="div"
+                        vertical={2}
+                      >
+                        <div
+                          aria-hidden="false"
+                          aria-live="assertive"
+                          className="c3 c2 sc-fbJfA c2"
+                          data-testid="bubble"
+                          id="standalone-tooltip-tooltip6_tooltip"
+                          role="tooltip"
+                        >
+                          <styled.div
+                            bubbleWidth={
+                              Object {
+                                "width": "calc(1008px - 1rem - 0.5rem)",
+                              }
+                            }
+                          >
+                            <div
+                              className="c4"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="small"
+                              >
+                                <styled.span
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="small"
+                                >
+                                  <span
+                                    className="c5"
+                                    size="small"
+                                  >
+                                    Tooltip text
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                    </Box>
+                  </Component>
+                </Styled(Component)>
+              </Bubble>
+              <TooltipButton
+                a11yText="Reveal additional information."
+                aria-controls="standalone-tooltip-tooltip6_tooltip"
+                aria-expanded="true"
+                aria-haspopup="true"
+                icon={[Function]}
+                id="standalone-tooltip-tooltip6_trigger"
+                inverted={false}
+                onClick={[Function]}
+              >
+                <styled.button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="c6"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <A11yContent>
+                      <styled.span>
+                        <span
+                          className="c7"
+                        >
+                          Reveal additional information.
+                        </span>
+                      </styled.span>
+                    </A11yContent>
+                    <Dependent
+                      color="greyShark"
+                    >
+                      <Dependent
+                        color="greyShark"
+                      >
+                        <styled.svg
+                          color="greyShark"
+                          data-testid="dependentSvg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <svg
+                            aria-hidden={true}
+                            className="c8"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            focusable={false}
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path
+                              clipRule="evenodd"
+                              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </styled.svg>
+                      </Dependent>
+                    </Dependent>
+                  </button>
+                </styled.button>
+              </TooltipButton>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </T>
+  </WithForwardedRef(T)>
+</Tooltip>
+`;
+
+exports[`Tooltip interactivity shows and hides the bubble 1`] = `
+.c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c1 {
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c1:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c2 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+@media (max-width:575px) {
+  .c1 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 25vw;
+  }
+}
+
+<div
+  aria-hidden="true"
+  aria-live="assertive"
+  className="c0 c1 sc-fbJfA c1"
+  data-testid="bubble"
+  id="standalone-tooltip-tooltip5_tooltip"
+  role="tooltip"
+>
+  <styled.div
+    bubbleWidth={
+      Object {
+        "width": "calc(1008px - 1rem - 0.5rem)",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <Text
+        block={false}
+        bold={false}
+        invert={false}
+        size="small"
+      >
+        <styled.span
+          block={false}
+          bold={false}
+          invert={false}
+          size="small"
+        >
+          <span
+            className="c3"
+            size="small"
+          >
+            Tooltip text
+          </span>
+        </styled.span>
+      </Text>
+    </div>
+  </styled.div>
+</div>
+`;
+
+exports[`Tooltip interactivity shows and hides the bubble 2`] = `
+.c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c1 {
+  border-radius: 4px;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c1:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c2 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (max-width:575px) {
+  .c1 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 25vw;
+  }
+}
+
+<div
+  aria-hidden="false"
+  aria-live="assertive"
+  className="c0 c1 sc-fbJfA c1"
+  data-testid="bubble"
+  id="standalone-tooltip-tooltip5_tooltip"
+  role="tooltip"
+>
+  <styled.div
+    bubbleWidth={
+      Object {
+        "width": "calc(1008px - 1rem - 0.5rem)",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <Text
+        block={false}
+        bold={false}
+        invert={false}
+        size="small"
+      >
+        <styled.span
+          block={false}
+          bold={false}
+          invert={false}
+          size="small"
+        >
+          <span
+            className="c3"
+            size="small"
+          >
+            Tooltip text
+          </span>
+        </styled.span>
+      </Text>
+    </div>
+  </styled.div>
+</div>
+`;
+
+exports[`Tooltip interactivity shows and hides the bubble 3`] = `
+.c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c1 {
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c1:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c2 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+@media (max-width:575px) {
+  .c1 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 25vw;
+  }
+}
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<div
+  aria-hidden="true"
+  aria-live="assertive"
+  className="c0 c1 sc-fbJfA c1"
+  data-testid="bubble"
+  id="standalone-tooltip-tooltip5_tooltip"
+  role="tooltip"
+>
+  <styled.div
+    bubbleWidth={
+      Object {
+        "width": "calc(1008px - 1rem - 0.5rem)",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <Text
+        block={false}
+        bold={false}
+        invert={false}
+        size="small"
+      >
+        <styled.span
+          block={false}
+          bold={false}
+          invert={false}
+          size="small"
+        >
+          <span
+            className="c3"
+            size="small"
+          >
+            Tooltip text
+          </span>
+        </styled.span>
+      </Text>
+    </div>
+  </styled.div>
+</div>
+`;
+
+exports[`Tooltip renders 1`] = `
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c6 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c2 {
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #2a2c2e,0 3px 2px 0 rgba(84,89,95,0.25);
+  left: calc(100% - 24px - 7px);
+}
+
+.c2:before {
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(42,42,44,0.4);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.c4 {
+  width: calc(1008px - 1rem - 0.5rem);
+  max-width: 100%;
+}
+
+.c0 {
+  line-height: 1;
+  position: relative;
+  width: 1rem;
+  height: 1.3rem;
+}
+
+.c1 {
+  position: absolute;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 25vw;
+  }
+}
+
+<Tooltip
+  copy="en"
+  direction="auto"
+  inverted={false}
+>
+  <WithForwardedRef(T)
+    copy="en"
+    direction="auto"
+    inverted={false}
+  >
+    <T
+      copy="en"
+      direction="auto"
+      forwardedRef={null}
+      inverted={false}
+    >
+      <styled.div
+        inverted={false}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div
+            data-testid="tooltipContainer"
+          >
+            <div
+              className="c1"
+              data-testid="tooltipContainer"
+            >
+              <Bubble
+                direction="right"
+                id="standalone-tooltip-tooltip1_tooltip"
+                open={false}
+                width={
+                  Object {
+                    "width": "calc(1008px - 1rem - 0.5rem)",
+                  }
+                }
+              >
+                <Styled(Component)
+                  aria-hidden="true"
+                  aria-live="assertive"
+                  bubbleDimensions={
+                    Object {
+                      "bubbleOffset": "7px",
+                      "bubbleTriangleHeight": "10px",
+                      "bubbleTrianglePosition": "12px",
+                      "bubbleTriangleWidth": "7px",
+                      "bubbleTriggerSize": "24px",
+                    }
+                  }
+                  direction="right"
+                  horizontal={3}
+                  id="standalone-tooltip-tooltip1_tooltip"
+                  open={false}
+                  role="tooltip"
+                  vertical={2}
+                >
+                  <Component
+                    aria-hidden="true"
+                    aria-live="assertive"
+                    bubbleDimensions={
+                      Object {
+                        "bubbleOffset": "7px",
+                        "bubbleTriangleHeight": "10px",
+                        "bubbleTrianglePosition": "12px",
+                        "bubbleTriangleWidth": "7px",
+                        "bubbleTriggerSize": "24px",
+                      }
+                    }
+                    className="c2"
+                    data-testid="bubble"
+                    direction="right"
+                    horizontal={3}
+                    id="standalone-tooltip-tooltip1_tooltip"
+                    open={false}
+                    role="tooltip"
+                    vertical={2}
+                  >
+                    <Box
+                      aria-hidden="true"
+                      aria-live="assertive"
+                      className="c2"
+                      data-testid="bubble"
+                      horizontal={3}
+                      id="standalone-tooltip-tooltip1_tooltip"
+                      inline={false}
+                      role="tooltip"
+                      tag="div"
+                      vertical={2}
+                    >
+                      <styled.div
+                        aria-hidden="true"
+                        aria-live="assertive"
+                        className="c2"
+                        data-testid="bubble"
+                        horizontal={3}
+                        id="standalone-tooltip-tooltip1_tooltip"
+                        inline={false}
+                        role="tooltip"
+                        tag="div"
+                        vertical={2}
+                      >
+                        <div
+                          aria-hidden="true"
+                          aria-live="assertive"
+                          className="c3 c2 sc-fbJfA c2"
+                          data-testid="bubble"
+                          id="standalone-tooltip-tooltip1_tooltip"
+                          role="tooltip"
+                        >
+                          <styled.div
+                            bubbleWidth={
+                              Object {
+                                "width": "calc(1008px - 1rem - 0.5rem)",
+                              }
+                            }
+                          >
+                            <div
+                              className="c4"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="small"
+                              >
+                                <styled.span
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="small"
+                                >
+                                  <span
+                                    className="c5"
+                                    size="small"
+                                  >
+                                    Tooltip text
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                    </Box>
+                  </Component>
+                </Styled(Component)>
+              </Bubble>
+              <TooltipButton
+                a11yText="Reveal additional information."
+                aria-controls="standalone-tooltip-tooltip1_tooltip"
+                aria-expanded="false"
+                aria-haspopup="true"
+                icon={[Function]}
+                id="standalone-tooltip-tooltip1_trigger"
+                inverted={false}
+                onClick={[Function]}
+              >
+                <styled.button
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="c6"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <A11yContent>
+                      <styled.span>
+                        <span
+                          className="c7"
+                        >
+                          Reveal additional information.
+                        </span>
+                      </styled.span>
+                    </A11yContent>
+                    <Dependent
+                      color="greyShark"
+                    >
+                      <Dependent
+                        color="greyShark"
+                      >
+                        <styled.svg
+                          color="greyShark"
+                          data-testid="dependentSvg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                        >
+                          <svg
+                            aria-hidden={true}
+                            className="c8"
+                            color="greyShark"
+                            data-testid="dependentSvg"
+                            focusable={false}
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path
+                              clipRule="evenodd"
+                              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </styled.svg>
+                      </Dependent>
+                    </Dependent>
+                  </button>
+                </styled.button>
+              </TooltipButton>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </T>
+  </WithForwardedRef(T)>
+</Tooltip>
+`;

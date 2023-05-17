@@ -1,166 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OrderedList /> can have a list style 1`] = `
-LoadedCheerio {
-  "0": <ol
-    class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+<ol
+  class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+>
+  <li
+    class="sc-beqWaB cTtZtu"
   >
-    <li
-      class="sc-beqWaB cTtZtu"
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Lorem ipsum
-      </span>
-    </li>
-    <li
-      class="sc-beqWaB cTtZtu"
+      Lorem ipsum
+    </span>
+  </li>
+  <li
+    class="sc-beqWaB cTtZtu"
+  >
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Dolor sit amet
-      </span>
-    </li>
-  </ol>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+      Dolor sit amet
+    </span>
+  </li>
+</ol>
 `;
 
 exports[`<OrderedList /> can have a list style 2`] = `
-LoadedCheerio {
-  "0": <ol
-    class="sc-dmqHEX EMvmD sc-hLseeU djmkiA sc-hLseeU djmkiA"
+<ol
+  class="sc-dmqHEX EMvmD sc-hLseeU djmkiA sc-hLseeU djmkiA"
+>
+  <li
+    class="sc-beqWaB cTtZtu"
   >
-    <li
-      class="sc-beqWaB cTtZtu"
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Lorem ipsum
-      </span>
-    </li>
-    <li
-      class="sc-beqWaB cTtZtu"
+      Lorem ipsum
+    </span>
+  </li>
+  <li
+    class="sc-beqWaB cTtZtu"
+  >
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Dolor sit amet
-      </span>
-    </li>
-  </ol>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+      Dolor sit amet
+    </span>
+  </li>
+</ol>
 `;
 
 exports[`<OrderedList /> renders 1`] = `
-LoadedCheerio {
-  "0": <ol
-    class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+<ol
+  class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+>
+  <li
+    class="sc-beqWaB cTtZtu"
   >
-    <li
-      class="sc-beqWaB cTtZtu"
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Lorem ipsum
-      </span>
-    </li>
-    <li
-      class="sc-beqWaB cTtZtu"
+      Lorem ipsum
+    </span>
+  </li>
+  <li
+    class="sc-beqWaB cTtZtu"
+  >
+    <span
+      class="sc-gueYoa gGRAZe"
     >
-      <span
-        class="sc-gueYoa gGRAZe"
-      >
-        Dolor sit amet
-      </span>
-    </li>
-  </ol>,
-  "_root": LoadedCheerio {
-    "0": Document {
-      "children": Array [
-        <html>
-          <head />
-          <body />
-        </html>,
-      ],
-      "endIndex": null,
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "startIndex": null,
-      "type": "root",
-      "x-mode": "quirks",
-    },
-    "_root": [Circular],
-    "length": 1,
-    "options": Object {
-      "decodeEntities": true,
-      "xml": false,
-    },
-  },
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "xml": false,
-  },
-}
+      Dolor sit amet
+    </span>
+  </li>
+</ol>
 `;

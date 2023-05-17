@@ -1,35 +1,411 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box between applies space-between 1`] = `ReactWrapper {}`;
+exports[`Box between applies space-between 1`] = `
+<Box
+  between="space-between"
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between="space-between"
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB dxudYL"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between arranges the children horizontally or vertically be either inline or block 1`] = `ReactWrapper {}`;
+exports[`Box between arranges the children horizontally or vertically be either inline or block 1`] = `
+<Box
+  between={3}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB hRwMWO"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between arranges the children horizontally or vertically be either inline or block 2`] = `ReactWrapper {}`;
+exports[`Box between arranges the children horizontally or vertically be either inline or block 2`] = `
+<Box
+  between={3}
+  inline={true}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    inline={true}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB bLLRWR"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between can handle a between={0} prop 1`] = `ReactWrapper {}`;
+exports[`Box between can handle a between={0} prop 1`] = `
+<Box
+  between={0}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={0}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB TsIBT"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between can handle a between={0} prop 2`] = `ReactWrapper {}`;
+exports[`Box between can handle a between={0} prop 2`] = `
+<Box
+  between={0}
+  inline={true}
+  tag="div"
+>
+  <styled.div
+    between={0}
+    inline={true}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB glRiEc"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between can handle responsive props 1`] = `ReactWrapper {}`;
+exports[`Box between can handle responsive props 1`] = `
+<Box
+  between={
+    Object {
+      "md": 8,
+      "xs": 4,
+    }
+  }
+  inline={
+    Object {
+      "md": true,
+      "xs": false,
+    }
+  }
+  tag="div"
+>
+  <styled.div
+    between={
+      Object {
+        "md": 8,
+        "xs": 4,
+      }
+    }
+    inline={
+      Object {
+        "md": true,
+        "xs": false,
+      }
+    }
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB iCjQkN"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between separates children by equal margins in a stack 1`] = `ReactWrapper {}`;
+exports[`Box between separates children by equal margins in a stack 1`] = `
+<Box
+  between={2}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={2}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB dJZbbo"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box between separates children by equal margins inline 1`] = `ReactWrapper {}`;
+exports[`Box between separates children by equal margins inline 1`] = `
+<Box
+  between={2}
+  inline={true}
+  tag="div"
+>
+  <styled.div
+    between={2}
+    inline={true}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB vEPAP"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box can apply bottom margin 1`] = `ReactWrapper {}`;
+exports[`Box can apply bottom margin 1`] = `
+<Box
+  below={2}
+  between={3}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    below={2}
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB larTme"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can be either vertical or horizonal 1`] = `ReactWrapper {}`;
+exports[`Box insets can be either vertical or horizonal 1`] = `
+<Box
+  between={3}
+  inline={false}
+  tag="div"
+  vertical={1}
+>
+  <styled.div
+    between={3}
+    inline={false}
+    tag="div"
+    vertical={1}
+  >
+    <div
+      className="sc-beqWaB bimAUu"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can be either vertical or horizonal 2`] = `ReactWrapper {}`;
+exports[`Box insets can be either vertical or horizonal 2`] = `
+<Box
+  between={3}
+  horizontal={1}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    horizontal={1}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB kFbEkl"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can be either vertical or horizonal 3`] = `ReactWrapper {}`;
+exports[`Box insets can be either vertical or horizonal 3`] = `
+<Box
+  between={3}
+  horizontal={3}
+  inline={false}
+  tag="div"
+  vertical={2}
+>
+  <styled.div
+    between={3}
+    horizontal={3}
+    inline={false}
+    tag="div"
+    vertical={2}
+  >
+    <div
+      className="sc-beqWaB iRJolB"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can be equal on all sides 1`] = `ReactWrapper {}`;
+exports[`Box insets can be equal on all sides 1`] = `
+<Box
+  between={3}
+  inline={false}
+  inset={3}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    inline={false}
+    inset={3}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB jJdFGh"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can handle responsive horizontal and vertical 1`] = `ReactWrapper {}`;
+exports[`Box insets can handle responsive horizontal and vertical 1`] = `
+<Box
+  between={3}
+  inline={false}
+  tag="div"
+  vertical={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+>
+  <styled.div
+    between={3}
+    inline={false}
+    tag="div"
+    vertical={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+  >
+    <div
+      className="sc-beqWaB jIdfaj"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can handle responsive horizontal and vertical 2`] = `ReactWrapper {}`;
+exports[`Box insets can handle responsive horizontal and vertical 2`] = `
+<Box
+  between={3}
+  horizontal={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    horizontal={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="sc-beqWaB eNRGP"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box insets can handle responsive horizontal and vertical 3`] = `ReactWrapper {}`;
+exports[`Box insets can handle responsive horizontal and vertical 3`] = `
+<Box
+  between={3}
+  horizontal={
+    Object {
+      "lg": 8,
+      "xs": 3,
+    }
+  }
+  inline={false}
+  tag="div"
+  vertical={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+>
+  <styled.div
+    between={3}
+    horizontal={
+      Object {
+        "lg": 8,
+        "xs": 3,
+      }
+    }
+    inline={false}
+    tag="div"
+    vertical={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+  >
+    <div
+      className="sc-beqWaB iTKbue"
+    >
+      Some content
+    </div>
+  </styled.div>
+</Box>
+`;
 
-exports[`Box renders 1`] = `ShallowWrapper {}`;
+exports[`Box renders 1`] = `
+<styled.div
+  between={3}
+  inline={false}
+  tag="div"
+>
+  Some content
+</styled.div>
+`;

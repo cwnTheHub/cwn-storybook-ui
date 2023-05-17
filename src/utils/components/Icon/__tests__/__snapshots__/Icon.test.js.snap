@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon renders 1`] = `ShallowWrapper {}`;
+exports[`Icon renders 1`] = `
+<styled.i
+  iSize={24}
+  symbol="spyglass"
+/>
+`;
