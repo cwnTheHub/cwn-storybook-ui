@@ -1,0 +1,504 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio allows numbers as value 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <input
+    aria-invalid="false"
+    class="sc-jTrPJq kkKcMj"
+    data-testid="hidden-input"
+    id="the-group_1"
+    name="the-group"
+    type="radio"
+    value="1"
+  />
+  <label
+    class="sc-gLDzan cJTSkB"
+    data-testid="checkbox-label"
+    for="the-group_1"
+  >
+    <div
+      class="sc-beqWaB bLLRWR"
+    >
+      <span
+        class="sc-eDDNvR kfyzgw"
+        data-testid="fake-input"
+      >
+        <span
+          class="sc-iAEyYk flHrRv"
+        />
+      </span>
+      <div
+        class="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+      >
+        <div>
+          <span
+            class="sc-hLseeU gsVpLy"
+          >
+            A label
+          </span>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Radio disabled can be disabled 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-hLseeU gsVpLy"
+          size="base"
+        >
+          A label
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio disabled can be disabled 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio disabled can be disabled and checked 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-hLseeU gsVpLy"
+          size="base"
+        >
+          A label
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio disabled can be disabled and checked 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio disabled can be disabled and checked 3`] = `null`;
+
+exports[`Radio error can have an error feedback state 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-hLseeU gsVpLy"
+          size="base"
+        >
+          Some error
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio error can have an error feedback state 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio error does not appear as an error when it is checked 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-hLseeU gsVpLy"
+          size="base"
+        >
+          Some error
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio error does not appear as an error when it is checked 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio focusing can be focused and unfocused 1`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio focusing can be focused and unfocused 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio has a fake radio 1`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-eDDNvR kfyzgw"
+      data-testid="fake-input"
+    >
+      <styled.span>
+        <span
+          className="sc-iAEyYk flHrRv"
+        />
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-eDDNvR kfyzgw"
+    data-testid="fake-input"
+  >
+    <styled.span>
+      <span
+        className="sc-iAEyYk flHrRv"
+      />
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Radio must have a label 1`] = `
+<label
+  className="sc-gLDzan cJTSkB"
+  data-testid="checkbox-label"
+  htmlFor="radiogroup_the-value"
+>
+  <Box
+    between={3}
+    inline={true}
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={true}
+      tag="div"
+    >
+      <div
+        className="sc-beqWaB bLLRWR"
+      >
+        <styled.span
+          data-testid="fake-input"
+        >
+          <span
+            className="sc-eDDNvR kfyzgw"
+            data-testid="fake-input"
+          >
+            <styled.span>
+              <span
+                className="sc-iAEyYk flHrRv"
+              />
+            </styled.span>
+          </span>
+        </styled.span>
+        <Styled(Box)
+          between={2}
+        >
+          <Box
+            between={2}
+            className="sc-fsQiph jMhwvT"
+            inline={false}
+            tag="div"
+          >
+            <styled.div
+              between={2}
+              className="sc-fsQiph jMhwvT"
+              inline={false}
+              tag="div"
+            >
+              <div
+                className="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+              >
+                <ColoredTextProvider
+                  tag="div"
+                >
+                  <div>
+                    <Text
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <styled.span
+                        block={false}
+                        bold={false}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <span
+                          className="sc-hLseeU gsVpLy"
+                          size="base"
+                        >
+                          Some label
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </div>
+                </ColoredTextProvider>
+              </div>
+            </styled.div>
+          </Box>
+        </Styled(Box)>
+      </div>
+    </styled.div>
+  </Box>
+</label>
+`;
+
+exports[`Radio renders 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <input
+    aria-invalid="false"
+    class="sc-jTrPJq kkKcMj"
+    data-testid="hidden-input"
+    id="the-group_the-value"
+    name="the-group"
+    type="radio"
+    value="the-value"
+  />
+  <label
+    class="sc-gLDzan cJTSkB"
+    data-testid="checkbox-label"
+    for="the-group_the-value"
+  >
+    <div
+      class="sc-beqWaB bLLRWR"
+    >
+      <span
+        class="sc-eDDNvR kfyzgw"
+        data-testid="fake-input"
+      >
+        <span
+          class="sc-iAEyYk flHrRv"
+        />
+      </span>
+      <div
+        class="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+      >
+        <div>
+          <span
+            class="sc-hLseeU gsVpLy"
+          >
+            A label
+          </span>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;

@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select can have an error message 1`] = `
+<Select
+  defaultValue=""
+  error="Oh no a terrible error!"
+  feedback="error"
+  hintPosition="inline"
+  id="some-id"
+  label="The select"
+  options={
+    Array [
+      Object {
+        "readOnly": true,
+        "text": "text one",
+        "value": "value-1",
+      },
+      Object {
+        "readOnly": true,
+        "text": "text two",
+        "value": "value-2",
+      },
+    ]
+  }
+>
+  <Box
+    between={2}
+    inline={false}
+    tag="div"
+  >
+    <styled.div
+      between={2}
+      inline={false}
+      tag="div"
+    >
+      <div
+        className="sc-gueYoa cinhCW"
+      >
+        <div>
+          <Box
+            between={2}
+            inline={true}
+            tag="div"
+          >
+            <styled.div
+              between={2}
+              inline={true}
+              tag="div"
+            >
+              <div
+                className="sc-gueYoa iWTRXF"
+              >
+                <label
+                  htmlFor="some-id"
+                >
+                  <Styled(Box)
+                    between={2}
+                    inline={true}
+                    tag="span"
+                  >
+                    <Box
+                      between={2}
+                      className="sc-hAtEyd fCFdVI"
+                      inline={true}
+                      tag="span"
+                    >
+                      <styled.div
+                        between={2}
+                        className="sc-hAtEyd fCFdVI"
+                        inline={true}
+                        tag="span"
+                      >
+                        <span
+                          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+                        >
+                          <Text
+                            block={false}
+                            bold={true}
+                            data-testid="selectLabel"
+                            invert={false}
+                            size="medium"
+                          >
+                            <styled.span
+                              block={false}
+                              bold={true}
+                              data-testid="selectLabel"
+                              invert={false}
+                              size="medium"
+                            >
+                              <span
+                                className="sc-beqWaB dKRSHW"
+                                data-testid="selectLabel"
+                                size="medium"
+                              >
+                                The select
+                              </span>
+                            </styled.span>
+                          </Text>
+                        </span>
+                      </styled.div>
+                    </Box>
+                  </Styled(Box)>
+                </label>
+              </div>
+            </styled.div>
+          </Box>
+        </div>
+        <InputFeedback
+          feedback="error"
+          id="some-id_error-message"
+        >
+          <Styled(Component)
+            feedback="error"
+            id="some-id_error-message"
+            inset={3}
+            role="alert"
+          >
+            <Component
+              className="sc-dmqHEX fByzdG"
+              feedback="error"
+              id="some-id_error-message"
+              inset={3}
+              role="alert"
+            >
+              <Box
+                className="sc-dmqHEX fByzdG"
+                id="some-id_error-message"
+                inline={false}
+                inset={3}
+                role="alert"
+                tag="div"
+              >
+                <styled.div
+                  className="sc-dmqHEX fByzdG"
+                  id="some-id_error-message"
+                  inline={false}
+                  inset={3}
+                  role="alert"
+                  tag="div"
+                >
+                  <div
+                    className="sc-gueYoa dRUHgU sc-dmqHEX fByzdG sc-dmqHEX fByzdG"
+                    id="some-id_error-message"
+                    role="alert"
+                  >
+                    <Paragraph
+                      align="left"
+                      bold={false}
+                      invert={false}
+                      size="small"
+                    >
+                      <styled.p
+                        align="left"
+                        bold={false}
+                        invert={false}
+                        size="small"
+                      >
+                        <p
+                          className="sc-hLseeU bzxvyi"
+                          size="small"
+                        >
+                          Oh no a terrible error!
+                        </p>
+                      </styled.p>
+                    </Paragraph>
+                  </div>
+                </styled.div>
+              </Box>
+            </Component>
+          </Styled(Component)>
+        </InputFeedback>
+        <div
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <styled.div>
+            <div
+              className="sc-csCMJt gkzQWq"
+            >
+              <styled.select
+                aria-describedby="some-id_error-message"
+                aria-invalid={true}
+                defaultValue=""
+                feedback="error"
+                id="some-id"
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <select
+                  aria-describedby="some-id_error-message"
+                  aria-invalid={true}
+                  className="sc-fbJfA bnbOuh"
+                  defaultValue=""
+                  id="some-id"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                >
+                  <option
+                    key="value-1"
+                    value="value-1"
+                  >
+                    text one
+                  </option>
+                  <option
+                    key="value-2"
+                    value="value-2"
+                  >
+                    text two
+                  </option>
+                </select>
+              </styled.select>
+              <Styled(Box)
+                between={1}
+                inline={true}
+              >
+                <Box
+                  between={1}
+                  className="sc-brKeYL ckPuSb"
+                  inline={true}
+                  tag="div"
+                >
+                  <styled.div
+                    between={1}
+                    className="sc-brKeYL ckPuSb"
+                    inline={true}
+                    tag="div"
+                  >
+                    <div
+                      className="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+                    >
+                      <FeedbackIcon
+                        feedback="error"
+                        showIcon={true}
+                      >
+                        <Fade
+                          in={true}
+                          mountOnEnter={true}
+                          timeout={100}
+                          unmountOnExit={true}
+                        >
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={true}
+                            mountOnEnter={true}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={100}
+                            unmountOnExit={true}
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                  "transition": "opacity 100ms ease-in-out",
+                                }
+                              }
+                            >
+                              <styled.div>
+                                <div
+                                  className="sc-jsMahE kZMUa-d"
+                                >
+                                  <NotificationError
+                                    copy={
+                                      Object {
+                                        "a11yText": "The value of this input field is invalid.",
+                                      }
+                                    }
+                                  >
+                                    <FeedbackIcon
+                                      copy={
+                                        Object {
+                                          "a11yText": "The value of this input field is invalid.",
+                                        }
+                                      }
+                                      copyDictionary={
+                                        Object {
+                                          "en": Object {
+                                            "a11yText": "Error",
+                                          },
+                                          "fr": Object {
+                                            "a11yText": "Erreur",
+                                          },
+                                        }
+                                      }
+                                      height={20}
+                                      optionalText={false}
+                                      viewBox="0 0 20 20"
+                                      width={20}
+                                    >
+                                      <styled.svg
+                                        height="1.25rem"
+                                        role="img"
+                                        viewBox="0 0 20 20"
+                                        width="1.25rem"
+                                      >
+                                        <svg
+                                          className="sc-gLDzan eVwPjW"
+                                          height="1.25rem"
+                                          role="img"
+                                          viewBox="0 0 20 20"
+                                          width="1.25rem"
+                                        >
+                                          <title>
+                                            The value of this input field is invalid.
+                                          </title>
+                                          <path
+                                            d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm10 5.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666zm-.003-2.5c.354 0 .644-.306.654-.69l.182-6.912c.01-.4-.285-.731-.654-.731H9.82c-.369 0-.664.33-.654.73l.175 6.912c.01.385.3.691.655.691z"
+                                            fill="#c12335"
+                                            fillRule="evenodd"
+                                          />
+                                        </svg>
+                                      </styled.svg>
+                                    </FeedbackIcon>
+                                  </NotificationError>
+                                </div>
+                              </styled.div>
+                            </div>
+                          </Transition>
+                        </Fade>
+                      </FeedbackIcon>
+                      <styled.div>
+                        <div
+                          className="sc-ktEKTO kztyyX"
+                        >
+                          <CaretDown
+                            size={16}
+                            variant="error"
+                          >
+                            <Limited
+                              size={16}
+                              variant="error"
+                            >
+                              <Component
+                                size={16}
+                                theme={
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "iconColor": "#c12335",
+                                  }
+                                }
+                              >
+                                <Styled(styled.svg)
+                                  animationDirection="down"
+                                  size={16}
+                                  variant="error"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <svg
+                                    className="sc-kFuwaP sc-irTswW gwtXPE fPKYHe"
+                                    size={16}
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                    />
+                                  </svg>
+                                </Styled(styled.svg)>
+                              </Component>
+                            </Limited>
+                          </CaretDown>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </div>
+          </styled.div>
+        </div>
+      </div>
+    </styled.div>
+  </Box>
+</Select>
+`;
+
+exports[`Select can render groups 1`] = `[Function]`;
+
+exports[`Select disabling deactivates the select 1`] = `[Function]`;
+
+exports[`Select disabling removes the positioning of the select so that the disabled treatment is displayed 1`] = `[Function]`;
+
+exports[`Select feedback states ensures that the contents do not overlap the icons 1`] = `[Function]`;
+
+exports[`Select label can have a hint below 1`] = `
+<label
+  htmlFor="the-select"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <Box
+      between={2}
+      className="sc-hAtEyd fCFdVI"
+      inline={true}
+      tag="span"
+    >
+      <styled.div
+        between={2}
+        className="sc-hAtEyd fCFdVI"
+        inline={true}
+        tag="span"
+      >
+        <span
+          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+        >
+          <Text
+            block={false}
+            bold={true}
+            data-testid="selectLabel"
+            invert={false}
+            size="medium"
+          >
+            <styled.span
+              block={false}
+              bold={true}
+              data-testid="selectLabel"
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="sc-beqWaB dKRSHW"
+                data-testid="selectLabel"
+                size="medium"
+              >
+                The select
+              </span>
+            </styled.span>
+          </Text>
+        </span>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</label>
+`;
+
+exports[`Select label can have a short hint 1`] = `
+<label
+  htmlFor="the-select"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <Box
+      between={2}
+      className="sc-hAtEyd fCFdVI"
+      inline={true}
+      tag="span"
+    >
+      <styled.div
+        between={2}
+        className="sc-hAtEyd fCFdVI"
+        inline={true}
+        tag="span"
+      >
+        <span
+          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+        >
+          <Text
+            block={false}
+            bold={true}
+            data-testid="selectLabel"
+            invert={false}
+            size="medium"
+          >
+            <styled.span
+              block={false}
+              bold={true}
+              data-testid="selectLabel"
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="sc-beqWaB dKRSHW"
+                data-testid="selectLabel"
+                size="medium"
+              >
+                The select
+              </span>
+            </styled.span>
+          </Text>
+          <Text
+            block={false}
+            bold={false}
+            id="the-select_hint"
+            invert={false}
+            size="small"
+          >
+            <styled.span
+              block={false}
+              bold={false}
+              id="the-select_hint"
+              invert={false}
+              size="small"
+            >
+              <span
+                className="sc-beqWaB cpsTJs"
+                id="the-select_hint"
+                size="small"
+              >
+                The short hint
+              </span>
+            </styled.span>
+          </Text>
+        </span>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</label>
+`;
+
+exports[`Select label must have a label 1`] = `
+<label
+  htmlFor="the-label"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <Box
+      between={2}
+      className="sc-hAtEyd fCFdVI"
+      inline={true}
+      tag="span"
+    >
+      <styled.div
+        between={2}
+        className="sc-hAtEyd fCFdVI"
+        inline={true}
+        tag="span"
+      >
+        <span
+          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+        >
+          <Text
+            block={false}
+            bold={true}
+            data-testid="selectLabel"
+            invert={false}
+            size="medium"
+          >
+            <styled.span
+              block={false}
+              bold={true}
+              data-testid="selectLabel"
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="sc-beqWaB dKRSHW"
+                data-testid="selectLabel"
+                size="medium"
+              >
+                The label
+              </span>
+            </styled.span>
+          </Text>
+        </span>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</label>
+`;
+
+exports[`Select needs a set of options 1`] = `[Function]`;
+
+exports[`Select positions the down caret so that the text does not overlap it 1`] = `[Function]`;
+
+exports[`Select renders 1`] = `
+<div
+  class="sc-gueYoa cinhCW"
+>
+  <div>
+    <div
+      class="sc-gueYoa iWTRXF"
+    >
+      <label
+        for="the-select"
+      >
+        <span
+          class="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+        >
+          <span
+            class="sc-beqWaB dKRSHW"
+            data-testid="selectLabel"
+          >
+            The select
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    style="position:relative"
+  >
+    <div
+      class="sc-csCMJt gkzQWq"
+    >
+      <select
+        aria-invalid="false"
+        class="sc-fbJfA bDREu"
+        id="the-select"
+      >
+        <option
+          value="value-1"
+        >
+          text one
+        </option>
+        <option
+          value="value-2"
+        >
+          text two
+        </option>
+      </select>
+      <div
+        class="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+      >
+        <div
+          class="sc-ktEKTO kztyyX"
+        >
+          <svg
+            class="sc-kFuwaP sc-irTswW jGhDzR fPKYHe"
+            size="16"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select renders with a feedback state and icon 1`] = `
+<div
+  class="sc-gueYoa cinhCW"
+>
+  <div>
+    <div
+      class="sc-gueYoa iWTRXF"
+    >
+      <label
+        for="the-select"
+      >
+        <span
+          class="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+        >
+          <span
+            class="sc-beqWaB dKRSHW"
+            data-testid="selectLabel"
+          >
+            The select
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    style="position:relative"
+  >
+    <div
+      class="sc-csCMJt gkzQWq"
+    >
+      <select
+        aria-invalid="true"
+        class="sc-fbJfA bnbOuh"
+        id="the-select"
+      >
+        <option
+          value="value-1"
+        >
+          text one
+        </option>
+        <option
+          value="value-2"
+        >
+          text two
+        </option>
+      </select>
+      <div
+        class="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+      >
+        <div
+          style="transition:opacity 100ms ease-in-out;opacity:1"
+        >
+          <div
+            class="sc-jsMahE kZMUa-d"
+          >
+            <svg
+              class="sc-gLDzan eVwPjW"
+              height="1.25rem"
+              role="img"
+              viewBox="0 0 20 20"
+              width="1.25rem"
+            >
+              <title>
+                The value of this input field is invalid.
+              </title>
+              <path
+                d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm10 5.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666zm-.003-2.5c.354 0 .644-.306.654-.69l.182-6.912c.01-.4-.285-.731-.654-.731H9.82c-.369 0-.664.33-.654.73l.175 6.912c.01.385.3.691.655.691z"
+                fill="#c12335"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="sc-ktEKTO kztyyX"
+        >
+          <svg
+            class="sc-kFuwaP sc-irTswW gwtXPE fPKYHe"
+            size="16"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

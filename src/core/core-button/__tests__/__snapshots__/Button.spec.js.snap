@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button can be presented as one of the allowed variants 1`] = `
+<button
+  class="sc-beqWaB etEeBB"
+  type="button"
+>
+  <span
+    class="sc-gueYoa htAACu"
+  >
+    Submit
+  </span>
+</button>
+`;
+
+exports[`Button can be presented as one of the new allowed variants 1`] = `
+<button
+  class="sc-beqWaB dWrusy"
+  type="button"
+>
+  <span
+    class="sc-gueYoa bJKfsr"
+  >
+    Submit
+  </span>
+</button>
+`;
+
+exports[`Button renders 1`] = `
+<button
+  class="sc-beqWaB iJOUxQ"
+  type="button"
+>
+  <span
+    class="sc-gueYoa htAACu"
+  >
+    Submit
+  </span>
+</button>
+`;

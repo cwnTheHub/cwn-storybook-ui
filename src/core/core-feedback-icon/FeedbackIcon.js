@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { getCopy, pixelToRem, safeRest } from "../../util-helpers";
+import { warn } from "../../utils/warn";
 
 const StyledSVG = styled.svg(({ width, height }) => ({
   width: `${width}rem`,
@@ -32,7 +33,7 @@ const FeedbackIcon = ({
   ).a11yText;
 
   if (!optionalText && a11yText === "") {
-    console.warn(
+    warn(
       "FeedbackIcon",
       "The `copy` prop is required, please provide some copy by supplying an object with `a11yText` as a key and your copy as a value."
     );
