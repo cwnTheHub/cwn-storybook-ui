@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextButton renders 1`] = `
+<button
+  class="sc-beqWaB hqDOkd"
+>
+  This is text
+</button>
+`;

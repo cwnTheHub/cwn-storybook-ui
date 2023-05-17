@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea disabling can be disabled 1`] = `
+<textarea
+  aria-invalid={false}
+  className="sc-csCMJt ixdylc"
+  id="the-textarea"
+  onBlur={[Function]}
+  onFocus={[Function]}
+/>
+`;
+
+exports[`TextArea feedback states ensures that the contents do not overlap the icon 1`] = `
+<textarea
+  aria-invalid={false}
+  className="sc-csCMJt ksFWDu"
+  id="the-textarea"
+  onBlur={[Function]}
+  onFocus={[Function]}
+/>
+`;
+
+exports[`TextArea label can have a short hint 1`] = `
+<label
+  htmlFor="the-textarea"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <Box
+      between={2}
+      className="sc-irTswW bOqoJl"
+      inline={true}
+      tag="span"
+    >
+      <styled.div
+        between={2}
+        className="sc-irTswW bOqoJl"
+        inline={true}
+        tag="span"
+      >
+        <span
+          className="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+        >
+          <Text
+            block={false}
+            bold={true}
+            invert={false}
+            size="medium"
+          >
+            <styled.span
+              block={false}
+              bold={true}
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="sc-dmqHEX hiTUaR"
+                size="medium"
+              >
+                The textarea
+              </span>
+            </styled.span>
+          </Text>
+          <Text
+            block={false}
+            bold={false}
+            id="the-textarea_hint"
+            invert={false}
+            size="small"
+          >
+            <styled.span
+              block={false}
+              bold={false}
+              id="the-textarea_hint"
+              invert={false}
+              size="small"
+            >
+              <span
+                className="sc-dmqHEX dbentL"
+                id="the-textarea_hint"
+                size="small"
+              >
+                The short hint
+              </span>
+            </styled.span>
+          </Text>
+        </span>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</label>
+`;
+
+exports[`TextArea renders 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <div
+    class="sc-beqWaB vEPAP"
+  >
+    <label
+      for="the-textarea"
+    >
+      <span
+        class="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+      >
+        <span
+          class="sc-dmqHEX hiTUaR"
+        >
+          The textarea
+        </span>
+      </span>
+    </label>
+  </div>
+  <div
+    class="sc-kFuwaP iecEBe"
+  >
+    <textarea
+      aria-invalid="false"
+      class="sc-csCMJt ixdylc"
+      id="the-textarea"
+    />
+    <div
+      class="sc-fbJfA kOdxUB"
+    />
+  </div>
+</div>
+`;
+
+exports[`TextArea renders with a feedback state and icon 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <div
+    class="sc-beqWaB vEPAP"
+  >
+    <label
+      for="the-textarea"
+    >
+      <span
+        class="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+      >
+        <span
+          class="sc-dmqHEX hiTUaR"
+        >
+          The textarea
+        </span>
+      </span>
+    </label>
+  </div>
+  <div
+    class="sc-kFuwaP iecEBe"
+  >
+    <textarea
+      aria-invalid="true"
+      class="sc-csCMJt hKbqJz"
+      id="the-textarea"
+    />
+    <div
+      class="sc-fbJfA kOdxUB"
+    >
+      <div
+        style="transition:opacity 100ms ease-in-out;opacity:1"
+      >
+        <div
+          class="sc-jsMahE kZMUa-d"
+        >
+          <svg
+            class="sc-gLDzan eVwPjW"
+            height="1.25rem"
+            role="img"
+            viewBox="0 0 20 20"
+            width="1.25rem"
+          >
+            <title>
+              The value of this input field is invalid.
+            </title>
+            <path
+              d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm10 5.833a.833.833 0 1 0 0-1.666.833.833 0 0 0 0 1.666zm-.003-2.5c.354 0 .644-.306.654-.69l.182-6.912c.01-.4-.285-.731-.654-.731H9.82c-.369 0-.664.33-.654.73l.175 6.912c.01.385.3.691.655.691z"
+              fill="#c12335"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

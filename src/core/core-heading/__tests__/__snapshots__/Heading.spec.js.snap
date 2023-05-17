@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders 1`] = `
+<h2
+  class="sc-beqWaB gBSKow"
+  data-testid="heading"
+>
+  The heading
+</h2>
+`;

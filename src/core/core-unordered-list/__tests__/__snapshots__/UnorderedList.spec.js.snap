@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UnorderedList /> can have a list style 1`] = `
+<UnorderedList
+  listStyle="circle"
+  size="medium"
+>
+  <Styled(Box)
+    between={2}
+    tag="ul"
+  >
+    <Box
+      between={2}
+      className="sc-dmqHEX facAEN"
+      inline={false}
+      tag="ul"
+    >
+      <styled.div
+        between={2}
+        className="sc-dmqHEX facAEN"
+        inline={false}
+        tag="ul"
+      >
+        <ul
+          className="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+        >
+          <UnorderedList.Item
+            key=".$.0"
+            listStyle="circle"
+            size="medium"
+          >
+            <styled.li
+              iconStyle="circle"
+              size="medium"
+            >
+              <li
+                className="sc-beqWaB kXizJK"
+                size="medium"
+              >
+                Lorem ipsum
+              </li>
+            </styled.li>
+          </UnorderedList.Item>
+          <UnorderedList.Item
+            key=".$.2"
+            listStyle="circle"
+            size="medium"
+          >
+            <styled.li
+              iconStyle="circle"
+              size="medium"
+            >
+              <li
+                className="sc-beqWaB kXizJK"
+                size="medium"
+              >
+                Dolor sit amet
+              </li>
+            </styled.li>
+          </UnorderedList.Item>
+        </ul>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</UnorderedList>
+`;
+
+exports[`<UnorderedList /> can have a list style 2`] = `
+<UnorderedList
+  listStyle="x"
+  size="medium"
+>
+  <Styled(Box)
+    between={2}
+    tag="ul"
+  >
+    <Box
+      between={2}
+      className="sc-dmqHEX facAEN"
+      inline={false}
+      tag="ul"
+    >
+      <styled.div
+        between={2}
+        className="sc-dmqHEX facAEN"
+        inline={false}
+        tag="ul"
+      >
+        <ul
+          className="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+        >
+          <UnorderedList.Item
+            key=".$.0"
+            listStyle="x"
+            size="medium"
+          >
+            <styled.li
+              iconStyle="x"
+              size="medium"
+            >
+              <li
+                className="sc-beqWaB iwYhBQ"
+                size="medium"
+              >
+                Lorem ipsum
+              </li>
+            </styled.li>
+          </UnorderedList.Item>
+          <UnorderedList.Item
+            key=".$.2"
+            listStyle="x"
+            size="medium"
+          >
+            <styled.li
+              iconStyle="x"
+              size="medium"
+            >
+              <li
+                className="sc-beqWaB iwYhBQ"
+                size="medium"
+              >
+                Dolor sit amet
+              </li>
+            </styled.li>
+          </UnorderedList.Item>
+        </ul>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</UnorderedList>
+`;
+
+exports[`<UnorderedList /> renders 1`] = `
+<ul
+  class="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+>
+  <li
+    class="sc-beqWaB kXizJK"
+  >
+    Lorem ipsum
+  </li>
+  <li
+    class="sc-beqWaB kXizJK"
+  >
+    Dolor sit amet
+  </li>
+</ul>
+`;
+
+exports[`<UnorderedList /> renders a mixed list of items 1`] = `
+<Styled(Box)
+  between={2}
+  tag="ul"
+>
+  <UnorderedList.Item
+    itemStyle="checkmark"
+    key=".$.0"
+    listStyle="circle"
+    size="medium"
+  >
+    Lorem ipsum
+  </UnorderedList.Item>
+  <UnorderedList.Item
+    itemStyle="x"
+    key=".$.1"
+    listStyle="circle"
+    size="medium"
+  >
+    Dolor sit amet
+  </UnorderedList.Item>
+</Styled(Box)>
+`;

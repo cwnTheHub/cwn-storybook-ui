@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup renders 1`] = `
+<ButtonGroup
+  label="Please select a storage size"
+  name="storageSize"
+  onChange={[Function]}
+  value="64gb"
+>
+  <fieldset
+    name="storageSize"
+  >
+    <legend>
+      <Text
+        block={false}
+        bold={true}
+        invert={false}
+        size="medium"
+      >
+        <styled.span
+          block={false}
+          bold={true}
+          invert={false}
+          size="medium"
+        >
+          <span
+            className="sc-gueYoa jgVsCw"
+            size="medium"
+          >
+            Please select a storage size
+          </span>
+        </styled.span>
+      </Text>
+    </legend>
+    <Styled(Box)
+      between={3}
+      inline={true}
+    >
+      <Box
+        between={3}
+        className="sc-jTrPJq bZZUVV"
+        inline={true}
+        tag="div"
+      >
+        <styled.div
+          between={3}
+          className="sc-jTrPJq bZZUVV"
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="sc-beqWaB bLLRWR sc-jTrPJq bZZUVV sc-jTrPJq bZZUVV"
+          >
+            <ButtonGroup.Item
+              checked={true}
+              key=".0"
+              name="storageSize"
+              onChange={[Function]}
+              value="64gb"
+            >
+              <styled.div>
+                <div
+                  className="sc-dmqHEX jOfoPq"
+                >
+                  <styled.input
+                    checked={true}
+                    id="storagesize_64gb"
+                    name="storageSize"
+                    onChange={[Function]}
+                    type="radio"
+                    value="64gb"
+                  >
+                    <input
+                      checked={true}
+                      className="sc-hLseeU zxRqz"
+                      id="storagesize_64gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="64gb"
+                    />
+                  </styled.input>
+                  <styled.label
+                    htmlFor="storagesize_64gb"
+                  >
+                    <label
+                      className="sc-eDDNvR jtgoom"
+                      htmlFor="storagesize_64gb"
+                    >
+                      64 GB
+                    </label>
+                  </styled.label>
+                </div>
+              </styled.div>
+            </ButtonGroup.Item>
+            <ButtonGroup.Item
+              checked={false}
+              key=".1"
+              name="storageSize"
+              onChange={[Function]}
+              value="128gb"
+            >
+              <styled.div>
+                <div
+                  className="sc-dmqHEX jOfoPq"
+                >
+                  <styled.input
+                    checked={false}
+                    id="storagesize_128gb"
+                    name="storageSize"
+                    onChange={[Function]}
+                    type="radio"
+                    value="128gb"
+                  >
+                    <input
+                      checked={false}
+                      className="sc-hLseeU zxRqz"
+                      id="storagesize_128gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="128gb"
+                    />
+                  </styled.input>
+                  <styled.label
+                    htmlFor="storagesize_128gb"
+                  >
+                    <label
+                      className="sc-eDDNvR jtgoom"
+                      htmlFor="storagesize_128gb"
+                    >
+                      128 GB
+                    </label>
+                  </styled.label>
+                </div>
+              </styled.div>
+            </ButtonGroup.Item>
+            <ButtonGroup.Item
+              checked={false}
+              key=".2"
+              name="storageSize"
+              onChange={[Function]}
+              value="256gb"
+            >
+              <styled.div>
+                <div
+                  className="sc-dmqHEX jOfoPq"
+                >
+                  <styled.input
+                    checked={false}
+                    id="storagesize_256gb"
+                    name="storageSize"
+                    onChange={[Function]}
+                    type="radio"
+                    value="256gb"
+                  >
+                    <input
+                      checked={false}
+                      className="sc-hLseeU zxRqz"
+                      id="storagesize_256gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="256gb"
+                    />
+                  </styled.input>
+                  <styled.label
+                    htmlFor="storagesize_256gb"
+                  >
+                    <label
+                      className="sc-eDDNvR jtgoom"
+                      htmlFor="storagesize_256gb"
+                    >
+                      256 GB
+                    </label>
+                  </styled.label>
+                </div>
+              </styled.div>
+            </ButtonGroup.Item>
+          </div>
+        </styled.div>
+      </Box>
+    </Styled(Box)>
+  </fieldset>
+</ButtonGroup>
+`;
