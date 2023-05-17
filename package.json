@@ -1,5 +1,5 @@
 {
-  "name": "@nemetondigital/nds",
+  "name": "@nds_core/nds",
   "version": "1.0.0",
   "private": false,
   "dependencies": {
