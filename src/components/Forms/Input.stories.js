@@ -43,7 +43,7 @@ export const FeedbackError = Template.bind({});
 FeedbackError.args = {
   id: "gdfgdfg",
   label: "Email",
-  defaultValue: "guest@nds.com",
+  defaultValue: "guest@nds_core.com",
   feedback: "error",
   error: (
     <React.Fragment>

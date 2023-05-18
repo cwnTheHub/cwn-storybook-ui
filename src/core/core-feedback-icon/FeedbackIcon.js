@@ -8,9 +8,6 @@ const StyledSVG = styled.svg(({ width, height }) => ({
   width: `${width}rem`,
   height: `${height}rem`,
 }));
-/**
- * @version ./package.json
- */
 const FeedbackIcon = ({
   width,
   height,

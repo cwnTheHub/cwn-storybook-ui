@@ -1,6 +1,6 @@
 import { colorText, colorWhite } from "../core/core-colours/colours";
 
-export const fontNemeton = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+export const fontNemeton = "'Nemeton-Web','Helvetica Neue', Helvetica, Arial, sans-serif";
 
 export const helveticaNeueThin35 = {
   fontWeight: 300,

@@ -14,7 +14,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Nemeton-Web','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -369,7 +369,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   padding: 0;
   margin: 0;
   border-width: 0;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Nemeton-Web','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -723,7 +723,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   padding: 0;
   margin: 0;
   border-width: 0;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Nemeton-Web','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1469,7 +1469,7 @@ exports[`Tooltip renders 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Nemeton-Web','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
   -moz-appearance: none;

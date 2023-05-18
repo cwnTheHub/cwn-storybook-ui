@@ -1,0 +1,612 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> can have a variant 1`] = `
+<Notification
+  copy="en"
+  dismissible={false}
+  variant="instructional"
+>
+  <Styled(Component)
+    variant="instructional"
+    vertical={3}
+  >
+    <Component
+      className="sc-blLsxD ktixO"
+      variant="instructional"
+      vertical={3}
+    >
+      <Box
+        className="sc-blLsxD ktixO"
+        inline={false}
+        tag="div"
+        vertical={3}
+      >
+        <styled.div
+          className="sc-blLsxD ktixO"
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <div
+            className="sc-hAtEyd iwA-dcq sc-blLsxD ktixO sc-blLsxD ktixO"
+          >
+            <FlexGrid
+              gutter={true}
+              limitWidth={true}
+              outsideGutter={true}
+            >
+              <styled.div
+                limitWidth={true}
+                outsideGutter={true}
+                reverseLevel={
+                  Array [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                  ]
+                }
+              >
+                <div
+                  className="sc-brKeYL djhfyk"
+                >
+                  <Row>
+                    <styled.div
+                      reverseLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                    >
+                      <div
+                        className="sc-fbJfA nQjJT"
+                      >
+                        <Col>
+                          <styled.div
+                            gutter={true}
+                            hiddenLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                            horizontalAlignLevel={
+                              Array [
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                              ]
+                            }
+                            xs={true}
+                          >
+                            <div
+                              className="sc-csCMJt eUxgKe"
+                            >
+                              <FlexGrid
+                                gutter={false}
+                                limitWidth={true}
+                                outsideGutter={true}
+                              >
+                                <styled.div
+                                  limitWidth={true}
+                                  outsideGutter={true}
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-brKeYL djhfyk"
+                                  >
+                                    <Row>
+                                      <styled.div
+                                        reverseLevel={
+                                          Array [
+                                            false,
+                                            false,
+                                            false,
+                                            false,
+                                            false,
+                                          ]
+                                        }
+                                      >
+                                        <div
+                                          className="sc-fbJfA nQjJT"
+                                        >
+                                          <Col>
+                                            <styled.div
+                                              gutter={false}
+                                              hiddenLevel={
+                                                Array [
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                ]
+                                              }
+                                              horizontalAlignLevel={
+                                                Array [
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                ]
+                                              }
+                                              xs={true}
+                                            >
+                                              <div
+                                                className="sc-csCMJt bdlALW"
+                                              >
+                                                <Box
+                                                  between={3}
+                                                  inline={true}
+                                                  tag="div"
+                                                >
+                                                  <styled.div
+                                                    between={3}
+                                                    inline={true}
+                                                    tag="div"
+                                                  >
+                                                    <div
+                                                      className="sc-hAtEyd jNRQeS"
+                                                    >
+                                                      <Box
+                                                        between={3}
+                                                        inline={true}
+                                                        style={
+                                                          Object {
+                                                            "justifyContent": "center",
+                                                          }
+                                                        }
+                                                        tag="div"
+                                                      >
+                                                        <styled.div
+                                                          between={3}
+                                                          inline={true}
+                                                          style={
+                                                            Object {
+                                                              "justifyContent": "center",
+                                                            }
+                                                          }
+                                                          tag="div"
+                                                        >
+                                                          <div
+                                                            className="sc-hAtEyd jNRQeS"
+                                                            style={
+                                                              Object {
+                                                                "justifyContent": "center",
+                                                              }
+                                                            }
+                                                          >
+                                                            <Paragraph
+                                                              align="left"
+                                                              bold={false}
+                                                              invert={false}
+                                                              size="medium"
+                                                            >
+                                                              <styled.p
+                                                                align="left"
+                                                                bold={false}
+                                                                invert={false}
+                                                                size="medium"
+                                                              >
+                                                                <p
+                                                                  className="sc-ktEKTO bLkYGd"
+                                                                  size="medium"
+                                                                >
+                                                                  Some content
+                                                                </p>
+                                                              </styled.p>
+                                                            </Paragraph>
+                                                          </div>
+                                                        </styled.div>
+                                                      </Box>
+                                                    </div>
+                                                  </styled.div>
+                                                </Box>
+                                              </div>
+                                            </styled.div>
+                                          </Col>
+                                        </div>
+                                      </styled.div>
+                                    </Row>
+                                  </div>
+                                </styled.div>
+                              </FlexGrid>
+                            </div>
+                          </styled.div>
+                        </Col>
+                      </div>
+                    </styled.div>
+                  </Row>
+                </div>
+              </styled.div>
+            </FlexGrid>
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Notification>
+`;
+
+exports[`<Notification /> can have a variant 2`] = `
+<Notification
+  copy="en"
+  dismissible={false}
+  variant="success"
+>
+  <Styled(Component)
+    variant="success"
+    vertical={3}
+  >
+    <Component
+      className="sc-blLsxD cmufLF"
+      variant="success"
+      vertical={3}
+    >
+      <Box
+        className="sc-blLsxD cmufLF"
+        inline={false}
+        tag="div"
+        vertical={3}
+      >
+        <styled.div
+          className="sc-blLsxD cmufLF"
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <div
+            className="sc-hAtEyd iwA-dcq sc-blLsxD cmufLF sc-blLsxD cmufLF"
+          >
+            <FlexGrid
+              gutter={true}
+              limitWidth={true}
+              outsideGutter={true}
+            >
+              <styled.div
+                limitWidth={true}
+                outsideGutter={true}
+                reverseLevel={
+                  Array [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                  ]
+                }
+              >
+                <div
+                  className="sc-brKeYL djhfyk"
+                >
+                  <Row>
+                    <styled.div
+                      reverseLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                    >
+                      <div
+                        className="sc-fbJfA nQjJT"
+                      >
+                        <Col>
+                          <styled.div
+                            gutter={true}
+                            hiddenLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                            horizontalAlignLevel={
+                              Array [
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                                "inherit",
+                              ]
+                            }
+                            xs={true}
+                          >
+                            <div
+                              className="sc-csCMJt eUxgKe"
+                            >
+                              <FlexGrid
+                                gutter={false}
+                                limitWidth={true}
+                                outsideGutter={true}
+                              >
+                                <styled.div
+                                  limitWidth={true}
+                                  outsideGutter={true}
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-brKeYL djhfyk"
+                                  >
+                                    <Row>
+                                      <styled.div
+                                        reverseLevel={
+                                          Array [
+                                            false,
+                                            false,
+                                            false,
+                                            false,
+                                            false,
+                                          ]
+                                        }
+                                      >
+                                        <div
+                                          className="sc-fbJfA nQjJT"
+                                        >
+                                          <Col>
+                                            <styled.div
+                                              gutter={false}
+                                              hiddenLevel={
+                                                Array [
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                ]
+                                              }
+                                              horizontalAlignLevel={
+                                                Array [
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                ]
+                                              }
+                                              xs={true}
+                                            >
+                                              <div
+                                                className="sc-csCMJt bdlALW"
+                                              >
+                                                <Box
+                                                  between={3}
+                                                  inline={true}
+                                                  tag="div"
+                                                >
+                                                  <styled.div
+                                                    between={3}
+                                                    inline={true}
+                                                    tag="div"
+                                                  >
+                                                    <div
+                                                      className="sc-hAtEyd jNRQeS"
+                                                    >
+                                                      <Box
+                                                        between={3}
+                                                        inline={true}
+                                                        style={
+                                                          Object {
+                                                            "justifyContent": "center",
+                                                          }
+                                                        }
+                                                        tag="div"
+                                                      >
+                                                        <styled.div
+                                                          between={3}
+                                                          inline={true}
+                                                          style={
+                                                            Object {
+                                                              "justifyContent": "center",
+                                                            }
+                                                          }
+                                                          tag="div"
+                                                        >
+                                                          <div
+                                                            className="sc-hAtEyd jNRQeS"
+                                                            style={
+                                                              Object {
+                                                                "justifyContent": "center",
+                                                              }
+                                                            }
+                                                          >
+                                                            <Styled(Component)
+                                                              vertical={1}
+                                                            >
+                                                              <Component
+                                                                className="sc-ieZDjg bDdaZP"
+                                                                vertical={1}
+                                                              >
+                                                                <Box
+                                                                  className="sc-ieZDjg bDdaZP"
+                                                                  inline={false}
+                                                                  tag="div"
+                                                                  vertical={1}
+                                                                >
+                                                                  <styled.div
+                                                                    className="sc-ieZDjg bDdaZP"
+                                                                    inline={false}
+                                                                    tag="div"
+                                                                    vertical={1}
+                                                                  >
+                                                                    <div
+                                                                      className="sc-hAtEyd gUehBC sc-ieZDjg bDdaZP sc-ieZDjg bDdaZP"
+                                                                    >
+                                                                      <NotificationSuccess
+                                                                        copy="en"
+                                                                      >
+                                                                        <FeedbackIcon
+                                                                          copy="en"
+                                                                          copyDictionary={
+                                                                            Object {
+                                                                              "en": Object {
+                                                                                "a11yText": "Success",
+                                                                              },
+                                                                              "fr": Object {
+                                                                                "a11yText": "Réussite",
+                                                                              },
+                                                                            }
+                                                                          }
+                                                                          height={20}
+                                                                          optionalText={false}
+                                                                          viewBox="0 0 20 20"
+                                                                          width={20}
+                                                                        >
+                                                                          <styled.svg
+                                                                            height="1.25rem"
+                                                                            role="img"
+                                                                            viewBox="0 0 20 20"
+                                                                            width="1.25rem"
+                                                                          >
+                                                                            <svg
+                                                                              className="sc-beqWaB kCjrFW"
+                                                                              height="1.25rem"
+                                                                              role="img"
+                                                                              viewBox="0 0 20 20"
+                                                                              width="1.25rem"
+                                                                            >
+                                                                              <title>
+                                                                                Success
+                                                                              </title>
+                                                                              <path
+                                                                                d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
+                                                                                fill="#2B8000"
+                                                                                fillRule="evenodd"
+                                                                              />
+                                                                            </svg>
+                                                                          </styled.svg>
+                                                                        </FeedbackIcon>
+                                                                      </NotificationSuccess>
+                                                                    </div>
+                                                                  </styled.div>
+                                                                </Box>
+                                                              </Component>
+                                                            </Styled(Component)>
+                                                            <Paragraph
+                                                              align="left"
+                                                              bold={false}
+                                                              invert={false}
+                                                              size="medium"
+                                                            >
+                                                              <styled.p
+                                                                align="left"
+                                                                bold={false}
+                                                                invert={false}
+                                                                size="medium"
+                                                              >
+                                                                <p
+                                                                  className="sc-ktEKTO bLkYGd"
+                                                                  size="medium"
+                                                                >
+                                                                  Some content
+                                                                </p>
+                                                              </styled.p>
+                                                            </Paragraph>
+                                                          </div>
+                                                        </styled.div>
+                                                      </Box>
+                                                    </div>
+                                                  </styled.div>
+                                                </Box>
+                                              </div>
+                                            </styled.div>
+                                          </Col>
+                                        </div>
+                                      </styled.div>
+                                    </Row>
+                                  </div>
+                                </styled.div>
+                              </FlexGrid>
+                            </div>
+                          </styled.div>
+                        </Col>
+                      </div>
+                    </styled.div>
+                  </Row>
+                </div>
+              </styled.div>
+            </FlexGrid>
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Notification>
+`;
+
+exports[`<Notification /> renders 1`] = `
+<div
+  class="sc-hAtEyd iwA-dcq sc-blLsxD ktixO sc-blLsxD ktixO"
+>
+  <div
+    class="sc-brKeYL djhfyk"
+  >
+    <div
+      class="sc-fbJfA nQjJT"
+    >
+      <div
+        class="sc-csCMJt eUxgKe"
+      >
+        <div
+          class="sc-brKeYL djhfyk"
+        >
+          <div
+            class="sc-fbJfA nQjJT"
+          >
+            <div
+              class="sc-csCMJt bdlALW"
+            >
+              <div
+                class="sc-hAtEyd jNRQeS"
+              >
+                <div
+                  class="sc-hAtEyd jNRQeS"
+                  style="justify-content:center"
+                >
+                  <p
+                    class="sc-ktEKTO bLkYGd"
+                  >
+                    Some content
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -31,10 +31,10 @@ describe("ButtonLink", () => {
   });
 
   it("is an anchor HTML element when using the href attribute", () => {
-    const link = doMount({ href: "http://nds.com" });
+    const link = doMount({ href: "http://nds_core.com" });
 
     expect(link).toHaveDisplayName("a");
-    expect(link).toHaveProp("href", "http://nds.com");
+    expect(link).toHaveProp("href", "http://nds_core.com");
   });
 
   it("renders a react router link element when passed as a prop", () => {
