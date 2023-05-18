@@ -10,7 +10,7 @@ export default {
 
 const Template = (args) => {
   return (
-    <div>
+    <div style={{padding:30}}>
       <Box between={2} inline>
         <Text>Here is the all-new quadcopter</Text>
         <Tooltip

@@ -1,0 +1,1334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox allows numbers as value 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <input
+    aria-invalid="false"
+    class="sc-iAEyYk ikeKPS"
+    data-testid="hidden-input"
+    id="the-group-name_1"
+    name="the-group-name"
+    type="checkbox"
+    value="1"
+  />
+  <label
+    class="sc-fsQiph lgWDnk"
+    data-testid="checkbox-label"
+    for="the-group-name_1"
+  >
+    <div
+      class="sc-beqWaB bLLRWR"
+    >
+      <span
+        class="sc-gLDzan cJHmxl"
+        data-testid="fake-input"
+      >
+        <span
+          class="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-eDDNvR hkfmaH"
+            height="1rem"
+            role="img"
+            viewBox="0 0 16 16"
+            width="1rem"
+          >
+            <path
+              d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+              fill="#2B8000"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </span>
+      <div
+        class="sc-jTrPJq"
+      >
+        <span
+          class="sc-gueYoa hJNqrA"
+        >
+          A label
+        </span>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Checkbox disabled can be disabled 1`] = `
+<ColoredTextProvider
+  className="sc-jTrPJq"
+  isError={false}
+  tag="div"
+>
+  <div
+    className="sc-jTrPJq"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-gueYoa hJNqrA"
+          size="base"
+        >
+          A label
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Checkbox disabled can be disabled 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox disabled can be disabled and checked 1`] = `
+<ColoredTextProvider
+  className="sc-jTrPJq"
+  isError={false}
+  tag="div"
+>
+  <div
+    className="sc-jTrPJq"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-gueYoa hJNqrA"
+          size="base"
+        >
+          A label
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Checkbox disabled can be disabled and checked 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox error can have an error feedback state 1`] = `
+<ColoredTextProvider
+  className="sc-jTrPJq bXyKwc"
+  isError={true}
+  tag="div"
+>
+  <div
+    className="sc-jTrPJq bXyKwc"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-gueYoa hJNqrA"
+          size="base"
+        >
+          Some error
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Checkbox error can have an error feedback state 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox error can have an error message 1`] = `
+<ColoredTextProvider
+  className="sc-jTrPJq bXyKwc"
+  isError={true}
+  tag="div"
+>
+  <div
+    className="sc-jTrPJq bXyKwc"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-gueYoa hJNqrA"
+          size="base"
+        >
+          Some error
+        </span>
+      </styled.span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Checkbox error can have an error message 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox error can have an error message 3`] = `
+<InputFeedback
+  feedback="error"
+  id="the-group-namethe-value_error-message"
+>
+  <Styled(Component)
+    feedback="error"
+    id="the-group-namethe-value_error-message"
+    inset={3}
+    role="alert"
+  >
+    <Component
+      className="sc-dmqHEX fByzdG"
+      feedback="error"
+      id="the-group-namethe-value_error-message"
+      inset={3}
+      role="alert"
+    >
+      <Box
+        className="sc-dmqHEX fByzdG"
+        id="the-group-namethe-value_error-message"
+        inline={false}
+        inset={3}
+        role="alert"
+        tag="div"
+      >
+        <styled.div
+          className="sc-dmqHEX fByzdG"
+          id="the-group-namethe-value_error-message"
+          inline={false}
+          inset={3}
+          role="alert"
+          tag="div"
+        >
+          <div
+            className="sc-beqWaB hjHWHa sc-dmqHEX fByzdG sc-dmqHEX fByzdG"
+            id="the-group-namethe-value_error-message"
+            role="alert"
+          >
+            <Paragraph
+              align="left"
+              bold={false}
+              invert={false}
+              size="small"
+            >
+              <styled.p
+                align="left"
+                bold={false}
+                invert={false}
+                size="small"
+              >
+                <p
+                  className="sc-hLseeU bzxvyi"
+                  size="small"
+                >
+                  Error message
+                </p>
+              </styled.p>
+            </Paragraph>
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</InputFeedback>
+`;
+
+exports[`Checkbox error does not appear as an error when it is checked 1`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox focusing can be focused and unfocused 1`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox focusing can be focused and unfocused 2`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox has a fake checkbox 1`] = `
+Array [
+  <styled.span
+    data-testid="fake-input"
+  >
+    <span
+      className="sc-gLDzan cJHmxl"
+      data-testid="fake-input"
+    >
+      <styled.span
+        id="checkmark"
+      >
+        <span
+          className="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
+              }
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <styled.svg
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="sc-eDDNvR hkfmaH"
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <path
+                    d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                    fill="#2B8000"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </styled.svg>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </styled.span>
+    </span>
+  </styled.span>,
+  <span
+    className="sc-gLDzan cJHmxl"
+    data-testid="fake-input"
+  >
+    <styled.span
+      id="checkmark"
+    >
+      <span
+        className="sc-qRumB fJbYZY"
+        id="checkmark"
+      >
+        <Checkmark>
+          <FeedbackIcon
+            copy={
+              Object {
+                "a11yText": "",
+              }
+            }
+            copyDictionary={Object {}}
+            height={16}
+            optionalText={true}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <styled.svg
+              aria-hidden={true}
+              height="1rem"
+              role="img"
+              viewBox="0 0 16 16"
+              width="1rem"
+            >
+              <svg
+                aria-hidden={true}
+                className="sc-eDDNvR hkfmaH"
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </styled.svg>
+          </FeedbackIcon>
+        </Checkmark>
+      </span>
+    </styled.span>
+  </span>,
+]
+`;
+
+exports[`Checkbox must have a label 1`] = `
+Array [
+  <div
+    className="sc-beqWaB bLLRWR"
+  >
+    <styled.span
+      data-testid="fake-input"
+    >
+      <span
+        className="sc-gLDzan cJHmxl"
+        data-testid="fake-input"
+      >
+        <styled.span
+          id="checkmark"
+        >
+          <span
+            className="sc-qRumB fJbYZY"
+            id="checkmark"
+          >
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
+                }
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <styled.svg
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="sc-eDDNvR hkfmaH"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </styled.svg>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </styled.span>
+      </span>
+    </styled.span>
+    <Styled(ColoredTextProvider)
+      isError={false}
+    >
+      <ColoredTextProvider
+        className="sc-jTrPJq"
+        isError={false}
+        tag="div"
+      >
+        <div
+          className="sc-jTrPJq"
+        >
+          <Text
+            block={false}
+            bold={false}
+            invert={false}
+            size="base"
+          >
+            <styled.span
+              block={false}
+              bold={false}
+              inheritColor={true}
+              invert={false}
+              size="base"
+            >
+              <span
+                className="sc-gueYoa hJNqrA"
+                size="base"
+              >
+                Some label
+              </span>
+            </styled.span>
+          </Text>
+        </div>
+      </ColoredTextProvider>
+    </Styled(ColoredTextProvider)>
+  </div>,
+  <div
+    className="sc-jTrPJq"
+  >
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <styled.span
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
+      >
+        <span
+          className="sc-gueYoa hJNqrA"
+          size="base"
+        >
+          Some label
+        </span>
+      </styled.span>
+    </Text>
+  </div>,
+]
+`;
+
+exports[`Checkbox renders 1`] = `
+<div
+  class="sc-beqWaB dJZbbo"
+>
+  <input
+    aria-invalid="false"
+    class="sc-iAEyYk ikeKPS"
+    data-testid="hidden-input"
+    id="the-group-name_the-value"
+    name="the-group-name"
+    type="checkbox"
+    value="the-value"
+  />
+  <label
+    class="sc-fsQiph lgWDnk"
+    data-testid="checkbox-label"
+    for="the-group-name_the-value"
+  >
+    <div
+      class="sc-beqWaB bLLRWR"
+    >
+      <span
+        class="sc-gLDzan cJHmxl"
+        data-testid="fake-input"
+      >
+        <span
+          class="sc-qRumB fJbYZY"
+          id="checkmark"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-eDDNvR hkfmaH"
+            height="1rem"
+            role="img"
+            viewBox="0 0 16 16"
+            width="1rem"
+          >
+            <path
+              d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+              fill="#2B8000"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </span>
+      <div
+        class="sc-jTrPJq"
+      >
+        <span
+          class="sc-gueYoa hJNqrA"
+        >
+          A label
+        </span>
+      </div>
+    </div>
+  </label>
+</div>
+`;
