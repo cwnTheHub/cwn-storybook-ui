@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col can align column content horizontally using a responsive prop object 1`] = `
+<styled.div
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "center",
+      "center",
+      "left",
+      "left",
+      "left",
+    ]
+  }
+  xs={true}
+>
+  <div
+    className="sc-beqWaB dfKIqi"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Col can align column content horizontally using a string 1`] = `
+<styled.div
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+    ]
+  }
+  xs={true}
+>
+  <div
+    className="sc-beqWaB hHMPCZ"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Col can hide columns 1`] = `
+<styled.div
+  gutter={true}
+  hiddenLevel={
+    Array [
+      0,
+      0,
+      1,
+      1,
+      0,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
+  md={1}
+  sm={0}
+  xl={0}
+  xs={true}
+>
+  <div
+    className="sc-beqWaB tSYEm"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Col renders 1`] = `
+<styled.div
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
+  xs={true}
+>
+  <div
+    className="sc-beqWaB iZDimM"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Col supports responsive hidden columns 1`] = `
+<styled.div
+  gutter={true}
+  hiddenLevel={
+    Array [
+      0,
+      1,
+      0,
+      1,
+      0,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
+  lg={1}
+  md={0}
+  sm={1}
+  xl={0}
+  xs={true}
+>
+  <div
+    className="sc-beqWaB hlWnHf"
+  >
+    Some content
+  </div>
+</styled.div>
+`;

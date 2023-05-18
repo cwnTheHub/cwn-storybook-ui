@@ -2,7 +2,7 @@
 
 exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
 <a
-  class="sc-beqWaB sc-dmqHEX iJOUxQ jurAgY"
+  class="sc-beqWaB sc-dmqHEX jIRSqr jurAgY"
 >
   Go home
 </a>
@@ -10,7 +10,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
 
 exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 <a
-  class="sc-beqWaB sc-dmqHEX etEeBB bKoOYO"
+  class="sc-beqWaB sc-dmqHEX gUOGma bKoOYO"
 >
   Go home
 </a>
@@ -18,7 +18,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 
 exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
 <a
-  class="sc-beqWaB sc-dmqHEX jBYQfy kSGpGF"
+  class="sc-beqWaB sc-dmqHEX fkrmkt kSGpGF"
 >
   Go home
 </a>
@@ -26,7 +26,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
 
 exports[`ButtonLink renders 1`] = `
 <a
-  class="sc-beqWaB sc-dmqHEX iJOUxQ EskLT"
+  class="sc-beqWaB sc-dmqHEX jIRSqr EskLT"
 >
   Go home
 </a>

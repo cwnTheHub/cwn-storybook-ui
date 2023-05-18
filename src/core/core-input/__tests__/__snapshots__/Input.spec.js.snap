@@ -28,7 +28,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   >
     <input
       aria-invalid="false"
-      class="sc-fsQiph hkYNsr"
+      class="sc-fsQiph LuVxs"
       id="the-input"
       type="text"
     />
@@ -195,7 +195,7 @@ Object {
             >
               <input
                 aria-invalid={false}
-                className="sc-fsQiph cdrdnB"
+                className="sc-fsQiph bvIPVm"
                 id="the-id"
                 onBlur={[Function]}
                 onFocus={[Function]}
@@ -339,7 +339,7 @@ exports[`Input renders 1`] = `
   >
     <input
       aria-invalid="false"
-      class="sc-fsQiph cdrdnB"
+      class="sc-fsQiph bvIPVm"
       id="the-input"
       type="text"
     />
@@ -378,7 +378,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   >
     <input
       aria-invalid="true"
-      class="sc-fsQiph gHFngC"
+      class="sc-fsQiph cOfxVN"
       id="the-input"
       type="text"
     />

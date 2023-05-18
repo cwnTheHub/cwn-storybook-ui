@@ -4,7 +4,7 @@ exports[`ChevronLink can have specific variants 1`] = `
 <a
   class="sc-csCMJt bLChbm"
   direction="right"
-  href="https://nds.com"
+  href="https://nds_core.com"
 >
   <span
     class="sc-irTswW gBRAVZ"
@@ -34,7 +34,7 @@ exports[`ChevronLink can have specific variants 2`] = `
 <a
   class="sc-csCMJt uvkdv"
   direction="right"
-  href="https://nds.com"
+  href="https://nds_core.com"
 >
   <span
     class="sc-irTswW gBRAVZ"
@@ -64,7 +64,7 @@ exports[`ChevronLink can have specific variants 3`] = `
 <a
   class="sc-csCMJt bLChbm"
   direction="right"
-  href="https://nds.com"
+  href="https://nds_core.com"
 >
   <span
     class="sc-irTswW gBRAVZ"
@@ -94,7 +94,7 @@ exports[`ChevronLink can have specific variants 4`] = `
 <a
   class="sc-csCMJt gcYODQ"
   direction="right"
-  href="https://nds.com"
+  href="https://nds_core.com"
 >
   <span
     class="sc-irTswW gBRAVZ"

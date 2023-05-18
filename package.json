@@ -15,6 +15,7 @@
     "@types/jest": "^29.5.1",
     "array-find": "^1.0.0",
     "array-find-es6": "^2.0.3",
+    "css-mediaquery": "^0.1.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.7",
     "jest-enzyme": "^7.1.2",

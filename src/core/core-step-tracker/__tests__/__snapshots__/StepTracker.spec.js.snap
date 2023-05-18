@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StepTracker /> renders 1`] = `
+<div
+  class="sc-qRumB hmYMAg"
+  data-testid="stepTrackerContainer"
+>
+  <div
+    class="sc-fsQiph ppWoS"
+  >
+    <div
+      class="sc-iAEyYk hxgYbc"
+    >
+      <div
+        class="sc-gLDzan cDpain"
+      >
+        <div
+          class="sc-jsMahE lbanHI"
+        >
+          <div
+            aria-current="false"
+            aria-label="Login"
+            class="sc-hLseeU itbJpM"
+            data-isactive="true"
+            data-testid="singleStepContainer-0"
+          >
+            <span
+              class="sc-eDDNvR csPyxp"
+            >
+              <i
+                aria-hidden="true"
+                class="sc-beqWaB ykiYb"
+              />
+            </span>
+            <div
+              class="sc-jTrPJq kxFDPL"
+            >
+              <span
+                class="sc-dmqHEX kYWyYY"
+              >
+                1. Login
+              </span>
+            </div>
+          </div>
+          <div
+            aria-current="true"
+            aria-label="Purchase"
+            class="sc-hLseeU itbJpM"
+            data-isactive="true"
+            data-testid="singleStepContainer-1"
+          >
+            <span
+              class="sc-eDDNvR csPyxp"
+            >
+              <br />
+            </span>
+            <div
+              class="sc-jTrPJq kxFDPL"
+            >
+              <span
+                class="sc-dmqHEX kSfWic"
+              >
+                2. Purchase
+              </span>
+            </div>
+          </div>
+          <div
+            aria-current="false"
+            aria-label="Checkout"
+            class="sc-hLseeU itbJpM"
+            data-isactive="false"
+            data-testid="singleStepContainer-2"
+          >
+            <span
+              class="sc-eDDNvR fUpTSU"
+            >
+              <br />
+            </span>
+            <div
+              class="sc-jTrPJq kxFDPL"
+            >
+              <span
+                class="sc-dmqHEX kYWyYY"
+              >
+                3. Checkout
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-iAEyYk hxgYbc"
+    >
+      <div
+        class="sc-gLDzan cgwGCy"
+      >
+        <div
+          class="sc-kFuwaP iibDDi"
+        >
+          <span
+            class="sc-dmqHEX kYWyYY"
+            data-testid="mobileStepLabel"
+          >
+            <span>
+              Step 2 of 3:
+            </span>
+             Purchase
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

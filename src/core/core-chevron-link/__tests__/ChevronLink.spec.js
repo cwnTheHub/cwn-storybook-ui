@@ -25,10 +25,10 @@ describe("ChevronLink", () => {
   });
 
   it("is an anchor HTML element when using the href attribute", () => {
-    const link = doShallow({ href: "http://nds.com" });
+    const link = doShallow({ href: "http://nds_core.com" });
 
     expect(link).toHaveProp("as", "a");
-    expect(link).toHaveProp("href", "http://nds.com");
+    expect(link).toHaveProp("href", "http://nds_core.com");
   });
 
   it("renders a react router link element when passed as a prop", () => {
@@ -53,24 +53,24 @@ describe("ChevronLink", () => {
   });
 
   it("has a chevron icon", () => {
-    let link = doShallow({ href: "https://nds.com" });
+    let link = doShallow({ href: "https://nds_core.com" });
     expect(link).toContainReact(<ChevronRight size={16} variant="default" />);
 
-    link = doShallow({ href: "https://nds.com", direction: "left" });
+    link = doShallow({ href: "https://nds_core.com", direction: "left" });
     expect(link).toContainReact(<ChevronLeft size={16} variant="default" />);
   });
 
   it("can have specific variants", () => {
-    let link = doRender({ href: "https://nds.com" });
+    let link = doRender({ href: "https://nds_core.com" });
     expect(link).toMatchSnapshot();
 
-    link = doRender({ href: "https://nds.com", variant: "secondary" });
+    link = doRender({ href: "https://nds_core.com", variant: "secondary" });
     expect(link).toMatchSnapshot();
 
-    link = doRender({ href: "https://nds.com", variant: "primary" });
+    link = doRender({ href: "https://nds_core.com", variant: "primary" });
     expect(link).toMatchSnapshot();
 
-    link = doRender({ href: "https://nds.com", variant: "inverted" });
+    link = doRender({ href: "https://nds_core.com", variant: "inverted" });
     expect(link).toMatchSnapshot();
   });
 
@@ -111,7 +111,7 @@ describe("ChevronLink", () => {
     // https://github.com/airbnb/enzyme/issues/1852#issuecomment-433145879
     const link = mount(
       <>
-        <ChevronLink ref={ref} href="https://nds.com">
+        <ChevronLink ref={ref} href="https://nds_core.com">
           Go home
         </ChevronLink>
       </>
