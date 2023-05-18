@@ -192,7 +192,7 @@ exports[`Select can have an error message 1`] = `
                 <select
                   aria-describedby="some-id_error-message"
                   aria-invalid={true}
-                  className="sc-fbJfA bnbOuh"
+                  className="sc-fbJfA cbEPPm"
                   defaultValue=""
                   id="some-id"
                   onBlur={[Function]}
@@ -611,7 +611,7 @@ exports[`Select renders 1`] = `
     >
       <select
         aria-invalid="false"
-        class="sc-fbJfA bDREu"
+        class="sc-fbJfA euieml"
         id="the-select"
       >
         <option
@@ -679,7 +679,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
     >
       <select
         aria-invalid="true"
-        class="sc-fbJfA bnbOuh"
+        class="sc-fbJfA cbEPPm"
         id="the-select"
       >
         <option

@@ -84,7 +84,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_64gb"
                   >
                     <label
-                      className="sc-eDDNvR jtgoom"
+                      className="sc-eDDNvR gOGdNN"
                       htmlFor="storagesize_64gb"
                     >
                       64 GB
@@ -126,7 +126,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_128gb"
                   >
                     <label
-                      className="sc-eDDNvR jtgoom"
+                      className="sc-eDDNvR gOGdNN"
                       htmlFor="storagesize_128gb"
                     >
                       128 GB
@@ -168,7 +168,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_256gb"
                   >
                     <label
-                      className="sc-eDDNvR jtgoom"
+                      className="sc-eDDNvR gOGdNN"
                       htmlFor="storagesize_256gb"
                     >
                       256 GB

@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row alignment can align columns horizontally to the start, center, or end 1`] = `
+<styled.div
+  horizontalAlign="start"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa ScMFA"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can align columns horizontally to the start, center, or end 2`] = `
+<styled.div
+  horizontalAlign="center"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa bEDXkp"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can align columns horizontally to the start, center, or end 3`] = `
+<styled.div
+  horizontalAlign="end"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa dEOgfo"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can align columns vertically to the top, middle, or bottom 1`] = `
+<styled.div
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  verticalAlign="top"
+>
+  <div
+    className="sc-gueYoa eyBydX"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can align columns vertically to the top, middle, or bottom 2`] = `
+<styled.div
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  verticalAlign="middle"
+>
+  <div
+    className="sc-gueYoa hThEJG"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can align columns vertically to the top, middle, or bottom 3`] = `
+<styled.div
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  verticalAlign="bottom"
+>
+  <div
+    className="sc-gueYoa bYaPLU"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row alignment can be horizontally and vertically aligned 1`] = `
+<styled.div
+  horizontalAlign="start"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  verticalAlign="top"
+>
+  <div
+    className="sc-gueYoa kosLsJ"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row can distribute columns around or between 1`] = `
+<styled.div
+  distribute="around"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa iUEGeb"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row can distribute columns around or between 2`] = `
+<styled.div
+  distribute="between"
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa cnUFfK"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row renders 1`] = `
+<styled.div
+  reverseLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa eeiOgy"
+  >
+    Some content
+  </div>
+</styled.div>
+`;
+
+exports[`Row supports responsive reversal 1`] = `
+<styled.div
+  reverseLevel={
+    Array [
+      true,
+      true,
+      true,
+      false,
+      true,
+    ]
+  }
+>
+  <div
+    className="sc-gueYoa dkMhCq"
+  >
+    Some content
+  </div>
+</styled.div>
+`;

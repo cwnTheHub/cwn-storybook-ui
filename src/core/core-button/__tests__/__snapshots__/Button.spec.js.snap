@@ -2,7 +2,7 @@
 
 exports[`Button can be presented as one of the allowed variants 1`] = `
 <button
-  class="sc-beqWaB etEeBB"
+  class="sc-beqWaB gUOGma"
   type="button"
 >
   <span
@@ -15,7 +15,7 @@ exports[`Button can be presented as one of the allowed variants 1`] = `
 
 exports[`Button can be presented as one of the new allowed variants 1`] = `
 <button
-  class="sc-beqWaB dWrusy"
+  class="sc-beqWaB fPqcah"
   type="button"
 >
   <span
@@ -28,7 +28,7 @@ exports[`Button can be presented as one of the new allowed variants 1`] = `
 
 exports[`Button renders 1`] = `
 <button
-  class="sc-beqWaB iJOUxQ"
+  class="sc-beqWaB jIRSqr"
   type="button"
 >
   <span

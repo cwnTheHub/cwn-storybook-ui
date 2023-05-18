@@ -19,7 +19,7 @@ exports[`InteractiveIcon renders 1`] = `
       variant="default"
     >
       <button
-        className="sc-gueYoa sc-hLseeU fLYPYb kPavwg"
+        className="sc-gueYoa sc-hLseeU bURvQ kPavwg"
       >
         <A11yContent>
           <styled.span>
