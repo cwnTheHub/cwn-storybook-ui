@@ -98,7 +98,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
       to={null}
     >
       <a
-        className="sc-eDDNvR cpzQlI"
+        className="sc-eDDNvR bUEJa"
         href="#"
         to={null}
       >

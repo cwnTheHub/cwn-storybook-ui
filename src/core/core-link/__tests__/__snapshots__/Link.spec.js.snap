@@ -88,7 +88,7 @@ Object {
 
 exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] = `
 <a
-  className="sc-beqWaB jTZqit"
+  className="sc-beqWaB bsa-dcz"
   href={null}
   id="the-link"
   role="button"
@@ -151,7 +151,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
 
 exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] = `
 <a
-  className="sc-beqWaB jTZqit"
+  className="sc-beqWaB bsa-dcz"
   href={null}
   id="the-link"
   role="button"

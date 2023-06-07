@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayHeading can be inverted 1`] = `
+<h1
+  class="sc-beqWaB uVNdW"
+>
+  The heading
+</h1>
+`;
+
+exports[`DisplayHeading renders 1`] = `
+<h1
+  class="sc-beqWaB gvrAbp"
+>
+  The heading
+</h1>
+`;
