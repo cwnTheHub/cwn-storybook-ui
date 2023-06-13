@@ -28,13 +28,18 @@ import { media, useResponsiveProp } from "../core-responsive";
 import NavigationItem from "./NavigationItem";
 import ListBox from "./ListBox";
 import FlexGrid from "../core-flex-grid/FlexGrid";
-import { buttons } from "../../shared-styles";
-import Text from "../core-text/Text";
-import ChevronLink from "../core-chevron-link/ChevronLink";
-import Link from "../core-link/Link";
+import { borders, buttons } from "../../shared-styles";
 import Paragraph from "../core-paragraph/Paragraph";
 import { getBottomItems } from "./collapseItems";
 import BottomSubNavMenu from "./BottomSubNavMenu";
+import resolveItemSelection from "./resolveItemSelection";
+
+const BoxSize = styled(Box)({
+  width: "100%",
+  ...borders.thin,
+  left: 0,
+  right: 0,
+});
 
 const base = {
   display: "inline-block",
@@ -109,19 +114,16 @@ const ItemContainer = styled.div(
   ({ isOpen, dropdownRight }) => {
     if (isOpen) {
       return {
-        ...media.from("md").css({
-          right: dropdownRight && 0,
-        }),
         maxHeight: "100vh",
         transform: "translateY(0%)",
         transition: "max-height 500ms ease-in",
+        ...media.from("md").css({
+          "box-sizing": "content-box",
+          width: maxWidth,
+        }),
       };
     }
-    return {
-      ...media.from("md").css({
-        right: dropdownRight && 0,
-      }),
-    };
+    return {};
   }
 );
 
@@ -135,7 +137,7 @@ const BottomItemContainer = styled(Box)({
     left: 0,
     right: 0,
     bottom: 0,
-    width: "100%",
+    width: "100vw",
     maxHeight: "auto",
   }),
 });
@@ -189,8 +191,6 @@ const NavigationSubMenu = forwardRef(
       [onClick]
     );
 
-    console.log("bottom items", bottomItems);
-
     const preventDefault = (e) => {
       if (!bodyRef.current.contains(e.touches[0].target)) {
         e.preventDefault();
@@ -211,7 +211,6 @@ const NavigationSubMenu = forwardRef(
           !footnoteRef.current.contains(e.target) &&
           e.target.getAttribute("data-tds-id") !== "footnote-link"
         ) {
-          //setIsOpen(false);
           clickSubMenu(e, { returnFocus: false });
         } else if (
           e.type === "touchstart" &&
@@ -220,7 +219,6 @@ const NavigationSubMenu = forwardRef(
           !footnoteRef.current.contains(e.touches[0].target) &&
           e.touches[0].target.getAttribute("data-tds-id") !== "footnote-link"
         ) {
-          // setIsOpen(false);
           clickSubMenu(e, { returnFocus: false });
         }
       },
@@ -252,6 +250,7 @@ const NavigationSubMenu = forwardRef(
     }
 
     const handleClick = (event) => {
+      event.stopPropagation();
       if (typeof onClick === "function") onClick(event, {});
     };
 
@@ -292,28 +291,29 @@ const NavigationSubMenu = forwardRef(
     );
 
     return (
-      <div
-        ref={footnoteRef}
-        style={{
-          maxWidth: 289,
-          position: "relative",
-        }}
-      >
-        <StyledNavigationSubMenu
-          {...safeRest(rest)}
-          as={reactRouterLinkComponent || "a"}
-          variant={variant}
-          onClick={handleClick}
-          id={id}
-        >
-          {innerLink}
-        </StyledNavigationSubMenu>
+      <div ref={footnoteRef}>
+        <FlexGrid limitWidth={false}>
+          <FlexGrid.Row horizontalAlign="end">
+            <FlexGrid.Col>
+              <Paragraph size={"medium"}>
+                <StyledNavigationSubMenu
+                  {...safeRest(rest)}
+                  as={reactRouterLinkComponent || "a"}
+                  variant={variant}
+                  onClick={handleClick}
+                  id={id}
+                >
+                  {innerLink}
+                </StyledNavigationSubMenu>
+              </Paragraph>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
         <ItemContainer
           ref={headingRef}
           isOpen={isOpen}
           isVisible={isVisible}
           onTransitionEnd={handleStyledFootnoteTransitionEnd}
-          dropdownRight={dropdownRight}
         >
           <FocusTrap autofocus={false}>
             <Box inset={3} between={3} ref={ref}>
@@ -338,115 +338,102 @@ const NavigationSubMenu = forwardRef(
                       ref: itemRef,
                       to,
                       items: nestedItems,
-                      onChange = () => {},
+                      isDisplayedInBottomBar,
                       ...itemRest
                     },
                     index
                   ) => {
-                    const NavItem = nestedItems ? ListBox : NavigationItem;
-
-                    return (
-                      <FlexGrid.Row horizontalAlign="start" key={id}>
-                        <Box inset={2}>
-                          <NavItem
-                            ref={itemRef}
-                            key={id}
-                            href={href}
-                            selectedId={selectedId}
-                            index={index}
-                            to={to}
-                            items={nestedItems}
-                            {...itemRest}
-                          >
-                            {label}
-                          </NavItem>
-                        </Box>
-                      </FlexGrid.Row>
+                    const { itemId, selected } = resolveItemSelection(
+                      { id, label, items: nestedItems },
+                      selectedId
                     );
+                    console.log("Selected", selected);
+                    const NavItem = nestedItems ? ListBox : NavigationItem;
+                    if (!isDisplayedInBottomBar) {
+                      return (
+                        <FlexGrid.Row horizontalAlign="start" key={itemId}>
+                          <Box inset={2}>
+                            <NavItem
+                              ref={itemRef}
+                              key={itemId}
+                              href={href}
+                              selectedId={selectedId}
+                              index={index}
+                              onClick={handleClick}
+                              items={nestedItems}
+                              selected={itemId === selectedId}
+                              {...itemRest}
+                            >
+                              {label}
+                            </NavItem>
+                          </Box>
+                        </FlexGrid.Row>
+                      );
+                    }
                   }
                 )}
               </FlexGrid>
 
               <BottomItemContainer>
-                <FlexGrid.Row horizontalAlign="center">
-                  <FlexGrid.Col>
-                    <FlexGrid.Row horizontalAlign="center">
-                      {bottomItems?.map(
-                        (
-                          {
-                            href,
-                            label,
-                            id,
-                            onClick,
-                            ref: itemRef,
-                            to,
-                            items: nestedItems,
-                            ...itemRest
-                          },
-                          index
-                        ) => {
-                          if (!href?.includes("login")) {
-                            const NavBottomItem = nestedItems
-                              ? BottomSubNavMenu
-                              : NavigationItem;
-                            return (
-                              <FlexGrid.Col key={id} >
-                                <Box vertical={3}>
-                                    <NavBottomItem
-                                      ref={itemRef}
-                                      key={id}
-                                      href={href}
-                                      selectedId={selectedId}
-                                      index={index}
-                                      to={to}
-                                      items={nestedItems}
-                                      //{...itemRest}
-                                    >
-                                      {label}
-                                    </NavBottomItem>
-                                </Box>
-                              </FlexGrid.Col>
-                            );
+                <FlexGrid gutter={false}>
+                  <FlexGrid.Row horizontalAlign="center">
+                    <FlexGrid.Col>
+                      <FlexGrid.Row horizontalAlign="center">
+                        {bottomItems?.map(
+                          (
+                            {
+                              href,
+                              label,
+                              id,
+                              onClick,
+                              ref: itemRef,
+                              to,
+                              items: nestedItems,
+                              isDisplayedInBottomBar,
+                              ...itemRest
+                            },
+                            index
+                          ) => {
+                            if (isDisplayedInBottomBar) {
+                              const NavBottomItem = nestedItems
+                                ? BottomSubNavMenu
+                                : NavigationItem;
+
+                                const itemId = id ?? label;
+                              return (
+                                <FlexGrid.Col key={itemId}>
+                                  <BoxSize key={itemId}>
+                                    <FlexGrid gutter={false}>
+                                      <FlexGrid.Row
+                                        key={itemId}
+                                        horizontalAlign={"center"}
+                                      >
+                                        <Box inset={3}>
+                                          <NavBottomItem
+                                            ref={itemRef}
+                                            key={itemId}
+                                            href={href}
+                                            selectedId={selectedId}
+                                            index={index}
+                                            to={to}
+                                            items={nestedItems}
+                                            {...itemRest}
+                                          >
+                                            {label}
+                                          </NavBottomItem>
+                                        </Box>
+                                      </FlexGrid.Row>
+                                    </FlexGrid>
+                                  </BoxSize>
+                                </FlexGrid.Col>
+                              );
+                            }
                           }
-                        }
-                      )}
-                    </FlexGrid.Row>
-                  </FlexGrid.Col>
-                  <FlexGrid.Col xs={0} sm={0} md={0} xl={0}>
-                    <Box vertical={2}>
-                      <Text>2</Text>
-                    </Box>
-                  </FlexGrid.Col>
-                  <FlexGrid.Col>
-                    <Box vertical={3}>
-                      {bottomItems?.map(
-                        (
-                          {
-                            href,
-                            label,
-                            id,
-                            onClick,
-                            ref: itemRef,
-                            to,
-                            items: nestedItems,
-                            ...itemRest
-                          },
-                          index
-                        ) => {
-                          if (href?.includes("/login")) {
-                            return (
-                              <Paragraph size="medium" key={id}>
-                                <ChevronLink to={to} {...itemRest}>
-                                  {label}
-                                </ChevronLink>
-                              </Paragraph>
-                            );
-                          }
-                        }
-                      )}
-                    </Box>
-                  </FlexGrid.Col>
-                </FlexGrid.Row>
+                        )}
+                      </FlexGrid.Row>
+                    </FlexGrid.Col>
+                  </FlexGrid.Row>
+                </FlexGrid>
               </BottomItemContainer>
             </Box>
           </FocusTrap>
@@ -477,7 +464,7 @@ NavigationSubMenu.propTypes = {
   label: PropTypes.string,
   selectedId: PropTypes.string,
   items: PropTypes.array,
-
+  isDisplayedInBottomBar: PropTypes.bool,
   dropdownRight: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
 };

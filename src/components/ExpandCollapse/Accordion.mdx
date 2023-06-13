@@ -1,0 +1,35 @@
+{/* Accordion.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as AccordionStories from './Accordion.stories';
+
+<Meta of={AccordionStories} />
+<Title />
+	
+`` import { Accordion } from '@nds_core/nds' ``
+
+A specialized ExpandCollapse in which only one panel can be open at a time.
+
+### Usage criteria
+The Accordion has the same design and behaviours as the ExpandCollapse, except that only one panel can be opened at a time.
+
+Note that the Accordion's open prop accepts only a single string, while the ExpandCollapse's open prop accepts an array of strings.
+
+# Minimal implementation
+
+<Primary />
+
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+--- 
+
+## Additional variations
+
+Listed below are additional variations of the component.
+
+<Stories />

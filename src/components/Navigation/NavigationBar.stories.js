@@ -19,10 +19,10 @@ Navigation.args = {
     {
       id: "1",
       label: "Login",
-      href: "/login",
+      to: "/login",
       icon: Profile,
       iconPosition: "left",
-      isBottomItem: true,
+      isDisplayedInBottomBar: true,
     },
     {
       id: "2",
@@ -30,23 +30,23 @@ Navigation.args = {
       href: "#",
       icon: QuestionMarkCircle,
       iconPosition: "left",
-      isBottomItem: true,
+      isDisplayedInBottomBar: true,
     },
     {
       id: "3",
-      label: "Lang",
+      label: "Language",
       onClick: (event) => console.log("Click event", event),
       dropdownRight:true,
       items: [
         {
           id: "3.1",
           label: "French",
-          href: "/fr",
+          to: "/fr",
         },
         {
           id: "3.2",
           label: "English",
-          href: "/en",
+          to: "/en",
         },
       ],
     },

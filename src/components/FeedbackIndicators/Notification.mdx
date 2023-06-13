@@ -1,0 +1,44 @@
+{/* Notification.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as NotificationStories from './Notification.stories';
+
+<Meta of={NotificationStories} />
+<Title />
+	
+`` import { Notification } from '@nds_core/nds' ``
+
+A banner that highlights important messages.
+
+### Usage criteria
+
+A banner that highlights important messages.
+
+Notifications are used to let users know:
+
+- System status such as an error or outage
+- Their actions have triggered a change such as confirmation of a payment
+- Information such as letting the user know they have almost used all their data
+
+Colours help indicate the type of message. For errors use a red background. 
+For other notifications use grey. Lastly, if the message is promotional use branded colours. 
+These are reflected in code via the variant prop, and the background colour will change to match the desiered variant. 
+For example, the error variant will produce a red background.
+# Minimal implementation
+
+<Primary />
+
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+--- 
+
+## Additional variations
+
+Listed below are additional variations of the component.
+
+<Stories />

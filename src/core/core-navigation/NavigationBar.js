@@ -1,18 +1,31 @@
 import React, { forwardRef, useEffect, useRef, useState } from "react";
-import {
-  generateResponsiveStyles,
-  handleResponsiveStyles,
-} from "../../util-helpers";
 import { componentWithName } from "../../util-prop-types";
 import Box from "../core-box/Box";
-import collapseItems from "./collapseItems";
+import collapseItems, { collapseFromMdItems } from "./collapseItems";
 import NavigationItem from "./NavigationItem";
 import PropTypes from "prop-types";
 import NavigationSubMenu from "./NavigationSubMenu";
-import { breakpoints, media, useResponsiveProp } from "../core-responsive";
+import { media, useResponsiveProp } from "../core-responsive";
 import Heading from "../core-heading/Heading";
 import FlexGrid from "../core-flex-grid/FlexGrid";
-import HairlineDivider from "../core-hairline-divider/HairlineDivider";
+import { borders } from "../../shared-styles";
+import styled from "styled-components";
+
+const BoxSize = styled(Box)({
+  ...media.from("md").css({
+    minWidth: 120,
+
+    ...borders.none,
+  }),
+});
+const NavBar = styled(Box)({
+  width: "100%",
+  boxSizing: "border-box",
+  ...media.from("md").css({
+    ...borders.thin,
+    ...borders.rounded,
+  }),
+});
 
 const NavigationBar = forwardRef(
   (
@@ -31,7 +44,7 @@ const NavigationBar = forwardRef(
 
     const itemsForViewport = useResponsiveProp({
       xs: collapseItems(items, selectedId),
-      lg: items,
+      md: items,
     });
 
     const handleSubMenuClose = (event) => {
@@ -72,71 +85,81 @@ const NavigationBar = forwardRef(
     }, [openSubMenuId]);
 
     return (
-      <FlexGrid>
-        <FlexGrid.Row verticalAlign="bottom" distribute="between">
-          <FlexGrid.Col md={4} horizontalAlign="left">
-            {heading && <Heading level={headingLevel}>{heading}</Heading>}
-          </FlexGrid.Col>
-          <FlexGrid.Col>
-            <FlexGrid.Row horizontalAlign="end">
-              <Box inline between={3}>
-                {itemsForViewport?.map(
-                  (
-                    {
-                      href,
-                      label,
-                      id,
-                      onClick,
-                      ref: itemRef,
-                      to,
-                      items: nestedItems,
-                      ...itemRest
-                    },
-                    index
-                  ) => {
-                    const itemId = id ?? label;
-                    const handleClick = (event) => {
-                      if (nestedItems) {
-                        setOpenSubMenuId(
-                          openSubMenuId !== itemId ? itemId : null
-                        );
-                      }
-                      onClick?.(event);
-                      onChange?.(itemId, event);
-                    };
+      <NavBar>
+        <FlexGrid gutter={false} limitWidth={false}>
+          <FlexGrid.Row verticalAlign={"middle"}>
+            <FlexGrid.Col md={2} xs={8} lg={6} horizontalAlign="left">
+              {heading && <Heading level={headingLevel}>{heading}</Heading>}
+            </FlexGrid.Col>
+            <FlexGrid.Col md={10} xs={4} lg={6}>
+              <FlexGrid gutter={false} limitWidth={false}>
+                <FlexGrid.Row horizontalAlign="end">
+                  {itemsForViewport?.map(
+                    (
+                      {
+                        href,
+                        label,
+                        id,
+                        onClick,
+                        ref: itemRef,
+                        to,
+                        items: nestedItems,
+                        ...itemRest
+                      },
+                      index
+                    ) => {
+                      const itemId = id ?? label;
+                      const handleClick = (event) => {
+                        if (nestedItems) {
+                          setOpenSubMenuId(
+                            openSubMenuId !== itemId ? itemId : null
+                          );
+                        }
+                        onClick?.(event);
+                        onChange?.(itemId, event);
+                      };
 
-                    const ItemComponent = nestedItems
-                      ? NavigationSubMenu
-                      : NavigationItem;
-                    const isOpen = itemId === openSubMenuId;
+                      const ItemComponent = nestedItems
+                        ? NavigationSubMenu
+                        : NavigationItem;
+                      const isOpen = itemId === openSubMenuId;
 
-                    return (
-                      <ItemComponent
-                        key={itemId}
-                        ref={itemRef}
-                        href={href}
-                        onClick={handleClick}
-                        // TODO: refactor to pass selected ID via context
-                        selectedId={selectedId}
-                        index={index}
-                        to={to}
-                        items={nestedItems}
-                        selected={itemId === selectedId}
-                        {...itemRest}
-                        {...(nestedItems && { isOpen })}
-                        {...(nestedItems && isOpen && { openOverlayRef })}
-                      >
-                        {label}
-                      </ItemComponent>
-                    );
-                  }
-                )}
-              </Box>
-            </FlexGrid.Row>
-          </FlexGrid.Col>
-        </FlexGrid.Row>
-        <HairlineDivider />
-      </FlexGrid>
+                      return (
+                        <FlexGrid.Col key={itemId} md={2}>
+                          <BoxSize key={itemId} inset={2}>
+                            <FlexGrid gutter={false} limitWidth={false}>
+                              <FlexGrid.Row horizontalAlign="center">
+                                <ItemComponent
+                                  key={itemId}
+                                  ref={itemRef}
+                                  href={href}
+                                  onClick={handleClick}
+                                  // TODO: refactor to pass selected ID via context
+                                  selectedId={selectedId}
+                                  index={index}
+                                  to={to}
+                                  items={nestedItems}
+                                  selected={itemId === selectedId}
+                                  {...itemRest}
+                                  {...(nestedItems && { isOpen })}
+                                  {...(nestedItems &&
+                                    isOpen && { openOverlayRef })}
+                                >
+                                  {label}
+                                </ItemComponent>
+                              </FlexGrid.Row>
+                            </FlexGrid>
+                          </BoxSize>
+                        </FlexGrid.Col>
+                      );
+                    }
+                  )}
+                </FlexGrid.Row>
+              </FlexGrid>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
+      </NavBar>
     );
   }
 );
