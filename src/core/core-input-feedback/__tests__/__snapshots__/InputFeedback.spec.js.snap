@@ -2,7 +2,7 @@
 
 exports[`InputFeedback can have a feedback state 1`] = `
 <div
-  className="sc-beqWaB hjHWHa sc-gueYoa jTWAqr sc-gueYoa jTWAqr"
+  className="sc-aXZVg hNbjKD sc-gEvEer jUueUw sc-gEvEer jUueUw"
   role={null}
 >
   Some feedback text.
@@ -11,7 +11,7 @@ exports[`InputFeedback can have a feedback state 1`] = `
 
 exports[`InputFeedback can have a feedback state 2`] = `
 <div
-  className="sc-beqWaB hjHWHa sc-gueYoa eNRbUU sc-gueYoa eNRbUU"
+  className="sc-aXZVg hNbjKD sc-gEvEer hTQEAH sc-gEvEer hTQEAH"
   role={null}
 >
   Some feedback text.
@@ -20,7 +20,7 @@ exports[`InputFeedback can have a feedback state 2`] = `
 
 exports[`InputFeedback renders 1`] = `
 <div
-  class="sc-beqWaB hjHWHa sc-gueYoa jTWAqr sc-gueYoa jTWAqr"
+  class="sc-aXZVg hNbjKD sc-gEvEer jUueUw sc-gEvEer jUueUw"
 >
   Some inputFeedback text.
 </div>

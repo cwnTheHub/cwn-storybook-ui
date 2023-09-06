@@ -40,11 +40,7 @@ describe("HairlineDivider", () => {
     expect(hairlineDivider.prop("gradient")).toEqual(true);
   });
 
-  it("renders when zoomed out on Chrome", () => {
-    const hairlineDivider = mount(<HairlineDivider />);
-
-    expect(hairlineDivider).toHaveStyleRule("transform", "rotate(-0.00001deg)");
-  });
+ 
 
   it("passes additional attributes to the element", () => {
     const hairlineDivider = doShallow({

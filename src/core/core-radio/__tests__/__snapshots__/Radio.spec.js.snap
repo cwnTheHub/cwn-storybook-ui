@@ -2,11 +2,11 @@
 
 exports[`Radio allows numbers as value 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <input
     aria-invalid="false"
-    class="sc-jTrPJq kkKcMj"
+    class="sc-iGgWBj dCIFAX"
     data-testid="hidden-input"
     id="the-group_1"
     name="the-group"
@@ -14,27 +14,27 @@ exports[`Radio allows numbers as value 1`] = `
     value="1"
   />
   <label
-    class="sc-gLDzan cJTSkB"
+    class="sc-gsFSXq cZLLyI"
     data-testid="checkbox-label"
     for="the-group_1"
   >
     <div
-      class="sc-beqWaB bLLRWR"
+      class="sc-aXZVg dPmMeI"
     >
       <span
-        class="sc-eDDNvR kfyzgw"
+        class="sc-dcJsrY ibBqoL"
         data-testid="fake-input"
       >
         <span
-          class="sc-iAEyYk flHrRv"
+          class="sc-kAyceB gQWyP"
         />
       </span>
       <div
-        class="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+        class="sc-aXZVg fMjfal sc-imWYAI ehccQx sc-imWYAI ehccQx"
       >
         <div>
           <span
-            class="sc-hLseeU gsVpLy"
+            class="sc-fqkvVR bjuUuj"
           >
             A label
           </span>
@@ -64,7 +64,7 @@ exports[`Radio disabled can be disabled 1`] = `
         size="base"
       >
         <span
-          className="sc-hLseeU gsVpLy"
+          className="sc-fqkvVR bjuUuj"
           size="base"
         >
           A label
@@ -81,23 +81,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -123,7 +123,7 @@ exports[`Radio disabled can be disabled and checked 1`] = `
         size="base"
       >
         <span
-          className="sc-hLseeU gsVpLy"
+          className="sc-fqkvVR bjuUuj"
           size="base"
         >
           A label
@@ -140,23 +140,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -184,7 +184,7 @@ exports[`Radio error can have an error feedback state 1`] = `
         size="base"
       >
         <span
-          className="sc-hLseeU gsVpLy"
+          className="sc-fqkvVR bjuUuj"
           size="base"
         >
           Some error
@@ -201,23 +201,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -243,7 +243,7 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
         size="base"
       >
         <span
-          className="sc-hLseeU gsVpLy"
+          className="sc-fqkvVR bjuUuj"
           size="base"
         >
           Some error
@@ -260,23 +260,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -289,23 +289,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -318,23 +318,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -347,23 +347,23 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-eDDNvR kfyzgw"
+      className="sc-dcJsrY ibBqoL"
       data-testid="fake-input"
     >
       <styled.span>
         <span
-          className="sc-iAEyYk flHrRv"
+          className="sc-kAyceB gQWyP"
         />
       </styled.span>
     </span>
   </styled.span>,
   <span
-    className="sc-eDDNvR kfyzgw"
+    className="sc-dcJsrY ibBqoL"
     data-testid="fake-input"
   >
     <styled.span>
       <span
-        className="sc-iAEyYk flHrRv"
+        className="sc-kAyceB gQWyP"
       />
     </styled.span>
   </span>,
@@ -372,7 +372,7 @@ Array [
 
 exports[`Radio must have a label 1`] = `
 <label
-  className="sc-gLDzan cJTSkB"
+  className="sc-gsFSXq cZLLyI"
   data-testid="checkbox-label"
   htmlFor="radiogroup_the-value"
 >
@@ -387,18 +387,18 @@ exports[`Radio must have a label 1`] = `
       tag="div"
     >
       <div
-        className="sc-beqWaB bLLRWR"
+        className="sc-aXZVg dPmMeI"
       >
         <styled.span
           data-testid="fake-input"
         >
           <span
-            className="sc-eDDNvR kfyzgw"
+            className="sc-dcJsrY ibBqoL"
             data-testid="fake-input"
           >
             <styled.span>
               <span
-                className="sc-iAEyYk flHrRv"
+                className="sc-kAyceB gQWyP"
               />
             </styled.span>
           </span>
@@ -408,18 +408,18 @@ exports[`Radio must have a label 1`] = `
         >
           <Box
             between={2}
-            className="sc-fsQiph jMhwvT"
+            className="sc-imWYAI ehccQx"
             inline={false}
             tag="div"
           >
             <styled.div
               between={2}
-              className="sc-fsQiph jMhwvT"
+              className="sc-imWYAI ehccQx"
               inline={false}
               tag="div"
             >
               <div
-                className="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+                className="sc-aXZVg fMjfal sc-imWYAI ehccQx sc-imWYAI ehccQx"
               >
                 <ColoredTextProvider
                   tag="div"
@@ -439,7 +439,7 @@ exports[`Radio must have a label 1`] = `
                         size="base"
                       >
                         <span
-                          className="sc-hLseeU gsVpLy"
+                          className="sc-fqkvVR bjuUuj"
                           size="base"
                         >
                           Some label
@@ -460,11 +460,11 @@ exports[`Radio must have a label 1`] = `
 
 exports[`Radio renders 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <input
     aria-invalid="false"
-    class="sc-jTrPJq kkKcMj"
+    class="sc-iGgWBj dCIFAX"
     data-testid="hidden-input"
     id="the-group_the-value"
     name="the-group"
@@ -472,27 +472,27 @@ exports[`Radio renders 1`] = `
     value="the-value"
   />
   <label
-    class="sc-gLDzan cJTSkB"
+    class="sc-gsFSXq cZLLyI"
     data-testid="checkbox-label"
     for="the-group_the-value"
   >
     <div
-      class="sc-beqWaB bLLRWR"
+      class="sc-aXZVg dPmMeI"
     >
       <span
-        class="sc-eDDNvR kfyzgw"
+        class="sc-dcJsrY ibBqoL"
         data-testid="fake-input"
       >
         <span
-          class="sc-iAEyYk flHrRv"
+          class="sc-kAyceB gQWyP"
         />
       </span>
       <div
-        class="sc-beqWaB dJZbbo sc-fsQiph jMhwvT sc-fsQiph jMhwvT"
+        class="sc-aXZVg fMjfal sc-imWYAI ehccQx sc-imWYAI ehccQx"
       >
         <div>
           <span
-            class="sc-hLseeU gsVpLy"
+            class="sc-fqkvVR bjuUuj"
           >
             A label
           </span>

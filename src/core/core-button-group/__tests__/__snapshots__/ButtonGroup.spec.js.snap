@@ -24,7 +24,7 @@ exports[`ButtonGroup renders 1`] = `
           size="medium"
         >
           <span
-            className="sc-gueYoa jgVsCw"
+            className="sc-gEvEer fKNAcX"
             size="medium"
           >
             Please select a storage size
@@ -38,18 +38,18 @@ exports[`ButtonGroup renders 1`] = `
     >
       <Box
         between={3}
-        className="sc-jTrPJq bZZUVV"
+        className="sc-iGgWBj gra-DKZ"
         inline={true}
         tag="div"
       >
         <styled.div
           between={3}
-          className="sc-jTrPJq bZZUVV"
+          className="sc-iGgWBj gra-DKZ"
           inline={true}
           tag="div"
         >
           <div
-            className="sc-beqWaB bLLRWR sc-jTrPJq bZZUVV sc-jTrPJq bZZUVV"
+            className="sc-aXZVg dPmMeI sc-iGgWBj gra-DKZ sc-iGgWBj gra-DKZ"
           >
             <ButtonGroup.Item
               checked={true}
@@ -60,7 +60,7 @@ exports[`ButtonGroup renders 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-dmqHEX jOfoPq"
+                  className="sc-eqUAAy bVaFdC"
                 >
                   <styled.input
                     checked={true}
@@ -72,7 +72,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={true}
-                      className="sc-hLseeU zxRqz"
+                      className="sc-fqkvVR bBNUxq"
                       id="storagesize_64gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -84,7 +84,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_64gb"
                   >
                     <label
-                      className="sc-eDDNvR gOGdNN"
+                      className="sc-dcJsrY leUgKW"
                       htmlFor="storagesize_64gb"
                     >
                       64 GB
@@ -102,7 +102,7 @@ exports[`ButtonGroup renders 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-dmqHEX jOfoPq"
+                  className="sc-eqUAAy bVaFdC"
                 >
                   <styled.input
                     checked={false}
@@ -114,7 +114,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={false}
-                      className="sc-hLseeU zxRqz"
+                      className="sc-fqkvVR bBNUxq"
                       id="storagesize_128gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -126,7 +126,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_128gb"
                   >
                     <label
-                      className="sc-eDDNvR gOGdNN"
+                      className="sc-dcJsrY leUgKW"
                       htmlFor="storagesize_128gb"
                     >
                       128 GB
@@ -144,7 +144,7 @@ exports[`ButtonGroup renders 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-dmqHEX jOfoPq"
+                  className="sc-eqUAAy bVaFdC"
                 >
                   <styled.input
                     checked={false}
@@ -156,7 +156,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={false}
-                      className="sc-hLseeU zxRqz"
+                      className="sc-fqkvVR bBNUxq"
                       id="storagesize_256gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -168,7 +168,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_256gb"
                   >
                     <label
-                      className="sc-eDDNvR gOGdNN"
+                      className="sc-dcJsrY leUgKW"
                       htmlFor="storagesize_256gb"
                     >
                       256 GB

@@ -3,7 +3,7 @@
 exports[`TextArea disabling can be disabled 1`] = `
 <textarea
   aria-invalid={false}
-  className="sc-csCMJt dWNmz"
+  className="sc-jlZhew fwviOg"
   id="the-textarea"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -13,7 +13,7 @@ exports[`TextArea disabling can be disabled 1`] = `
 exports[`TextArea feedback states ensures that the contents do not overlap the icon 1`] = `
 <textarea
   aria-invalid={false}
-  className="sc-csCMJt ikBbRZ"
+  className="sc-jlZhew dcQjQi"
   id="the-textarea"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -31,18 +31,18 @@ exports[`TextArea label can have a short hint 1`] = `
   >
     <Box
       between={2}
-      className="sc-irTswW bOqoJl"
+      className="sc-dAlyuH kIoXqF"
       inline={true}
       tag="span"
     >
       <styled.div
         between={2}
-        className="sc-irTswW bOqoJl"
+        className="sc-dAlyuH kIoXqF"
         inline={true}
         tag="span"
       >
         <span
-          className="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+          className="sc-aXZVg kiRGJS sc-dAlyuH kIoXqF sc-dAlyuH kIoXqF"
         >
           <Text
             block={false}
@@ -57,7 +57,7 @@ exports[`TextArea label can have a short hint 1`] = `
               size="medium"
             >
               <span
-                className="sc-dmqHEX hiTUaR"
+                className="sc-eqUAAy bxnxsp"
                 size="medium"
               >
                 The textarea
@@ -79,7 +79,7 @@ exports[`TextArea label can have a short hint 1`] = `
               size="small"
             >
               <span
-                className="sc-dmqHEX dbentL"
+                className="sc-eqUAAy GHYGD"
                 id="the-textarea_hint"
                 size="small"
               >
@@ -96,19 +96,19 @@ exports[`TextArea label can have a short hint 1`] = `
 
 exports[`TextArea renders 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <div
-    class="sc-beqWaB vEPAP"
+    class="sc-aXZVg kiRGJS"
   >
     <label
       for="the-textarea"
     >
       <span
-        class="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+        class="sc-aXZVg kiRGJS sc-dAlyuH kIoXqF sc-dAlyuH kIoXqF"
       >
         <span
-          class="sc-dmqHEX hiTUaR"
+          class="sc-eqUAAy bxnxsp"
         >
           The textarea
         </span>
@@ -116,15 +116,15 @@ exports[`TextArea renders 1`] = `
     </label>
   </div>
   <div
-    class="sc-kFuwaP iecEBe"
+    class="sc-kpDqfm iIXxNM"
   >
     <textarea
       aria-invalid="false"
-      class="sc-csCMJt dWNmz"
+      class="sc-jlZhew fwviOg"
       id="the-textarea"
     />
     <div
-      class="sc-fbJfA kOdxUB"
+      class="sc-cwHptR fTsviP"
     />
   </div>
 </div>
@@ -132,19 +132,19 @@ exports[`TextArea renders 1`] = `
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <div
-    class="sc-beqWaB vEPAP"
+    class="sc-aXZVg kiRGJS"
   >
     <label
       for="the-textarea"
     >
       <span
-        class="sc-beqWaB vEPAP sc-irTswW bOqoJl sc-irTswW bOqoJl"
+        class="sc-aXZVg kiRGJS sc-dAlyuH kIoXqF sc-dAlyuH kIoXqF"
       >
         <span
-          class="sc-dmqHEX hiTUaR"
+          class="sc-eqUAAy bxnxsp"
         >
           The textarea
         </span>
@@ -152,24 +152,24 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="sc-kFuwaP iecEBe"
+    class="sc-kpDqfm iIXxNM"
   >
     <textarea
       aria-invalid="true"
-      class="sc-csCMJt gaKMLo"
+      class="sc-jlZhew gyVEYL"
       id="the-textarea"
     />
     <div
-      class="sc-fbJfA kOdxUB"
+      class="sc-cwHptR fTsviP"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="sc-jsMahE kZMUa-d"
+          class="sc-dhKdcB gexGqa"
         >
           <svg
-            class="sc-gLDzan eVwPjW"
+            class="sc-gsFSXq kTxPxJ"
             height="1.25rem"
             role="img"
             viewBox="0 0 20 20"
