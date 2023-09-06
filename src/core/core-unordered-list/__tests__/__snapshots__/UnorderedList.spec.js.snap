@@ -11,18 +11,18 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   >
     <Box
       between={2}
-      className="sc-dmqHEX facAEN"
+      className="sc-eqUAAy eUciOt"
       inline={false}
       tag="ul"
     >
       <styled.div
         between={2}
-        className="sc-dmqHEX facAEN"
+        className="sc-eqUAAy eUciOt"
         inline={false}
         tag="ul"
       >
         <ul
-          className="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+          className="sc-gEvEer MkeJt sc-eqUAAy eUciOt sc-eqUAAy eUciOt"
         >
           <UnorderedList.Item
             key=".$.0"
@@ -34,7 +34,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               size="medium"
             >
               <li
-                className="sc-beqWaB kXizJK"
+                className="sc-aXZVg kqKPez"
                 size="medium"
               >
                 Lorem ipsum
@@ -51,7 +51,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               size="medium"
             >
               <li
-                className="sc-beqWaB kXizJK"
+                className="sc-aXZVg kqKPez"
                 size="medium"
               >
                 Dolor sit amet
@@ -76,18 +76,18 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   >
     <Box
       between={2}
-      className="sc-dmqHEX facAEN"
+      className="sc-eqUAAy eUciOt"
       inline={false}
       tag="ul"
     >
       <styled.div
         between={2}
-        className="sc-dmqHEX facAEN"
+        className="sc-eqUAAy eUciOt"
         inline={false}
         tag="ul"
       >
         <ul
-          className="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+          className="sc-gEvEer MkeJt sc-eqUAAy eUciOt sc-eqUAAy eUciOt"
         >
           <UnorderedList.Item
             key=".$.0"
@@ -99,7 +99,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               size="medium"
             >
               <li
-                className="sc-beqWaB iwYhBQ"
+                className="sc-aXZVg jvGpWV"
                 size="medium"
               >
                 Lorem ipsum
@@ -116,7 +116,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               size="medium"
             >
               <li
-                className="sc-beqWaB iwYhBQ"
+                className="sc-aXZVg jvGpWV"
                 size="medium"
               >
                 Dolor sit amet
@@ -132,15 +132,15 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 
 exports[`<UnorderedList /> renders 1`] = `
 <ul
-  class="sc-gueYoa cinhCW sc-dmqHEX facAEN sc-dmqHEX facAEN"
+  class="sc-gEvEer MkeJt sc-eqUAAy eUciOt sc-eqUAAy eUciOt"
 >
   <li
-    class="sc-beqWaB kXizJK"
+    class="sc-aXZVg kqKPez"
   >
     Lorem ipsum
   </li>
   <li
-    class="sc-beqWaB kXizJK"
+    class="sc-aXZVg kqKPez"
   >
     Dolor sit amet
   </li>

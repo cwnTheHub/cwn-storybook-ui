@@ -2,41 +2,41 @@
 
 exports[`<StepTracker /> renders 1`] = `
 <div
-  class="sc-qRumB hmYMAg"
+  class="sc-jXbUNg ciKHpg"
   data-testid="stepTrackerContainer"
 >
   <div
-    class="sc-fsQiph ppWoS"
+    class="sc-imWYAI gSIfsY"
   >
     <div
-      class="sc-iAEyYk hxgYbc"
+      class="sc-kAyceB kZqNpc"
     >
       <div
-        class="sc-gLDzan cDpain"
+        class="sc-gsFSXq KfszY"
       >
         <div
-          class="sc-jsMahE lbanHI"
+          class="sc-dhKdcB bKFPXb"
         >
           <div
             aria-current="false"
             aria-label="Login"
-            class="sc-hLseeU itbJpM"
+            class="sc-fqkvVR jIbaTZ"
             data-isactive="true"
             data-testid="singleStepContainer-0"
           >
             <span
-              class="sc-eDDNvR csPyxp"
+              class="sc-dcJsrY bJfjRS"
             >
               <i
                 aria-hidden="true"
-                class="sc-beqWaB ykiYb"
+                class="sc-aXZVg bjdNpe"
               />
             </span>
             <div
-              class="sc-jTrPJq kxFDPL"
+              class="sc-iGgWBj hbWyPT"
             >
               <span
-                class="sc-dmqHEX kYWyYY"
+                class="sc-eqUAAy eqHARA"
               >
                 1. Login
               </span>
@@ -45,20 +45,20 @@ exports[`<StepTracker /> renders 1`] = `
           <div
             aria-current="true"
             aria-label="Purchase"
-            class="sc-hLseeU itbJpM"
+            class="sc-fqkvVR jIbaTZ"
             data-isactive="true"
             data-testid="singleStepContainer-1"
           >
             <span
-              class="sc-eDDNvR csPyxp"
+              class="sc-dcJsrY bJfjRS"
             >
               <br />
             </span>
             <div
-              class="sc-jTrPJq kxFDPL"
+              class="sc-iGgWBj hbWyPT"
             >
               <span
-                class="sc-dmqHEX kSfWic"
+                class="sc-eqUAAy IbxGE"
               >
                 2. Purchase
               </span>
@@ -67,20 +67,20 @@ exports[`<StepTracker /> renders 1`] = `
           <div
             aria-current="false"
             aria-label="Checkout"
-            class="sc-hLseeU itbJpM"
+            class="sc-fqkvVR jIbaTZ"
             data-isactive="false"
             data-testid="singleStepContainer-2"
           >
             <span
-              class="sc-eDDNvR fUpTSU"
+              class="sc-dcJsrY kIkQVH"
             >
               <br />
             </span>
             <div
-              class="sc-jTrPJq kxFDPL"
+              class="sc-iGgWBj hbWyPT"
             >
               <span
-                class="sc-dmqHEX kYWyYY"
+                class="sc-eqUAAy eqHARA"
               >
                 3. Checkout
               </span>
@@ -90,16 +90,16 @@ exports[`<StepTracker /> renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-iAEyYk hxgYbc"
+      class="sc-kAyceB kZqNpc"
     >
       <div
-        class="sc-gLDzan cgwGCy"
+        class="sc-gsFSXq eHvvkR"
       >
         <div
-          class="sc-kFuwaP iibDDi"
+          class="sc-kpDqfm dAhSKo"
         >
           <span
-            class="sc-dmqHEX kYWyYY"
+            class="sc-eqUAAy eqHARA"
             data-testid="mobileStepLabel"
           >
             <span>

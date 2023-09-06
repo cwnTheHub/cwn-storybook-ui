@@ -19,12 +19,12 @@ exports[`InteractiveIcon renders 1`] = `
       variant="default"
     >
       <button
-        className="sc-gueYoa sc-hLseeU bURvQ kPavwg"
+        className="sc-gEvEer sc-fqkvVR hywsPT kfAYrN"
       >
         <A11yContent>
           <styled.span>
             <span
-              className="sc-beqWaB fhdLXM"
+              className="sc-aXZVg kNIMGd"
             >
               This is an interactive icon
             </span>
@@ -32,7 +32,7 @@ exports[`InteractiveIcon renders 1`] = `
         </A11yContent>
         <styled.span>
           <span
-            className="sc-dmqHEX cfmyov"
+            className="sc-eqUAAy jsBhqr"
           />
         </styled.span>
         <Dependent
@@ -50,7 +50,7 @@ exports[`InteractiveIcon renders 1`] = `
             >
               <svg
                 aria-hidden={true}
-                className="sc-irTswW jPPdXB"
+                className="sc-dAlyuH ezSwF"
                 color="greyShark"
                 data-testid="dependentSvg"
                 focusable={false}
@@ -98,7 +98,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
       to={null}
     >
       <a
-        className="sc-eDDNvR cpzQlI"
+        className="sc-dcJsrY kegMPl"
         href="#"
         to={null}
       >
@@ -132,7 +132,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
             >
               <svg
                 aria-hidden={true}
-                className="sc-irTswW jPPdXB"
+                className="sc-dAlyuH ezSwF"
                 color="greyShark"
                 data-testid="dependentSvg"
                 focusable={false}

@@ -12,7 +12,7 @@ exports[`Box between applies space-between 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB dxudYL"
+      className="sc-aXZVg dtGQza"
     >
       Some content
     </div>
@@ -32,7 +32,7 @@ exports[`Box between arranges the children horizontally or vertically be either 
     tag="div"
   >
     <div
-      className="sc-beqWaB hRwMWO"
+      className="sc-aXZVg cPJwEj"
     >
       Some content
     </div>
@@ -52,7 +52,7 @@ exports[`Box between arranges the children horizontally or vertically be either 
     tag="div"
   >
     <div
-      className="sc-beqWaB bLLRWR"
+      className="sc-aXZVg dPmMeI"
     >
       Some content
     </div>
@@ -72,7 +72,7 @@ exports[`Box between can handle a between={0} prop 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB TsIBT"
+      className="sc-aXZVg jNNAZe"
     >
       Some content
     </div>
@@ -92,7 +92,7 @@ exports[`Box between can handle a between={0} prop 2`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB glRiEc"
+      className="sc-aXZVg kEDeWt"
     >
       Some content
     </div>
@@ -132,7 +132,7 @@ exports[`Box between can handle responsive props 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB iCjQkN"
+      className="sc-aXZVg ctJCcE"
     >
       Some content
     </div>
@@ -152,7 +152,7 @@ exports[`Box between separates children by equal margins in a stack 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB dJZbbo"
+      className="sc-aXZVg fMjfal"
     >
       Some content
     </div>
@@ -172,7 +172,7 @@ exports[`Box between separates children by equal margins inline 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB vEPAP"
+      className="sc-aXZVg kiRGJS"
     >
       Some content
     </div>
@@ -194,7 +194,7 @@ exports[`Box can apply bottom margin 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB larTme"
+      className="sc-aXZVg iOFecL"
     >
       Some content
     </div>
@@ -216,7 +216,7 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
     vertical={1}
   >
     <div
-      className="sc-beqWaB bimAUu"
+      className="sc-aXZVg dOWxJz"
     >
       Some content
     </div>
@@ -238,7 +238,7 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB kFbEkl"
+      className="sc-aXZVg isbtU"
     >
       Some content
     </div>
@@ -262,7 +262,7 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
     vertical={2}
   >
     <div
-      className="sc-beqWaB iRJolB"
+      className="sc-aXZVg ivatao"
     >
       Some content
     </div>
@@ -284,7 +284,7 @@ exports[`Box insets can be equal on all sides 1`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB jJdFGh"
+      className="sc-aXZVg gvEusw"
     >
       Some content
     </div>
@@ -316,7 +316,7 @@ exports[`Box insets can handle responsive horizontal and vertical 1`] = `
     }
   >
     <div
-      className="sc-beqWaB jIdfaj"
+      className="sc-aXZVg hqxExe"
     >
       Some content
     </div>
@@ -348,7 +348,7 @@ exports[`Box insets can handle responsive horizontal and vertical 2`] = `
     tag="div"
   >
     <div
-      className="sc-beqWaB eNRGP"
+      className="sc-aXZVg hhrpSW"
     >
       Some content
     </div>
@@ -392,7 +392,7 @@ exports[`Box insets can handle responsive horizontal and vertical 3`] = `
     }
   >
     <div
-      className="sc-beqWaB iTKbue"
+      className="sc-aXZVg bEllPP"
     >
       Some content
     </div>

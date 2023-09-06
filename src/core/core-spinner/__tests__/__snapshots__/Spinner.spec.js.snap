@@ -28,7 +28,7 @@ Array [
     overlay={true}
   >
     <div
-      className="sc-gueYoa bvMyUv"
+      className="sc-gEvEer iswGuI"
       data-testid="spinner"
     >
       <styled.svg
@@ -43,7 +43,7 @@ Array [
         <svg
           aria-labelledby="spinner-title-9"
           aria-live="assertive"
-          className="sc-dmqHEX fFkesz"
+          className="sc-eqUAAy eWAKov"
           data-testid="svg"
           height="100"
           role="alert"
@@ -67,7 +67,7 @@ Array [
             variant="primary"
           >
             <circle
-              className="sc-hLseeU jMXLEA"
+              className="sc-fqkvVR fwUbmx"
               cx="50"
               cy="50"
               fill="none"
@@ -84,7 +84,7 @@ Array [
         tabIndex="-1"
       >
         <div
-          className="sc-eDDNvR hWDWZa"
+          className="sc-dcJsrY klNqlJ"
           tabIndex="-1"
         >
           <Text
@@ -100,7 +100,7 @@ Array [
               size="small"
             >
               <span
-                className="sc-beqWaB cpsTJs"
+                className="sc-aXZVg brTLRl"
                 size="small"
               >
                 Loading content
@@ -112,7 +112,7 @@ Array [
     </div>
   </styled.div>,
   <div
-    className="sc-gueYoa bvMyUv"
+    className="sc-gEvEer iswGuI"
     data-testid="spinner"
   >
     <styled.svg
@@ -127,7 +127,7 @@ Array [
       <svg
         aria-labelledby="spinner-title-9"
         aria-live="assertive"
-        className="sc-dmqHEX fFkesz"
+        className="sc-eqUAAy eWAKov"
         data-testid="svg"
         height="100"
         role="alert"
@@ -151,7 +151,7 @@ Array [
           variant="primary"
         >
           <circle
-            className="sc-hLseeU jMXLEA"
+            className="sc-fqkvVR fwUbmx"
             cx="50"
             cy="50"
             fill="none"
@@ -168,7 +168,7 @@ Array [
       tabIndex="-1"
     >
       <div
-        className="sc-eDDNvR hWDWZa"
+        className="sc-dcJsrY klNqlJ"
         tabIndex="-1"
       >
         <Text
@@ -184,7 +184,7 @@ Array [
             size="small"
           >
             <span
-              className="sc-beqWaB cpsTJs"
+              className="sc-aXZVg brTLRl"
               size="small"
             >
               Loading content
@@ -213,7 +213,7 @@ Array [
     <svg
       aria-labelledby="spinner-title-11"
       aria-live="assertive"
-      className="sc-dmqHEX fFkesz"
+      className="sc-eqUAAy eWAKov"
       data-some-attr="some value"
       data-testid="svg"
       height="100"
@@ -239,7 +239,7 @@ Array [
         variant="primary"
       >
         <circle
-          className="sc-hLseeU jMXLEA"
+          className="sc-fqkvVR fwUbmx"
           cx="50"
           cy="50"
           fill="none"
@@ -255,7 +255,7 @@ Array [
   <svg
     aria-labelledby="spinner-title-11"
     aria-live="assertive"
-    className="sc-dmqHEX fFkesz"
+    className="sc-eqUAAy eWAKov"
     data-some-attr="some value"
     data-testid="svg"
     height="100"
@@ -281,7 +281,7 @@ Array [
       variant="primary"
     >
       <circle
-        className="sc-hLseeU jMXLEA"
+        className="sc-fqkvVR fwUbmx"
         cx="50"
         cy="50"
         fill="none"
@@ -298,13 +298,13 @@ Array [
 
 exports[`Spinner renders 1`] = `
 <div
-  class="sc-gueYoa hSDaHN"
+  class="sc-gEvEer jQNvAm"
   data-testid="spinner"
 >
   <svg
     aria-labelledby="spinner-title-1"
     aria-live="assertive"
-    class="sc-dmqHEX fFkesz"
+    class="sc-eqUAAy eWAKov"
     data-testid="svg"
     height="100"
     role="alert"
@@ -317,7 +317,7 @@ exports[`Spinner renders 1`] = `
       Loading content
     </title>
     <circle
-      class="sc-hLseeU jMXLEA"
+      class="sc-fqkvVR fwUbmx"
       cx="50"
       cy="50"
       fill="none"
@@ -329,11 +329,11 @@ exports[`Spinner renders 1`] = `
     />
   </svg>
   <div
-    class="sc-eDDNvR hWDWZa"
+    class="sc-dcJsrY klNqlJ"
     tabindex="-1"
   >
     <span
-      class="sc-beqWaB cpsTJs"
+      class="sc-aXZVg brTLRl"
     >
       Loading content
     </span>
@@ -351,7 +351,7 @@ Array [
   >
     <div
       aria-live="assertive"
-      className="sc-jTrPJq kllCcj"
+      className="sc-iGgWBj zckPf"
       data-testid="container"
     >
       <SpinnerSvg
@@ -365,7 +365,7 @@ Array [
           overlay={true}
         >
           <div
-            className="sc-gueYoa bvMyUv"
+            className="sc-gEvEer iswGuI"
             data-testid="spinner"
           >
             <styled.svg
@@ -380,7 +380,7 @@ Array [
               <svg
                 aria-labelledby="spinner-title-4"
                 aria-live="assertive"
-                className="sc-dmqHEX fFkesz"
+                className="sc-eqUAAy eWAKov"
                 data-testid="svg"
                 height="50"
                 role="alert"
@@ -404,7 +404,7 @@ Array [
                   variant="secondary"
                 >
                   <circle
-                    className="sc-hLseeU dHYHqZ"
+                    className="sc-fqkvVR duSTxA"
                     cx="50"
                     cy="50"
                     fill="none"
@@ -424,7 +424,7 @@ Array [
         data-testid="overlay"
       >
         <div
-          className="sc-gLDzan cTXIKw"
+          className="sc-gsFSXq fPTKTP"
           data-testid="overlay"
         />
       </styled.div>
@@ -432,7 +432,7 @@ Array [
         inert="true"
       >
         <div
-          className="sc-fsQiph iEMlfU"
+          className="sc-imWYAI dqJbdG"
           inert="true"
         >
           <span
@@ -448,7 +448,7 @@ Array [
   </styled.div>,
   <div
     aria-live="assertive"
-    className="sc-jTrPJq kllCcj"
+    className="sc-iGgWBj zckPf"
     data-testid="container"
   >
     <SpinnerSvg
@@ -462,7 +462,7 @@ Array [
         overlay={true}
       >
         <div
-          className="sc-gueYoa bvMyUv"
+          className="sc-gEvEer iswGuI"
           data-testid="spinner"
         >
           <styled.svg
@@ -477,7 +477,7 @@ Array [
             <svg
               aria-labelledby="spinner-title-4"
               aria-live="assertive"
-              className="sc-dmqHEX fFkesz"
+              className="sc-eqUAAy eWAKov"
               data-testid="svg"
               height="50"
               role="alert"
@@ -501,7 +501,7 @@ Array [
                 variant="secondary"
               >
                 <circle
-                  className="sc-hLseeU dHYHqZ"
+                  className="sc-fqkvVR duSTxA"
                   cx="50"
                   cy="50"
                   fill="none"
@@ -521,7 +521,7 @@ Array [
       data-testid="overlay"
     >
       <div
-        className="sc-gLDzan cTXIKw"
+        className="sc-gsFSXq fPTKTP"
         data-testid="overlay"
       />
     </styled.div>
@@ -529,7 +529,7 @@ Array [
       inert="true"
     >
       <div
-        className="sc-fsQiph iEMlfU"
+        className="sc-imWYAI dqJbdG"
         inert="true"
       >
         <span
@@ -555,7 +555,7 @@ Array [
   >
     <div
       aria-live="assertive"
-      className="sc-jTrPJq kllCcj"
+      className="sc-iGgWBj zckPf"
       data-testid="container"
     >
       <SpinnerSvg
@@ -569,7 +569,7 @@ Array [
           overlay={true}
         >
           <div
-            className="sc-gueYoa bvMyUv"
+            className="sc-gEvEer iswGuI"
             data-testid="spinner"
           >
             <styled.svg
@@ -584,7 +584,7 @@ Array [
               <svg
                 aria-labelledby="spinner-title-3"
                 aria-live="assertive"
-                className="sc-dmqHEX fFkesz"
+                className="sc-eqUAAy eWAKov"
                 data-testid="svg"
                 height="50"
                 role="alert"
@@ -608,7 +608,7 @@ Array [
                   variant="primary"
                 >
                   <circle
-                    className="sc-hLseeU jMXLEA"
+                    className="sc-fqkvVR fwUbmx"
                     cx="50"
                     cy="50"
                     fill="none"
@@ -628,7 +628,7 @@ Array [
         data-testid="overlay"
       >
         <div
-          className="sc-gLDzan cTXIKw"
+          className="sc-gsFSXq fPTKTP"
           data-testid="overlay"
         />
       </styled.div>
@@ -636,7 +636,7 @@ Array [
         inert="true"
       >
         <div
-          className="sc-fsQiph iEMlfU"
+          className="sc-imWYAI dqJbdG"
           inert="true"
         >
           <span
@@ -652,7 +652,7 @@ Array [
   </styled.div>,
   <div
     aria-live="assertive"
-    className="sc-jTrPJq kllCcj"
+    className="sc-iGgWBj zckPf"
     data-testid="container"
   >
     <SpinnerSvg
@@ -666,7 +666,7 @@ Array [
         overlay={true}
       >
         <div
-          className="sc-gueYoa bvMyUv"
+          className="sc-gEvEer iswGuI"
           data-testid="spinner"
         >
           <styled.svg
@@ -681,7 +681,7 @@ Array [
             <svg
               aria-labelledby="spinner-title-3"
               aria-live="assertive"
-              className="sc-dmqHEX fFkesz"
+              className="sc-eqUAAy eWAKov"
               data-testid="svg"
               height="50"
               role="alert"
@@ -705,7 +705,7 @@ Array [
                 variant="primary"
               >
                 <circle
-                  className="sc-hLseeU jMXLEA"
+                  className="sc-fqkvVR fwUbmx"
                   cx="50"
                   cy="50"
                   fill="none"
@@ -725,7 +725,7 @@ Array [
       data-testid="overlay"
     >
       <div
-        className="sc-gLDzan cTXIKw"
+        className="sc-gsFSXq fPTKTP"
         data-testid="overlay"
       />
     </styled.div>
@@ -733,7 +733,7 @@ Array [
       inert="true"
     >
       <div
-        className="sc-fsQiph iEMlfU"
+        className="sc-imWYAI dqJbdG"
         inert="true"
       >
         <span
@@ -759,7 +759,7 @@ Array [
   >
     <div
       aria-live="assertive"
-      className="sc-jTrPJq kllCcj"
+      className="sc-iGgWBj zckPf"
       data-testid="container"
     >
       <SpinnerSvg
@@ -774,7 +774,7 @@ Array [
           overlay={true}
         >
           <div
-            className="sc-gueYoa bvMyUv"
+            className="sc-gEvEer iswGuI"
             data-testid="spinner"
           >
             <styled.svg
@@ -789,7 +789,7 @@ Array [
               <svg
                 aria-labelledby="spinner-title-6"
                 aria-live="assertive"
-                className="sc-dmqHEX fFkesz"
+                className="sc-eqUAAy eWAKov"
                 data-testid="svg"
                 height="100"
                 role="alert"
@@ -813,7 +813,7 @@ Array [
                   variant="primary"
                 >
                   <circle
-                    className="sc-hLseeU jMXLEA"
+                    className="sc-fqkvVR fwUbmx"
                     cx="50"
                     cy="50"
                     fill="none"
@@ -830,7 +830,7 @@ Array [
               tabIndex="-1"
             >
               <div
-                className="sc-eDDNvR hWDWZa"
+                className="sc-dcJsrY klNqlJ"
                 tabIndex="-1"
               >
                 <Text
@@ -846,7 +846,7 @@ Array [
                     size="small"
                   >
                     <span
-                      className="sc-beqWaB cpsTJs"
+                      className="sc-aXZVg brTLRl"
                       size="small"
                     >
                       Loading content
@@ -862,7 +862,7 @@ Array [
         data-testid="overlay"
       >
         <div
-          className="sc-gLDzan cTXIKw"
+          className="sc-gsFSXq fPTKTP"
           data-testid="overlay"
         />
       </styled.div>
@@ -870,7 +870,7 @@ Array [
         inert="true"
       >
         <div
-          className="sc-fsQiph iEMlfU"
+          className="sc-imWYAI dqJbdG"
           inert="true"
         >
           <span
@@ -886,7 +886,7 @@ Array [
   </styled.div>,
   <div
     aria-live="assertive"
-    className="sc-jTrPJq kllCcj"
+    className="sc-iGgWBj zckPf"
     data-testid="container"
   >
     <SpinnerSvg
@@ -901,7 +901,7 @@ Array [
         overlay={true}
       >
         <div
-          className="sc-gueYoa bvMyUv"
+          className="sc-gEvEer iswGuI"
           data-testid="spinner"
         >
           <styled.svg
@@ -916,7 +916,7 @@ Array [
             <svg
               aria-labelledby="spinner-title-6"
               aria-live="assertive"
-              className="sc-dmqHEX fFkesz"
+              className="sc-eqUAAy eWAKov"
               data-testid="svg"
               height="100"
               role="alert"
@@ -940,7 +940,7 @@ Array [
                 variant="primary"
               >
                 <circle
-                  className="sc-hLseeU jMXLEA"
+                  className="sc-fqkvVR fwUbmx"
                   cx="50"
                   cy="50"
                   fill="none"
@@ -957,7 +957,7 @@ Array [
             tabIndex="-1"
           >
             <div
-              className="sc-eDDNvR hWDWZa"
+              className="sc-dcJsrY klNqlJ"
               tabIndex="-1"
             >
               <Text
@@ -973,7 +973,7 @@ Array [
                   size="small"
                 >
                   <span
-                    className="sc-beqWaB cpsTJs"
+                    className="sc-aXZVg brTLRl"
                     size="small"
                   >
                     Loading content
@@ -989,7 +989,7 @@ Array [
       data-testid="overlay"
     >
       <div
-        className="sc-gLDzan cTXIKw"
+        className="sc-gsFSXq fPTKTP"
         data-testid="overlay"
       />
     </styled.div>
@@ -997,7 +997,7 @@ Array [
       inert="true"
     >
       <div
-        className="sc-fsQiph iEMlfU"
+        className="sc-imWYAI dqJbdG"
         inert="true"
       >
         <span
@@ -1016,17 +1016,17 @@ Array [
 exports[`Spinner renders with children 1`] = `
 <div
   aria-live="assertive"
-  class="sc-jTrPJq xQqfy"
+  class="sc-iGgWBj ippCVi"
   data-testid="container"
 >
   <div
-    class="sc-gueYoa bvMyUv"
+    class="sc-gEvEer iswGuI"
     data-testid="spinner"
   >
     <svg
       aria-labelledby="spinner-title-2"
       aria-live="assertive"
-      class="sc-dmqHEX fFkesz"
+      class="sc-eqUAAy eWAKov"
       data-testid="svg"
       height="100"
       role="alert"
@@ -1039,7 +1039,7 @@ exports[`Spinner renders with children 1`] = `
         Loading content
       </title>
       <circle
-        class="sc-hLseeU jMXLEA"
+        class="sc-fqkvVR fwUbmx"
         cx="50"
         cy="50"
         fill="none"
@@ -1051,22 +1051,22 @@ exports[`Spinner renders with children 1`] = `
       />
     </svg>
     <div
-      class="sc-eDDNvR hWDWZa"
+      class="sc-dcJsrY klNqlJ"
       tabindex="-1"
     >
       <span
-        class="sc-beqWaB cpsTJs"
+        class="sc-aXZVg brTLRl"
       >
         Loading content
       </span>
     </div>
   </div>
   <div
-    class="sc-gLDzan cTXIKw"
+    class="sc-gsFSXq fPTKTP"
     data-testid="overlay"
   />
   <div
-    class="sc-fsQiph iEMlfU"
+    class="sc-imWYAI dqJbdG"
     inert="true"
   >
     <span

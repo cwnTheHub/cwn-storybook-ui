@@ -1,0 +1,20 @@
+{/* HairlineDivider.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as HairlineDividerStories from './HairlineDivider.stories';
+
+<Meta of={HairlineDividerStories} />
+<Title />
+	
+`` import { HairlineDivider } from '@nds_core/nds' ``
+
+Separate content within modules.
+
+### Usage
+HairlineDivider is used to help separate content. Use Box to add space between the HairlineDivider and content.
+<Canvas of={HairlineDividerStories.Horizontal} />
+
+<Canvas of={HairlineDividerStories.Vertical} />
+
+<Canvas of={HairlineDividerStories.Example} />

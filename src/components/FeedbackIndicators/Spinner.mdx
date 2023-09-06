@@ -1,0 +1,48 @@
+{/* Spinner.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as SpinnerStories from './Spinner.stories';
+
+<Meta of={SpinnerStories} />
+<Title />
+	
+`` import { Spinner } from '@nds_core/nds' ``
+
+A banner that highlights important messages.
+
+### Usage criteria
+
+- Avoid using a spinner whenever possible. Make content available to the user as soon as possible
+- User feedback should be present when a user action takes longer than 0.1 seconds
+- A Spinner is most appropriate for providing feedback for actions that last between 2 and 10 seconds
+- Actions that take longer than 10 seconds ideally provide feedback with relative progress, such as a progress bar
+- Recommend not to use for full page loading
+- Label should be short and concise. Spinner label should accurately explain the state of the requested action along with relevant items being loaded, "Loading page content", "Logging in", "Processing payment"
+- Use the small spinner when applied on a button or other small interactive elements such as toggles or links
+    - When overlaying buttons, the spinner’s colour should match the button's colour (green spinner for green buttons, and purple spinner for purple buttons)
+- Use the large spinner when affecting an entire web page or content block, whose content has not finished loading, such as paginated content
+- Both the small and large spinner have an overlay background to visually indicate content behind it is inaccessible. Use the standalone spinner (small/large) as an interstitial placeholder for loading content
+
+# Minimal implementation
+
+- To make the Spinner visible, set the spinning prop to true
+- Provide a label to give more context about what is happening
+    - The label prop is a string or node that acts as both a line of text under the Spinner as well as text that is communicated to assistive technology
+    - Use A11yContent to provide information to assistive technology that should not appear in the Spinner's visible label. This content must be wrapped with a React.Fragment or span if A11yContent is being used. In the next major update, the label prop will be required in code
+
+<Primary />
+
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+--- 
+
+## Additional variations
+
+Listed below are additional variations of the component.
+
+<Stories />

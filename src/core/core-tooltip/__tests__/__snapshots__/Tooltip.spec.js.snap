@@ -240,7 +240,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         <div
                           aria-hidden="true"
                           aria-live="assertive"
-                          className="c3 c2 sc-fbJfA c2"
+                          className="c3 c2 sc-cwHptR c2"
                           data-testid="bubble"
                           id="standalone-tooltip-tooltip10_tooltip"
                           role="tooltip"
@@ -594,7 +594,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         <div
                           aria-hidden="false"
                           aria-live="assertive"
-                          className="c3 c2 sc-fbJfA c2"
+                          className="c3 c2 sc-cwHptR c2"
                           data-testid="bubble"
                           id="standalone-tooltip-tooltip6_tooltip"
                           role="tooltip"
@@ -948,7 +948,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         <div
                           aria-hidden="false"
                           aria-live="assertive"
-                          className="c3 c2 sc-fbJfA c2"
+                          className="c3 c2 sc-cwHptR c2"
                           data-testid="bubble"
                           id="standalone-tooltip-tooltip6_tooltip"
                           role="tooltip"
@@ -1146,7 +1146,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="c0 c1 sc-fbJfA c1"
+  className="c0 c1 sc-cwHptR c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
@@ -1280,7 +1280,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 <div
   aria-hidden="false"
   aria-live="assertive"
-  className="c0 c1 sc-fbJfA c1"
+  className="c0 c1 sc-cwHptR c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
@@ -1415,7 +1415,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="c0 c1 sc-fbJfA c1"
+  className="c0 c1 sc-cwHptR c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
@@ -1683,7 +1683,7 @@ exports[`Tooltip renders 1`] = `
                         <div
                           aria-hidden="true"
                           aria-live="assertive"
-                          className="c3 c2 sc-fbJfA c2"
+                          className="c3 c2 sc-cwHptR c2"
                           data-testid="bubble"
                           id="standalone-tooltip-tooltip1_tooltip"
                           role="tooltip"

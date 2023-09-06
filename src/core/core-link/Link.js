@@ -80,7 +80,7 @@ const StyledLink = styled.a(
       return {
         display: "inline-block",
         "& > svg": {
-          verticalAlign: "bottom",
+          verticalAlign: "middle",
         },
       };
     }

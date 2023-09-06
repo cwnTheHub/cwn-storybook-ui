@@ -15,7 +15,7 @@ exports[`FlexGrid allows the limitWidth prop to be unset 1`] = `
   }
 >
   <div
-    className="sc-dmqHEX jRLGbF"
+    className="sc-eqUAAy dVBANZ"
   >
     <Row
       id="row-1"
@@ -33,7 +33,7 @@ exports[`FlexGrid allows the limitWidth prop to be unset 1`] = `
         }
       >
         <div
-          className="sc-gueYoa eeiOgy"
+          className="sc-gEvEer eomXnB"
           id="row-1"
         >
           <Col
@@ -63,7 +63,7 @@ exports[`FlexGrid allows the limitWidth prop to be unset 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-1"
               >
                 1st column content
@@ -97,7 +97,7 @@ exports[`FlexGrid allows the limitWidth prop to be unset 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-2"
               >
                 2nd column content
@@ -126,7 +126,7 @@ exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
   }
 >
   <div
-    className="sc-dmqHEX jCylam"
+    className="sc-eqUAAy cwbvGa"
   >
     <Row
       id="row-1"
@@ -144,7 +144,7 @@ exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
         }
       >
         <div
-          className="sc-gueYoa eeiOgy"
+          className="sc-gEvEer eomXnB"
           id="row-1"
         >
           <Col
@@ -174,7 +174,7 @@ exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-1"
               >
                 1st column content
@@ -208,7 +208,7 @@ exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-2"
               >
                 2nd column content
@@ -224,18 +224,18 @@ exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
 
 exports[`FlexGrid renders 1`] = `
 <div
-  class="sc-dmqHEX jCylam"
+  class="sc-eqUAAy cwbvGa"
 >
   <div
-    class="sc-gueYoa eeiOgy"
+    class="sc-gEvEer eomXnB"
   >
     <div
-      class="sc-beqWaB iZDimM"
+      class="sc-aXZVg fEpJnR"
     >
       1st column content
     </div>
     <div
-      class="sc-beqWaB iZDimM"
+      class="sc-aXZVg fEpJnR"
     >
       2nd column content
     </div>
@@ -258,7 +258,7 @@ exports[`FlexGrid renders with no outside gutter 1`] = `
   }
 >
   <div
-    className="sc-dmqHEX cIyRso"
+    className="sc-eqUAAy gcMtKk"
   >
     <Row
       id="row-1"
@@ -276,7 +276,7 @@ exports[`FlexGrid renders with no outside gutter 1`] = `
         }
       >
         <div
-          className="sc-gueYoa eeiOgy"
+          className="sc-gEvEer eomXnB"
           id="row-1"
         >
           <Col
@@ -306,7 +306,7 @@ exports[`FlexGrid renders with no outside gutter 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-1"
               >
                 1st column content
@@ -340,7 +340,7 @@ exports[`FlexGrid renders with no outside gutter 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-2"
               >
                 2nd column content
@@ -369,7 +369,7 @@ exports[`FlexGrid supports responsive reversal 1`] = `
   }
 >
   <div
-    className="sc-dmqHEX gxOGum"
+    className="sc-eqUAAy cpCwrC"
   >
     <Row
       id="row-1"
@@ -387,7 +387,7 @@ exports[`FlexGrid supports responsive reversal 1`] = `
         }
       >
         <div
-          className="sc-gueYoa eeiOgy"
+          className="sc-gEvEer eomXnB"
           id="row-1"
         >
           <Col
@@ -417,7 +417,7 @@ exports[`FlexGrid supports responsive reversal 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-1"
               >
                 1st column content
@@ -451,7 +451,7 @@ exports[`FlexGrid supports responsive reversal 1`] = `
               xs={true}
             >
               <div
-                className="sc-beqWaB iZDimM"
+                className="sc-aXZVg fEpJnR"
                 id="col-2"
               >
                 2nd column content

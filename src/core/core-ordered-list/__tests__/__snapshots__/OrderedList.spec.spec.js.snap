@@ -2,22 +2,22 @@
 
 exports[`<OrderedList /> can have a list style 1`] = `
 <ol
-  class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+  class="sc-eqUAAy gxGxiH sc-fqkvVR guxdMx sc-fqkvVR guxdMx"
 >
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Dolor sit amet
     </span>
@@ -27,22 +27,22 @@ exports[`<OrderedList /> can have a list style 1`] = `
 
 exports[`<OrderedList /> can have a list style 2`] = `
 <ol
-  class="sc-dmqHEX EMvmD sc-hLseeU djmkiA sc-hLseeU djmkiA"
+  class="sc-eqUAAy gxGxiH sc-fqkvVR kcbKFd sc-fqkvVR kcbKFd"
 >
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Dolor sit amet
     </span>
@@ -52,22 +52,22 @@ exports[`<OrderedList /> can have a list style 2`] = `
 
 exports[`<OrderedList /> renders 1`] = `
 <ol
-  class="sc-dmqHEX EMvmD sc-hLseeU jgcRss sc-hLseeU jgcRss"
+  class="sc-eqUAAy gxGxiH sc-fqkvVR guxdMx sc-fqkvVR guxdMx"
 >
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="sc-beqWaB cTtZtu"
+    class="sc-aXZVg jUpfkX"
   >
     <span
-      class="sc-gueYoa gGRAZe"
+      class="sc-gEvEer inVZch"
     >
       Dolor sit amet
     </span>
