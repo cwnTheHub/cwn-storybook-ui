@@ -132,7 +132,7 @@
     "webpack": ">=5.76.0"
   },
   "description": "cwn packages",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.js",
   "module": "dist/index.es.js",
   "repository": {
     "type": "git",
