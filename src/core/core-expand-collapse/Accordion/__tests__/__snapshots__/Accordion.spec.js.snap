@@ -12,7 +12,7 @@ exports[`Accordion renders a closed accordion 1`] = `
   >
     <styled.div>
       <div
-        className="sc-cyRfQX kDtkdU"
+        className="sc-bXCLTC kLkBnc"
       >
         <HairlineDivider
           gradient={false}
@@ -23,7 +23,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             vertical={false}
           >
             <hr
-              className="sc-gLDzan cVIxKp"
+              className="sc-gsFSXq hJbcYC"
             />
           </styled.hr>
         </HairlineDivider>
@@ -52,7 +52,7 @@ exports[`Accordion renders a closed accordion 1`] = `
               >
                 <button
                   aria-expanded={false}
-                  className="sc-fGFwAa cotdGt"
+                  className="sc-eldPxv iQTkcr"
                   disabled={false}
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -70,7 +70,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                       vertical={3}
                     >
                       <div
-                        className="sc-dmqHEX XMIEO"
+                        className="sc-eqUAAy jBegVG"
                       >
                         <Box
                           between={3}
@@ -83,13 +83,13 @@ exports[`Accordion renders a closed accordion 1`] = `
                             tag="div"
                           >
                             <div
-                              className="sc-dmqHEX lmDtTa"
+                              className="sc-eqUAAy bySzvK"
                             >
                               <styled.div
                                 isDisabled={false}
                               >
                                 <div
-                                  className="sc-blLsxD"
+                                  className="sc-fPXMVe"
                                 >
                                   <Translate
                                     direction="y"
@@ -120,7 +120,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                         }
                                       >
                                         <div
-                                          className="sc-beqWaB ktUxbV"
+                                          className="sc-aXZVg hKRLqk"
                                           style={
                                             Object {
                                               "transition": "transform 300ms",
@@ -140,7 +140,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                               size="large"
                                             >
                                               <span
-                                                className="sc-jTrPJq kdhpZt"
+                                                className="sc-iGgWBj gpkkXd"
                                                 size="large"
                                               >
                                                 <CaretDown>
@@ -162,7 +162,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                                         viewBox="0 0 24 24"
                                                       >
                                                         <svg
-                                                          className="sc-fsQiph sc-qRumB CLtXa kUoCDO"
+                                                          className="sc-imWYAI sc-jXbUNg jJCqOQ mmsaG"
                                                           viewBox="0 0 24 24"
                                                         >
                                                           <path
@@ -186,19 +186,19 @@ exports[`Accordion renders a closed accordion 1`] = `
                                 direction="row"
                               >
                                 <div
-                                  className="sc-ieZDjg iWLgQF"
+                                  className="sc-gFqAkR coPpZD"
                                   direction="row"
                                 >
                                   <styled.div
                                     direction="column"
                                   >
                                     <div
-                                      className="sc-ieZDjg ktfDDN"
+                                      className="sc-gFqAkR dLRsVj"
                                       direction="column"
                                     >
                                       <styled.div>
                                         <div
-                                          className="sc-dKfzgJ kRaMTw"
+                                          className="sc-ikkxIA kBchbG"
                                         >
                                           <Text
                                             block={false}
@@ -213,7 +213,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                               size="large"
                                             >
                                               <span
-                                                className="sc-jTrPJq kdhpZt"
+                                                className="sc-iGgWBj gpkkXd"
                                                 size="large"
                                               >
                                                 Panel title
@@ -285,7 +285,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                     >
                       <div
                         aria-hidden={true}
-                        className="sc-gueYoa fReBwP"
+                        className="sc-gEvEer kqXJcw"
                         style={
                           Object {
                             "height": "0px",
@@ -302,7 +302,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                           <DimpleDivider>
                             <styled.hr>
                               <hr
-                                className="sc-iAEyYk bWcwpZ"
+                                className="sc-kAyceB lnNYLt"
                               />
                             </styled.hr>
                           </DimpleDivider>
@@ -310,7 +310,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             compact={false}
                           >
                             <div
-                              className="sc-ivnCJf fKccpL"
+                              className="sc-hmdomO gIoriQ"
                             >
                               <Text
                                 block={true}
@@ -325,7 +325,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                   size="base"
                                 >
                                   <span
-                                    className="sc-jTrPJq oYigk"
+                                    className="sc-iGgWBj cqOcdo"
                                     size="base"
                                   >
                                     <Panel
@@ -358,7 +358,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                   vertical={false}
                 >
                   <hr
-                    className="sc-gLDzan cVIxKp"
+                    className="sc-gsFSXq hJbcYC"
                   />
                 </styled.hr>
               </HairlineDivider>
@@ -387,7 +387,7 @@ exports[`Accordion renders an open accordion 1`] = `
       open="panel-1"
     >
       <div
-        className="sc-cyRfQX kDtkdU"
+        className="sc-bXCLTC kLkBnc"
         open="panel-1"
       >
         <HairlineDivider
@@ -399,7 +399,7 @@ exports[`Accordion renders an open accordion 1`] = `
             vertical={false}
           >
             <hr
-              className="sc-gLDzan cVIxKp"
+              className="sc-gsFSXq hJbcYC"
             />
           </styled.hr>
         </HairlineDivider>
@@ -428,7 +428,7 @@ exports[`Accordion renders an open accordion 1`] = `
               >
                 <button
                   aria-expanded={true}
-                  className="sc-fGFwAa cotdGt"
+                  className="sc-eldPxv iQTkcr"
                   disabled={false}
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -446,7 +446,7 @@ exports[`Accordion renders an open accordion 1`] = `
                       vertical={3}
                     >
                       <div
-                        className="sc-dmqHEX XMIEO"
+                        className="sc-eqUAAy jBegVG"
                       >
                         <Box
                           between={3}
@@ -459,13 +459,13 @@ exports[`Accordion renders an open accordion 1`] = `
                             tag="div"
                           >
                             <div
-                              className="sc-dmqHEX lmDtTa"
+                              className="sc-eqUAAy bySzvK"
                             >
                               <styled.div
                                 isDisabled={false}
                               >
                                 <div
-                                  className="sc-blLsxD"
+                                  className="sc-fPXMVe"
                                 >
                                   <Translate
                                     direction="y"
@@ -496,7 +496,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                         }
                                       >
                                         <div
-                                          className="sc-beqWaB ktUxbV"
+                                          className="sc-aXZVg hKRLqk"
                                           style={
                                             Object {
                                               "transition": "transform 300ms",
@@ -516,7 +516,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                               size="large"
                                             >
                                               <span
-                                                className="sc-jTrPJq kdhpZt"
+                                                className="sc-iGgWBj gpkkXd"
                                                 size="large"
                                               >
                                                 <CaretUp>
@@ -539,7 +539,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                                         viewBox="0 0 24 24"
                                                       >
                                                         <svg
-                                                          className="sc-fsQiph sc-qRumB CLtXa clwulL"
+                                                          className="sc-imWYAI sc-jXbUNg jJCqOQ loiAIL"
                                                           viewBox="0 0 24 24"
                                                         >
                                                           <path
@@ -563,19 +563,19 @@ exports[`Accordion renders an open accordion 1`] = `
                                 direction="row"
                               >
                                 <div
-                                  className="sc-ieZDjg iWLgQF"
+                                  className="sc-gFqAkR coPpZD"
                                   direction="row"
                                 >
                                   <styled.div
                                     direction="column"
                                   >
                                     <div
-                                      className="sc-ieZDjg ktfDDN"
+                                      className="sc-gFqAkR dLRsVj"
                                       direction="column"
                                     >
                                       <styled.div>
                                         <div
-                                          className="sc-dKfzgJ kRaMTw"
+                                          className="sc-ikkxIA kBchbG"
                                         >
                                           <Text
                                             block={false}
@@ -590,7 +590,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                               size="large"
                                             >
                                               <span
-                                                className="sc-jTrPJq kdhpZt"
+                                                className="sc-iGgWBj gpkkXd"
                                                 size="large"
                                               >
                                                 Panel title
@@ -662,7 +662,7 @@ exports[`Accordion renders an open accordion 1`] = `
                     >
                       <div
                         aria-hidden={false}
-                        className="sc-gueYoa fReBwP"
+                        className="sc-gEvEer kqXJcw"
                         style={
                           Object {
                             "height": "auto",
@@ -679,7 +679,7 @@ exports[`Accordion renders an open accordion 1`] = `
                           <DimpleDivider>
                             <styled.hr>
                               <hr
-                                className="sc-iAEyYk bWcwpZ"
+                                className="sc-kAyceB lnNYLt"
                               />
                             </styled.hr>
                           </DimpleDivider>
@@ -687,7 +687,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             compact={false}
                           >
                             <div
-                              className="sc-ivnCJf fKccpL"
+                              className="sc-hmdomO gIoriQ"
                             >
                               <Text
                                 block={true}
@@ -702,7 +702,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                   size="base"
                                 >
                                   <span
-                                    className="sc-jTrPJq oYigk"
+                                    className="sc-iGgWBj cqOcdo"
                                     size="base"
                                   >
                                     <Panel
@@ -735,7 +735,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   vertical={false}
                 >
                   <hr
-                    className="sc-gLDzan cVIxKp"
+                    className="sc-gsFSXq hJbcYC"
                   />
                 </styled.hr>
               </HairlineDivider>

@@ -34,7 +34,7 @@ exports[`Select can have an error message 1`] = `
       tag="div"
     >
       <div
-        className="sc-gueYoa cinhCW"
+        className="sc-gEvEer MkeJt"
       >
         <div>
           <Box
@@ -48,7 +48,7 @@ exports[`Select can have an error message 1`] = `
               tag="div"
             >
               <div
-                className="sc-gueYoa iWTRXF"
+                className="sc-gEvEer kwHvtq"
               >
                 <label
                   htmlFor="some-id"
@@ -60,18 +60,18 @@ exports[`Select can have an error message 1`] = `
                   >
                     <Box
                       between={2}
-                      className="sc-hAtEyd fCFdVI"
+                      className="sc-dLMFU izcDrW"
                       inline={true}
                       tag="span"
                     >
                       <styled.div
                         between={2}
-                        className="sc-hAtEyd fCFdVI"
+                        className="sc-dLMFU izcDrW"
                         inline={true}
                         tag="span"
                       >
                         <span
-                          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+                          className="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
                         >
                           <Text
                             block={false}
@@ -88,7 +88,7 @@ exports[`Select can have an error message 1`] = `
                               size="medium"
                             >
                               <span
-                                className="sc-beqWaB dKRSHW"
+                                className="sc-aXZVg iRALSn"
                                 data-testid="selectLabel"
                                 size="medium"
                               >
@@ -116,14 +116,14 @@ exports[`Select can have an error message 1`] = `
             role="alert"
           >
             <Component
-              className="sc-dmqHEX fByzdG"
+              className="sc-eqUAAy hyKQuW"
               feedback="error"
               id="some-id_error-message"
               inset={3}
               role="alert"
             >
               <Box
-                className="sc-dmqHEX fByzdG"
+                className="sc-eqUAAy hyKQuW"
                 id="some-id_error-message"
                 inline={false}
                 inset={3}
@@ -131,7 +131,7 @@ exports[`Select can have an error message 1`] = `
                 tag="div"
               >
                 <styled.div
-                  className="sc-dmqHEX fByzdG"
+                  className="sc-eqUAAy hyKQuW"
                   id="some-id_error-message"
                   inline={false}
                   inset={3}
@@ -139,7 +139,7 @@ exports[`Select can have an error message 1`] = `
                   tag="div"
                 >
                   <div
-                    className="sc-gueYoa dRUHgU sc-dmqHEX fByzdG sc-dmqHEX fByzdG"
+                    className="sc-gEvEer kmHlLv sc-eqUAAy hyKQuW sc-eqUAAy hyKQuW"
                     id="some-id_error-message"
                     role="alert"
                   >
@@ -156,7 +156,7 @@ exports[`Select can have an error message 1`] = `
                         size="small"
                       >
                         <p
-                          className="sc-hLseeU bzxvyi"
+                          className="sc-fqkvVR jspODP"
                           size="small"
                         >
                           Oh no a terrible error!
@@ -178,7 +178,7 @@ exports[`Select can have an error message 1`] = `
         >
           <styled.div>
             <div
-              className="sc-csCMJt gkzQWq"
+              className="sc-jlZhew RsZNZ"
             >
               <styled.select
                 aria-describedby="some-id_error-message"
@@ -192,7 +192,7 @@ exports[`Select can have an error message 1`] = `
                 <select
                   aria-describedby="some-id_error-message"
                   aria-invalid={true}
-                  className="sc-fbJfA cbEPPm"
+                  className="sc-cwHptR gvUDjM"
                   defaultValue=""
                   id="some-id"
                   onBlur={[Function]}
@@ -218,18 +218,18 @@ exports[`Select can have an error message 1`] = `
               >
                 <Box
                   between={1}
-                  className="sc-brKeYL ckPuSb"
+                  className="sc-jEACwC oHRCA"
                   inline={true}
                   tag="div"
                 >
                   <styled.div
                     between={1}
-                    className="sc-brKeYL ckPuSb"
+                    className="sc-jEACwC oHRCA"
                     inline={true}
                     tag="div"
                   >
                     <div
-                      className="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+                      className="sc-gEvEer ibtQRs sc-jEACwC oHRCA sc-jEACwC oHRCA"
                     >
                       <FeedbackIcon
                         feedback="error"
@@ -266,7 +266,7 @@ exports[`Select can have an error message 1`] = `
                             >
                               <styled.div>
                                 <div
-                                  className="sc-jsMahE kZMUa-d"
+                                  className="sc-dhKdcB gexGqa"
                                 >
                                   <NotificationError
                                     copy={
@@ -303,7 +303,7 @@ exports[`Select can have an error message 1`] = `
                                         width="1.25rem"
                                       >
                                         <svg
-                                          className="sc-gLDzan eVwPjW"
+                                          className="sc-gsFSXq kTxPxJ"
                                           height="1.25rem"
                                           role="img"
                                           viewBox="0 0 20 20"
@@ -329,7 +329,7 @@ exports[`Select can have an error message 1`] = `
                       </FeedbackIcon>
                       <styled.div>
                         <div
-                          className="sc-ktEKTO kztyyX"
+                          className="sc-cPiKLX jhUFlB"
                         >
                           <CaretDown
                             size={16}
@@ -355,7 +355,7 @@ exports[`Select can have an error message 1`] = `
                                   viewBox="0 0 24 24"
                                 >
                                   <svg
-                                    className="sc-kFuwaP sc-irTswW gwtXPE fPKYHe"
+                                    className="sc-kpDqfm sc-dAlyuH jBUsSq cSGzSW"
                                     size={16}
                                     viewBox="0 0 24 24"
                                   >
@@ -401,18 +401,18 @@ exports[`Select label can have a hint below 1`] = `
   >
     <Box
       between={2}
-      className="sc-hAtEyd fCFdVI"
+      className="sc-dLMFU izcDrW"
       inline={true}
       tag="span"
     >
       <styled.div
         between={2}
-        className="sc-hAtEyd fCFdVI"
+        className="sc-dLMFU izcDrW"
         inline={true}
         tag="span"
       >
         <span
-          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+          className="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
         >
           <Text
             block={false}
@@ -429,7 +429,7 @@ exports[`Select label can have a hint below 1`] = `
               size="medium"
             >
               <span
-                className="sc-beqWaB dKRSHW"
+                className="sc-aXZVg iRALSn"
                 data-testid="selectLabel"
                 size="medium"
               >
@@ -455,18 +455,18 @@ exports[`Select label can have a short hint 1`] = `
   >
     <Box
       between={2}
-      className="sc-hAtEyd fCFdVI"
+      className="sc-dLMFU izcDrW"
       inline={true}
       tag="span"
     >
       <styled.div
         between={2}
-        className="sc-hAtEyd fCFdVI"
+        className="sc-dLMFU izcDrW"
         inline={true}
         tag="span"
       >
         <span
-          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+          className="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
         >
           <Text
             block={false}
@@ -483,7 +483,7 @@ exports[`Select label can have a short hint 1`] = `
               size="medium"
             >
               <span
-                className="sc-beqWaB dKRSHW"
+                className="sc-aXZVg iRALSn"
                 data-testid="selectLabel"
                 size="medium"
               >
@@ -506,7 +506,7 @@ exports[`Select label can have a short hint 1`] = `
               size="small"
             >
               <span
-                className="sc-beqWaB cpsTJs"
+                className="sc-aXZVg brTLRl"
                 id="the-select_hint"
                 size="small"
               >
@@ -532,18 +532,18 @@ exports[`Select label must have a label 1`] = `
   >
     <Box
       between={2}
-      className="sc-hAtEyd fCFdVI"
+      className="sc-dLMFU izcDrW"
       inline={true}
       tag="span"
     >
       <styled.div
         between={2}
-        className="sc-hAtEyd fCFdVI"
+        className="sc-dLMFU izcDrW"
         inline={true}
         tag="span"
       >
         <span
-          className="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+          className="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
         >
           <Text
             block={false}
@@ -560,7 +560,7 @@ exports[`Select label must have a label 1`] = `
               size="medium"
             >
               <span
-                className="sc-beqWaB dKRSHW"
+                className="sc-aXZVg iRALSn"
                 data-testid="selectLabel"
                 size="medium"
               >
@@ -581,20 +581,20 @@ exports[`Select positions the down caret so that the text does not overlap it 1`
 
 exports[`Select renders 1`] = `
 <div
-  class="sc-gueYoa cinhCW"
+  class="sc-gEvEer MkeJt"
 >
   <div>
     <div
-      class="sc-gueYoa iWTRXF"
+      class="sc-gEvEer kwHvtq"
     >
       <label
         for="the-select"
       >
         <span
-          class="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+          class="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
         >
           <span
-            class="sc-beqWaB dKRSHW"
+            class="sc-aXZVg iRALSn"
             data-testid="selectLabel"
           >
             The select
@@ -607,11 +607,11 @@ exports[`Select renders 1`] = `
     style="position:relative"
   >
     <div
-      class="sc-csCMJt gkzQWq"
+      class="sc-jlZhew RsZNZ"
     >
       <select
         aria-invalid="false"
-        class="sc-fbJfA euieml"
+        class="sc-cwHptR itnVKb"
         id="the-select"
       >
         <option
@@ -626,13 +626,13 @@ exports[`Select renders 1`] = `
         </option>
       </select>
       <div
-        class="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+        class="sc-gEvEer ibtQRs sc-jEACwC oHRCA sc-jEACwC oHRCA"
       >
         <div
-          class="sc-ktEKTO kztyyX"
+          class="sc-cPiKLX jhUFlB"
         >
           <svg
-            class="sc-kFuwaP sc-irTswW jGhDzR fPKYHe"
+            class="sc-kpDqfm sc-dAlyuH eZjCvP cSGzSW"
             size="16"
             viewBox="0 0 24 24"
           >
@@ -649,20 +649,20 @@ exports[`Select renders 1`] = `
 
 exports[`Select renders with a feedback state and icon 1`] = `
 <div
-  class="sc-gueYoa cinhCW"
+  class="sc-gEvEer MkeJt"
 >
   <div>
     <div
-      class="sc-gueYoa iWTRXF"
+      class="sc-gEvEer kwHvtq"
     >
       <label
         for="the-select"
       >
         <span
-          class="sc-gueYoa iWTRXF sc-hAtEyd fCFdVI sc-hAtEyd fCFdVI"
+          class="sc-gEvEer kwHvtq sc-dLMFU izcDrW sc-dLMFU izcDrW"
         >
           <span
-            class="sc-beqWaB dKRSHW"
+            class="sc-aXZVg iRALSn"
             data-testid="selectLabel"
           >
             The select
@@ -675,11 +675,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
     style="position:relative"
   >
     <div
-      class="sc-csCMJt gkzQWq"
+      class="sc-jlZhew RsZNZ"
     >
       <select
         aria-invalid="true"
-        class="sc-fbJfA cbEPPm"
+        class="sc-cwHptR gvUDjM"
         id="the-select"
       >
         <option
@@ -694,16 +694,16 @@ exports[`Select renders with a feedback state and icon 1`] = `
         </option>
       </select>
       <div
-        class="sc-gueYoa bgMITT sc-brKeYL ckPuSb sc-brKeYL ckPuSb"
+        class="sc-gEvEer ibtQRs sc-jEACwC oHRCA sc-jEACwC oHRCA"
       >
         <div
           style="transition:opacity 100ms ease-in-out;opacity:1"
         >
           <div
-            class="sc-jsMahE kZMUa-d"
+            class="sc-dhKdcB gexGqa"
           >
             <svg
-              class="sc-gLDzan eVwPjW"
+              class="sc-gsFSXq kTxPxJ"
               height="1.25rem"
               role="img"
               viewBox="0 0 20 20"
@@ -721,10 +721,10 @@ exports[`Select renders with a feedback state and icon 1`] = `
           </div>
         </div>
         <div
-          class="sc-ktEKTO kztyyX"
+          class="sc-cPiKLX jhUFlB"
         >
           <svg
-            class="sc-kFuwaP sc-irTswW gwtXPE fPKYHe"
+            class="sc-kpDqfm sc-dAlyuH jBUsSq cSGzSW"
             size="16"
             viewBox="0 0 24 24"
           >
