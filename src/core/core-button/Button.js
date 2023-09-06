@@ -163,12 +163,12 @@ const isDeprecatedButtonVariant = (variant) => {
 const Button = forwardRef(({ type, variant, rank, children, ...rest }, ref) => {
   const restNoDisabled = preventDisabling(rest);
 
-  if (isDeprecatedButtonVariant(variant)) {
+  /* if (isDeprecatedButtonVariant(variant)) {
     deprecate(
       "core-button",
       "The 'primary' and 'secondary' variants have been deprecated."
     );
-  }
+  } */
 
   return (
     <StyledButton

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HairlineDivider renders horizontally 1`] = `
+<hr
+  class="sc-aXZVg jFqjSE"
+/>
+`;
+
+exports[`HairlineDivider renders vertically 1`] = `
+<hr
+  class="sc-aXZVg kxIxLo"
+/>
+`;

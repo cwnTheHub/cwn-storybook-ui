@@ -1,0 +1,78 @@
+{/* Responsive.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as ResponsiveStories from './Responsive.stories';
+
+<Meta of={ResponsiveStories} />
+<Title />
+	
+`` import { Responsive } from '@nds_core/nds' ``
+
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+The Responsive component is a thin wrapper over the react-media community component, which "listens for matches to a CSS media query and renders its child component based on whether the query matches or not."
+
+The package also contains a media utility (documented below). In most cases we recommend using the media utility over the Responsive React component since they do not adversely affect server-side rendering. While not recommended for general use, the Responsive component is useful if you want to do something programmatically. For example, changing a prop or swapping a component on resize.
+
+#### Breakpoints
+The included media utility and the Responsive component both use the same breakpoint keys. The following chart details these breakpoint keys, and what values they represent.
+
+| Breakpoint | minWidth Value | maxWidth Value |
+| ---------- | -------------- | -------------- |
+| sm | 576px | 575px |
+| md | 768px | 767px |
+| lg | 992px | 991px |
+| xl | 1200px | 1199px |
+
+
+
+#### Responsive component usage
+Use the render prop for the common case of rendering a component only when the media query matches.
+
+Use the minWidth and maxWidth props to configure viewport size ranges. The breakpoint specifiers will be converted to pixel-based media queries.
+<Canvas of={ResponsiveStories.ComponentUsage} />
+
+For more power use a child function, whose only argument will be a boolean flag that indicates whether the media query matches or not.
+<Canvas of={ResponsiveStories.FunctionUsage} />
+The Responsive React component is a thin wrapper over the react-media community component, which "listens for matches to a CSS media query and renders its child component based on whether the query matches or not." While it is available, this component is not recommended for most use-cases.
+
+#### media utility usage
+To generate media queries for your styled-components, first import the named media export from @tds/core-responsive in your .jsx file.
+
+`` import { Media } from '@nds_core/nds' ``
+
+After importing, the media object, it can be used to add media-queries to your component.
+
+```
+const SomeComponent = styled.div({
+  color: 'red',
+  ...media.from('md').css({
+    color: 'blue',
+  }),
+  ...media.from('lg').css({
+    color: 'green',
+  }),
+})
+
+```
+
+media functions can be chained to create more complex media-queries
+
+```
+const SomeOtherComponent = styled.div({
+  color: 'red',
+  ...media
+    .from('md')
+    .until('lg')
+    .and('(orientation: landscape)')
+    .css({
+      color: 'blue',
+    }),
+})
+
+```

@@ -2,14 +2,14 @@
 
 exports[`BenefitNoHeading renders with icons set in each item 1`] = `
 <ul
-  class="sc-gueYoa dNwoeA"
+  class="sc-gEvEer lbtBnH"
 >
   <li
-    class="sc-gueYoa cjnSxT"
+    class="sc-gEvEer jARwmw"
   >
     <i
       aria-hidden="true"
-      class="sc-beqWaB kzDdbp"
+      class="sc-aXZVg hCrRII"
       size="24"
     >
       <svg
@@ -25,17 +25,17 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
       </svg>
     </i>
     <span
-      class="sc-dmqHEX dbentL"
+      class="sc-eqUAAy GHYGD"
     >
       Some content
     </span>
   </li>
   <li
-    class="sc-gueYoa cjnSxT"
+    class="sc-gEvEer jARwmw"
   >
     <i
       aria-hidden="true"
-      class="sc-beqWaB kzDdbp"
+      class="sc-aXZVg hCrRII"
       size="24"
     >
       <svg
@@ -50,7 +50,7 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
       </svg>
     </i>
     <span
-      class="sc-dmqHEX dbentL"
+      class="sc-eqUAAy GHYGD"
     >
       Some other content
     </span>
@@ -60,14 +60,14 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
 
 exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
 <ul
-  class="sc-gueYoa dNwoeA"
+  class="sc-gEvEer lbtBnH"
 >
   <li
-    class="sc-gueYoa cjnSxT"
+    class="sc-gEvEer jARwmw"
   >
     <i
       aria-hidden="true"
-      class="sc-beqWaB kzDdbp"
+      class="sc-aXZVg hCrRII"
       size="24"
     >
       <svg
@@ -83,17 +83,17 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
       </svg>
     </i>
     <span
-      class="sc-dmqHEX dbentL"
+      class="sc-eqUAAy GHYGD"
     >
       Some content
     </span>
   </li>
   <li
-    class="sc-gueYoa cjnSxT"
+    class="sc-gEvEer jARwmw"
   >
     <i
       aria-hidden="true"
-      class="sc-beqWaB kzDdbp"
+      class="sc-aXZVg hCrRII"
       size="24"
     >
       <svg
@@ -109,7 +109,7 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
       </svg>
     </i>
     <span
-      class="sc-dmqHEX dbentL"
+      class="sc-eqUAAy GHYGD"
     >
       Some other content
     </span>

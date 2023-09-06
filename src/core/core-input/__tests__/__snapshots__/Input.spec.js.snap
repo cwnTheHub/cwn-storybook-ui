@@ -2,20 +2,20 @@
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <div>
     <div
-      class="sc-beqWaB vEPAP"
+      class="sc-aXZVg kiRGJS"
     >
       <label
         for="the-input"
       >
         <span
-          class="sc-beqWaB vEPAP sc-iAEyYk feFWGD sc-iAEyYk feFWGD"
+          class="sc-aXZVg kiRGJS sc-kAyceB chYFXr sc-kAyceB chYFXr"
         >
           <span
-            class="sc-dmqHEX hiTUaR"
+            class="sc-eqUAAy bxnxsp"
           >
             The input
           </span>
@@ -28,21 +28,21 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   >
     <input
       aria-invalid="false"
-      class="sc-fsQiph LuVxs"
+      class="sc-imWYAI cKXA-de"
       id="the-input"
       type="text"
     />
     <div
-      class="sc-qRumB hXyFJJ"
+      class="sc-jXbUNg jPGoCt"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="sc-jsMahE kZMUa-d"
+          class="sc-dhKdcB gexGqa"
         >
           <svg
-            class="sc-gLDzan eVwPjW"
+            class="sc-gsFSXq kTxPxJ"
             height="1.25rem"
             role="img"
             viewBox="0 0 20 20"
@@ -90,7 +90,7 @@ Object {
         tag="div"
       >
         <div
-          className="sc-beqWaB dJZbbo"
+          className="sc-aXZVg fMjfal"
         >
           <div>
             <Box
@@ -104,7 +104,7 @@ Object {
                 tag="div"
               >
                 <div
-                  className="sc-beqWaB vEPAP"
+                  className="sc-aXZVg kiRGJS"
                 >
                   <label
                     htmlFor="the-id"
@@ -116,18 +116,18 @@ Object {
                     >
                       <Box
                         between={2}
-                        className="sc-iAEyYk feFWGD"
+                        className="sc-kAyceB chYFXr"
                         inline={true}
                         tag="span"
                       >
                         <styled.div
                           between={2}
-                          className="sc-iAEyYk feFWGD"
+                          className="sc-kAyceB chYFXr"
                           inline={true}
                           tag="span"
                         >
                           <span
-                            className="sc-beqWaB vEPAP sc-iAEyYk feFWGD sc-iAEyYk feFWGD"
+                            className="sc-aXZVg kiRGJS sc-kAyceB chYFXr sc-kAyceB chYFXr"
                           >
                             <Text
                               block={false}
@@ -142,7 +142,7 @@ Object {
                                 size="medium"
                               >
                                 <span
-                                  className="sc-dmqHEX hiTUaR"
+                                  className="sc-eqUAAy bxnxsp"
                                   size="medium"
                                 >
                                   The input
@@ -162,7 +162,7 @@ Object {
                                 size="small"
                               >
                                 <span
-                                  className="sc-dmqHEX dbentL"
+                                  className="sc-eqUAAy GHYGD"
                                   size="small"
                                 >
                                   The short hint
@@ -195,7 +195,7 @@ Object {
             >
               <input
                 aria-invalid={false}
-                className="sc-fsQiph bvIPVm"
+                className="sc-imWYAI ctXBnY"
                 id="the-id"
                 onBlur={[Function]}
                 onFocus={[Function]}
@@ -205,7 +205,7 @@ Object {
             </styled.input>
             <styled.div>
               <div
-                className="sc-qRumB hXyFJJ"
+                className="sc-jXbUNg jPGoCt"
               >
                 <FeedbackIcon
                   showIcon={false}
@@ -250,18 +250,18 @@ Object {
     >
       <Box
         between={2}
-        className="sc-iAEyYk feFWGD"
+        className="sc-kAyceB chYFXr"
         inline={true}
         tag="span"
       >
         <styled.div
           between={2}
-          className="sc-iAEyYk feFWGD"
+          className="sc-kAyceB chYFXr"
           inline={true}
           tag="span"
         >
           <span
-            className="sc-beqWaB vEPAP sc-iAEyYk feFWGD sc-iAEyYk feFWGD"
+            className="sc-aXZVg kiRGJS sc-kAyceB chYFXr sc-kAyceB chYFXr"
           >
             <Text
               block={false}
@@ -276,7 +276,7 @@ Object {
                 size="medium"
               >
                 <span
-                  className="sc-dmqHEX hiTUaR"
+                  className="sc-eqUAAy bxnxsp"
                   size="medium"
                 >
                   The input
@@ -296,7 +296,7 @@ Object {
                 size="small"
               >
                 <span
-                  className="sc-dmqHEX dbentL"
+                  className="sc-eqUAAy GHYGD"
                   size="small"
                 >
                   The short hint
@@ -313,20 +313,20 @@ Object {
 
 exports[`Input renders 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <div>
     <div
-      class="sc-beqWaB vEPAP"
+      class="sc-aXZVg kiRGJS"
     >
       <label
         for="the-input"
       >
         <span
-          class="sc-beqWaB vEPAP sc-iAEyYk feFWGD sc-iAEyYk feFWGD"
+          class="sc-aXZVg kiRGJS sc-kAyceB chYFXr sc-kAyceB chYFXr"
         >
           <span
-            class="sc-dmqHEX hiTUaR"
+            class="sc-eqUAAy bxnxsp"
           >
             The input
           </span>
@@ -339,12 +339,12 @@ exports[`Input renders 1`] = `
   >
     <input
       aria-invalid="false"
-      class="sc-fsQiph bvIPVm"
+      class="sc-imWYAI ctXBnY"
       id="the-input"
       type="text"
     />
     <div
-      class="sc-qRumB hXyFJJ"
+      class="sc-jXbUNg jPGoCt"
     />
   </div>
 </div>
@@ -352,20 +352,20 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <div>
     <div
-      class="sc-beqWaB vEPAP"
+      class="sc-aXZVg kiRGJS"
     >
       <label
         for="the-input"
       >
         <span
-          class="sc-beqWaB vEPAP sc-iAEyYk feFWGD sc-iAEyYk feFWGD"
+          class="sc-aXZVg kiRGJS sc-kAyceB chYFXr sc-kAyceB chYFXr"
         >
           <span
-            class="sc-dmqHEX hiTUaR"
+            class="sc-eqUAAy bxnxsp"
           >
             The input
           </span>
@@ -378,21 +378,21 @@ exports[`Input renders with a feedback state and icon 1`] = `
   >
     <input
       aria-invalid="true"
-      class="sc-fsQiph cOfxVN"
+      class="sc-imWYAI kvNObz"
       id="the-input"
       type="text"
     />
     <div
-      class="sc-qRumB hXyFJJ"
+      class="sc-jXbUNg jPGoCt"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="sc-jsMahE kZMUa-d"
+          class="sc-dhKdcB gexGqa"
         >
           <svg
-            class="sc-gLDzan eVwPjW"
+            class="sc-gsFSXq kTxPxJ"
             height="1.25rem"
             role="img"
             viewBox="0 0 20 20"

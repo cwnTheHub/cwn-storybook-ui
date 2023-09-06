@@ -11,24 +11,24 @@ exports[`<Notification /> can have a variant 1`] = `
     vertical={3}
   >
     <Component
-      className="sc-blLsxD ktixO"
+      className="sc-fPXMVe loNnDC"
       variant="instructional"
       vertical={3}
     >
       <Box
-        className="sc-blLsxD ktixO"
+        className="sc-fPXMVe loNnDC"
         inline={false}
         tag="div"
         vertical={3}
       >
         <styled.div
-          className="sc-blLsxD ktixO"
+          className="sc-fPXMVe loNnDC"
           inline={false}
           tag="div"
           vertical={3}
         >
           <div
-            className="sc-hAtEyd iwA-dcq sc-blLsxD ktixO sc-blLsxD ktixO"
+            className="sc-dLMFU lhcihw sc-fPXMVe loNnDC sc-fPXMVe loNnDC"
           >
             <FlexGrid
               gutter={true}
@@ -49,7 +49,7 @@ exports[`<Notification /> can have a variant 1`] = `
                 }
               >
                 <div
-                  className="sc-brKeYL djhfyk"
+                  className="sc-jEACwC jUXPuX"
                 >
                   <Row>
                     <styled.div
@@ -64,7 +64,7 @@ exports[`<Notification /> can have a variant 1`] = `
                       }
                     >
                       <div
-                        className="sc-fbJfA nQjJT"
+                        className="sc-cwHptR gLqpmd"
                       >
                         <Col>
                           <styled.div
@@ -90,7 +90,7 @@ exports[`<Notification /> can have a variant 1`] = `
                             xs={true}
                           >
                             <div
-                              className="sc-csCMJt eUxgKe"
+                              className="sc-jlZhew fwwBBF"
                             >
                               <FlexGrid
                                 gutter={false}
@@ -111,7 +111,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                   }
                                 >
                                   <div
-                                    className="sc-brKeYL djhfyk"
+                                    className="sc-jEACwC jUXPuX"
                                   >
                                     <Row>
                                       <styled.div
@@ -126,7 +126,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                         }
                                       >
                                         <div
-                                          className="sc-fbJfA nQjJT"
+                                          className="sc-cwHptR gLqpmd"
                                         >
                                           <Col>
                                             <styled.div
@@ -152,7 +152,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                               xs={true}
                                             >
                                               <div
-                                                className="sc-csCMJt bdlALW"
+                                                className="sc-jlZhew fYJcTN"
                                               >
                                                 <Box
                                                   between={3}
@@ -165,7 +165,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                                     tag="div"
                                                   >
                                                     <div
-                                                      className="sc-hAtEyd jNRQeS"
+                                                      className="sc-dLMFU iREnKw"
                                                     >
                                                       <Box
                                                         between={3}
@@ -188,7 +188,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                                           tag="div"
                                                         >
                                                           <div
-                                                            className="sc-hAtEyd jNRQeS"
+                                                            className="sc-dLMFU iREnKw"
                                                             style={
                                                               Object {
                                                                 "justifyContent": "center",
@@ -208,7 +208,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                                                 size="medium"
                                                               >
                                                                 <p
-                                                                  className="sc-ktEKTO bLkYGd"
+                                                                  className="sc-cPiKLX FMILr"
                                                                   size="medium"
                                                                 >
                                                                   Some content
@@ -258,24 +258,24 @@ exports[`<Notification /> can have a variant 2`] = `
     vertical={3}
   >
     <Component
-      className="sc-blLsxD cmufLF"
+      className="sc-fPXMVe bgAopl"
       variant="success"
       vertical={3}
     >
       <Box
-        className="sc-blLsxD cmufLF"
+        className="sc-fPXMVe bgAopl"
         inline={false}
         tag="div"
         vertical={3}
       >
         <styled.div
-          className="sc-blLsxD cmufLF"
+          className="sc-fPXMVe bgAopl"
           inline={false}
           tag="div"
           vertical={3}
         >
           <div
-            className="sc-hAtEyd iwA-dcq sc-blLsxD cmufLF sc-blLsxD cmufLF"
+            className="sc-dLMFU lhcihw sc-fPXMVe bgAopl sc-fPXMVe bgAopl"
           >
             <FlexGrid
               gutter={true}
@@ -296,7 +296,7 @@ exports[`<Notification /> can have a variant 2`] = `
                 }
               >
                 <div
-                  className="sc-brKeYL djhfyk"
+                  className="sc-jEACwC jUXPuX"
                 >
                   <Row>
                     <styled.div
@@ -311,7 +311,7 @@ exports[`<Notification /> can have a variant 2`] = `
                       }
                     >
                       <div
-                        className="sc-fbJfA nQjJT"
+                        className="sc-cwHptR gLqpmd"
                       >
                         <Col>
                           <styled.div
@@ -337,7 +337,7 @@ exports[`<Notification /> can have a variant 2`] = `
                             xs={true}
                           >
                             <div
-                              className="sc-csCMJt eUxgKe"
+                              className="sc-jlZhew fwwBBF"
                             >
                               <FlexGrid
                                 gutter={false}
@@ -358,7 +358,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                   }
                                 >
                                   <div
-                                    className="sc-brKeYL djhfyk"
+                                    className="sc-jEACwC jUXPuX"
                                   >
                                     <Row>
                                       <styled.div
@@ -373,7 +373,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                         }
                                       >
                                         <div
-                                          className="sc-fbJfA nQjJT"
+                                          className="sc-cwHptR gLqpmd"
                                         >
                                           <Col>
                                             <styled.div
@@ -399,7 +399,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                               xs={true}
                                             >
                                               <div
-                                                className="sc-csCMJt bdlALW"
+                                                className="sc-jlZhew fYJcTN"
                                               >
                                                 <Box
                                                   between={3}
@@ -412,7 +412,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                     tag="div"
                                                   >
                                                     <div
-                                                      className="sc-hAtEyd jNRQeS"
+                                                      className="sc-dLMFU iREnKw"
                                                     >
                                                       <Box
                                                         between={3}
@@ -435,7 +435,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                           tag="div"
                                                         >
                                                           <div
-                                                            className="sc-hAtEyd jNRQeS"
+                                                            className="sc-dLMFU iREnKw"
                                                             style={
                                                               Object {
                                                                 "justifyContent": "center",
@@ -446,23 +446,23 @@ exports[`<Notification /> can have a variant 2`] = `
                                                               vertical={1}
                                                             >
                                                               <Component
-                                                                className="sc-ieZDjg bDdaZP"
+                                                                className="sc-gFqAkR jTZokd"
                                                                 vertical={1}
                                                               >
                                                                 <Box
-                                                                  className="sc-ieZDjg bDdaZP"
+                                                                  className="sc-gFqAkR jTZokd"
                                                                   inline={false}
                                                                   tag="div"
                                                                   vertical={1}
                                                                 >
                                                                   <styled.div
-                                                                    className="sc-ieZDjg bDdaZP"
+                                                                    className="sc-gFqAkR jTZokd"
                                                                     inline={false}
                                                                     tag="div"
                                                                     vertical={1}
                                                                   >
                                                                     <div
-                                                                      className="sc-hAtEyd gUehBC sc-ieZDjg bDdaZP sc-ieZDjg bDdaZP"
+                                                                      className="sc-dLMFU dqhjSI sc-gFqAkR jTZokd sc-gFqAkR jTZokd"
                                                                     >
                                                                       <NotificationSuccess
                                                                         copy="en"
@@ -491,7 +491,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                             width="1.25rem"
                                                                           >
                                                                             <svg
-                                                                              className="sc-beqWaB kCjrFW"
+                                                                              className="sc-aXZVg iHZZjH"
                                                                               height="1.25rem"
                                                                               role="img"
                                                                               viewBox="0 0 20 20"
@@ -527,7 +527,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                 size="medium"
                                                               >
                                                                 <p
-                                                                  className="sc-ktEKTO bLkYGd"
+                                                                  className="sc-cPiKLX FMILr"
                                                                   size="medium"
                                                                 >
                                                                   Some content
@@ -568,35 +568,35 @@ exports[`<Notification /> can have a variant 2`] = `
 
 exports[`<Notification /> renders 1`] = `
 <div
-  class="sc-hAtEyd iwA-dcq sc-blLsxD ktixO sc-blLsxD ktixO"
+  class="sc-dLMFU lhcihw sc-fPXMVe loNnDC sc-fPXMVe loNnDC"
 >
   <div
-    class="sc-brKeYL djhfyk"
+    class="sc-jEACwC jUXPuX"
   >
     <div
-      class="sc-fbJfA nQjJT"
+      class="sc-cwHptR gLqpmd"
     >
       <div
-        class="sc-csCMJt eUxgKe"
+        class="sc-jlZhew fwwBBF"
       >
         <div
-          class="sc-brKeYL djhfyk"
+          class="sc-jEACwC jUXPuX"
         >
           <div
-            class="sc-fbJfA nQjJT"
+            class="sc-cwHptR gLqpmd"
           >
             <div
-              class="sc-csCMJt bdlALW"
+              class="sc-jlZhew fYJcTN"
             >
               <div
-                class="sc-hAtEyd jNRQeS"
+                class="sc-dLMFU iREnKw"
               >
                 <div
-                  class="sc-hAtEyd jNRQeS"
+                  class="sc-dLMFU iREnKw"
                   style="justify-content:center"
                 >
                   <p
-                    class="sc-ktEKTO bLkYGd"
+                    class="sc-cPiKLX FMILr"
                   >
                     Some content
                   </p>

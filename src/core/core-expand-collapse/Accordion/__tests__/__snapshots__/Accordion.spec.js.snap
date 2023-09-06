@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion renders a closed accordion 1`] = `
+<Accordion
+  topDivider={true}
+>
+  <Panels
+    compact={false}
+    isPanelOpen={[Function]}
+    togglePanel={[Function]}
+    topDivider={true}
+  >
+    <styled.div>
+      <div
+        className="sc-bXCLTC kLkBnc"
+      >
+        <HairlineDivider
+          gradient={false}
+          vertical={false}
+        >
+          <styled.hr
+            gradient={false}
+            vertical={false}
+          >
+            <hr
+              className="sc-gsFSXq hJbcYC"
+            />
+          </styled.hr>
+        </HairlineDivider>
+        <PanelWrapper
+          compact={false}
+          key="panel-1"
+          onClick={[Function]}
+          open={false}
+          panelDisabled={false}
+          panelHeader="Panel title"
+          panelId="panel-1"
+        >
+          <div
+            data-testid="panel-1"
+            id="panel-1"
+          >
+            <div>
+              <styled.button
+                aria-expanded={false}
+                disabled={false}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                panelDisabled={false}
+                type="button"
+              >
+                <button
+                  aria-expanded={false}
+                  className="sc-eldPxv iQTkcr"
+                  disabled={false}
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  type="button"
+                >
+                  <Box
+                    inline={false}
+                    tag="div"
+                    vertical={3}
+                  >
+                    <styled.div
+                      inline={false}
+                      tag="div"
+                      vertical={3}
+                    >
+                      <div
+                        className="sc-eqUAAy jBegVG"
+                      >
+                        <Box
+                          between={3}
+                          inline={true}
+                          tag="div"
+                        >
+                          <styled.div
+                            between={3}
+                            inline={true}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-eqUAAy bySzvK"
+                            >
+                              <styled.div
+                                isDisabled={false}
+                              >
+                                <div
+                                  className="sc-fPXMVe"
+                                >
+                                  <Translate
+                                    direction="y"
+                                    distance="0.25rem"
+                                    in={false}
+                                    timeout={300}
+                                  >
+                                    <Transition
+                                      appear={false}
+                                      enter={true}
+                                      exit={true}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      onEnter={[Function]}
+                                      onEntered={[Function]}
+                                      onEntering={[Function]}
+                                      onExit={[Function]}
+                                      onExited={[Function]}
+                                      onExiting={[Function]}
+                                      timeout={300}
+                                      unmountOnExit={false}
+                                    >
+                                      <styled.div
+                                        style={
+                                          Object {
+                                            "transition": "transform 300ms",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          className="sc-aXZVg hKRLqk"
+                                          style={
+                                            Object {
+                                              "transition": "transform 300ms",
+                                            }
+                                          }
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <styled.span
+                                              block={false}
+                                              bold={false}
+                                              invert={false}
+                                              size="large"
+                                            >
+                                              <span
+                                                className="sc-iGgWBj gpkkXd"
+                                                size="large"
+                                              >
+                                                <CaretDown>
+                                                  <Limited
+                                                    size={24}
+                                                    variant="default"
+                                                  >
+                                                    <Component
+                                                      size={24}
+                                                      theme={
+                                                        Object {
+                                                          "backgroundColor": "transparent",
+                                                          "iconColor": "#2B8000",
+                                                        }
+                                                      }
+                                                    >
+                                                      <Styled(styled.svg)
+                                                        animationDirection="down"
+                                                        viewBox="0 0 24 24"
+                                                      >
+                                                        <svg
+                                                          className="sc-imWYAI sc-jXbUNg jJCqOQ mmsaG"
+                                                          viewBox="0 0 24 24"
+                                                        >
+                                                          <path
+                                                            d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                                          />
+                                                        </svg>
+                                                      </Styled(styled.svg)>
+                                                    </Component>
+                                                  </Limited>
+                                                </CaretDown>
+                                              </span>
+                                            </styled.span>
+                                          </Text>
+                                        </div>
+                                      </styled.div>
+                                    </Transition>
+                                  </Translate>
+                                </div>
+                              </styled.div>
+                              <styled.div
+                                direction="row"
+                              >
+                                <div
+                                  className="sc-gFqAkR coPpZD"
+                                  direction="row"
+                                >
+                                  <styled.div
+                                    direction="column"
+                                  >
+                                    <div
+                                      className="sc-gFqAkR dLRsVj"
+                                      direction="column"
+                                    >
+                                      <styled.div>
+                                        <div
+                                          className="sc-ikkxIA kBchbG"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <styled.span
+                                              block={false}
+                                              bold={false}
+                                              invert={false}
+                                              size="large"
+                                            >
+                                              <span
+                                                className="sc-iGgWBj gpkkXd"
+                                                size="large"
+                                              >
+                                                Panel title
+                                              </span>
+                                            </styled.span>
+                                          </Text>
+                                        </div>
+                                      </styled.div>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </styled.div>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </styled.div>
+                  </Box>
+                </button>
+              </styled.button>
+              <FadeAndReveal
+                height={0}
+                in={false}
+                timeout={500}
+              >
+                <CSSTransition
+                  classNames=""
+                  in={false}
+                  timeout={
+                    Object {
+                      "appear": 500,
+                      "enter": 500,
+                      "exit": 0,
+                    }
+                  }
+                >
+                  <Transition
+                    appear={false}
+                    enter={true}
+                    exit={true}
+                    in={false}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={
+                      Object {
+                        "appear": 500,
+                        "enter": 500,
+                        "exit": 0,
+                      }
+                    }
+                    unmountOnExit={false}
+                  >
+                    <styled.div
+                      aria-hidden={true}
+                      style={
+                        Object {
+                          "height": "0px",
+                          "opacity": 0,
+                          "overflow": "hidden",
+                          "transition": "height 500ms ease-in-out, opacity 500ms ease-in-out, visibility 0ms 500ms",
+                          "visibility": "hidden",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={true}
+                        className="sc-gEvEer kqXJcw"
+                        style={
+                          Object {
+                            "height": "0px",
+                            "opacity": 0,
+                            "overflow": "hidden",
+                            "transition": "height 500ms ease-in-out, opacity 500ms ease-in-out, visibility 0ms 500ms",
+                            "visibility": "hidden",
+                          }
+                        }
+                      >
+                        <div
+                          data-testid="content"
+                        >
+                          <DimpleDivider>
+                            <styled.hr>
+                              <hr
+                                className="sc-kAyceB lnNYLt"
+                              />
+                            </styled.hr>
+                          </DimpleDivider>
+                          <ContentContainer
+                            compact={false}
+                          >
+                            <div
+                              className="sc-hmdomO gIoriQ"
+                            >
+                              <Text
+                                block={true}
+                                bold={false}
+                                invert={false}
+                                size="base"
+                              >
+                                <styled.span
+                                  block={true}
+                                  bold={false}
+                                  invert={false}
+                                  size="base"
+                                >
+                                  <span
+                                    className="sc-iGgWBj cqOcdo"
+                                    size="base"
+                                  >
+                                    <Panel
+                                      disabled={false}
+                                      header="Panel title"
+                                      id="panel-1"
+                                      key=".0"
+                                    >
+                                      <div>
+                                        Panel content
+                                      </div>
+                                    </Panel>
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </ContentContainer>
+                        </div>
+                      </div>
+                    </styled.div>
+                  </Transition>
+                </CSSTransition>
+              </FadeAndReveal>
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
+              >
+                <styled.hr
+                  gradient={false}
+                  vertical={false}
+                >
+                  <hr
+                    className="sc-gsFSXq hJbcYC"
+                  />
+                </styled.hr>
+              </HairlineDivider>
+            </div>
+          </div>
+        </PanelWrapper>
+      </div>
+    </styled.div>
+  </Panels>
+</Accordion>
+`;
+
+exports[`Accordion renders an open accordion 1`] = `
+<Accordion
+  open="panel-1"
+  topDivider={true}
+>
+  <Panels
+    compact={false}
+    isPanelOpen={[Function]}
+    open="panel-1"
+    togglePanel={[Function]}
+    topDivider={true}
+  >
+    <styled.div
+      open="panel-1"
+    >
+      <div
+        className="sc-bXCLTC kLkBnc"
+        open="panel-1"
+      >
+        <HairlineDivider
+          gradient={false}
+          vertical={false}
+        >
+          <styled.hr
+            gradient={false}
+            vertical={false}
+          >
+            <hr
+              className="sc-gsFSXq hJbcYC"
+            />
+          </styled.hr>
+        </HairlineDivider>
+        <PanelWrapper
+          compact={false}
+          key="panel-1"
+          onClick={[Function]}
+          open={true}
+          panelDisabled={false}
+          panelHeader="Panel title"
+          panelId="panel-1"
+        >
+          <div
+            data-testid="panel-1"
+            id="panel-1"
+          >
+            <div>
+              <styled.button
+                aria-expanded={true}
+                disabled={false}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                panelDisabled={false}
+                type="button"
+              >
+                <button
+                  aria-expanded={true}
+                  className="sc-eldPxv iQTkcr"
+                  disabled={false}
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  type="button"
+                >
+                  <Box
+                    inline={false}
+                    tag="div"
+                    vertical={3}
+                  >
+                    <styled.div
+                      inline={false}
+                      tag="div"
+                      vertical={3}
+                    >
+                      <div
+                        className="sc-eqUAAy jBegVG"
+                      >
+                        <Box
+                          between={3}
+                          inline={true}
+                          tag="div"
+                        >
+                          <styled.div
+                            between={3}
+                            inline={true}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-eqUAAy bySzvK"
+                            >
+                              <styled.div
+                                isDisabled={false}
+                              >
+                                <div
+                                  className="sc-fPXMVe"
+                                >
+                                  <Translate
+                                    direction="y"
+                                    distance="-0.25rem"
+                                    in={false}
+                                    timeout={300}
+                                  >
+                                    <Transition
+                                      appear={false}
+                                      enter={true}
+                                      exit={true}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      onEnter={[Function]}
+                                      onEntered={[Function]}
+                                      onEntering={[Function]}
+                                      onExit={[Function]}
+                                      onExited={[Function]}
+                                      onExiting={[Function]}
+                                      timeout={300}
+                                      unmountOnExit={false}
+                                    >
+                                      <styled.div
+                                        style={
+                                          Object {
+                                            "transition": "transform 300ms",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          className="sc-aXZVg hKRLqk"
+                                          style={
+                                            Object {
+                                              "transition": "transform 300ms",
+                                            }
+                                          }
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <styled.span
+                                              block={false}
+                                              bold={false}
+                                              invert={false}
+                                              size="large"
+                                            >
+                                              <span
+                                                className="sc-iGgWBj gpkkXd"
+                                                size="large"
+                                              >
+                                                <CaretUp>
+                                                  <Limited
+                                                    animationDirection="up"
+                                                    size={24}
+                                                    variant="default"
+                                                  >
+                                                    <Component
+                                                      size={24}
+                                                      theme={
+                                                        Object {
+                                                          "backgroundColor": "transparent",
+                                                          "iconColor": "#2B8000",
+                                                        }
+                                                      }
+                                                    >
+                                                      <Styled(styled.svg)
+                                                        animationDirection="up"
+                                                        viewBox="0 0 24 24"
+                                                      >
+                                                        <svg
+                                                          className="sc-imWYAI sc-jXbUNg jJCqOQ loiAIL"
+                                                          viewBox="0 0 24 24"
+                                                        >
+                                                          <path
+                                                            d="M17.7940812,14.8167698 C17.4424627,15.1174894 17.0896181,14.9549557 16.8868854,14.7547243 L11.9968161,10.259447 L7.11722187,14.7547243 C6.93839231,14.9185479 6.49053328,15.1800328 6.16524043,14.8167698 C5.83994757,14.4535067 6.06520964,14.0838947 6.24327169,13.9200711 L11.6348225,8.12339734 C11.8136521,7.95886755 12.1060729,7.95886755 12.2849025,8.12339734 C12.2849025,8.12410347 17.7940809,13.920071 17.7940809,13.920071 C17.9792355,14.0649573 18.1456996,14.5160501 17.7940812,14.8167698 Z"
+                                                          />
+                                                        </svg>
+                                                      </Styled(styled.svg)>
+                                                    </Component>
+                                                  </Limited>
+                                                </CaretUp>
+                                              </span>
+                                            </styled.span>
+                                          </Text>
+                                        </div>
+                                      </styled.div>
+                                    </Transition>
+                                  </Translate>
+                                </div>
+                              </styled.div>
+                              <styled.div
+                                direction="row"
+                              >
+                                <div
+                                  className="sc-gFqAkR coPpZD"
+                                  direction="row"
+                                >
+                                  <styled.div
+                                    direction="column"
+                                  >
+                                    <div
+                                      className="sc-gFqAkR dLRsVj"
+                                      direction="column"
+                                    >
+                                      <styled.div>
+                                        <div
+                                          className="sc-ikkxIA kBchbG"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <styled.span
+                                              block={false}
+                                              bold={false}
+                                              invert={false}
+                                              size="large"
+                                            >
+                                              <span
+                                                className="sc-iGgWBj gpkkXd"
+                                                size="large"
+                                              >
+                                                Panel title
+                                              </span>
+                                            </styled.span>
+                                          </Text>
+                                        </div>
+                                      </styled.div>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </styled.div>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </styled.div>
+                  </Box>
+                </button>
+              </styled.button>
+              <FadeAndReveal
+                height={0}
+                in={true}
+                timeout={500}
+              >
+                <CSSTransition
+                  classNames=""
+                  in={true}
+                  timeout={
+                    Object {
+                      "appear": 500,
+                      "enter": 500,
+                      "exit": 0,
+                    }
+                  }
+                >
+                  <Transition
+                    appear={false}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={
+                      Object {
+                        "appear": 500,
+                        "enter": 500,
+                        "exit": 0,
+                      }
+                    }
+                    unmountOnExit={false}
+                  >
+                    <styled.div
+                      aria-hidden={false}
+                      style={
+                        Object {
+                          "height": "auto",
+                          "opacity": 1,
+                          "overflow": "hidden",
+                          "transition": "unset",
+                          "visibility": "visible",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        className="sc-gEvEer kqXJcw"
+                        style={
+                          Object {
+                            "height": "auto",
+                            "opacity": 1,
+                            "overflow": "hidden",
+                            "transition": "unset",
+                            "visibility": "visible",
+                          }
+                        }
+                      >
+                        <div
+                          data-testid="content"
+                        >
+                          <DimpleDivider>
+                            <styled.hr>
+                              <hr
+                                className="sc-kAyceB lnNYLt"
+                              />
+                            </styled.hr>
+                          </DimpleDivider>
+                          <ContentContainer
+                            compact={false}
+                          >
+                            <div
+                              className="sc-hmdomO gIoriQ"
+                            >
+                              <Text
+                                block={true}
+                                bold={false}
+                                invert={false}
+                                size="base"
+                              >
+                                <styled.span
+                                  block={true}
+                                  bold={false}
+                                  invert={false}
+                                  size="base"
+                                >
+                                  <span
+                                    className="sc-iGgWBj cqOcdo"
+                                    size="base"
+                                  >
+                                    <Panel
+                                      disabled={false}
+                                      header="Panel title"
+                                      id="panel-1"
+                                      key=".0"
+                                    >
+                                      <div>
+                                        Panel content
+                                      </div>
+                                    </Panel>
+                                  </span>
+                                </styled.span>
+                              </Text>
+                            </div>
+                          </ContentContainer>
+                        </div>
+                      </div>
+                    </styled.div>
+                  </Transition>
+                </CSSTransition>
+              </FadeAndReveal>
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
+              >
+                <styled.hr
+                  gradient={false}
+                  vertical={false}
+                >
+                  <hr
+                    className="sc-gsFSXq hJbcYC"
+                  />
+                </styled.hr>
+              </HairlineDivider>
+            </div>
+          </div>
+        </PanelWrapper>
+      </div>
+    </styled.div>
+  </Panels>
+</Accordion>
+`;
+
+exports[`Accordion renders empty panels 1`] = `null`;

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-
 import Box from "../core-box/Box";
 import generateId from "../../utils/generateId";
 import { safeRest } from "../../util-helpers";

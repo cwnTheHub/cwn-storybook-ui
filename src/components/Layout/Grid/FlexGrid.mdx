@@ -1,0 +1,75 @@
+{/* FlexGrid.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as FlexGridStories from './FlexGrid.stories';
+
+<Meta of={FlexGridStories} />
+<Title />
+	
+`` import { FlexGrid } from '@nds_core/nds' ``
+
+A mobile-first flexbox grid.
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+### Usage 
+
+The FlexGrid system is a thin wrapper over react-flexbox-grid, which implements flexboxgrid.css. It uses a series of rows and columns to layout and align content 2-dimensionally.
+
+If you are new to or unfamiliar with flexbox, read this CSS Tricks flexbox guide for background, terminology, guidelines, and code snippets.
+
+#### Accessibility
+- FlexGrid helps with building responsive interfaces and provide first-class support to customers using any screen size. Use the FlexGrid’s responsive props to help achieve responsive content
+- By default, FlexGrid implements limitWidth in order to keep all content aligned on the left and right sides of a page. It uses rem units to grow in width and respond to browser font size configurations
+Below is a quick example of how the components fit together. See the FlexGrid.Row and FlexGrid.Col components below for a more in-depth look.
+
+<Canvas of={FlexGridStories.Accessibility} />
+
+#### How it works
+- FlexGrid is the top-level container. It centers and horizontally pads your site’s contents
+- FlexGrid.Rows are wrappers for columns. Columns have horizontal padding (called a gutter) for controlling the space between them
+- Place content inside FlexGrid.Col components. These should be the immediate children of rows
+- Columns without a specified width will automatically layout as equal width columns
+- Column widths can be made responsive by using the responsive props, which match the props used in Responsive: xs, sm, md, lg and xl
+- The responsive column widths are based on minimum width media queries, so they apply to the specified breakpoint and all those above it
+
+#### Removing the gutter
+
+Remove the 16px gutter surrounding columns by passing gutter={false} to the FlexGrid container. This removes the horizontal padding from all child columns.
+
+<Canvas of={FlexGridStories.RemovingTheGutter} />
+
+#### Removing the outside 
+
+In some layouts, there might be the need to remove the gutter from the left and right of the row. For example, if the layout requires a FlexGrid to be nested under another FlexGrid Column, the child FlexGrid's columns will not line up with the parent FlexGrid's columns due to the additional gutter between the child columns.
+
+It is possible to avoid this situation while keeping the gutters between the columns, to do so, pass outsideGutter={false} to the child FlexGrid. This will remove the gutter on the left and the right of the FlexGrid.
+
+outsideGutter should not be false if parent FlexGrid has gutter={false}
+
+<Canvas of={FlexGridStories.RemovingTheOutsideGutter} />
+
+#### Working with full-width and limited-width content
+Pages should have multiple instances of FlexGrid to separate full-width content and regular limited-width content. See expanded example by clicking the full-screen icon below.
+
+<Canvas of={FlexGridStories.FullWidth} />
+
+#### Reversing item order
+On certain layouts, the order of items within the FlexGrid may need to be reversed. To do this, set the corresponding prop for the target breakpoint range as true. If a breakpoint is defined as true, it will affect all other breakpoints after it until a latter breakpoint assigned as false is found.
+
+In the following example, the items are set to reverse until the md breakpoint. Then, at the xl breakpoint, the items will reverse again.
+
+<Canvas of={FlexGridStories.ReverseItemOrder} />
+
+
+--- 
+
+## All variations
+
+Listed below are additional variations of the component.
+
+<Stories />

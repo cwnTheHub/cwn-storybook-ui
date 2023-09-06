@@ -1,0 +1,43 @@
+{/* Row.mdx */}
+
+import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+
+import * as RowStories from './Row.stories';
+
+<Meta of={RowStories} />
+<Title />
+	
+`` import { Row } from '@nds_core/nds' ``
+
+## Inputs
+
+The component accepts the following inputs (props):
+
+<Controls />
+
+### Usage 
+
+--- 
+# Row
+
+#### Alignment
+
+Use flexbox alignment properties to vertically and horizontally align columns.
+
+<Canvas of={RowStories.TheRow} />
+
+### Distribution
+Use flexbox distribution properties to control the negative space around columns.
+
+<Canvas of={RowStories.Distribution} />
+
+<Canvas of={RowStories.Alignment} />
+
+#### Reversing item order
+On certain layouts, the order of items within the row may need to be reversed. To do this, set the corresponding prop for the target breakpoint range as true. If a breakpoint is defined as true, it will affect all other breakpoints after it until a latter breakpoint assigned as false is found.
+
+In the following example, the items are set to reverse until the md breakpoint. Then, at the xl breakpoint, the items will reverse again.
+
+
+<Canvas of={RowStories.ReverseItemOrder} />
+--- 

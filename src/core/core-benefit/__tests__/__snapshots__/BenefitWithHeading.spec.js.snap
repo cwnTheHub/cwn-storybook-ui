@@ -2,17 +2,17 @@
 
 exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 <ul
-  class="sc-hLseeU gnISxC"
+  class="sc-fqkvVR bIzObP"
 >
   <li
-    class="sc-hLseeU cPIETx"
+    class="sc-fqkvVR dsWtKo"
   >
     <div
-      class="sc-hLseeU jcrQdZ"
+      class="sc-fqkvVR cTxgyA"
     >
       <i
         aria-hidden="true"
-        class="sc-gueYoa cuAuDn"
+        class="sc-gEvEer bWFWNI"
         size="24"
       >
         <svg
@@ -30,27 +30,27 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="sc-dmqHEX kfJuFS"
+        class="sc-eqUAAy Merhy"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="sc-eDDNvR kpfFzp"
+        class="sc-dcJsrY kQapqa"
       >
         Some content
       </span>
     </div>
   </li>
   <li
-    class="sc-hLseeU cPIETx"
+    class="sc-fqkvVR dsWtKo"
   >
     <div
-      class="sc-hLseeU jcrQdZ"
+      class="sc-fqkvVR cTxgyA"
     >
       <i
         aria-hidden="true"
-        class="sc-gueYoa cuAuDn"
+        class="sc-gEvEer bWFWNI"
         size="24"
       >
         <svg
@@ -67,13 +67,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="sc-dmqHEX kfJuFS"
+        class="sc-eqUAAy Merhy"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="sc-eDDNvR kpfFzp"
+        class="sc-dcJsrY kQapqa"
       >
         Some other content
       </span>
@@ -84,17 +84,17 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 
 exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
 <ul
-  class="sc-hLseeU gnISxC"
+  class="sc-fqkvVR bIzObP"
 >
   <li
-    class="sc-hLseeU cPIETx"
+    class="sc-fqkvVR dsWtKo"
   >
     <div
-      class="sc-hLseeU jcrQdZ"
+      class="sc-fqkvVR cTxgyA"
     >
       <i
         aria-hidden="true"
-        class="sc-gueYoa cuAuDn"
+        class="sc-gEvEer bWFWNI"
         size="24"
       >
         <svg
@@ -112,27 +112,27 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="sc-dmqHEX kfJuFS"
+        class="sc-eqUAAy Merhy"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="sc-eDDNvR kpfFzp"
+        class="sc-dcJsrY kQapqa"
       >
         Some content
       </span>
     </div>
   </li>
   <li
-    class="sc-hLseeU cPIETx"
+    class="sc-fqkvVR dsWtKo"
   >
     <div
-      class="sc-hLseeU jcrQdZ"
+      class="sc-fqkvVR cTxgyA"
     >
       <i
         aria-hidden="true"
-        class="sc-gueYoa cuAuDn"
+        class="sc-gEvEer bWFWNI"
         size="24"
       >
         <svg
@@ -150,13 +150,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="sc-dmqHEX kfJuFS"
+        class="sc-eqUAAy Merhy"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="sc-eDDNvR kpfFzp"
+        class="sc-dcJsrY kQapqa"
       >
         Some other content
       </span>

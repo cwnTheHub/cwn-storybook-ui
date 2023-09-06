@@ -2,11 +2,11 @@
 
 exports[`Checkbox allows numbers as value 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <input
     aria-invalid="false"
-    class="sc-iAEyYk ikeKPS"
+    class="sc-kAyceB jhFre"
     data-testid="hidden-input"
     id="the-group-name_1"
     name="the-group-name"
@@ -14,24 +14,24 @@ exports[`Checkbox allows numbers as value 1`] = `
     value="1"
   />
   <label
-    class="sc-fsQiph lgWDnk"
+    class="sc-imWYAI bqUnNg"
     data-testid="checkbox-label"
     for="the-group-name_1"
   >
     <div
-      class="sc-beqWaB bLLRWR"
+      class="sc-aXZVg dPmMeI"
     >
       <span
-        class="sc-gLDzan cJHmxl"
+        class="sc-gsFSXq hbrKFW"
         data-testid="fake-input"
       >
         <span
-          class="sc-qRumB fJbYZY"
+          class="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <svg
             aria-hidden="true"
-            class="sc-eDDNvR hkfmaH"
+            class="sc-dcJsrY hdmOdM"
             height="1rem"
             role="img"
             viewBox="0 0 16 16"
@@ -46,10 +46,10 @@ exports[`Checkbox allows numbers as value 1`] = `
         </span>
       </span>
       <div
-        class="sc-jTrPJq"
+        class="sc-iGgWBj"
       >
         <span
-          class="sc-gueYoa hJNqrA"
+          class="sc-gEvEer bVugIj"
         >
           A label
         </span>
@@ -61,12 +61,12 @@ exports[`Checkbox allows numbers as value 1`] = `
 
 exports[`Checkbox disabled can be disabled 1`] = `
 <ColoredTextProvider
-  className="sc-jTrPJq"
+  className="sc-iGgWBj"
   isError={false}
   tag="div"
 >
   <div
-    className="sc-jTrPJq"
+    className="sc-iGgWBj"
   >
     <Text
       block={false}
@@ -82,7 +82,7 @@ exports[`Checkbox disabled can be disabled 1`] = `
         size="base"
       >
         <span
-          className="sc-gueYoa hJNqrA"
+          className="sc-gEvEer bVugIj"
           size="base"
         >
           A label
@@ -99,14 +99,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -131,7 +131,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -151,14 +151,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -183,7 +183,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -206,12 +206,12 @@ Array [
 
 exports[`Checkbox disabled can be disabled and checked 1`] = `
 <ColoredTextProvider
-  className="sc-jTrPJq"
+  className="sc-iGgWBj"
   isError={false}
   tag="div"
 >
   <div
-    className="sc-jTrPJq"
+    className="sc-iGgWBj"
   >
     <Text
       block={false}
@@ -227,7 +227,7 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
         size="base"
       >
         <span
-          className="sc-gueYoa hJNqrA"
+          className="sc-gEvEer bVugIj"
           size="base"
         >
           A label
@@ -244,14 +244,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -276,7 +276,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -296,14 +296,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -328,7 +328,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -351,12 +351,12 @@ Array [
 
 exports[`Checkbox error can have an error feedback state 1`] = `
 <ColoredTextProvider
-  className="sc-jTrPJq bXyKwc"
+  className="sc-iGgWBj bQcuAQ"
   isError={true}
   tag="div"
 >
   <div
-    className="sc-jTrPJq bXyKwc"
+    className="sc-iGgWBj bQcuAQ"
   >
     <Text
       block={false}
@@ -372,7 +372,7 @@ exports[`Checkbox error can have an error feedback state 1`] = `
         size="base"
       >
         <span
-          className="sc-gueYoa hJNqrA"
+          className="sc-gEvEer bVugIj"
           size="base"
         >
           Some error
@@ -389,14 +389,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -421,7 +421,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -441,14 +441,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -473,7 +473,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -496,12 +496,12 @@ Array [
 
 exports[`Checkbox error can have an error message 1`] = `
 <ColoredTextProvider
-  className="sc-jTrPJq bXyKwc"
+  className="sc-iGgWBj bQcuAQ"
   isError={true}
   tag="div"
 >
   <div
-    className="sc-jTrPJq bXyKwc"
+    className="sc-iGgWBj bQcuAQ"
   >
     <Text
       block={false}
@@ -517,7 +517,7 @@ exports[`Checkbox error can have an error message 1`] = `
         size="base"
       >
         <span
-          className="sc-gueYoa hJNqrA"
+          className="sc-gEvEer bVugIj"
           size="base"
         >
           Some error
@@ -534,14 +534,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -566,7 +566,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -586,14 +586,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -618,7 +618,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -651,14 +651,14 @@ exports[`Checkbox error can have an error message 3`] = `
     role="alert"
   >
     <Component
-      className="sc-dmqHEX fByzdG"
+      className="sc-eqUAAy hyKQuW"
       feedback="error"
       id="the-group-namethe-value_error-message"
       inset={3}
       role="alert"
     >
       <Box
-        className="sc-dmqHEX fByzdG"
+        className="sc-eqUAAy hyKQuW"
         id="the-group-namethe-value_error-message"
         inline={false}
         inset={3}
@@ -666,7 +666,7 @@ exports[`Checkbox error can have an error message 3`] = `
         tag="div"
       >
         <styled.div
-          className="sc-dmqHEX fByzdG"
+          className="sc-eqUAAy hyKQuW"
           id="the-group-namethe-value_error-message"
           inline={false}
           inset={3}
@@ -674,7 +674,7 @@ exports[`Checkbox error can have an error message 3`] = `
           tag="div"
         >
           <div
-            className="sc-beqWaB hjHWHa sc-dmqHEX fByzdG sc-dmqHEX fByzdG"
+            className="sc-aXZVg hNbjKD sc-eqUAAy hyKQuW sc-eqUAAy hyKQuW"
             id="the-group-namethe-value_error-message"
             role="alert"
           >
@@ -691,7 +691,7 @@ exports[`Checkbox error can have an error message 3`] = `
                 size="small"
               >
                 <p
-                  className="sc-hLseeU bzxvyi"
+                  className="sc-fqkvVR jspODP"
                   size="small"
                 >
                   Error message
@@ -712,14 +712,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -744,7 +744,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -764,14 +764,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -796,7 +796,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -823,14 +823,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -855,7 +855,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -875,14 +875,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -907,7 +907,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -934,14 +934,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -966,7 +966,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -986,14 +986,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -1018,7 +1018,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -1045,14 +1045,14 @@ Array [
     data-testid="fake-input"
   >
     <span
-      className="sc-gLDzan cJHmxl"
+      className="sc-gsFSXq hbrKFW"
       data-testid="fake-input"
     >
       <styled.span
         id="checkmark"
       >
         <span
-          className="sc-qRumB fJbYZY"
+          className="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <Checkmark>
@@ -1077,7 +1077,7 @@ Array [
               >
                 <svg
                   aria-hidden={true}
-                  className="sc-eDDNvR hkfmaH"
+                  className="sc-dcJsrY hdmOdM"
                   height="1rem"
                   role="img"
                   viewBox="0 0 16 16"
@@ -1097,14 +1097,14 @@ Array [
     </span>
   </styled.span>,
   <span
-    className="sc-gLDzan cJHmxl"
+    className="sc-gsFSXq hbrKFW"
     data-testid="fake-input"
   >
     <styled.span
       id="checkmark"
     >
       <span
-        className="sc-qRumB fJbYZY"
+        className="sc-jXbUNg ljzloA"
         id="checkmark"
       >
         <Checkmark>
@@ -1129,7 +1129,7 @@ Array [
             >
               <svg
                 aria-hidden={true}
-                className="sc-eDDNvR hkfmaH"
+                className="sc-dcJsrY hdmOdM"
                 height="1rem"
                 role="img"
                 viewBox="0 0 16 16"
@@ -1153,20 +1153,20 @@ Array [
 exports[`Checkbox must have a label 1`] = `
 Array [
   <div
-    className="sc-beqWaB bLLRWR"
+    className="sc-aXZVg dPmMeI"
   >
     <styled.span
       data-testid="fake-input"
     >
       <span
-        className="sc-gLDzan cJHmxl"
+        className="sc-gsFSXq hbrKFW"
         data-testid="fake-input"
       >
         <styled.span
           id="checkmark"
         >
           <span
-            className="sc-qRumB fJbYZY"
+            className="sc-jXbUNg ljzloA"
             id="checkmark"
           >
             <Checkmark>
@@ -1191,7 +1191,7 @@ Array [
                 >
                   <svg
                     aria-hidden={true}
-                    className="sc-eDDNvR hkfmaH"
+                    className="sc-dcJsrY hdmOdM"
                     height="1rem"
                     role="img"
                     viewBox="0 0 16 16"
@@ -1214,12 +1214,12 @@ Array [
       isError={false}
     >
       <ColoredTextProvider
-        className="sc-jTrPJq"
+        className="sc-iGgWBj"
         isError={false}
         tag="div"
       >
         <div
-          className="sc-jTrPJq"
+          className="sc-iGgWBj"
         >
           <Text
             block={false}
@@ -1235,7 +1235,7 @@ Array [
               size="base"
             >
               <span
-                className="sc-gueYoa hJNqrA"
+                className="sc-gEvEer bVugIj"
                 size="base"
               >
                 Some label
@@ -1247,7 +1247,7 @@ Array [
     </Styled(ColoredTextProvider)>
   </div>,
   <div
-    className="sc-jTrPJq"
+    className="sc-iGgWBj"
   >
     <Text
       block={false}
@@ -1263,7 +1263,7 @@ Array [
         size="base"
       >
         <span
-          className="sc-gueYoa hJNqrA"
+          className="sc-gEvEer bVugIj"
           size="base"
         >
           Some label
@@ -1276,11 +1276,11 @@ Array [
 
 exports[`Checkbox renders 1`] = `
 <div
-  class="sc-beqWaB dJZbbo"
+  class="sc-aXZVg fMjfal"
 >
   <input
     aria-invalid="false"
-    class="sc-iAEyYk ikeKPS"
+    class="sc-kAyceB jhFre"
     data-testid="hidden-input"
     id="the-group-name_the-value"
     name="the-group-name"
@@ -1288,24 +1288,24 @@ exports[`Checkbox renders 1`] = `
     value="the-value"
   />
   <label
-    class="sc-fsQiph lgWDnk"
+    class="sc-imWYAI bqUnNg"
     data-testid="checkbox-label"
     for="the-group-name_the-value"
   >
     <div
-      class="sc-beqWaB bLLRWR"
+      class="sc-aXZVg dPmMeI"
     >
       <span
-        class="sc-gLDzan cJHmxl"
+        class="sc-gsFSXq hbrKFW"
         data-testid="fake-input"
       >
         <span
-          class="sc-qRumB fJbYZY"
+          class="sc-jXbUNg ljzloA"
           id="checkmark"
         >
           <svg
             aria-hidden="true"
-            class="sc-eDDNvR hkfmaH"
+            class="sc-dcJsrY hdmOdM"
             height="1rem"
             role="img"
             viewBox="0 0 16 16"
@@ -1320,10 +1320,10 @@ exports[`Checkbox renders 1`] = `
         </span>
       </span>
       <div
-        class="sc-jTrPJq"
+        class="sc-iGgWBj"
       >
         <span
-          class="sc-gueYoa hJNqrA"
+          class="sc-gEvEer bVugIj"
         >
           A label
         </span>

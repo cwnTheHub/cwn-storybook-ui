@@ -2,22 +2,22 @@
 
 exports[`ChevronLink can have specific variants 1`] = `
 <a
-  class="sc-csCMJt bLChbm"
+  class="sc-jlZhew hVOOvR"
   direction="right"
   href="https://nds_core.com"
 >
   <span
-    class="sc-irTswW gBRAVZ"
+    class="sc-dAlyuH dNgVPZ"
   >
     <span>
       Go home
     </span>
     <span
-      class="sc-fbJfA hRhRVD"
+      class="sc-cwHptR IjNTX"
       direction="right"
     >
       <svg
-        class="sc-beqWaB sc-gueYoa cULUph UHpQT"
+        class="sc-aXZVg sc-gEvEer ePlSMI cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
@@ -32,22 +32,22 @@ exports[`ChevronLink can have specific variants 1`] = `
 
 exports[`ChevronLink can have specific variants 2`] = `
 <a
-  class="sc-csCMJt uvkdv"
+  class="sc-jlZhew XCwio"
   direction="right"
   href="https://nds_core.com"
 >
   <span
-    class="sc-irTswW gBRAVZ"
+    class="sc-dAlyuH dNgVPZ"
   >
     <span>
       Go home
     </span>
     <span
-      class="sc-fbJfA hRhRVD"
+      class="sc-cwHptR IjNTX"
       direction="right"
     >
       <svg
-        class="sc-beqWaB sc-gueYoa gqnhJg UHpQT"
+        class="sc-aXZVg sc-gEvEer dfiPeB cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
@@ -62,22 +62,22 @@ exports[`ChevronLink can have specific variants 2`] = `
 
 exports[`ChevronLink can have specific variants 3`] = `
 <a
-  class="sc-csCMJt bLChbm"
+  class="sc-jlZhew hVOOvR"
   direction="right"
   href="https://nds_core.com"
 >
   <span
-    class="sc-irTswW gBRAVZ"
+    class="sc-dAlyuH dNgVPZ"
   >
     <span>
       Go home
     </span>
     <span
-      class="sc-fbJfA hRhRVD"
+      class="sc-cwHptR IjNTX"
       direction="right"
     >
       <svg
-        class="sc-beqWaB sc-gueYoa cULUph UHpQT"
+        class="sc-aXZVg sc-gEvEer ePlSMI cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
@@ -92,22 +92,22 @@ exports[`ChevronLink can have specific variants 3`] = `
 
 exports[`ChevronLink can have specific variants 4`] = `
 <a
-  class="sc-csCMJt gcYODQ"
+  class="sc-jlZhew fvhRNv"
   direction="right"
   href="https://nds_core.com"
 >
   <span
-    class="sc-irTswW gBRAVZ"
+    class="sc-dAlyuH dNgVPZ"
   >
     <span>
       Go home
     </span>
     <span
-      class="sc-fbJfA hRhRVD"
+      class="sc-cwHptR IjNTX"
       direction="right"
     >
       <svg
-        class="sc-beqWaB sc-gueYoa kfMxyD UHpQT"
+        class="sc-aXZVg sc-gEvEer fzZsTG cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
@@ -122,22 +122,22 @@ exports[`ChevronLink can have specific variants 4`] = `
 
 exports[`ChevronLink renders 1`] = `
 <a
-  class="sc-csCMJt bLChbm"
+  class="sc-jlZhew hVOOvR"
   direction="right"
   href="test.com"
 >
   <span
-    class="sc-irTswW gBRAVZ"
+    class="sc-dAlyuH dNgVPZ"
   >
     <span>
       Go home
     </span>
     <span
-      class="sc-fbJfA hRhRVD"
+      class="sc-cwHptR IjNTX"
       direction="right"
     >
       <svg
-        class="sc-beqWaB sc-gueYoa cULUph UHpQT"
+        class="sc-aXZVg sc-gEvEer ePlSMI cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
