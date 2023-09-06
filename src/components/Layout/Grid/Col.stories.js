@@ -1,6 +1,6 @@
 import React from "react";
 
-import styled from "styled-components"
+import styled from "styled-components";
 import Box from "../../../core/core-box/Box";
 import { Col, FlexGrid } from "../../../core/core-flex-grid";
 import Text from "../../../core/core-text/Text";
