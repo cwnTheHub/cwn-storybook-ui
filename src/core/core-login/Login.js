@@ -20,8 +20,9 @@ import Notification from "../core-notification/Notification";
 const Login = ({
   variant,
   checkUsernameOrEmailExists,
-  sentLoginData,
+  sendLoginData,
   send2FALoginData,
+  sendSignUPData,
   copy,
   policies,
 }) => {
@@ -36,7 +37,6 @@ const Login = ({
   const [errorPwd, setErrorPwd] = useState(undefined);
   const [confirmPassword, setConfirmPassword] = useState("");
   const [statusConfirmPwd, setStatusConfirmPwd] = useState(undefined);
-  const [errorConfirmPwd, setErrorConfirmPwd] = useState(undefined);
   const [isValid, setValid] = useState(false);
 
   const [secureCode, setSecureCode] = useState("");
@@ -52,7 +52,10 @@ const Login = ({
 
   const [userNotExistAndContinueToRegister, setNextStep] = useState(false);
 
-  const [errorMessage, setErrorMessage] = useState({});
+  const [isLoginComplete, setIsLoginComplete] = useState(false);
+
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
 
   const content = getCopy(copyDictionary, copy);
   const contentPolicies = getCopy(policies, copy);
@@ -132,9 +135,26 @@ const Login = ({
           setError(undefined);
           setStatus(undefined);
           const response = checkUsernameOrEmailExists(username);
-          setUserExists(response);
-          if (response != undefined) {
+
+          if (
+            response?.data != undefined ||
+            response?.success != undefined ||
+            response?.error != undefined
+          ) {
             setUsernameIsChecked(true);
+          }
+          if (response?.success) {
+            setUserExists(true);
+            setStatus("success");
+          }
+          if (variant != "regular" && response?.error) {
+            setSuccessMessage(null);
+            setErrorMessage({
+              ...response?.error,
+              message: content?.companyOREmployeeIDNotFoundTxt,
+            });
+          } else {
+            setErrorMessage(null);
           }
         }
         break;
@@ -160,7 +180,7 @@ const Login = ({
         if (confirmPassword != password) {
           setStatusConfirmPwd("error");
         } else {
-          setStatusConfirmPwd(undefined);
+          setStatusConfirmPwd("success");
         }
         break;
       default:
@@ -169,46 +189,78 @@ const Login = ({
 
   const continueCTA = (e) => {
     e.preventDefault();
+    setSuccessMessage(null);
+    setErrorMessage(null);
     setNextStep(true);
   };
 
   const signUpCTA = (e) => {
     e.preventDefault();
+    setSuccessMessage(null);
+    setErrorMessage(null);
+
+    if (
+      statusConfirmPwd == "success" &&
+      isValid &&
+      !errorEmail &&
+      !userExists
+    ) {
+      sendSignUPData({ username, email, password });
+    }
   };
 
   const signInCTA = async (e) => {
     e.preventDefault();
+    setSuccessMessage(null);
+    setErrorMessage(null);
+
     if (password.length < 1) {
       setErrorPwd(content?.emptyField);
       setStatusPwd("error");
     } else if (username.length && password.length) {
       setHas2FALoading(true);
-      const response = await sentLoginData({ username, password });
-      if (response != undefined) {
+      const response = await sendLoginData({ username, password });
+      if (response?.success) {
         setHas2FALoading(false);
-        setHas2FA(response.res);
-        setErrorMessage(response?.message);
+
+        setSuccessMessage(response?.success);
+
+        setStatus(undefined);
+        if (response?.data?.has2FA) {
+          setHas2FA(true);
+        } else {
+          setUsername("");
+          setPassword("");
+          setIsLoginComplete(true);
+        }
+      }
+      if (response?.error) {
+        setHas2FALoading(false);
+        setErrorMessage(response?.error);
+        setStatusPwd("error");
+        setPassword("");
+        setStatus(undefined);
       }
     }
   };
 
   const renderGeneralError = () => {
-    if (errorMessage?.status >= 200 && errorMessage?.status <= 299) {
+    if (successMessage?.status >= 200 && successMessage?.status <= 299) {
       return (
         <Notification variant="success" copy={copy}>
-          <Text bold> {errorMessage?.message}</Text>
+          <Text small> {successMessage?.message}</Text>
         </Notification>
       );
     } else if (errorMessage?.status >= 400 && errorMessage?.status <= 499) {
       return (
         <Notification variant="error" copy={copy}>
-          <Text bold> {errorMessage?.message}</Text>
+          <Text small> {errorMessage?.message}</Text>
         </Notification>
       );
     } else {
       return (
         <Notification variant="warning" copy={copy}>
-          <Text bold> {content?.error500}</Text>
+          <Text small> {content?.error500}</Text>
         </Notification>
       );
     }
@@ -216,7 +268,9 @@ const Login = ({
 
   const submitSecureCodeCTA = async (e) => {
     e.preventDefault();
-    // send details
+    setSuccessMessage(null);
+    setErrorMessage(null);
+
     if (secureCode.length < 6 && secureCode > 6) {
       setErrorSecureCode("Code invalid");
       setStatusSecureCode("error");
@@ -226,10 +280,16 @@ const Login = ({
         password,
         secureCode,
       });
-      if (response != undefined && response) {
+      console.log(response);
+      if (response?.success) {
         setErrorSecureCode(undefined);
         setStatusSecureCode("success");
-        setErrorMessage(response?.message);
+        setSuccessMessage(response?.success);
+        setIsLoginComplete(true);
+      } else if (response?.error) {
+        setErrorSecureCode(undefined);
+        setStatusSecureCode("error");
+        setErrorMessage(response?.error);
       }
     }
   };
@@ -267,160 +327,178 @@ const Login = ({
                       <HairlineDivider />
                     </>
                   ) : null}
-                  {errorMessage?.message ? renderGeneralError() : null}
-                  {!has2FA ? (
-                    <>
+                  {errorMessage || successMessage ? renderGeneralError() : null}
+                  {!isLoginComplete ? (
+                    !has2FA ? (
+                      <>
+                        <Input
+                          type={"text"}
+                          hintPosition={"below"}
+                          label={
+                            variant == "inHouse"
+                              ? content?.employeeId
+                              : content?.username
+                          }
+                          name="username"
+                          autocomplete={true}
+                          onChange={onDataFilling}
+                          onBlur={validate}
+                          value={username}
+                          feedback={status}
+                          error={error}
+                        />
+                        {userExists && (
+                          <Input
+                            type={"password"}
+                            hintPosition={"below"}
+                            label={content?.password}
+                            name="password"
+                            autocomplete={false}
+                            onChange={onDataFilling}
+                            onBlur={validate}
+                            value={password}
+                            feedback={statusPwd}
+                            error={errorPwd}
+                          />
+                        )}
+                      </>
+                    ) : (
                       <Input
-                        type={"text"}
+                        type={"number"}
                         hintPosition={"below"}
-                        label={
-                          variant == "inHouse"
-                            ? content?.employeeId
-                            : content?.username
-                        }
-                        name="username"
+                        label={content?.secureCode}
+                        name="secureCode"
                         autocomplete={true}
                         onChange={onDataFilling}
                         onBlur={validate}
-                        value={username}
-                        feedback={status}
-                        error={error}
-                        disabled={userExists}
+                        value={secureCode}
+                        feedback={statusSecureCode}
+                        error={errorSecureCode}
                       />
-                      {userExists && (
-                        <Input
-                          type={"password"}
-                          hintPosition={"below"}
-                          label={content?.password}
-                          name="password"
-                          autocomplete={false}
-                          onChange={onDataFilling}
-                          onBlur={validate}
-                          value={password}
-                          feedback={statusPwd}
-                          error={errorPwd}
-                        />
-                      )}
-                    </>
-                  ) : (
-                    <Input
-                      type={"number"}
-                      hintPosition={"below"}
-                      label={content?.secureCode}
-                      name="secureCode"
-                      autocomplete={true}
-                      onChange={onDataFilling}
-                      onBlur={validate}
-                      value={secureCode}
-                      feedback={statusSecureCode}
-                      error={errorSecureCode}
-                    />
-                  )}
+                    )
+                  ) : null}
                 </>
               )}
-              {userNotExistAndContinueToRegister && (
+              {!isLoginComplete
+                ? userNotExistAndContinueToRegister &&
+                  variant == "regular" && (
+                    <>
+                      <Input
+                        type={"email"}
+                        hintPosition={"below"}
+                        label={content?.email}
+                        name="email"
+                        onChange={onDataFilling}
+                        onBlur={validate}
+                        value={email}
+                        feedback={statusEmail}
+                        error={errorEmail}
+                      />
+                      {!userExists &&
+                      usernameIsCkecked &&
+                      password?.length &&
+                      !isValid ? (
+                        <Requirements
+                          value={password}
+                          requirements={passwordRequirements}
+                          onValidChange={(isValid) => setValid(isValid)}
+                        />
+                      ) : null}
+                      <Input
+                        type={"password"}
+                        hintPosition={"below"}
+                        label={content?.password}
+                        name="password"
+                        onChange={onDataFilling}
+                        onBlur={validate}
+                        value={password}
+                        feedback={statusPwd}
+                        error={errorPwd}
+                      />
+                      <Input
+                        type={"password"}
+                        hintPosition={"below"}
+                        label={content?.confirmPassword}
+                        name="confirmPassword"
+                        onChange={onDataFilling}
+                        onBlur={validate}
+                        value={confirmPassword}
+                        feedback={statusConfirmPwd}
+                        autocomplete="off"
+                      />
+                    </>
+                  )
+                : null}
+              {!isLoginComplete ? (
                 <>
-                  <Input
-                    type={"email"}
-                    hintPosition={"below"}
-                    label={content?.email}
-                    name="email"
-                    onChange={onDataFilling}
-                    onBlur={validate}
-                    value={email}
-                    feedback={statusEmail}
-                    error={errorEmail}
-                  />
                   {!userExists &&
                   usernameIsCkecked &&
-                  password?.length &&
-                  !isValid ? (
-                    <Requirements
-                      value={password}
-                      requirements={passwordRequirements}
-                      onValidChange={(isValid) => setValid(isValid)}
-                    />
+                  !userNotExistAndContinueToRegister &&
+                  variant == "regular" ? (
+                    <Button onClick={continueCTA} variant="primary">
+                      {content?.continueCTA}
+                    </Button>
+                  ) : !userExists &&
+                    usernameIsCkecked &&
+                    userNotExistAndContinueToRegister ? (
+                    <Button onClick={signUpCTA} variant="primary">
+                      {content?.signUpCTA}
+                    </Button>
+                  ) : !userNotExistAndContinueToRegister &&
+                    userExists &&
+                    usernameIsCkecked & !has2FA ? (
+                    <Spinner
+                      label="Loading user"
+                      size="small"
+                      spinning={has2FALoading}
+                      inline
+                    >
+                      <Button onClick={signInCTA} variant="primary">
+                        {content?.signInCTA}
+                      </Button>
+                    </Spinner>
+                  ) : !userNotExistAndContinueToRegister &&
+                    userExists &&
+                    usernameIsCkecked & has2FA ? (
+                    <Spinner
+                      label="Loading user"
+                      size="small"
+                      spinning={has2FALoading}
+                      inline
+                    >
+                      <Button onClick={submitSecureCodeCTA} variant="primary">
+                        {content?.submitSecureCodeCTATxt}
+                      </Button>
+                    </Spinner>
                   ) : null}
-                  <Input
-                    type={"password"}
-                    hintPosition={"below"}
-                    label={content?.password}
-                    name="password"
-                    onChange={onDataFilling}
-                    onBlur={validate}
-                    value={password}
-                    feedback={statusPwd}
-                    error={errorPwd}
-                  />
-                  <Input
-                    type={"password"}
-                    hintPosition={"below"}
-                    label={content?.confirmPassword}
-                    name="confirmPassword"
-                    onChange={onDataFilling}
-                    onBlur={validate}
-                    value={confirmPassword}
-                    feedback={statusConfirmPwd}
-                    error={errorConfirmPwd}
-                    autocomplete="off"
-                  />
                 </>
-              )}
-              {!userExists &&
-              usernameIsCkecked &&
-              !userNotExistAndContinueToRegister ? (
-                <Button onClick={continueCTA} variant="primary">
-                  {content?.continueCTA}
-                </Button>
-              ) : !userExists &&
-                usernameIsCkecked &&
-                userNotExistAndContinueToRegister ? (
-                <Button onClick={signUpCTA} variant="primary">
-                  {content?.signUpCTA}
-                </Button>
-              ) : !userNotExistAndContinueToRegister &&
-                userExists &&
-                usernameIsCkecked & !has2FA ? (
-                <Spinner
-                  label="Loading user"
-                  size="small"
-                  spinning={has2FALoading}
-                  inline
-                >
-                  <Button onClick={signInCTA} variant="primary">
-                    {content?.signInCTA}
-                  </Button>
-                </Spinner>
-              ) : !userNotExistAndContinueToRegister &&
-                userExists &&
-                usernameIsCkecked & has2FA ? (
-                <Spinner
-                  label="Loading user"
-                  size="small"
-                  spinning={has2FALoading}
-                  inline
-                >
-                  <Button onClick={submitSecureCodeCTA} variant="primary">
-                    {content?.submitSecureCodeCTATxt}
-                  </Button>
-                </Spinner>
               ) : null}
               <Box between={1} vertical={3}>
-                {variant != "inHouse" ? (
-                  <>
-                    {userExists && (
-                      <ChevronLink href="#">
-                        {content?.pwdForgotTxt}
-                      </ChevronLink>
-                    )}
-                    {!userExists && (
-                      <ChevronLink href="#">
-                        {content?.usernameForgotTxt}
-                      </ChevronLink>
-                    )}
-                  </>
-                ) : null}
-                <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                {!isLoginComplete
+                  ? variant != "inHouse" && (
+                      <>
+                        {userExists && (
+                          <div>
+                            <ChevronLink href="#">
+                              {content?.pwdForgotTxt}
+                            </ChevronLink>
+                          </div>
+                        )}
+                        {!userExists &&
+                          !usernameIsCkecked &&
+                          !userNotExistAndContinueToRegister && (
+                            <div>
+                              <ChevronLink href="#">
+                                {content?.usernameForgotTxt}
+                              </ChevronLink>
+                            </div>
+                          )}
+                      </>
+                    )
+                  : null}
+                <div>
+                  <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                </div>
               </Box>
             </Box>
           </Card>
@@ -433,8 +511,9 @@ const Login = ({
 Login.propTypes = {
   variant: PropTypes.oneOf(["regular", "inHouse", "Company"]).isRequired,
   checkUsernameOrEmailExists: PropTypes.func,
-  sentLoginData: PropTypes.func,
+  sendLoginData: PropTypes.func,
   send2FALoginData: PropTypes.func,
+  sendSignUPData: PropTypes.func,
 
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(["en", "fr"]),
@@ -471,74 +550,96 @@ Login.propTypes = {
 };
 
 Login.defaultProps = {
-  variant: "inHouse",
+  variant: "regular",
   copy: "en",
   checkUsernameOrEmailExists: (user) => {
-    const username = ["draqlablood", "admin"];
+    const username = ["moderator", "admin"];
     if (username?.includes(user)) {
-      return true;
-    }
-    return false;
-  },
-  sentLoginData: (userData) => {
-    const { username, password } = userData;
-    const name = ["draqlablood", "admin"];
-    const pwd = "password";
-
-    if (
-      name.includes(username) &&
-      username == "draqlablood" &&
-      password == pwd
-    ) {
       return {
-        res: true,
-        message: {
+        error: null,
+        data: true,
+        success: {
           status: 200,
           message: "We have sent you a code to your email address! ",
         },
       };
+    }
+    return {
+      success: null,
+      data: false,
+      error: {
+        status: 404,
+        message: "User does not exist! Create an account. ",
+      },
+    };
+  },
+  sendLoginData: (userData) => {
+    const { username, password } = userData;
+    const name = ["moderator", "admin"];
+    const pwd = "password";
+
+    if (name.includes(username) && username == "moderator" && password == pwd) {
+      return {
+        error: null,
+        data: { has2FA: true },
+        success: {
+          status: 200,
+          message: "We have sent you a security code to your email address.",
+        },
+      };
     } else if (
       name.includes(username) &&
-      username == "draqlablood" &&
+      username == "admin" &&
+      password == pwd
+    ) {
+      return {
+        error: null,
+        data: { has2FA: false },
+        success: {
+          status: 200,
+          message: "For more security activate the 2FA ",
+        },
+      };
+    } else if (
+      name.includes(username) &&
+      (username == "moderator" || username == "admin") &&
       password != pwd
     ) {
-      return { res: false, message: { status: 401, message: "Login failed " } };
-    } else {
-      return {
-        res: false,
-        message: { status: 200, message: "For more security subscribe to 2FA" },
-      };
+      return { data: false, error: { status: 401, message: "Login failed!" } };
     }
+    return null;
   },
   send2FALoginData: (userData) => {
     const { username, secureCode } = userData;
-    const name = ["draqlablood", "admin"];
+    const name = ["moderator", "admin"];
     const secure = 123456;
+
+    console.log("test .. ", { username, secureCode });
 
     if (
       name.includes(username) &&
-      username == "draqlablood" &&
+      username == "moderator" &&
       secureCode == secure
     ) {
       return {
-        res: true,
-        message: { status: 200, message: "Loading user params ..." },
+        error: null,
+        data: true,
+        success: { status: 200, message: "Loading user params . . ." },
       };
     } else if (
       name.includes(username) &&
-      username == "draqlablood" &&
+      username == "moderator" &&
       secureCode != secure
     ) {
       return {
-        res: false,
-        message: { status: 401, message: "Code incorrect" },
-      };
-    } else {
-      return {
-        res: false,
-        message: { status: 200, message: "For more security subscribe to 2FA" },
+        success: null,
+        data: false,
+        error: { status: 401, message: "Code incorrect" },
       };
     }
+  },
+  sendSignUPData: (data) => {
+    console.log(data);
   },
   policies: {
     en: [

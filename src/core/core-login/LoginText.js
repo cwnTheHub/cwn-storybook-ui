@@ -22,7 +22,8 @@ const copyDictionary = {
       "Internal Server Error: We're working to fix it. Please try again later.",
     pwdForgotTxt: "Forgot password ?",
     usernameForgotTxt: "Username forgot ?",
-    employeeId: "Employee ID"
+    employeeId: "Employee ID",
+    companyOREmployeeIDNotFoundTxt: "Account does not exists ! Contact us."
   },
   fr: {
     heading: "Prêt à passer à l'étape suivante ?",
@@ -47,7 +48,8 @@ const copyDictionary = {
       "Erreur interne du serveur : Nous travaillons à sa résolution. Veuillez réessayer ultérieurement.",
     pwdForgotTxt: "Mot de passe oublié ?",
     usernameForgotTxt: "Nom d'utilisateur oublié ?",
-    employeeId: "Numero d'employer"
+    employeeId: "Numero d'employer",
+    companyOREmployeeIDNotFoundTxt: "Le compte n'existe pas ! Contactez-nous."
   },
 };
 export default copyDictionary;

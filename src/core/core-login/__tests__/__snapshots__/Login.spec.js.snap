@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login/> renders 1`] = `
+<div
+  class="sc-feUZmu gLPHiS"
+>
+  <div
+    class="sc-dAbbOL WHwBZ"
+  >
+    <div
+      class="sc-ikkxIA bJfcxL"
+    >
+      <div
+        class="sc-aXZVg hgmtPE sc-gsFSXq cGRQzy sc-gsFSXq cGRQzy"
+      >
+        <div
+          class="sc-aXZVg cPJwEj"
+        >
+          <h3
+            class="sc-hzhJZQ ejsfGD"
+            data-testid="heading"
+          >
+            Ready to take the next step?
+          </h3>
+          <span
+            class="sc-dAlyuH ixzeCR"
+          >
+            Create an account or sign in.
+          </span>
+          <p
+            class="sc-hmdomO hwARNG"
+          >
+            By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
+          </p>
+          <div
+            class="sc-aXZVg cSsmnn"
+          >
+            <p
+              class="sc-hmdomO hdkNeV"
+            >
+              <a
+                class="sc-kOHTFB eYqJno"
+                href="#"
+              >
+                Terms
+              </a>
+            </p>
+            <p
+              class="sc-hmdomO hdkNeV"
+            >
+              <a
+                class="sc-kOHTFB eYqJno"
+                href="#"
+              >
+                Cookie
+              </a>
+            </p>
+            <p
+              class="sc-hmdomO hdkNeV"
+            >
+              <a
+                class="sc-kOHTFB eYqJno"
+                href="#"
+              >
+                Privacy
+              </a>
+            </p>
+          </div>
+          <hr
+            class="sc-fUnMCh jDzUIp"
+          />
+          <div
+            class="sc-aXZVg fMjfal"
+          >
+            <div>
+              <div
+                class="sc-aXZVg kiRGJS"
+              >
+                <label
+                  for="username"
+                >
+                  <span
+                    class="sc-aXZVg kiRGJS sc-koXPp iPqYIw sc-koXPp iPqYIw"
+                  >
+                    <span
+                      class="sc-dAlyuH fYJTzU"
+                    >
+                      Username
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div
+              style="position:relative"
+            >
+              <input
+                aria-invalid="false"
+                class="sc-bmzYkS cwqa-DS"
+                id="username"
+                name="username"
+                type="text"
+                value=""
+              />
+              <div
+                class="sc-iHGNWf jujJoU"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-aXZVg eyAcEv"
+          >
+            <div>
+              <a
+                class="sc-fPXMVe feVztn"
+                direction="right"
+                href="#"
+              >
+                <span
+                  class="sc-aXZVg kiRGJS"
+                >
+                  <span>
+                    Username forgot ?
+                  </span>
+                  <span
+                    class="sc-gFqAkR eQHOvT"
+                    direction="right"
+                  >
+                    <svg
+                      class="sc-imWYAI sc-jXbUNg jJCqOQ lmNWrC"
+                      size="16"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="sc-fPXMVe feVztn"
+                direction="right"
+                href="#"
+              >
+                <span
+                  class="sc-aXZVg kiRGJS"
+                >
+                  <span>
+                    Having issues submit a ticket
+                  </span>
+                  <span
+                    class="sc-gFqAkR eQHOvT"
+                    direction="right"
+                  >
+                    <svg
+                      class="sc-imWYAI sc-jXbUNg jJCqOQ lmNWrC"
+                      size="16"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

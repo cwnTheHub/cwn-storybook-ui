@@ -17,42 +17,86 @@ export default {
   component: Login,
 };
 
-export const Template = (args) => {
-  return (
-    <Login/>
-    /* FlexGrid>
-      <FlexGrid.Row>
-        <FlexGrid.Col xs={12} md={8}>
-          <Card variant="defaultWithBorder">
-            <Box between={3}>
-              <Heading level="h3">Internet 15 - Special Offer</Heading>
-              <HairlineDivider />
-              <Text size="medium">
-                Good for basic browsing, and posting to social media.
-              </Text>
-              <BenefitWithHeading>
-                <BenefitWithHeading.Item icon={Speed} heading="15 mbps">
-                  download speed
-                </BenefitWithHeading.Item>
-                <BenefitWithHeading.Item icon={Speed} heading="1 mbps">
-                  upload speed
-                </BenefitWithHeading.Item>
-                <BenefitWithHeading.Item icon={DataLimit} heading="Unlimited">
-                  Monthly data
-                </BenefitWithHeading.Item>
-              </BenefitWithHeading>
-              <Input
-                hintPosition={"below"}
-                hint={"Enter your username or email"}
-                label={"Username"}
-              />
-              <Button>Continue</Button>
-              <ChevronLink href="#"></ChevronLink>
-            </Box>
-          </Card>
-        </FlexGrid.Col>
-      </FlexGrid.Row>
-    </FlexGrid> */
-      
-  );
+const Template = (args) => {
+  return <Login {...args} />;
+};
+
+export const Demo = Template.bind({});
+
+export const RegularUser = Template.bind({});
+RegularUser.args = {
+  variant: "regular",
+  copy: "en",
+  checkUsernameOrEmailExists: () => {},
+  sentLoginData: () => {},
+  send2FALoginData: () => {},
+  policies: {
+    en: [
+      {
+        text: "Terms",
+        linkTo: "#",
+      },
+      {
+        text: "Cookie",
+        linkTo: "#",
+      },
+      {
+        text: "Privacy",
+        linkTo: "#",
+      },
+    ],
+    fr: [
+      {
+        text: "Conditions",
+        linkTo: "#",
+      },
+      {
+        text: " Cookies",
+        linkTo: "#",
+      },
+      {
+        text: "Confidentialité",
+        linkTo: "#",
+      },
+    ],
+  },
+};
+
+export const InHouseUser = Template.bind({});
+InHouseUser.args = {
+  variant: "inHouse",
+  copy: "en",
+  checkUsernameOrEmailExists: () => {},
+  sentLoginData: () => {},
+  send2FALoginData: () => {},
+  policies: {
+    en: [
+      {
+        text: "Terms",
+        linkTo: "#",
+      },
+      {
+        text: "Cookie",
+        linkTo: "#",
+      },
+      {
+        text: "Privacy",
+        linkTo: "#",
+      },
+    ],
+    fr: [
+      {
+        text: "Conditions",
+        linkTo: "#",
+      },
+      {
+        text: " Cookies",
+        linkTo: "#",
+      },
+      {
+        text: "Confidentialité",
+        linkTo: "#",
+      },
+    ],
+  },
 };
