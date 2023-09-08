@@ -18,7 +18,8 @@ import Spinner from "../core-spinner/Spinner";
 import Notification from "../core-notification/Notification";
 
 const Login = ({
-  variant,
+  variantType,
+  cardVariant,
   checkUsernameOrEmailExists,
   sendLoginData,
   send2FALoginData,
@@ -147,7 +148,7 @@ const Login = ({
             setUserExists(true);
             setStatus("success");
           }
-          if (variant != "regular" && response?.error) {
+          if (variantType != "regular" && response?.error) {
             setSuccessMessage(null);
             setErrorMessage({
               ...response?.error,
@@ -298,9 +299,9 @@ const Login = ({
     <FlexGrid>
       <FlexGrid.Row>
         <FlexGrid.Col xs={12} md={8}>
-          <Card variant="defaultWithBorder">
+          <Card variant={cardVariant}>
             <Box between={3}>
-              {!has2FA && variant != "inHouse" ? (
+              {!has2FA && variantType == "regular" ? (
                 !userExists ? (
                   <>
                     <Heading level="h3">{content?.heading}</Heading>
@@ -314,7 +315,7 @@ const Login = ({
               ) : null}
               {!userNotExistAndContinueToRegister && (
                 <>
-                  {variant != "inHouse" && !has2FA ? (
+                  {variantType == "regular" && !has2FA ? (
                     <>
                       <Paragraph>{content?.paragraph}</Paragraph>
                       <Box inline between={4}>
@@ -335,7 +336,7 @@ const Login = ({
                           type={"text"}
                           hintPosition={"below"}
                           label={
-                            variant == "inHouse"
+                            variantType != "regular"
                               ? content?.employeeId
                               : content?.username
                           }
@@ -381,7 +382,7 @@ const Login = ({
               )}
               {!isLoginComplete
                 ? userNotExistAndContinueToRegister &&
-                  variant == "regular" && (
+                  variantType == "regular" && (
                     <>
                       <Input
                         type={"email"}
@@ -434,7 +435,7 @@ const Login = ({
                   {!userExists &&
                   usernameIsCkecked &&
                   !userNotExistAndContinueToRegister &&
-                  variant == "regular" ? (
+                  variantType == "regular" ? (
                     <Button onClick={continueCTA} variant="primary">
                       {content?.continueCTA}
                     </Button>
@@ -475,7 +476,7 @@ const Login = ({
               ) : null}
               <Box between={1} vertical={3}>
                 {!isLoginComplete
-                  ? variant != "inHouse" && (
+                  ? variantType != "regular" && (
                       <>
                         {userExists && (
                           <div>
@@ -509,7 +510,17 @@ const Login = ({
 };
 
 Login.propTypes = {
-  variant: PropTypes.oneOf(["regular", "inHouse", "Company"]).isRequired,
+  variantType: PropTypes.oneOf(["regular", "inHouse", "Company"]).isRequired,
+  cardVariant: PropTypes.oneOf([
+    "white",
+    "lavender",
+    "grey",
+    "default",
+    "branded",
+    "alternative",
+    "defaultWithBorder",
+    "defaultOnlyBorder",
+  ]),
   checkUsernameOrEmailExists: PropTypes.func,
   sendLoginData: PropTypes.func,
   send2FALoginData: PropTypes.func,
@@ -550,7 +561,8 @@ Login.propTypes = {
 };
 
 Login.defaultProps = {
-  variant: "regular",
+  variantType: "regular",
+  cardVariant:"defaultWithBorder",
   copy: "en",
   checkUsernameOrEmailExists: (user) => {
     const username = ["moderator", "admin"];

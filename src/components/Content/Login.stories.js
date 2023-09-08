@@ -25,7 +25,8 @@ export const Demo = Template.bind({});
 
 export const RegularUser = Template.bind({});
 RegularUser.args = {
-  variant: "regular",
+  variantType: "regular",
+  cardVariant:"defaultWithBorder",
   copy: "en",
   checkUsernameOrEmailExists: () => {},
   sentLoginData: () => {},
@@ -64,7 +65,8 @@ RegularUser.args = {
 
 export const InHouseUser = Template.bind({});
 InHouseUser.args = {
-  variant: "inHouse",
+  variantType: "inHouse",
+  cardVariant:"defaultWithBorder",
   copy: "en",
   checkUsernameOrEmailExists: () => {},
   sentLoginData: () => {},
