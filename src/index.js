@@ -29,6 +29,8 @@ import OrderedList, {
   StyledOrderedItem,
 } from "./core/core-ordered-list/OrderedList";
 import Paragraph from "./core/core-paragraph/Paragraph";
+import Card from "./core/core-card/Card";
+import Login from "./core/core-login/Login";
 
 export {
     A11yContent,
@@ -60,4 +62,6 @@ export {
     OrderedList,
     StyledOrderedItem,
     Paragraph,
+    Card,
+    Login
   };
