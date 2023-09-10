@@ -1,13 +1,13 @@
 FROM node:18-alpine
 
-ENV PORT 1001
+WORKDIR /nds_core/
 
-COPY package.json /nds_core/
-COPY . /nds_core/
-
-WORKDIR /nds_core
+COPY package*.json ./
 
 RUN npm install
 
-RUN npm run storybook
+COPY . .
 
+EXPOSE 1001
+
+CMD ["npm", "run", "storybook"]
