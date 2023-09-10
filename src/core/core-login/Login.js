@@ -12,7 +12,7 @@ import Link from "../core-link/Link";
 import Paragraph from "../core-paragraph/Paragraph";
 import Text from "../core-text/Text";
 import { Requirements } from "./requirements/Requirements";
-import { getCopy } from "../../util-helpers";
+import { getCopy, safeRest } from "../../util-helpers";
 import copyDictionary from "./LoginText";
 import Spinner from "../core-spinner/Spinner";
 import Notification from "../core-notification/Notification";
@@ -26,6 +26,9 @@ const Login = ({
   sendSignUPData,
   copy,
   policies,
+  fullHeight,
+  spacing,
+  ...rest
 }) => {
   const [username, setUsername] = useState("");
   const [userExists, setUserExists] = useState(false);
@@ -137,11 +140,7 @@ const Login = ({
           setStatus(undefined);
           const response = checkUsernameOrEmailExists(username);
 
-          if (
-            response?.data != undefined ||
-            response?.success != undefined ||
-            response?.error != undefined
-          ) {
+          if (response?.success || response?.error) {
             setUsernameIsChecked(true);
           }
           if (response?.success) {
@@ -206,11 +205,19 @@ const Login = ({
       !errorEmail &&
       !userExists
     ) {
-      sendSignUPData({ username, email, password });
+      const response = sendSignUPData({ username, email, password });
+      if (response?.success) {
+        setIsLoginComplete(true);
+        console.log("We are here", response);
+        setSuccessMessage(response?.success);
+      }
+      if (response?.error) {
+        setErrorMessage(response?.error);
+      }
     }
   };
 
-  const signInCTA = async (e) => {
+  const signInCTA = (e) => {
     e.preventDefault();
     setSuccessMessage(null);
     setErrorMessage(null);
@@ -220,7 +227,7 @@ const Login = ({
       setStatusPwd("error");
     } else if (username.length && password.length) {
       setHas2FALoading(true);
-      const response = await sendLoginData({ username, password });
+      const response = sendLoginData({ username, password });
       if (response?.success) {
         setHas2FALoading(false);
 
@@ -230,8 +237,6 @@ const Login = ({
         if (response?.data?.has2FA) {
           setHas2FA(true);
         } else {
-          setUsername("");
-          setPassword("");
           setIsLoginComplete(true);
         }
       }
@@ -248,26 +253,38 @@ const Login = ({
   const renderGeneralError = () => {
     if (successMessage?.status >= 200 && successMessage?.status <= 299) {
       return (
-        <Notification variant="success" copy={copy}>
+        <Notification
+          variant="success"
+          copy={copy}
+          data-testid="notification-success"
+        >
           <Text small> {successMessage?.message}</Text>
         </Notification>
       );
     } else if (errorMessage?.status >= 400 && errorMessage?.status <= 499) {
       return (
-        <Notification variant="error" copy={copy}>
+        <Notification
+          variant="error"
+          copy={copy}
+          data-testid="notification-error"
+        >
           <Text small> {errorMessage?.message}</Text>
         </Notification>
       );
     } else {
       return (
-        <Notification variant="warning" copy={copy}>
+        <Notification
+          variant="warning"
+          copy={copy}
+          data-testid="notification-warning"
+        >
           <Text small> {content?.error500}</Text>
         </Notification>
       );
     }
   };
 
-  const submitSecureCodeCTA = async (e) => {
+  const submitSecureCodeCTA = (e) => {
     e.preventDefault();
     setSuccessMessage(null);
     setErrorMessage(null);
@@ -276,12 +293,11 @@ const Login = ({
       setErrorSecureCode("Code invalid");
       setStatusSecureCode("error");
     } else {
-      const response = await send2FALoginData({
+      const response = send2FALoginData({
         username,
         password,
         secureCode,
       });
-      console.log(response);
       if (response?.success) {
         setErrorSecureCode(undefined);
         setStatusSecureCode("success");
@@ -299,9 +315,20 @@ const Login = ({
     <FlexGrid>
       <FlexGrid.Row>
         <FlexGrid.Col xs={12} md={8}>
-          <Card variant={cardVariant}>
+          <Card
+            variant={cardVariant}
+            {...safeRest(rest)}
+            fullHeight={fullHeight}
+          >
             <Box between={3}>
-              {!has2FA && variantType == "regular" ? (
+              {(errorMessage || successMessage) &&
+              isLoginComplete &&
+              userNotExistAndContinueToRegister
+                ? renderGeneralError()
+                : null}
+              {!has2FA &&
+              variantType == "regular" &&
+              !userNotExistAndContinueToRegister ? (
                 !userExists ? (
                   <>
                     <Heading level="h3">{content?.heading}</Heading>
@@ -347,6 +374,7 @@ const Login = ({
                           value={username}
                           feedback={status}
                           error={error}
+                          data-testid="username"
                         />
                         {userExists && (
                           <Input
@@ -360,6 +388,7 @@ const Login = ({
                             value={password}
                             feedback={statusPwd}
                             error={errorPwd}
+                            data-testid="pwd"
                           />
                         )}
                       </>
@@ -375,74 +404,87 @@ const Login = ({
                         value={secureCode}
                         feedback={statusSecureCode}
                         error={errorSecureCode}
+                        data-testid="secure-code-input"
                       />
                     )
                   ) : null}
                 </>
               )}
-              {!isLoginComplete
-                ? userNotExistAndContinueToRegister &&
-                  variantType == "regular" && (
-                    <>
-                      <Input
-                        type={"email"}
-                        hintPosition={"below"}
-                        label={content?.email}
-                        name="email"
-                        onChange={onDataFilling}
-                        onBlur={validate}
-                        value={email}
-                        feedback={statusEmail}
-                        error={errorEmail}
-                      />
-                      {!userExists &&
-                      usernameIsCkecked &&
-                      password?.length &&
-                      !isValid ? (
-                        <Requirements
-                          value={password}
-                          requirements={passwordRequirements}
-                          onValidChange={(isValid) => setValid(isValid)}
-                        />
-                      ) : null}
-                      <Input
-                        type={"password"}
-                        hintPosition={"below"}
-                        label={content?.password}
-                        name="password"
-                        onChange={onDataFilling}
-                        onBlur={validate}
-                        value={password}
-                        feedback={statusPwd}
-                        error={errorPwd}
-                      />
-                      <Input
-                        type={"password"}
-                        hintPosition={"below"}
-                        label={content?.confirmPassword}
-                        name="confirmPassword"
-                        onChange={onDataFilling}
-                        onBlur={validate}
-                        value={confirmPassword}
-                        feedback={statusConfirmPwd}
-                        autocomplete="off"
-                      />
-                    </>
-                  )
-                : null}
+              {!isLoginComplete &&
+              !userExists &&
+              userNotExistAndContinueToRegister &&
+              variantType == "regular" ? (
+                <>
+                  {errorMessage || successMessage ? renderGeneralError() : null}
+                  <Input
+                    type={"email"}
+                    hintPosition={"below"}
+                    label={content?.email}
+                    name="email"
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={email}
+                    feedback={statusEmail}
+                    error={errorEmail}
+                    data-testid="email-input"
+                  />
+                  {!userExists &&
+                  usernameIsCkecked &&
+                  password?.length &&
+                  !isValid ? (
+                    <Requirements
+                      value={password}
+                      requirements={passwordRequirements}
+                      onValidChange={(isValid) => setValid(isValid)}
+                    />
+                  ) : null}
+                  <Input
+                    type={"password"}
+                    hintPosition={"below"}
+                    label={content?.password}
+                    name="password"
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={password}
+                    feedback={statusPwd}
+                    error={errorPwd}
+                    data-testid="password-input"
+                  />
+                  <Input
+                    type={"password"}
+                    hintPosition={"below"}
+                    label={content?.confirmPassword}
+                    name="confirmPassword"
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={confirmPassword}
+                    feedback={statusConfirmPwd}
+                    autocomplete="off"
+                    data-testid="confirm-pwd-input"
+                  />
+                </>
+              ) : null}
               {!isLoginComplete ? (
                 <>
                   {!userExists &&
                   usernameIsCkecked &&
                   !userNotExistAndContinueToRegister &&
                   variantType == "regular" ? (
-                    <Button onClick={continueCTA} variant="primary">
+                    <Button
+                      onClick={continueCTA}
+                      variant="primary"
+                      data-testid="create-account-button"
+                    >
                       {content?.continueCTA}
                     </Button>
                   ) : !userExists &&
                     usernameIsCkecked &&
                     userNotExistAndContinueToRegister ? (
-                    <Button onClick={signUpCTA} variant="primary">
+                    <Button
+                      onClick={signUpCTA}
+                      variant="primary"
+                      data-testid="sign-up-button"
+                    >
                       {content?.signUpCTA}
                     </Button>
                   ) : !userNotExistAndContinueToRegister &&
@@ -454,7 +496,11 @@ const Login = ({
                       spinning={has2FALoading}
                       inline
                     >
-                      <Button onClick={signInCTA} variant="primary">
+                      <Button
+                        onClick={signInCTA}
+                        variant="primary"
+                        data-testid="sign-in-button"
+                      >
                         {content?.signInCTA}
                       </Button>
                     </Spinner>
@@ -467,7 +513,11 @@ const Login = ({
                       spinning={has2FALoading}
                       inline
                     >
-                      <Button onClick={submitSecureCodeCTA} variant="primary">
+                      <Button
+                        onClick={submitSecureCodeCTA}
+                        variant="primary"
+                        data-testid="sign-in-with-code-button"
+                      >
                         {content?.submitSecureCodeCTATxt}
                       </Button>
                     </Spinner>
@@ -476,10 +526,10 @@ const Login = ({
               ) : null}
               <Box between={1} vertical={3}>
                 {!isLoginComplete
-                  ? variantType != "regular" && (
+                  ? variantType != "inHouse" && (
                       <>
-                        {userExists && (
-                          <div>
+                        {userExists && !has2FA && (
+                          <div data-testid="link-pwd-forgot">
                             <ChevronLink href="#">
                               {content?.pwdForgotTxt}
                             </ChevronLink>
@@ -488,7 +538,7 @@ const Login = ({
                         {!userExists &&
                           !usernameIsCkecked &&
                           !userNotExistAndContinueToRegister && (
-                            <div>
+                            <div data-testid="link-username-forgot">
                               <ChevronLink href="#">
                                 {content?.usernameForgotTxt}
                               </ChevronLink>
@@ -558,12 +608,15 @@ Login.propTypes = {
       })
     ),
   }),
+  fullHeight: PropTypes.bool,
+  spacing: PropTypes.oneOf(["default", "narrow", "compact", "intermediate"]),
 };
 
 Login.defaultProps = {
   variantType: "regular",
-  cardVariant:"defaultWithBorder",
+  cardVariant: "defaultWithBorder",
   copy: "en",
+  fullHeight: false,
   checkUsernameOrEmailExists: (user) => {
     const username = ["moderator", "admin"];
     if (username?.includes(user)) {
@@ -650,8 +703,28 @@ Login.defaultProps = {
       };
     }
   },
-  sendSignUPData: (data) => {
-    console.log(data);
+  sendSignUPData: (userData) => {
+    const { username, email, password } = userData;
+    const emails = [];
+    if (emails.includes(email)) {
+      return {
+        success: null,
+        data: null,
+        error: {
+          status: 401,
+          message: "Email already exists !",
+        },
+      };
+    }
+    return {
+      error: null,
+      data: { username, email, password },
+      success: {
+        status: 200,
+        message:
+          "Thanks for registering! Please check your email for an activation link",
+      },
+    };
   },
   policies: {
     en: [
