@@ -9,5 +9,5 @@ WORKDIR /nds_core
 
 RUN npm install
 
-CMD ["node", "npm run storybook -p ${PORT}"]
+RUN npm run storybook
 
