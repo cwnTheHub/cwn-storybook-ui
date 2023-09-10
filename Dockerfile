@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-WORKDIR /nds_core/
+WORKDIR /nds_docs/
 
 COPY package*.json ./
 
