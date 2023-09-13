@@ -1,16 +1,5 @@
 import React from "react";
-import { BenefitWithHeading } from "../../core/core-benefit";
-import Box from "../../core/core-box/Box";
-import Button from "../../core/core-button/Button";
-import Card from "../../core/core-card/Card";
-import ChevronLink from "../../core/core-chevron-link/ChevronLink";
-import { DataLimit, Speed } from "../../core/core-decorative-icon";
-import { FlexGrid } from "../../core/core-flex-grid";
-import HairlineDivider from "../../core/core-hairline-divider/HairlineDivider";
-import Heading from "../../core/core-heading/Heading";
-import { Input } from "../../core/core-input";
 import Login from "../../core/core-login/Login";
-import Text from "../../core/core-text/Text";
 
 export default {
   title: "Content/ Login",

@@ -40,7 +40,7 @@ const IconButton = forwardRef(
   ({ a11yText, variant, onClick, tag, icon: Icon, ...rest }, ref) => {
     let color;
     if (variant === "alternative") {
-      color = "telusPurple";
+      color = "colorNemetonPurple";
     } else if (variant === "inverted") {
       color = "white";
     } else {
