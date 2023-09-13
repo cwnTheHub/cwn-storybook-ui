@@ -691,7 +691,7 @@ exports[`Checkbox error can have an error message 3`] = `
                 size="small"
               >
                 <p
-                  className="sc-fqkvVR jspODP"
+                  className="sc-fqkvVR gipbFT"
                   size="small"
                 >
                   Error message
