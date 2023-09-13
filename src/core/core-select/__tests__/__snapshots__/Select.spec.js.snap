@@ -156,7 +156,7 @@ exports[`Select can have an error message 1`] = `
                         size="small"
                       >
                         <p
-                          className="sc-fqkvVR jspODP"
+                          className="sc-fqkvVR gipbFT"
                           size="small"
                         >
                           Oh no a terrible error!

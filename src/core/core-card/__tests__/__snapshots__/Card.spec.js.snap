@@ -1,0 +1,759 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> can be presented as one of the allowed variants 1`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="default"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      horizontal={4}
+      variant="default"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="default"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 2`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="default"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      horizontal={4}
+      variant="default"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="default"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 3`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="branded"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="branded"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY ggQaXS"
+      fullHeight={false}
+      horizontal={4}
+      variant="branded"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY ggQaXS"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="branded"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY ggQaXS"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="branded"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY ggQaXS sc-dcJsrY ggQaXS"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 4`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="alternative"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="alternative"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY jFBXlV"
+      fullHeight={false}
+      horizontal={4}
+      variant="alternative"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY jFBXlV"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="alternative"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY jFBXlV"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="alternative"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY jFBXlV sc-dcJsrY jFBXlV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 5`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="defaultWithBorder"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="defaultWithBorder"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY gPiDTD"
+      fullHeight={false}
+      horizontal={4}
+      variant="defaultWithBorder"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY gPiDTD"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="defaultWithBorder"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY gPiDTD"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="defaultWithBorder"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY gPiDTD sc-dcJsrY gPiDTD"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 6`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="defaultOnlyBorder"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="defaultOnlyBorder"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY cOZuIn"
+      fullHeight={false}
+      horizontal={4}
+      variant="defaultOnlyBorder"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY cOZuIn"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="defaultOnlyBorder"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY cOZuIn"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="defaultOnlyBorder"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY cOZuIn sc-dcJsrY cOZuIn"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> full bleed image renders with an image 1`] = `
+<Card
+  fullBleedImage={
+    Object {
+      "alt": "image",
+      "height": 200,
+      "position": "top",
+      "src": "image-example.jpg",
+      "width": 200,
+    }
+  }
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    variant="default"
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      variant="default"
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        inline={false}
+        tag="div"
+        variant="default"
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          inline={false}
+          tag="div"
+          variant="default"
+        >
+          <div
+            className="sc-aXZVg hGJiZM sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            <Styled(Component)
+              fullBleedImage={
+                Object {
+                  "alt": "image",
+                  "height": 200,
+                  "position": "top",
+                  "src": "image-example.jpg",
+                  "width": 200,
+                }
+              }
+            >
+              <Component
+                className="sc-iGgWBj jXfUcL"
+                fullBleedImage={
+                  Object {
+                    "alt": "image",
+                    "height": 200,
+                    "position": "top",
+                    "src": "image-example.jpg",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  className="sc-iGgWBj jXfUcL"
+                >
+                  <Image
+                    alt="image"
+                    height={200}
+                    src="image-example.jpg"
+                    width={200}
+                  >
+                    <styled.img
+                      alt="image"
+                      height={200}
+                      src="image-example.jpg"
+                      width={200}
+                    >
+                      <img
+                        alt="image"
+                        className="sc-gEvEer ecMjHE"
+                        height={200}
+                        src="image-example.jpg"
+                        width={200}
+                      />
+                    </styled.img>
+                  </Image>
+                  <Box
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <styled.div
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
+                    >
+                      <div
+                        className="sc-aXZVg hgmtPE"
+                      >
+                        Some content
+                      </div>
+                    </styled.div>
+                  </Box>
+                </div>
+              </Component>
+            </Styled(Component)>
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> full bleed image renders with responsive image props 1`] = `
+<Card
+  fullBleedImage={
+    Object {
+      "alt": "image",
+      "height": 200,
+      "position": Object {
+        "md": "bottom",
+        "xs": "top",
+      },
+      "src": "image-example.jpg",
+      "width": 200,
+    }
+  }
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    variant="default"
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      variant="default"
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        inline={false}
+        tag="div"
+        variant="default"
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          inline={false}
+          tag="div"
+          variant="default"
+        >
+          <div
+            className="sc-aXZVg hGJiZM sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            <Styled(Component)
+              fullBleedImage={
+                Object {
+                  "alt": "image",
+                  "height": 200,
+                  "position": Object {
+                    "md": "bottom",
+                    "xs": "top",
+                  },
+                  "src": "image-example.jpg",
+                  "width": 200,
+                }
+              }
+            >
+              <Component
+                className="sc-iGgWBj jeORQS"
+                fullBleedImage={
+                  Object {
+                    "alt": "image",
+                    "height": 200,
+                    "position": Object {
+                      "md": "bottom",
+                      "xs": "top",
+                    },
+                    "src": "image-example.jpg",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  className="sc-iGgWBj jeORQS"
+                >
+                  <Image
+                    alt="image"
+                    height={200}
+                    src="image-example.jpg"
+                    width={200}
+                  >
+                    <styled.img
+                      alt="image"
+                      height={200}
+                      src="image-example.jpg"
+                      width={200}
+                    >
+                      <img
+                        alt="image"
+                        className="sc-gEvEer ecMjHE"
+                        height={200}
+                        src="image-example.jpg"
+                        width={200}
+                      />
+                    </styled.img>
+                  </Image>
+                  <Box
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <styled.div
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
+                    >
+                      <div
+                        className="sc-aXZVg hgmtPE"
+                      >
+                        Some content
+                      </div>
+                    </styled.div>
+                  </Box>
+                </div>
+              </Component>
+            </Styled(Component)>
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> full bleed image renders without an image 1`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="default"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      horizontal={4}
+      variant="default"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="default"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> renders 1`] = `
+<div
+  class="sc-aXZVg hgmtPE sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+>
+  Children
+</div>
+`;
+
+exports[`<Card /> spacing renders compact spacing 1`] = `
+<Card
+  fullHeight={false}
+  spacing="compact"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    inset={3}
+    variant="default"
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      inset={3}
+      variant="default"
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        inline={false}
+        inset={3}
+        tag="div"
+        variant="default"
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          inline={false}
+          inset={3}
+          tag="div"
+          variant="default"
+        >
+          <div
+            className="sc-aXZVg hNbjKD sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders default spacing 1`] = `
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="default"
+    vertical={5}
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      horizontal={4}
+      variant="default"
+      vertical={5}
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        horizontal={4}
+        inline={false}
+        tag="div"
+        variant="default"
+        vertical={5}
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={5}
+        >
+          <div
+            className="sc-aXZVg hgmtPE sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders intermediate spacing 1`] = `
+<Card
+  fullHeight={false}
+  spacing="intermediate"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    inset={4}
+    variant="default"
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      inset={4}
+      variant="default"
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        inline={false}
+        inset={4}
+        tag="div"
+        variant="default"
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          inline={false}
+          inset={4}
+          tag="div"
+          variant="default"
+        >
+          <div
+            className="sc-aXZVg duBTCt sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders narrow spacing 1`] = `
+<Card
+  fullHeight={false}
+  spacing="narrow"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={3}
+    variant="default"
+    vertical={4}
+  >
+    <Component
+      className="sc-dcJsrY bqdwMV"
+      fullHeight={false}
+      horizontal={3}
+      variant="default"
+      vertical={4}
+    >
+      <Box
+        className="sc-dcJsrY bqdwMV"
+        horizontal={3}
+        inline={false}
+        tag="div"
+        variant="default"
+        vertical={4}
+      >
+        <styled.div
+          className="sc-dcJsrY bqdwMV"
+          horizontal={3}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={4}
+        >
+          <div
+            className="sc-aXZVg kChUJS sc-dcJsrY bqdwMV sc-dcJsrY bqdwMV"
+          >
+            Some content
+          </div>
+        </styled.div>
+      </Box>
+    </Component>
+  </Styled(Component)>
+</Card>
+`;

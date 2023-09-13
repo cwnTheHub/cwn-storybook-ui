@@ -16,6 +16,13 @@ const paragraphBold = ({ bold, size }) =>
 const paragraphAlign = ({ align }) => ({
   textAlign: align,
 });
+const truncateText = ({ truncate, numberOfLines }) =>
+  truncate && {
+    display: "-webkit-box",
+    "-webkit-box-orient": "vertical",
+    "-webkit-line-clamp": `${numberOfLines} !important`,
+    overflow: "hidden",
+  };
 
 export const StyledParagraph = styled.p(
   paragraphColor,
@@ -25,6 +32,7 @@ export const StyledParagraph = styled.p(
   paragraphSize,
   paragraphBold,
   paragraphAlign,
+  truncateText,
   { sup: typography.sup }
 );
 
@@ -36,6 +44,8 @@ const Paragraph = ({ size, invert, children, ...rest }, context) => {
         size={size}
         invert={invert}
         inheritColor={context.inheritColor}
+        numberOfLines={rest.numberOfLines}
+        truncate={rest.truncate}
       >
         {children}
       </StyledParagraph>
@@ -49,6 +59,8 @@ Paragraph.propTypes = {
   align: PropTypes.oneOf(["left", "center", "right"]),
   invert: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  truncate: PropTypes.bool,
+  numberOfLines: PropTypes.number,
 };
 
 Paragraph.defaultProps = {

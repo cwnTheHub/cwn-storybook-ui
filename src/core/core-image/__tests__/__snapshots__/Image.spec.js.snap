@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image circular masking applies 50% border radius 1`] = `
+<img
+  alt=""
+  class="sc-aXZVg sc-eqUAAy dACnTI ggaxlI"
+  height="200"
+  src="test-image.jpg"
+  width="200"
+/>
+`;
+
+exports[`Image renders 1`] = `
+<img
+  alt=""
+  class="sc-aXZVg dACnTI"
+  height="200"
+  src="test-image.jpg"
+  width="200"
+/>
+`;
+
+exports[`Image rounds 4 corners 1`] = `
+<img
+  alt=""
+  class="sc-aXZVg sc-gEvEer dACnTI dTNxNW"
+  height="200"
+  src="test-image.jpg"
+  width="200"
+/>
+`;
