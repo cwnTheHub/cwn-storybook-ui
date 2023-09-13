@@ -210,7 +210,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -244,7 +244,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -295,7 +295,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -346,7 +346,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -989,7 +989,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -1023,7 +1023,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -1074,7 +1074,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -1125,7 +1125,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -1768,7 +1768,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -1802,7 +1802,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -1853,7 +1853,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -1904,7 +1904,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -2547,7 +2547,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -2581,7 +2581,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -2632,7 +2632,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -2683,7 +2683,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -3326,7 +3326,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -3360,7 +3360,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -3411,7 +3411,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -3462,7 +3462,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -4105,7 +4105,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -4139,7 +4139,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -4190,7 +4190,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -4241,7 +4241,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -4706,7 +4706,7 @@ Object {
                   Create an account or sign in.
                 </span>
                 <p
-                  class="sc-hmdomO hwARNG"
+                  class="sc-hmdomO QqZSy"
                 >
                   By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
                 </p>
@@ -4714,7 +4714,7 @@ Object {
                   class="sc-aXZVg cSsmnn"
                 >
                   <p
-                    class="sc-hmdomO hdkNeV"
+                    class="sc-hmdomO kQPBoJ"
                   >
                     <a
                       class="sc-kOHTFB eYqJno"
@@ -4724,7 +4724,7 @@ Object {
                     </a>
                   </p>
                   <p
-                    class="sc-hmdomO hdkNeV"
+                    class="sc-hmdomO kQPBoJ"
                   >
                     <a
                       class="sc-kOHTFB eYqJno"
@@ -4734,7 +4734,7 @@ Object {
                     </a>
                   </p>
                   <p
-                    class="sc-hmdomO hdkNeV"
+                    class="sc-hmdomO kQPBoJ"
                   >
                     <a
                       class="sc-kOHTFB eYqJno"
@@ -4885,7 +4885,7 @@ Object {
                 Create an account or sign in.
               </span>
               <p
-                class="sc-hmdomO hwARNG"
+                class="sc-hmdomO QqZSy"
               >
                 By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
               </p>
@@ -4893,7 +4893,7 @@ Object {
                 class="sc-aXZVg cSsmnn"
               >
                 <p
-                  class="sc-hmdomO hdkNeV"
+                  class="sc-hmdomO kQPBoJ"
                 >
                   <a
                     class="sc-kOHTFB eYqJno"
@@ -4903,7 +4903,7 @@ Object {
                   </a>
                 </p>
                 <p
-                  class="sc-hmdomO hdkNeV"
+                  class="sc-hmdomO kQPBoJ"
                 >
                   <a
                     class="sc-kOHTFB eYqJno"
@@ -4913,7 +4913,7 @@ Object {
                   </a>
                 </p>
                 <p
-                  class="sc-hmdomO hdkNeV"
+                  class="sc-hmdomO kQPBoJ"
                 >
                   <a
                     class="sc-kOHTFB eYqJno"
@@ -5300,7 +5300,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -5334,7 +5334,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -5385,7 +5385,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -5436,7 +5436,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6080,7 +6080,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -6114,7 +6114,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6165,7 +6165,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6216,7 +6216,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6860,7 +6860,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -6894,7 +6894,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6945,7 +6945,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -6996,7 +6996,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -7640,7 +7640,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                           size="medium"
                                         >
                                           <p
-                                            className="sc-hmdomO hwARNG"
+                                            className="sc-hmdomO QqZSy"
                                             size="medium"
                                           >
                                             By creating an account or logging in, you understand and agree to our Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
@@ -7674,7 +7674,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -7725,7 +7725,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
@@ -7776,7 +7776,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                                 size="small"
                                               >
                                                 <p
-                                                  className="sc-hmdomO hdkNeV"
+                                                  className="sc-hmdomO kQPBoJ"
                                                   size="small"
                                                 >
                                                   <WithForwardedRef(Link)
