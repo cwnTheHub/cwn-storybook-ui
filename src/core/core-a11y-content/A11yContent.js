@@ -17,9 +17,6 @@ const A11yContent = ({ children, ...rest }) => {
 };
 
 A11yContent.propTypes = {
-  /**
-   * Accessible content. Can be either a string or a `Heading` Component
-   */
   children: or([PropTypes.string, componentWithName("Heading")]).isRequired,
 };
 A11yContent.defaultProps = {};

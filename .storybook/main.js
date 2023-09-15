@@ -6,6 +6,7 @@ export default {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
+    "@storybook/addon-styling",
     {
       name: "@storybook/addon-docs",
       options: {

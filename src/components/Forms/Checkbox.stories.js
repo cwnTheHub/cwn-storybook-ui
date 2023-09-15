@@ -4,7 +4,7 @@ import Checkbox from "../../core/core-checkbox/Checkbox";
 import Text from "../../core/core-text/Text";
 
 export default {
-  title: "Forms/ Checkbox",
+  title: "Core components/Forms/ Checkbox",
   component: Checkbox,
 };
 
@@ -47,14 +47,14 @@ const Controlled = (args) => {
         onChange={handleCheck}
         name="products"
         value="consumer"
-        label="Consumer"
+        label="Checkbox 1"
       />
       <Checkbox
         checked={initialState.businessSelected}
         onChange={handleCheck}
         name="products"
         value="business"
-        label="Business"
+        label="Checkbox 2"
       />
     </Box>
   );

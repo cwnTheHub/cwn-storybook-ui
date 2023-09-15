@@ -1,5 +1,3 @@
-
-
 import A11yContent from "./core/core-a11y-content/A11yContent";
 import { BenefitNoHeading, BenefitWithHeading } from "./core/core-benefit";
 import Box from "./core/core-box/Box";
@@ -31,37 +29,41 @@ import OrderedList, {
 import Paragraph from "./core/core-paragraph/Paragraph";
 import Card from "./core/core-card/Card";
 import Login from "./core/core-login/Login";
+import * as Colours from "./core/core-colours/colours";
+import * as SVGs from "./core/core-decorative-icon/svgs";
 
 export {
-    A11yContent,
-    BenefitNoHeading,
-    BenefitWithHeading,
-    Box,
-    Button,
-    ButtonGroup,
-    ButtonLink,
-    Checkbox,
-    ChevronLink,
-    DecorativeIcon,
-    DimpleDivider,
-    DisplayHeading,
-    Accordion,
-    ExpandCollapse,
-    FlexGrid,
-    Row,
-    StyledCol,
-    StyledRow,
-    Col,
-    HairlineDivider,
-    Heading,
-    Input,
-    FeedbackIcon,
-    InputFeedback,
-    Link,
-    Notification,
-    OrderedList,
-    StyledOrderedItem,
-    Paragraph,
-    Card,
-    Login
-  };
+  A11yContent,
+  BenefitNoHeading,
+  BenefitWithHeading,
+  Box,
+  Button,
+  ButtonGroup,
+  ButtonLink,
+  Checkbox,
+  ChevronLink,
+  DecorativeIcon,
+  DimpleDivider,
+  DisplayHeading,
+  Accordion,
+  ExpandCollapse,
+  FlexGrid,
+  Row,
+  StyledCol,
+  StyledRow,
+  Col,
+  HairlineDivider,
+  Heading,
+  Input,
+  FeedbackIcon,
+  InputFeedback,
+  Link,
+  Notification,
+  OrderedList,
+  StyledOrderedItem,
+  Paragraph,
+  Card,
+  Login,
+  Colours,
+  SVGs,
+};

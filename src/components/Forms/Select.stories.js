@@ -2,7 +2,7 @@ import React from "react";
 import Select from "../../core/core-select/Select";
 
 export default {
-  title: "Forms/Select",
+  title: "Core components/Forms/Select",
   component: Select,
 };
 

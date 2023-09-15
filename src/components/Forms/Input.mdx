@@ -1,0 +1,98 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as InputStories from "./Input.stories";
+
+<Meta of={InputStories} />
+<Title />
+
+`import { Input } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Minimal usage
+
+By default, a "text" input field will be rendered, but other HTML5 input types are also supported.
+
+However, the basic Input is limited to a subset of the possible input types. More complex types such as dates will be available as additional components.
+
+Supply additional HTML input attributes as normal.
+
+<Canvas of={InputStories.MinimalUsage} />
+
+### Controlled Input 
+
+If it is required that the state of the Input be controlled by the
+application or other external methods, value and onChange props must be passed to
+the Input. If the Input should not be changed by user input, a readOnly prop must
+be provided.
+
+<Canvas of={InputStories.Controlled} />
+
+```jsx
+initialState = {
+  value: 'Harry',
+}
+const onChange = evt => {
+  setState({ value: evt.target.value })
+}
+;<Box between={2}>
+  <Input label="First name" type="text" value={state.value} onChange={onChange} />
+</Box>
+```
+
+### Uncontrolled Input
+If it is not necessary to control Input state. You can create an Input without a value prop, in this case the Input will act as an HTML input with the type specified by the type prop. Its value can be accessed by referencing the element via a ref.
+
+### Default values
+Due to the nature of uncontrolled components, you cannot set an initial value property on the component. If you need to set a default state for your uncontrolled Input, you can use the defaultValue property as described in the react documentation.
+
+<Canvas of={InputStories.Controlled} />
+
+```jsx
+<Input label="Last name" type="text" defaultValue="Potter" />
+```
+
+### Getting feedback for entered values
+
+#### Usage criteria for feedback
+
+- Keep `error` text as brief as possible, **should be limited to text and links**
+  - Developers can use `React.Fragment` or `<span>` when supplying custom content to the `error` prop
+  - Note that the `div` tag is not valid in a `p` tag
+
+Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
+was correct, or highlight errors that must be corrected.
+
+<Canvas of={InputStories.FeedbackSuccess} />
+<Canvas of={InputStories.FeedbackError} />
+
+### Supplying a hint
+
+#### Usage criteria for hint
+
+- `hint` can now be used beside the label (inline) or below
+  - Label and inline hint text should not exceed 40 characters total, otherwise, use hint text below the label
+- The `hint` should **not** be longer than 85 characters
+- The `hint` should **not** wrap more than 3 lines on all viewport sizes
+- Developers can use `hintPosition` to re-position the `hint` below the `label` if the text supplied to the inline `hint` wraps
+
+Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator
+that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
+
+<Canvas of={InputStories.InputWithHint} />
+
+Use the `hintPosition` in conjunction with `hint` to display a larger hint below the label.
+
+<Canvas of={InputStories.InputWithHintPosition} />

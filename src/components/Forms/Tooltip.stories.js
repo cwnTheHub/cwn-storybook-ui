@@ -4,7 +4,7 @@ import Text from "../../core/core-text/Text";
 import Tooltip from "../../core/core-tooltip/Tooltip";
 
 export default {
-  title: "Forms/Tooltip",
+  title: "Core components/Forms/Tooltip",
   component: Tooltip,
 };
 

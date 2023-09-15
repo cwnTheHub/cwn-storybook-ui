@@ -2,7 +2,7 @@ import React from "react";
 import TextArea from "../../core/core-text-area/TextArea";
 
 export default {
-  title: "Forms/TextArea",
+  title: "Core components/Forms/TextArea",
   component: TextArea,
 };
 
