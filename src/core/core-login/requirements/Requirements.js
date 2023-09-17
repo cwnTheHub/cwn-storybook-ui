@@ -28,10 +28,12 @@ export const Requirements = ({ value, requirements, onValidChange }) => {
 
 Requirements.propTypes = {
   value: PropTypes.string,
-  requirements: PropTypes.arrayOf({
-    validator: PropTypes.func,
-    text: PropTypes.string,
-  }),
+  requirements: PropTypes.arrayOf(
+    PropTypes.shape({
+      validator: PropTypes.func,
+      text: PropTypes.string,
+    })
+  ),
 
   onValidChange: PropTypes.func,
 };

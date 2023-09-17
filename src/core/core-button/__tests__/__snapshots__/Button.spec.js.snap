@@ -2,7 +2,7 @@
 
 exports[`Button can be presented as one of the allowed variants 1`] = `
 <button
-  class="sc-aXZVg hKkIfv"
+  class="sc-aXZVg blAfUS"
   type="button"
 >
   <span

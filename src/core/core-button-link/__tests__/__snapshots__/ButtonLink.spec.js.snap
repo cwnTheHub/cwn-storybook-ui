@@ -10,7 +10,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
 
 exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 <a
-  class="sc-aXZVg sc-eqUAAy hKkIfv fqaKRa"
+  class="sc-aXZVg sc-eqUAAy blAfUS bJSsIP"
 >
   Go home
 </a>

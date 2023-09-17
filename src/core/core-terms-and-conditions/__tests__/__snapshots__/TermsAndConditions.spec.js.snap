@@ -1,0 +1,2480 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TermsAndConditions renders 1`] = `
+<div>
+  <hr
+    class="sc-jXbUNg lmAJea"
+  />
+  <div
+    class="sc-jlZhew dMwDCH"
+  >
+    <div
+      class="sc-dAlyuH bIlVra"
+    >
+      <div
+        class="sc-kpDqfm cifNoG"
+      >
+        <button
+          aria-expanded="false"
+          class="sc-aXZVg sc-cwHptR eRdfpe gEjMmE"
+          type="button"
+        >
+          <div
+            class="sc-eqUAAy bqyypq sc-jEACwC bLgeUd sc-jEACwC bLgeUd"
+          >
+            <span
+              class="sc-cPiKLX ClNlr"
+            >
+              <svg
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                  fill="#0077b6"
+                />
+              </svg>
+              <span
+                class="sc-gEvEer eUXPwY"
+              >
+                <svg
+                  height="8px"
+                  viewBox="0 0 12 8"
+                  width="12px"
+                  xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                  />
+                </svg>
+              </span>
+            </span>
+            <h2
+              class="sc-imWYAI fWWKfQ"
+              data-testid="heading"
+            >
+              View terms and conditions
+            </h2>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    class="sc-kAyceB gzSLaV"
+    style="opacity:0;height:0px;overflow:hidden;visibility:hidden;transition:height 150ms ease-in-out, opacity 150ms ease-in-out, visibility 0ms 150ms"
+  >
+    <div>
+      <div
+        class="sc-jlZhew dMwDCH"
+      >
+        <div
+          class="sc-dAlyuH bIlVra"
+        >
+          <div
+            class="sc-kpDqfm cifNoG"
+          >
+            <hr
+              class="sc-dhKdcB bHumyI"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-gsFSXq eGowxu"
+        style="transform:translateY(1rem);transition:transform 150ms"
+      >
+        <div
+          class="sc-jlZhew gdoqxI"
+        >
+          <div
+            class="sc-dAlyuH bIlVra"
+          >
+            <div
+              class="sc-kpDqfm bGfWnO"
+            >
+              <ol
+                class="sc-eqUAAy jUlTkQ sc-dcJsrY lmraYS sc-dcJsrY lmraYS"
+                type="indexed"
+              >
+                <li
+                  class="sc-fqkvVR hTEkDH"
+                >
+                  One
+                </li>
+                <li
+                  class="sc-fqkvVR hTEkDH"
+                >
+                  Two
+                </li>
+                <li
+                  class="sc-fqkvVR hTEkDH"
+                >
+                  Three
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr
+    class="sc-jXbUNg lmAJea"
+  />
+</div>
+`;
+
+exports[`TermsAndConditions renders expanded 1`] = `
+<TermsAndConditions
+  copy="en"
+  indexedContent={
+    Array [
+      "One",
+      "Two",
+      "Three",
+    ]
+  }
+  nonIndexedContent={Array []}
+>
+  <div>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+    <FlexGrid
+      gutter={false}
+      limitWidth={false}
+      outsideGutter={true}
+    >
+      <styled.div
+        limitWidth={false}
+        outsideGutter={true}
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <div
+          className="sc-jlZhew dMwDCH"
+        >
+          <Row>
+            <styled.div
+              reverseLevel={
+                Array [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                ]
+              }
+            >
+              <div
+                className="sc-dAlyuH bIlVra"
+              >
+                <Col>
+                  <styled.div
+                    gutter={false}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                      ]
+                    }
+                    xs={true}
+                  >
+                    <div
+                      className="sc-kpDqfm cifNoG"
+                    >
+                      <Styled(styled.button)
+                        aria-expanded={true}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <button
+                          aria-expanded={true}
+                          className="sc-aXZVg sc-cwHptR eRdfpe gEjMmE"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <Styled(Box)
+                            between={3}
+                            inline={true}
+                            vertical={3}
+                          >
+                            <Box
+                              between={3}
+                              className="sc-jEACwC bLgeUd"
+                              inline={true}
+                              tag="div"
+                              vertical={3}
+                            >
+                              <styled.div
+                                between={3}
+                                className="sc-jEACwC bLgeUd"
+                                inline={true}
+                                tag="div"
+                                vertical={3}
+                              >
+                                <div
+                                  className="sc-eqUAAy bqyypq sc-jEACwC bLgeUd sc-jEACwC bLgeUd"
+                                >
+                                  <styled.span>
+                                    <span
+                                      className="sc-cPiKLX ClNlr"
+                                    >
+                                      <Circle>
+                                        <svg
+                                          height="24px"
+                                          viewBox="0 0 24 24"
+                                          width="24px"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        >
+                                          <path
+                                            d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                                            fill="#0077b6"
+                                          />
+                                        </svg>
+                                      </Circle>
+                                      <Chevron
+                                        isOpen={true}
+                                      >
+                                        <styled.span
+                                          isOpen={true}
+                                        >
+                                          <span
+                                            className="sc-gEvEer iMYXvF"
+                                          >
+                                            <svg
+                                              height="8px"
+                                              viewBox="0 0 12 8"
+                                              width="12px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                                            >
+                                              <path
+                                                d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                                                transform="rotate(180, 6, 4)"
+                                              />
+                                            </svg>
+                                          </span>
+                                        </styled.span>
+                                      </Chevron>
+                                    </span>
+                                  </styled.span>
+                                  <Heading
+                                    invert={false}
+                                    level="h4"
+                                    tag="h2"
+                                  >
+                                    <styled.h1
+                                      as="h2"
+                                      data-testid="heading"
+                                      invert={false}
+                                      level="h4"
+                                    >
+                                      <h2
+                                        className="sc-imWYAI fWWKfQ"
+                                        data-testid="heading"
+                                      >
+                                        Hide terms and conditions
+                                      </h2>
+                                    </styled.h1>
+                                  </Heading>
+                                </div>
+                              </styled.div>
+                            </Box>
+                          </Styled(Box)>
+                        </button>
+                      </Styled(styled.button)>
+                    </div>
+                  </styled.div>
+                </Col>
+              </div>
+            </styled.div>
+          </Row>
+        </div>
+      </styled.div>
+    </FlexGrid>
+    <FadeAndReveal
+      height={0}
+      in={true}
+      timeout={150}
+    >
+      <CSSTransition
+        classNames=""
+        in={true}
+        timeout={
+          Object {
+            "appear": 150,
+            "enter": 150,
+            "exit": 0,
+          }
+        }
+      >
+        <Transition
+          appear={false}
+          enter={true}
+          exit={true}
+          in={true}
+          mountOnEnter={false}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={
+            Object {
+              "appear": 150,
+              "enter": 150,
+              "exit": 0,
+            }
+          }
+          unmountOnExit={false}
+        >
+          <styled.div
+            aria-hidden={false}
+            style={
+              Object {
+                "height": 0,
+                "opacity": 1,
+                "overflow": "hidden",
+                "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+              }
+            }
+          >
+            <div
+              aria-hidden={false}
+              className="sc-kAyceB gzSLaV"
+              style={
+                Object {
+                  "height": 0,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+                }
+              }
+            >
+              <div>
+                <FlexGrid
+                  gutter={false}
+                  limitWidth={false}
+                  outsideGutter={true}
+                >
+                  <styled.div
+                    limitWidth={false}
+                    outsideGutter={true}
+                    reverseLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                  >
+                    <div
+                      className="sc-jlZhew dMwDCH"
+                    >
+                      <Row>
+                        <styled.div
+                          reverseLevel={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              false,
+                              false,
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-dAlyuH bIlVra"
+                          >
+                            <Col>
+                              <styled.div
+                                gutter={false}
+                                hiddenLevel={
+                                  Array [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                  ]
+                                }
+                                horizontalAlignLevel={
+                                  Array [
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                  ]
+                                }
+                                xs={true}
+                              >
+                                <div
+                                  className="sc-kpDqfm cifNoG"
+                                >
+                                  <DimpleDivider>
+                                    <styled.hr>
+                                      <hr
+                                        className="sc-dhKdcB bHumyI"
+                                      />
+                                    </styled.hr>
+                                  </DimpleDivider>
+                                </div>
+                              </styled.div>
+                            </Col>
+                          </div>
+                        </styled.div>
+                      </Row>
+                    </div>
+                  </styled.div>
+                </FlexGrid>
+                <Translate
+                  direction="y"
+                  distance="0rem"
+                  in={true}
+                  initialStyle={
+                    Object {
+                      "transform": "translateY(1rem)",
+                    }
+                  }
+                  timeout={150}
+                >
+                  <Transition
+                    appear={false}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={150}
+                    unmountOnExit={false}
+                  >
+                    <styled.div
+                      style={
+                        Object {
+                          "transform": "translateY(0rem)",
+                          "transition": "transform 150ms",
+                        }
+                      }
+                    >
+                      <div
+                        className="sc-gsFSXq eGowxu"
+                        style={
+                          Object {
+                            "transform": "translateY(0rem)",
+                            "transition": "transform 150ms",
+                          }
+                        }
+                      >
+                        <FlexGrid
+                          gutter={true}
+                          limitWidth={true}
+                          outsideGutter={true}
+                        >
+                          <styled.div
+                            limitWidth={true}
+                            outsideGutter={true}
+                            reverseLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                          >
+                            <div
+                              className="sc-jlZhew gdoqxI"
+                            >
+                              <Row>
+                                <styled.div
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-dAlyuH bIlVra"
+                                  >
+                                    <Col
+                                      md={10}
+                                      mdOffset={1}
+                                      xs={12}
+                                    >
+                                      <styled.div
+                                        gutter={true}
+                                        hiddenLevel={
+                                          Array [
+                                            12,
+                                            12,
+                                            10,
+                                            10,
+                                            10,
+                                          ]
+                                        }
+                                        horizontalAlignLevel={
+                                          Array [
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                          ]
+                                        }
+                                        md={10}
+                                        mdOffset={1}
+                                        xs={12}
+                                      >
+                                        <div
+                                          className="sc-kpDqfm bGfWnO"
+                                        >
+                                          <List
+                                            below={4}
+                                            size="small"
+                                            styledComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": e {
+                                                  "baseHash": 1306216779,
+                                                  "baseStyle": undefined,
+                                                  "componentId": "sc-dcJsrY",
+                                                  "isStatic": false,
+                                                  "rules": Array [
+                                                    "word-wrap: break-word;",
+                                                    "font-weight: 700;",
+                                                    "font-size: 0.875rem;",
+                                                    "letter-spacing: -0.6px;",
+                                                    "line-height: 1.42857;",
+                                                    "padding-left: 2rem;",
+                                                    "@media (min-width: 768px) {",
+                                                    "padding-left: 1rem;",
+                                                    "}",
+                                                    [Function],
+                                                  ],
+                                                  "staticRulesId": "",
+                                                },
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "shouldForwardProp": undefined,
+                                                "styledComponentId": "sc-dcJsrY",
+                                                "target": Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "below": undefined,
+                                                    "between": undefined,
+                                                    "className": undefined,
+                                                    "horizontal": undefined,
+                                                    "inline": false,
+                                                    "inset": undefined,
+                                                    "tag": "div",
+                                                    "vertical": undefined,
+                                                  },
+                                                  "propTypes": Object {
+                                                    "below": [Function],
+                                                    "between": [Function],
+                                                    "children": [Function],
+                                                    "className": [Function],
+                                                    "horizontal": [Function],
+                                                    "inline": [Function],
+                                                    "inset": [Function],
+                                                    "tag": [Function],
+                                                    "vertical": [Function],
+                                                  },
+                                                  "render": [Function],
+                                                },
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            type="indexed"
+                                          >
+                                            <Styled(Box)
+                                              below={4}
+                                              between={3}
+                                              size="small"
+                                              tag="ol"
+                                              type="indexed"
+                                            >
+                                              <Box
+                                                below={4}
+                                                between={3}
+                                                className="sc-dcJsrY lmraYS"
+                                                inline={false}
+                                                size="small"
+                                                tag="ol"
+                                                type="indexed"
+                                              >
+                                                <styled.div
+                                                  below={4}
+                                                  between={3}
+                                                  className="sc-dcJsrY lmraYS"
+                                                  inline={false}
+                                                  size="small"
+                                                  tag="ol"
+                                                  type="indexed"
+                                                >
+                                                  <ol
+                                                    className="sc-eqUAAy jUlTkQ sc-dcJsrY lmraYS sc-dcJsrY lmraYS"
+                                                    size="small"
+                                                    type="indexed"
+                                                  >
+                                                    <Item
+                                                      key=".$0"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          One
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                    <Item
+                                                      key=".$1"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          Two
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                    <Item
+                                                      key=".$2"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          Three
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                  </ol>
+                                                </styled.div>
+                                              </Box>
+                                            </Styled(Box)>
+                                          </List>
+                                        </div>
+                                      </styled.div>
+                                    </Col>
+                                  </div>
+                                </styled.div>
+                              </Row>
+                            </div>
+                          </styled.div>
+                        </FlexGrid>
+                      </div>
+                    </styled.div>
+                  </Transition>
+                </Translate>
+              </div>
+            </div>
+          </styled.div>
+        </Transition>
+      </CSSTransition>
+    </FadeAndReveal>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+  </div>
+</TermsAndConditions>
+`;
+
+exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedContent 1`] = `
+<TermsAndConditions
+  copy="en"
+  indexedContent={
+    Array [
+      "One",
+      "Two",
+      "Three",
+    ]
+  }
+  nonIndexedContent={
+    Array [
+      "Four",
+      "Five",
+    ]
+  }
+>
+  <div>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+    <FlexGrid
+      gutter={false}
+      limitWidth={false}
+      outsideGutter={true}
+    >
+      <styled.div
+        limitWidth={false}
+        outsideGutter={true}
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <div
+          className="sc-jlZhew dMwDCH"
+        >
+          <Row>
+            <styled.div
+              reverseLevel={
+                Array [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                ]
+              }
+            >
+              <div
+                className="sc-dAlyuH bIlVra"
+              >
+                <Col>
+                  <styled.div
+                    gutter={false}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                      ]
+                    }
+                    xs={true}
+                  >
+                    <div
+                      className="sc-kpDqfm cifNoG"
+                    >
+                      <Styled(styled.button)
+                        aria-expanded={true}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <button
+                          aria-expanded={true}
+                          className="sc-aXZVg sc-cwHptR eRdfpe gEjMmE"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <Styled(Box)
+                            between={3}
+                            inline={true}
+                            vertical={3}
+                          >
+                            <Box
+                              between={3}
+                              className="sc-jEACwC bLgeUd"
+                              inline={true}
+                              tag="div"
+                              vertical={3}
+                            >
+                              <styled.div
+                                between={3}
+                                className="sc-jEACwC bLgeUd"
+                                inline={true}
+                                tag="div"
+                                vertical={3}
+                              >
+                                <div
+                                  className="sc-eqUAAy bqyypq sc-jEACwC bLgeUd sc-jEACwC bLgeUd"
+                                >
+                                  <styled.span>
+                                    <span
+                                      className="sc-cPiKLX ClNlr"
+                                    >
+                                      <Circle>
+                                        <svg
+                                          height="24px"
+                                          viewBox="0 0 24 24"
+                                          width="24px"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        >
+                                          <path
+                                            d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                                            fill="#0077b6"
+                                          />
+                                        </svg>
+                                      </Circle>
+                                      <Chevron
+                                        isOpen={true}
+                                      >
+                                        <styled.span
+                                          isOpen={true}
+                                        >
+                                          <span
+                                            className="sc-gEvEer iMYXvF"
+                                          >
+                                            <svg
+                                              height="8px"
+                                              viewBox="0 0 12 8"
+                                              width="12px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                                            >
+                                              <path
+                                                d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                                                transform="rotate(180, 6, 4)"
+                                              />
+                                            </svg>
+                                          </span>
+                                        </styled.span>
+                                      </Chevron>
+                                    </span>
+                                  </styled.span>
+                                  <Heading
+                                    invert={false}
+                                    level="h4"
+                                    tag="h2"
+                                  >
+                                    <styled.h1
+                                      as="h2"
+                                      data-testid="heading"
+                                      invert={false}
+                                      level="h4"
+                                    >
+                                      <h2
+                                        className="sc-imWYAI fWWKfQ"
+                                        data-testid="heading"
+                                      >
+                                        Hide terms and conditions
+                                      </h2>
+                                    </styled.h1>
+                                  </Heading>
+                                </div>
+                              </styled.div>
+                            </Box>
+                          </Styled(Box)>
+                        </button>
+                      </Styled(styled.button)>
+                    </div>
+                  </styled.div>
+                </Col>
+              </div>
+            </styled.div>
+          </Row>
+        </div>
+      </styled.div>
+    </FlexGrid>
+    <FadeAndReveal
+      height={0}
+      in={true}
+      timeout={150}
+    >
+      <CSSTransition
+        classNames=""
+        in={true}
+        timeout={
+          Object {
+            "appear": 150,
+            "enter": 150,
+            "exit": 0,
+          }
+        }
+      >
+        <Transition
+          appear={false}
+          enter={true}
+          exit={true}
+          in={true}
+          mountOnEnter={false}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={
+            Object {
+              "appear": 150,
+              "enter": 150,
+              "exit": 0,
+            }
+          }
+          unmountOnExit={false}
+        >
+          <styled.div
+            aria-hidden={false}
+            style={
+              Object {
+                "height": 0,
+                "opacity": 1,
+                "overflow": "hidden",
+                "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+              }
+            }
+          >
+            <div
+              aria-hidden={false}
+              className="sc-kAyceB gzSLaV"
+              style={
+                Object {
+                  "height": 0,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+                }
+              }
+            >
+              <div>
+                <FlexGrid
+                  gutter={false}
+                  limitWidth={false}
+                  outsideGutter={true}
+                >
+                  <styled.div
+                    limitWidth={false}
+                    outsideGutter={true}
+                    reverseLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                  >
+                    <div
+                      className="sc-jlZhew dMwDCH"
+                    >
+                      <Row>
+                        <styled.div
+                          reverseLevel={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              false,
+                              false,
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-dAlyuH bIlVra"
+                          >
+                            <Col>
+                              <styled.div
+                                gutter={false}
+                                hiddenLevel={
+                                  Array [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                  ]
+                                }
+                                horizontalAlignLevel={
+                                  Array [
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                  ]
+                                }
+                                xs={true}
+                              >
+                                <div
+                                  className="sc-kpDqfm cifNoG"
+                                >
+                                  <DimpleDivider>
+                                    <styled.hr>
+                                      <hr
+                                        className="sc-dhKdcB bHumyI"
+                                      />
+                                    </styled.hr>
+                                  </DimpleDivider>
+                                </div>
+                              </styled.div>
+                            </Col>
+                          </div>
+                        </styled.div>
+                      </Row>
+                    </div>
+                  </styled.div>
+                </FlexGrid>
+                <Translate
+                  direction="y"
+                  distance="0rem"
+                  in={true}
+                  initialStyle={
+                    Object {
+                      "transform": "translateY(1rem)",
+                    }
+                  }
+                  timeout={150}
+                >
+                  <Transition
+                    appear={false}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={150}
+                    unmountOnExit={false}
+                  >
+                    <styled.div
+                      style={
+                        Object {
+                          "transform": "translateY(0rem)",
+                          "transition": "transform 150ms",
+                        }
+                      }
+                    >
+                      <div
+                        className="sc-gsFSXq eGowxu"
+                        style={
+                          Object {
+                            "transform": "translateY(0rem)",
+                            "transition": "transform 150ms",
+                          }
+                        }
+                      >
+                        <FlexGrid
+                          gutter={true}
+                          limitWidth={true}
+                          outsideGutter={true}
+                        >
+                          <styled.div
+                            limitWidth={true}
+                            outsideGutter={true}
+                            reverseLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                          >
+                            <div
+                              className="sc-jlZhew gdoqxI"
+                            >
+                              <Row>
+                                <styled.div
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-dAlyuH bIlVra"
+                                  >
+                                    <Col
+                                      md={10}
+                                      mdOffset={1}
+                                      xs={12}
+                                    >
+                                      <styled.div
+                                        gutter={true}
+                                        hiddenLevel={
+                                          Array [
+                                            12,
+                                            12,
+                                            10,
+                                            10,
+                                            10,
+                                          ]
+                                        }
+                                        horizontalAlignLevel={
+                                          Array [
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                          ]
+                                        }
+                                        md={10}
+                                        mdOffset={1}
+                                        xs={12}
+                                      >
+                                        <div
+                                          className="sc-kpDqfm bGfWnO"
+                                        >
+                                          <List
+                                            below={4}
+                                            size="small"
+                                            styledComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": e {
+                                                  "baseHash": 1306216779,
+                                                  "baseStyle": undefined,
+                                                  "componentId": "sc-dcJsrY",
+                                                  "isStatic": false,
+                                                  "rules": Array [
+                                                    "word-wrap: break-word;",
+                                                    "font-weight: 700;",
+                                                    "font-size: 0.875rem;",
+                                                    "letter-spacing: -0.6px;",
+                                                    "line-height: 1.42857;",
+                                                    "padding-left: 2rem;",
+                                                    "@media (min-width: 768px) {",
+                                                    "padding-left: 1rem;",
+                                                    "}",
+                                                    [Function],
+                                                  ],
+                                                  "staticRulesId": "",
+                                                },
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "shouldForwardProp": undefined,
+                                                "styledComponentId": "sc-dcJsrY",
+                                                "target": Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "below": undefined,
+                                                    "between": undefined,
+                                                    "className": undefined,
+                                                    "horizontal": undefined,
+                                                    "inline": false,
+                                                    "inset": undefined,
+                                                    "tag": "div",
+                                                    "vertical": undefined,
+                                                  },
+                                                  "propTypes": Object {
+                                                    "below": [Function],
+                                                    "between": [Function],
+                                                    "children": [Function],
+                                                    "className": [Function],
+                                                    "horizontal": [Function],
+                                                    "inline": [Function],
+                                                    "inset": [Function],
+                                                    "tag": [Function],
+                                                    "vertical": [Function],
+                                                  },
+                                                  "render": [Function],
+                                                },
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            type="indexed"
+                                          >
+                                            <Styled(Box)
+                                              below={4}
+                                              between={3}
+                                              size="small"
+                                              tag="ol"
+                                              type="indexed"
+                                            >
+                                              <Box
+                                                below={4}
+                                                between={3}
+                                                className="sc-dcJsrY lmraYS"
+                                                inline={false}
+                                                size="small"
+                                                tag="ol"
+                                                type="indexed"
+                                              >
+                                                <styled.div
+                                                  below={4}
+                                                  between={3}
+                                                  className="sc-dcJsrY lmraYS"
+                                                  inline={false}
+                                                  size="small"
+                                                  tag="ol"
+                                                  type="indexed"
+                                                >
+                                                  <ol
+                                                    className="sc-eqUAAy jUlTkQ sc-dcJsrY lmraYS sc-dcJsrY lmraYS"
+                                                    size="small"
+                                                    type="indexed"
+                                                  >
+                                                    <Item
+                                                      key=".$0"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          One
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                    <Item
+                                                      key=".$1"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          Two
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                    <Item
+                                                      key=".$2"
+                                                      styledComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": e {
+                                                            "baseHash": -1703275152,
+                                                            "baseStyle": undefined,
+                                                            "componentId": "sc-fqkvVR",
+                                                            "isStatic": false,
+                                                            "rules": Array [
+                                                              "& > span {",
+                                                              "font-weight: 500;",
+                                                              "}",
+                                                              "padding-left: 1rem;",
+                                                            ],
+                                                            "staticRulesId": "",
+                                                          },
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "shouldForwardProp": undefined,
+                                                          "styledComponentId": "sc-fqkvVR",
+                                                          "target": "li",
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                    >
+                                                      <styled.li>
+                                                        <li
+                                                          className="sc-fqkvVR hTEkDH"
+                                                        >
+                                                          Three
+                                                        </li>
+                                                      </styled.li>
+                                                    </Item>
+                                                  </ol>
+                                                </styled.div>
+                                              </Box>
+                                            </Styled(Box)>
+                                          </List>
+                                        </div>
+                                      </styled.div>
+                                    </Col>
+                                  </div>
+                                </styled.div>
+                              </Row>
+                            </div>
+                          </styled.div>
+                        </FlexGrid>
+                        <FlexGrid
+                          gutter={true}
+                          limitWidth={true}
+                          outsideGutter={true}
+                        >
+                          <styled.div
+                            limitWidth={true}
+                            outsideGutter={true}
+                            reverseLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                          >
+                            <div
+                              className="sc-jlZhew gdoqxI"
+                            >
+                              <Row>
+                                <styled.div
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-dAlyuH bIlVra"
+                                  >
+                                    <Col
+                                      md={10}
+                                      mdOffset={1}
+                                      xs={12}
+                                    >
+                                      <styled.div
+                                        gutter={true}
+                                        hiddenLevel={
+                                          Array [
+                                            12,
+                                            12,
+                                            10,
+                                            10,
+                                            10,
+                                          ]
+                                        }
+                                        horizontalAlignLevel={
+                                          Array [
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                          ]
+                                        }
+                                        md={10}
+                                        mdOffset={1}
+                                        xs={12}
+                                      >
+                                        <div
+                                          className="sc-kpDqfm bGfWnO"
+                                        >
+                                          <Box
+                                            between={3}
+                                            inline={false}
+                                            tag="div"
+                                          >
+                                            <styled.div
+                                              between={3}
+                                              inline={false}
+                                              tag="div"
+                                            >
+                                              <div
+                                                className="sc-eqUAAy eIBRct"
+                                              >
+                                                <div
+                                                  css={
+                                                    Object {
+                                                      "paddingLeft": "2rem",
+                                                    }
+                                                  }
+                                                >
+                                                  <Heading
+                                                    invert={false}
+                                                    level="h4"
+                                                    tag="span"
+                                                  >
+                                                    <styled.h1
+                                                      as="span"
+                                                      data-testid="heading"
+                                                      invert={false}
+                                                      level="h4"
+                                                    >
+                                                      <span
+                                                        className="sc-imWYAI fWWKfQ"
+                                                        data-testid="heading"
+                                                      >
+                                                        The following applies to all terms and conditions above
+                                                      </span>
+                                                    </styled.h1>
+                                                  </Heading>
+                                                </div>
+                                                <List
+                                                  below={4}
+                                                  size="small"
+                                                  styledComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": e {
+                                                        "baseHash": 1306216779,
+                                                        "baseStyle": undefined,
+                                                        "componentId": "sc-dcJsrY",
+                                                        "isStatic": false,
+                                                        "rules": Array [
+                                                          "word-wrap: break-word;",
+                                                          "font-weight: 700;",
+                                                          "font-size: 0.875rem;",
+                                                          "letter-spacing: -0.6px;",
+                                                          "line-height: 1.42857;",
+                                                          "padding-left: 2rem;",
+                                                          "@media (min-width: 768px) {",
+                                                          "padding-left: 1rem;",
+                                                          "}",
+                                                          [Function],
+                                                        ],
+                                                        "staticRulesId": "",
+                                                      },
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "shouldForwardProp": undefined,
+                                                      "styledComponentId": "sc-dcJsrY",
+                                                      "target": Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "defaultProps": Object {
+                                                          "below": undefined,
+                                                          "between": undefined,
+                                                          "className": undefined,
+                                                          "horizontal": undefined,
+                                                          "inline": false,
+                                                          "inset": undefined,
+                                                          "tag": "div",
+                                                          "vertical": undefined,
+                                                        },
+                                                        "propTypes": Object {
+                                                          "below": [Function],
+                                                          "between": [Function],
+                                                          "children": [Function],
+                                                          "className": [Function],
+                                                          "horizontal": [Function],
+                                                          "inline": [Function],
+                                                          "inset": [Function],
+                                                          "tag": [Function],
+                                                          "vertical": [Function],
+                                                        },
+                                                        "render": [Function],
+                                                      },
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  type="nonIndexed"
+                                                >
+                                                  <Styled(Box)
+                                                    below={4}
+                                                    between={3}
+                                                    size="small"
+                                                    tag="ul"
+                                                    type="nonIndexed"
+                                                  >
+                                                    <Box
+                                                      below={4}
+                                                      between={3}
+                                                      className="sc-dcJsrY iauTkD"
+                                                      inline={false}
+                                                      size="small"
+                                                      tag="ul"
+                                                      type="nonIndexed"
+                                                    >
+                                                      <styled.div
+                                                        below={4}
+                                                        between={3}
+                                                        className="sc-dcJsrY iauTkD"
+                                                        inline={false}
+                                                        size="small"
+                                                        tag="ul"
+                                                        type="nonIndexed"
+                                                      >
+                                                        <ul
+                                                          className="sc-eqUAAy jUlTkQ sc-dcJsrY iauTkD sc-dcJsrY iauTkD"
+                                                          size="small"
+                                                          type="nonIndexed"
+                                                        >
+                                                          <Item
+                                                            key=".$0"
+                                                            styledComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": e {
+                                                                  "baseHash": -1703275152,
+                                                                  "baseStyle": undefined,
+                                                                  "componentId": "sc-fqkvVR",
+                                                                  "isStatic": false,
+                                                                  "rules": Array [
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
+                                                                  ],
+                                                                  "staticRulesId": "",
+                                                                },
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "shouldForwardProp": undefined,
+                                                                "styledComponentId": "sc-fqkvVR",
+                                                                "target": "li",
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
+                                                              }
+                                                            }
+                                                          >
+                                                            <styled.li>
+                                                              <li
+                                                                className="sc-fqkvVR hTEkDH"
+                                                              >
+                                                                Four
+                                                              </li>
+                                                            </styled.li>
+                                                          </Item>
+                                                          <Item
+                                                            key=".$1"
+                                                            styledComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": e {
+                                                                  "baseHash": -1703275152,
+                                                                  "baseStyle": undefined,
+                                                                  "componentId": "sc-fqkvVR",
+                                                                  "isStatic": false,
+                                                                  "rules": Array [
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
+                                                                  ],
+                                                                  "staticRulesId": "",
+                                                                },
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "shouldForwardProp": undefined,
+                                                                "styledComponentId": "sc-fqkvVR",
+                                                                "target": "li",
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
+                                                              }
+                                                            }
+                                                          >
+                                                            <styled.li>
+                                                              <li
+                                                                className="sc-fqkvVR hTEkDH"
+                                                              >
+                                                                Five
+                                                              </li>
+                                                            </styled.li>
+                                                          </Item>
+                                                        </ul>
+                                                      </styled.div>
+                                                    </Box>
+                                                  </Styled(Box)>
+                                                </List>
+                                              </div>
+                                            </styled.div>
+                                          </Box>
+                                        </div>
+                                      </styled.div>
+                                    </Col>
+                                  </div>
+                                </styled.div>
+                              </Row>
+                            </div>
+                          </styled.div>
+                        </FlexGrid>
+                      </div>
+                    </styled.div>
+                  </Transition>
+                </Translate>
+              </div>
+            </div>
+          </styled.div>
+        </Transition>
+      </CSSTransition>
+    </FadeAndReveal>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+  </div>
+</TermsAndConditions>
+`;
+
+exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
+<TermsAndConditions
+  copy="en"
+  indexedContent={Array []}
+  nonIndexedContent={
+    Array [
+      "Four",
+      "Five",
+    ]
+  }
+>
+  <div>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+    <FlexGrid
+      gutter={false}
+      limitWidth={false}
+      outsideGutter={true}
+    >
+      <styled.div
+        limitWidth={false}
+        outsideGutter={true}
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <div
+          className="sc-jlZhew dMwDCH"
+        >
+          <Row>
+            <styled.div
+              reverseLevel={
+                Array [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                ]
+              }
+            >
+              <div
+                className="sc-dAlyuH bIlVra"
+              >
+                <Col>
+                  <styled.div
+                    gutter={false}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                      ]
+                    }
+                    xs={true}
+                  >
+                    <div
+                      className="sc-kpDqfm cifNoG"
+                    >
+                      <Styled(styled.button)
+                        aria-expanded={true}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <button
+                          aria-expanded={true}
+                          className="sc-aXZVg sc-cwHptR eRdfpe gEjMmE"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <Styled(Box)
+                            between={3}
+                            inline={true}
+                            vertical={3}
+                          >
+                            <Box
+                              between={3}
+                              className="sc-jEACwC bLgeUd"
+                              inline={true}
+                              tag="div"
+                              vertical={3}
+                            >
+                              <styled.div
+                                between={3}
+                                className="sc-jEACwC bLgeUd"
+                                inline={true}
+                                tag="div"
+                                vertical={3}
+                              >
+                                <div
+                                  className="sc-eqUAAy bqyypq sc-jEACwC bLgeUd sc-jEACwC bLgeUd"
+                                >
+                                  <styled.span>
+                                    <span
+                                      className="sc-cPiKLX ClNlr"
+                                    >
+                                      <Circle>
+                                        <svg
+                                          height="24px"
+                                          viewBox="0 0 24 24"
+                                          width="24px"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        >
+                                          <path
+                                            d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                                            fill="#0077b6"
+                                          />
+                                        </svg>
+                                      </Circle>
+                                      <Chevron
+                                        isOpen={true}
+                                      >
+                                        <styled.span
+                                          isOpen={true}
+                                        >
+                                          <span
+                                            className="sc-gEvEer iMYXvF"
+                                          >
+                                            <svg
+                                              height="8px"
+                                              viewBox="0 0 12 8"
+                                              width="12px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                                            >
+                                              <path
+                                                d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                                                transform="rotate(180, 6, 4)"
+                                              />
+                                            </svg>
+                                          </span>
+                                        </styled.span>
+                                      </Chevron>
+                                    </span>
+                                  </styled.span>
+                                  <Heading
+                                    invert={false}
+                                    level="h4"
+                                    tag="h2"
+                                  >
+                                    <styled.h1
+                                      as="h2"
+                                      data-testid="heading"
+                                      invert={false}
+                                      level="h4"
+                                    >
+                                      <h2
+                                        className="sc-imWYAI fWWKfQ"
+                                        data-testid="heading"
+                                      >
+                                        Hide terms and conditions
+                                      </h2>
+                                    </styled.h1>
+                                  </Heading>
+                                </div>
+                              </styled.div>
+                            </Box>
+                          </Styled(Box)>
+                        </button>
+                      </Styled(styled.button)>
+                    </div>
+                  </styled.div>
+                </Col>
+              </div>
+            </styled.div>
+          </Row>
+        </div>
+      </styled.div>
+    </FlexGrid>
+    <FadeAndReveal
+      height={0}
+      in={true}
+      timeout={150}
+    >
+      <CSSTransition
+        classNames=""
+        in={true}
+        timeout={
+          Object {
+            "appear": 150,
+            "enter": 150,
+            "exit": 0,
+          }
+        }
+      >
+        <Transition
+          appear={false}
+          enter={true}
+          exit={true}
+          in={true}
+          mountOnEnter={false}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={
+            Object {
+              "appear": 150,
+              "enter": 150,
+              "exit": 0,
+            }
+          }
+          unmountOnExit={false}
+        >
+          <styled.div
+            aria-hidden={false}
+            style={
+              Object {
+                "height": 0,
+                "opacity": 1,
+                "overflow": "hidden",
+                "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+              }
+            }
+          >
+            <div
+              aria-hidden={false}
+              className="sc-kAyceB gzSLaV"
+              style={
+                Object {
+                  "height": 0,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "transition": "height 150ms ease-in-out, opacity 150ms ease-in-out",
+                }
+              }
+            >
+              <div>
+                <FlexGrid
+                  gutter={false}
+                  limitWidth={false}
+                  outsideGutter={true}
+                >
+                  <styled.div
+                    limitWidth={false}
+                    outsideGutter={true}
+                    reverseLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                  >
+                    <div
+                      className="sc-jlZhew dMwDCH"
+                    >
+                      <Row>
+                        <styled.div
+                          reverseLevel={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              false,
+                              false,
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-dAlyuH bIlVra"
+                          >
+                            <Col>
+                              <styled.div
+                                gutter={false}
+                                hiddenLevel={
+                                  Array [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                  ]
+                                }
+                                horizontalAlignLevel={
+                                  Array [
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                  ]
+                                }
+                                xs={true}
+                              >
+                                <div
+                                  className="sc-kpDqfm cifNoG"
+                                >
+                                  <DimpleDivider>
+                                    <styled.hr>
+                                      <hr
+                                        className="sc-dhKdcB bHumyI"
+                                      />
+                                    </styled.hr>
+                                  </DimpleDivider>
+                                </div>
+                              </styled.div>
+                            </Col>
+                          </div>
+                        </styled.div>
+                      </Row>
+                    </div>
+                  </styled.div>
+                </FlexGrid>
+                <Translate
+                  direction="y"
+                  distance="0rem"
+                  in={true}
+                  initialStyle={
+                    Object {
+                      "transform": "translateY(1rem)",
+                    }
+                  }
+                  timeout={150}
+                >
+                  <Transition
+                    appear={false}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={150}
+                    unmountOnExit={false}
+                  >
+                    <styled.div
+                      style={
+                        Object {
+                          "transform": "translateY(0rem)",
+                          "transition": "transform 150ms",
+                        }
+                      }
+                    >
+                      <div
+                        className="sc-gsFSXq eGowxu"
+                        style={
+                          Object {
+                            "transform": "translateY(0rem)",
+                            "transition": "transform 150ms",
+                          }
+                        }
+                      >
+                        <FlexGrid
+                          gutter={true}
+                          limitWidth={true}
+                          outsideGutter={true}
+                        >
+                          <styled.div
+                            limitWidth={true}
+                            outsideGutter={true}
+                            reverseLevel={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                              ]
+                            }
+                          >
+                            <div
+                              className="sc-jlZhew gdoqxI"
+                            >
+                              <Row>
+                                <styled.div
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="sc-dAlyuH bIlVra"
+                                  >
+                                    <Col
+                                      md={10}
+                                      mdOffset={1}
+                                      xs={12}
+                                    >
+                                      <styled.div
+                                        gutter={true}
+                                        hiddenLevel={
+                                          Array [
+                                            12,
+                                            12,
+                                            10,
+                                            10,
+                                            10,
+                                          ]
+                                        }
+                                        horizontalAlignLevel={
+                                          Array [
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                          ]
+                                        }
+                                        md={10}
+                                        mdOffset={1}
+                                        xs={12}
+                                      >
+                                        <div
+                                          className="sc-kpDqfm bGfWnO"
+                                        >
+                                          <Box
+                                            between={3}
+                                            inline={false}
+                                            tag="div"
+                                          >
+                                            <styled.div
+                                              between={3}
+                                              inline={false}
+                                              tag="div"
+                                            >
+                                              <div
+                                                className="sc-eqUAAy eIBRct"
+                                              >
+                                                <List
+                                                  below={4}
+                                                  size="small"
+                                                  styledComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": e {
+                                                        "baseHash": 1306216779,
+                                                        "baseStyle": undefined,
+                                                        "componentId": "sc-dcJsrY",
+                                                        "isStatic": false,
+                                                        "rules": Array [
+                                                          "word-wrap: break-word;",
+                                                          "font-weight: 700;",
+                                                          "font-size: 0.875rem;",
+                                                          "letter-spacing: -0.6px;",
+                                                          "line-height: 1.42857;",
+                                                          "padding-left: 2rem;",
+                                                          "@media (min-width: 768px) {",
+                                                          "padding-left: 1rem;",
+                                                          "}",
+                                                          [Function],
+                                                        ],
+                                                        "staticRulesId": "",
+                                                      },
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "shouldForwardProp": undefined,
+                                                      "styledComponentId": "sc-dcJsrY",
+                                                      "target": Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "defaultProps": Object {
+                                                          "below": undefined,
+                                                          "between": undefined,
+                                                          "className": undefined,
+                                                          "horizontal": undefined,
+                                                          "inline": false,
+                                                          "inset": undefined,
+                                                          "tag": "div",
+                                                          "vertical": undefined,
+                                                        },
+                                                        "propTypes": Object {
+                                                          "below": [Function],
+                                                          "between": [Function],
+                                                          "children": [Function],
+                                                          "className": [Function],
+                                                          "horizontal": [Function],
+                                                          "inline": [Function],
+                                                          "inset": [Function],
+                                                          "tag": [Function],
+                                                          "vertical": [Function],
+                                                        },
+                                                        "render": [Function],
+                                                      },
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  type="nonIndexed"
+                                                >
+                                                  <Styled(Box)
+                                                    below={4}
+                                                    between={3}
+                                                    size="small"
+                                                    tag="ul"
+                                                    type="nonIndexed"
+                                                  >
+                                                    <Box
+                                                      below={4}
+                                                      between={3}
+                                                      className="sc-dcJsrY iauTkD"
+                                                      inline={false}
+                                                      size="small"
+                                                      tag="ul"
+                                                      type="nonIndexed"
+                                                    >
+                                                      <styled.div
+                                                        below={4}
+                                                        between={3}
+                                                        className="sc-dcJsrY iauTkD"
+                                                        inline={false}
+                                                        size="small"
+                                                        tag="ul"
+                                                        type="nonIndexed"
+                                                      >
+                                                        <ul
+                                                          className="sc-eqUAAy jUlTkQ sc-dcJsrY iauTkD sc-dcJsrY iauTkD"
+                                                          size="small"
+                                                          type="nonIndexed"
+                                                        >
+                                                          <Item
+                                                            key=".$0"
+                                                            styledComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": e {
+                                                                  "baseHash": -1703275152,
+                                                                  "baseStyle": undefined,
+                                                                  "componentId": "sc-fqkvVR",
+                                                                  "isStatic": false,
+                                                                  "rules": Array [
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
+                                                                  ],
+                                                                  "staticRulesId": "",
+                                                                },
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "shouldForwardProp": undefined,
+                                                                "styledComponentId": "sc-fqkvVR",
+                                                                "target": "li",
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
+                                                              }
+                                                            }
+                                                          >
+                                                            <styled.li>
+                                                              <li
+                                                                className="sc-fqkvVR hTEkDH"
+                                                              >
+                                                                Four
+                                                              </li>
+                                                            </styled.li>
+                                                          </Item>
+                                                          <Item
+                                                            key=".$1"
+                                                            styledComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": e {
+                                                                  "baseHash": -1703275152,
+                                                                  "baseStyle": undefined,
+                                                                  "componentId": "sc-fqkvVR",
+                                                                  "isStatic": false,
+                                                                  "rules": Array [
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
+                                                                  ],
+                                                                  "staticRulesId": "",
+                                                                },
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "shouldForwardProp": undefined,
+                                                                "styledComponentId": "sc-fqkvVR",
+                                                                "target": "li",
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
+                                                              }
+                                                            }
+                                                          >
+                                                            <styled.li>
+                                                              <li
+                                                                className="sc-fqkvVR hTEkDH"
+                                                              >
+                                                                Five
+                                                              </li>
+                                                            </styled.li>
+                                                          </Item>
+                                                        </ul>
+                                                      </styled.div>
+                                                    </Box>
+                                                  </Styled(Box)>
+                                                </List>
+                                              </div>
+                                            </styled.div>
+                                          </Box>
+                                        </div>
+                                      </styled.div>
+                                    </Col>
+                                  </div>
+                                </styled.div>
+                              </Row>
+                            </div>
+                          </styled.div>
+                        </FlexGrid>
+                      </div>
+                    </styled.div>
+                  </Transition>
+                </Translate>
+              </div>
+            </div>
+          </styled.div>
+        </Transition>
+      </CSSTransition>
+    </FadeAndReveal>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <styled.hr
+        gradient={false}
+        vertical={false}
+      >
+        <hr
+          className="sc-jXbUNg lmAJea"
+        />
+      </styled.hr>
+    </HairlineDivider>
+  </div>
+</TermsAndConditions>
+`;

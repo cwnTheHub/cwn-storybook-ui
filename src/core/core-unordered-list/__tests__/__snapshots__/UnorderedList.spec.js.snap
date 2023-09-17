@@ -34,7 +34,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               size="medium"
             >
               <li
-                className="sc-aXZVg kqKPez"
+                className="sc-aXZVg chrzLG"
                 size="medium"
               >
                 Lorem ipsum
@@ -51,7 +51,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               size="medium"
             >
               <li
-                className="sc-aXZVg kqKPez"
+                className="sc-aXZVg chrzLG"
                 size="medium"
               >
                 Dolor sit amet
@@ -135,12 +135,12 @@ exports[`<UnorderedList /> renders 1`] = `
   class="sc-gEvEer MkeJt sc-eqUAAy eUciOt sc-eqUAAy eUciOt"
 >
   <li
-    class="sc-aXZVg kqKPez"
+    class="sc-aXZVg chrzLG"
   >
     Lorem ipsum
   </li>
   <li
-    class="sc-aXZVg kqKPez"
+    class="sc-aXZVg chrzLG"
   >
     Dolor sit amet
   </li>

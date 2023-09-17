@@ -32,7 +32,7 @@ exports[`ChevronLink can have specific variants 1`] = `
 
 exports[`ChevronLink can have specific variants 2`] = `
 <a
-  class="sc-jlZhew XCwio"
+  class="sc-jlZhew eCYVfV"
   direction="right"
   href="https://nds_core.com"
 >
@@ -47,7 +47,7 @@ exports[`ChevronLink can have specific variants 2`] = `
       direction="right"
     >
       <svg
-        class="sc-aXZVg sc-gEvEer dfiPeB cwmGAY"
+        class="sc-aXZVg sc-gEvEer YtaRA cwmGAY"
         size="16"
         viewBox="0 0 24 24"
       >
