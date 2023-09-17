@@ -1,0 +1,50 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+} from "@storybook/blocks";
+
+import * as HeadingStories from "./Heading.stories";
+
+<Meta of={HeadingStories} />
+<Title />
+
+`import {Heading} from '@nds_core/nds'`
+
+### PROPS & METHODS
+<Controls/>
+
+<Canvas of={HeadingStories.Minimal} />
+
+#### Usage criteria
+
+- Be mindful of SEO and accessibility
+- Organize headers in a nested order: h1, then h2, then h3
+- Try **not** to skip levels where possible: h1, then h3
+- Use one h1 per page
+- The semantic HTML tag and visual appearance of the Heading component can be controlled using the `level` and `tag` props together
+- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](?path=/docs/core-components-typography-displayheading--documentation)
+- For subtext in the Hero overlays, or Headlines, use [`Text`](?path=/docs/core-components-typography-text--documentation)
+
+#### Separating HTML tag from visual style
+
+The `Heading` component allows developers, designers, and content editors to represent headings with a certain style
+while rendering a HTML tag of their choice. It's important to maintain a correct order of heading level and not skip
+levels; for example, have an `<h2>` HTML element directly follows an `<h1>`, or an `<h3>` directly follows and `<h2>`. This allows users of
+assistive technology to navigate through content predictably since headings represent information
+hierarchy.
+
+In the example below, the content would appear at the top of a page, as a Promo.
+
+- The first line of text (Consider this...) appears as a visual heading 4, but renders with an `<h1>` tag
+- The second line of text (Getting membership...) appears as a visual heading 1, but renders with an `<h2>`
+
+When we provide different heading tags, the heading hierarchy is in order for assistive technology, but we are able
+to have a different visual hierarchy of text.
+
+<Canvas of ={HeadingStories.Example}/>

@@ -31,6 +31,12 @@ import Card from "./core/core-card/Card";
 import Login from "./core/core-login/Login";
 import * as Colours from "./core/core-colours/colours";
 import * as SVGs from "./core/core-decorative-icon/svgs";
+import TextButton from "./core/core-text-button/TextButton";
+import Radio from "./core/core-radio/Radio";
+import Select from "./core/core-select/Select";
+import TextArea from "./core/core-text-area/TextArea";
+import Tooltip from "./core/core-tooltip/Tooltip";
+import Responsive, { media } from "./core/core-responsive";
 
 export {
   A11yContent,
@@ -48,6 +54,7 @@ export {
   Accordion,
   ExpandCollapse,
   FlexGrid,
+  Radio,
   Row,
   StyledCol,
   StyledRow,
@@ -66,4 +73,10 @@ export {
   Login,
   Colours,
   SVGs,
+  TextButton,
+  TextArea,
+  Select,
+  Tooltip,
+  media,
+  Responsive,
 };

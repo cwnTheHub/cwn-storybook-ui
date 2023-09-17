@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Responsive from "../../../core/core-responsive";
 import Text from "../../../core/core-text/Text";
 
 export default {
-  title: "Layout /Responsive",
+  title: "Core components/Layout /Responsive",
   component: Responsive,
 };
 
@@ -34,5 +34,27 @@ export const FunctionUsage = (args) => {
         )
       }
     </Responsive>
+  );
+};
+
+export const RenderWithBreakpoint = () => {
+  const [initialState, setInitialState] = useState({
+    device: "desktop",
+  });
+
+  return (
+    <div>
+      <Responsive
+        maxWidth="md"
+        defaultMatches={initialState.device === "mobile"}
+        render={() => <Text>Render me below medium breakpoint.</Text>}
+      />
+
+      <Responsive
+        minWidth="md"
+        defaultMatches={initialState.device === "desktop"}
+        render={() => <Text>Render me above medium breakpoint.</Text>}
+      />
+    </div>
   );
 };

@@ -45,7 +45,6 @@ const Introduction = () => {
         following the links below
       </Paragraph>
       <ChevronLink href="/?path=/docs/layout-responsive--documentation">
-        {" "}
         Getting started For developers
       </ChevronLink>
       <ChevronLink href="#"> Core components</ChevronLink>

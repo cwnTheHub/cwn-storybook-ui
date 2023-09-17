@@ -1,0 +1,40 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as ParagraphStories from "./Paragraph.stories";
+
+<Meta of={ParagraphStories} />
+<Title />
+
+`import {Paragraph} from '@nds_core/nds'`
+
+Block text as an HTML `<p>` element.
+
+### PROPS & METHODS
+
+<Controls />
+
+### Minimal usage
+
+<Canvas of={ParagraphStories.MinimalUsage} />
+
+### Usage criteria
+
+- All body text should be contained in a `Paragraph`, regardless of length.
+- If the `Paragraph` is on a dark background, the `invert` prop must be used to maintain sufficient colour contrast.
+- If other modifications must be made to the text inside a `Paragraph` such as size or font weight, use the `Text`, `Small`, and `Strong` components.
+
+### Placing text on dark colours
+
+Use the invert prop.
+
+<Story of={ParagraphStories.Inverted} />

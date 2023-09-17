@@ -32,7 +32,7 @@ import * as SelectStories from "./Select.stories";
 
 If it is required that the state of the `Select` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `Select`. If the `Select` should not be changed by user input, a `readOnly` prop must be provided.
 
-<Canvas of={SelectStories.MinimalUsage} />
+<Canvas of={SelectStories.SelectWithFeedback} />
 
 ### Uncontrolled Select
 
@@ -55,15 +55,17 @@ Due to the nature of uncontrolled components, you cannot set an initial `value` 
 Use the `feedback` attribute to give the user feedback regarding their selection. You can affirm that the user's selection
 was correct, or highlight errors that must be corrected.
 
-
+<Canvas of={SelectStories.SelectWithFeedback} />
 
 ### Using Tooltip
 
 When a more in-depth explanation is needed to fill out a `Select` properly, a `Tooltip` may be provided to the `tooltip` prop.
 
-
+<Canvas of={SelectStories.SelectWithTooltip} />
 
 ### Grouping options
 
 `Select` supports option groups. By passing an array of options to a top-level `options` key, the component will render
 an `<optgroup>` element along with its respective options.
+
+<Canvas of={SelectStories.Grouped} />

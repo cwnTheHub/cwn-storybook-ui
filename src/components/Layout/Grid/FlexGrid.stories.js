@@ -8,7 +8,7 @@ import Text from "../../../core/core-text/Text";
 import { borders } from "../../../shared-styles";
 
 export default {
-  title: "Layout/Grid/FlexGrid",
+  title: "Core components/Layout/Grid/FlexGrid",
   component: FlexGrid,
 };
 
