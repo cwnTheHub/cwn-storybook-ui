@@ -99,7 +99,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               size="medium"
             >
               <li
-                className="sc-aXZVg iOxKLV"
+                className="sc-aXZVg jvGpWV"
                 size="medium"
               >
                 Lorem ipsum
@@ -116,7 +116,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               size="medium"
             >
               <li
-                className="sc-aXZVg iOxKLV"
+                className="sc-aXZVg jvGpWV"
                 size="medium"
               >
                 Dolor sit amet

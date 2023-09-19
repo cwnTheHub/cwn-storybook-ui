@@ -3,10 +3,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import { colorGreyShuttle, colorPrimary } from "../../core-colours/colours";
-import Icon, { Check } from "../../core-decorative-icon";
+import Icon from "../../core-decorative-icon";
 import Text from "../../core-text/Text";
 import { media } from "../../core-responsive";
-import { IconButton } from "../../core-interactive-icon";
 
 const StyledStep = styled.div({
   position: "relative",
@@ -78,7 +77,7 @@ const Step = ({ label, status, stepNumber, stepIndex }) => {
     >
       <StyledIcon isStepActive={isStepActive()}>
         {status > stepIndex ? (
-          <IconButton icon={Check} variant="inverted" />
+          <Icon symbol="checkmark" size={16} variant="inverted" />
         ) : (
           <br />
         )}

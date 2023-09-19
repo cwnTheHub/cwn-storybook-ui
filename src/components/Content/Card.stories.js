@@ -6,7 +6,7 @@ import Heading from "../../core/core-heading/Heading";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Content/ Card",
+  title: "Core components/Content/ Card",
   component: Card,
 };
 
