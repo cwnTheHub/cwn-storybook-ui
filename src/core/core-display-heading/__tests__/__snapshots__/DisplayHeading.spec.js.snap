@@ -10,7 +10,7 @@ exports[`DisplayHeading can be inverted 1`] = `
 
 exports[`DisplayHeading renders 1`] = `
 <h1
-  class="sc-aXZVg kbJpdE"
+  class="sc-aXZVg jRFWnJ"
 >
   The heading
 </h1>

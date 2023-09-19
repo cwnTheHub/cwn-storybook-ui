@@ -5,6 +5,7 @@ exports[`ButtonGroup renders 1`] = `
   label="Please select a storage size"
   name="storageSize"
   onChange={[Function]}
+  showFieldset={true}
   value="64gb"
 >
   <fieldset
@@ -72,7 +73,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={true}
-                      className="sc-fqkvVR bBNUxq"
+                      className="sc-fqkvVR cciTRq"
                       id="storagesize_64gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -84,7 +85,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_64gb"
                   >
                     <label
-                      className="sc-dcJsrY leUgKW"
+                      className="sc-dcJsrY lhdwjz"
                       htmlFor="storagesize_64gb"
                     >
                       64 GB
@@ -114,7 +115,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={false}
-                      className="sc-fqkvVR bBNUxq"
+                      className="sc-fqkvVR cciTRq"
                       id="storagesize_128gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -126,7 +127,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_128gb"
                   >
                     <label
-                      className="sc-dcJsrY leUgKW"
+                      className="sc-dcJsrY lhdwjz"
                       htmlFor="storagesize_128gb"
                     >
                       128 GB
@@ -156,7 +157,7 @@ exports[`ButtonGroup renders 1`] = `
                   >
                     <input
                       checked={false}
-                      className="sc-fqkvVR bBNUxq"
+                      className="sc-fqkvVR cciTRq"
                       id="storagesize_256gb"
                       name="storageSize"
                       onChange={[Function]}
@@ -168,7 +169,7 @@ exports[`ButtonGroup renders 1`] = `
                     htmlFor="storagesize_256gb"
                   >
                     <label
-                      className="sc-dcJsrY leUgKW"
+                      className="sc-dcJsrY lhdwjz"
                       htmlFor="storagesize_256gb"
                     >
                       256 GB

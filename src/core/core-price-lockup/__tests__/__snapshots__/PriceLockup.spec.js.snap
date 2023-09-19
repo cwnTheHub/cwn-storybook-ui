@@ -1,0 +1,644 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is provided, regardless of rateText 1`] = `
+<PriceLockup
+  footnoteLinks={
+    <FootnoteLink
+      copy="en"
+      number={3}
+      onClick={[Function]}
+    />
+  }
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  size="medium"
+  strikethrough={false}
+>
+  <Styled(Box)
+    between={3}
+  >
+    <Box
+      between={3}
+      className="sc-imWYAI btBFct"
+      inline={false}
+      tag="div"
+    >
+      <styled.div
+        between={3}
+        className="sc-imWYAI btBFct"
+        inline={false}
+        tag="div"
+      >
+        <div
+          className="sc-fqkvVR bIzObP sc-imWYAI btBFct sc-imWYAI btBFct"
+        >
+          <Box
+            between={1}
+            inline={false}
+            tag="div"
+          >
+            <styled.div
+              between={1}
+              inline={false}
+              tag="div"
+            >
+              <div
+                className="sc-fqkvVR lngbYD"
+              >
+                <styled.div
+                  strikethrough={false}
+                >
+                  <div
+                    className="sc-dhKdcB epSUyG"
+                  >
+                    <Styled(Box)
+                      between={2}
+                      inline={true}
+                    >
+                      <Box
+                        between={2}
+                        className="sc-jXbUNg gvoOLc"
+                        inline={true}
+                        tag="div"
+                      >
+                        <styled.div
+                          between={2}
+                          className="sc-jXbUNg gvoOLc"
+                          inline={true}
+                          tag="div"
+                        >
+                          <div
+                            className="sc-fqkvVR kmRcDq sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+                          >
+                            <Box
+                              between={1}
+                              inline={true}
+                              tag="div"
+                            >
+                              <styled.div
+                                between={1}
+                                inline={true}
+                                tag="div"
+                              >
+                                <div
+                                  className="sc-fqkvVR bSAsig"
+                                >
+                                  <styled.span
+                                    aria-hidden="false"
+                                    data-testid="dollarSign"
+                                    size="medium"
+                                  >
+                                    <span
+                                      aria-hidden="false"
+                                      className="sc-gsFSXq epBLcp"
+                                      data-testid="dollarSign"
+                                      size="medium"
+                                    >
+                                      $
+                                    </span>
+                                  </styled.span>
+                                  <styled.span
+                                    aria-hidden="false"
+                                    data-testid="priceValue"
+                                    size="medium"
+                                    strikethrough={false}
+                                  >
+                                    <span
+                                      aria-hidden="false"
+                                      className="sc-iGgWBj gJMYCz"
+                                      data-testid="priceValue"
+                                      size="medium"
+                                    >
+                                      25
+                                    </span>
+                                  </styled.span>
+                                </div>
+                              </styled.div>
+                            </Box>
+                            <styled.span
+                              aria-hidden="false"
+                              data-testid="rateText"
+                              size="medium"
+                            >
+                              <span
+                                aria-hidden="false"
+                                className="sc-dcJsrY kkfzjd"
+                                data-testid="rateText"
+                                size="medium"
+                              >
+                                /month
+                              </span>
+                            </styled.span>
+                          </div>
+                        </styled.div>
+                      </Box>
+                    </Styled(Box)>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </Box>
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <styled.hr
+              gradient={false}
+              vertical={false}
+            >
+              <hr
+                className="sc-eqUAAy ddEfPq"
+              />
+            </styled.hr>
+          </HairlineDivider>
+          <span>
+            <Styled(styled.span)
+              inline={false}
+            >
+              <span
+                className="sc-aXZVg sc-kpDqfm geBklx ixDXtM"
+              >
+                <FootnoteLink
+                  copy="en"
+                  number={3}
+                  onClick={[Function]}
+                >
+                  <sup
+                    key="3"
+                  >
+                    <styled.button
+                      data-nosnippet={true}
+                      data-tds-id="footnote-link"
+                      key="3"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <button
+                        className="sc-cwHptR cqCwLQ"
+                        data-nosnippet={true}
+                        data-tds-id="footnote-link"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <A11yContent
+                          role="doc-noteref"
+                        >
+                          <styled.span
+                            role="doc-noteref"
+                          >
+                            <span
+                              className="sc-gEvEer fUhnJR"
+                              role="doc-noteref"
+                            >
+                              Read legal footnote
+                            </span>
+                          </styled.span>
+                        </A11yContent>
+                        3
+                      </button>
+                    </styled.button>
+                  </sup>
+                </FootnoteLink>
+              </span>
+            </Styled(styled.span)>
+          </span>
+        </div>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</PriceLockup>
+`;
+
+exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is provided 1`] = `
+<PriceLockup
+  footnoteLinks={
+    <FootnoteLink
+      copy="en"
+      number={3}
+      onClick={[Function]}
+    />
+  }
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  size="medium"
+  strikethrough={false}
+>
+  <Styled(Box)
+    between={3}
+  >
+    <Box
+      between={3}
+      className="sc-imWYAI btBFct"
+      inline={false}
+      tag="div"
+    >
+      <styled.div
+        between={3}
+        className="sc-imWYAI btBFct"
+        inline={false}
+        tag="div"
+      >
+        <div
+          className="sc-fqkvVR bIzObP sc-imWYAI btBFct sc-imWYAI btBFct"
+        >
+          <Box
+            between={1}
+            inline={false}
+            tag="div"
+          >
+            <styled.div
+              between={1}
+              inline={false}
+              tag="div"
+            >
+              <div
+                className="sc-fqkvVR lngbYD"
+              >
+                <styled.div
+                  strikethrough={false}
+                >
+                  <div
+                    className="sc-dhKdcB epSUyG"
+                  >
+                    <Styled(Box)
+                      between={2}
+                      inline={true}
+                    >
+                      <Box
+                        between={2}
+                        className="sc-jXbUNg gvoOLc"
+                        inline={true}
+                        tag="div"
+                      >
+                        <styled.div
+                          between={2}
+                          className="sc-jXbUNg gvoOLc"
+                          inline={true}
+                          tag="div"
+                        >
+                          <div
+                            className="sc-fqkvVR kmRcDq sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+                          >
+                            <Box
+                              between={1}
+                              inline={true}
+                              tag="div"
+                            >
+                              <styled.div
+                                between={1}
+                                inline={true}
+                                tag="div"
+                              >
+                                <div
+                                  className="sc-fqkvVR bSAsig"
+                                >
+                                  <styled.span
+                                    aria-hidden="false"
+                                    data-testid="dollarSign"
+                                    size="medium"
+                                  >
+                                    <span
+                                      aria-hidden="false"
+                                      className="sc-gsFSXq epBLcp"
+                                      data-testid="dollarSign"
+                                      size="medium"
+                                    >
+                                      $
+                                    </span>
+                                  </styled.span>
+                                  <styled.span
+                                    aria-hidden="false"
+                                    data-testid="priceValue"
+                                    size="medium"
+                                    strikethrough={false}
+                                  >
+                                    <span
+                                      aria-hidden="false"
+                                      className="sc-iGgWBj gJMYCz"
+                                      data-testid="priceValue"
+                                      size="medium"
+                                    >
+                                      25
+                                    </span>
+                                  </styled.span>
+                                </div>
+                              </styled.div>
+                            </Box>
+                            <styled.span
+                              aria-hidden="false"
+                              data-testid="rateText"
+                              size="medium"
+                            >
+                              <span
+                                aria-hidden="false"
+                                className="sc-dcJsrY kkfzjd"
+                                data-testid="rateText"
+                                size="medium"
+                              >
+                                /month
+                              </span>
+                            </styled.span>
+                          </div>
+                        </styled.div>
+                      </Box>
+                    </Styled(Box)>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </Box>
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <styled.hr
+              gradient={false}
+              vertical={false}
+            >
+              <hr
+                className="sc-eqUAAy ddEfPq"
+              />
+            </styled.hr>
+          </HairlineDivider>
+          <span>
+            <Styled(styled.span)
+              inline={false}
+            >
+              <span
+                className="sc-aXZVg sc-kpDqfm geBklx ixDXtM"
+              >
+                <FootnoteLink
+                  copy="en"
+                  number={3}
+                  onClick={[Function]}
+                >
+                  <sup
+                    key="3"
+                  >
+                    <styled.button
+                      data-nosnippet={true}
+                      data-tds-id="footnote-link"
+                      key="3"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <button
+                        className="sc-cwHptR cqCwLQ"
+                        data-nosnippet={true}
+                        data-tds-id="footnote-link"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <A11yContent
+                          role="doc-noteref"
+                        >
+                          <styled.span
+                            role="doc-noteref"
+                          >
+                            <span
+                              className="sc-gEvEer fUhnJR"
+                              role="doc-noteref"
+                            >
+                              Read legal footnote
+                            </span>
+                          </styled.span>
+                        </A11yContent>
+                        3
+                      </button>
+                    </styled.button>
+                  </sup>
+                </FootnoteLink>
+              </span>
+            </Styled(styled.span)>
+          </span>
+        </div>
+      </styled.div>
+    </Box>
+  </Styled(Box)>
+</PriceLockup>
+`;
+
+exports[`PriceLockup renders with default props 1`] = `
+<div
+  class="sc-fqkvVR gmPDkV sc-imWYAI btBFct sc-imWYAI btBFct"
+>
+  <div
+    class="sc-fqkvVR lngbYD"
+  >
+    <div
+      class="sc-dhKdcB epSUyG"
+    >
+      <div
+        class="sc-fqkvVR bSAsig sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+      >
+        <div
+          class="sc-fqkvVR bSAsig"
+        >
+          <span
+            aria-hidden="false"
+            class="sc-gsFSXq gaHINk"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="false"
+            class="sc-iGgWBj bsAFgr"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+        <span
+          aria-hidden="false"
+          class="sc-dcJsrY gLgXAK"
+          data-testid="rateText"
+        >
+          /month
+          <span
+            class="sc-aXZVg sc-kpDqfm geBklx bRzPdo"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceLockup size prop is large renders 1`] = `
+<div
+  class="sc-fqkvVR fSyyRZ sc-imWYAI btBFct sc-imWYAI btBFct"
+>
+  <div
+    class="sc-fqkvVR flXDtY"
+  >
+    <span
+      class="sc-aXZVg CECGt"
+    >
+      top text
+    </span>
+    <div
+      class="sc-dhKdcB epSUyG"
+    >
+      <div
+        class="sc-fqkvVR kmRcDq sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+      >
+        <div
+          class="sc-fqkvVR kmRcDq"
+        >
+          <span
+            aria-hidden="false"
+            class="sc-kAyceB iYreHo"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="false"
+            class="sc-iGgWBj kqpqDE"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+        <span
+          aria-hidden="false"
+          class="sc-dcJsrY cDmTTM"
+          data-testid="rateText"
+        >
+          /month
+          <span
+            class="sc-aXZVg sc-kpDqfm geBklx bRzPdo"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceLockup size prop is medium renders 1`] = `
+<div
+  class="sc-fqkvVR bIzObP sc-imWYAI btBFct sc-imWYAI btBFct"
+>
+  <div
+    class="sc-fqkvVR lngbYD"
+  >
+    <span
+      class="sc-aXZVg brTLRl"
+    >
+      top text
+    </span>
+    <div
+      class="sc-dhKdcB epSUyG"
+    >
+      <div
+        class="sc-fqkvVR kmRcDq sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+      >
+        <div
+          class="sc-fqkvVR bSAsig"
+        >
+          <span
+            aria-hidden="false"
+            class="sc-gsFSXq epBLcp"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="false"
+            class="sc-iGgWBj gJMYCz"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+        <span
+          aria-hidden="false"
+          class="sc-dcJsrY kkfzjd"
+          data-testid="rateText"
+        >
+          /month
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr
+    class="sc-eqUAAy ddEfPq"
+  />
+  <span>
+    <span
+      class="sc-aXZVg sc-dAlyuH dLVkUm fTObjr"
+    >
+      bottom text
+    </span>
+    <span
+      class="sc-aXZVg sc-kpDqfm geBklx bRzPdo"
+    />
+  </span>
+</div>
+`;
+
+exports[`PriceLockup size prop is small renders 1`] = `
+<div
+  class="sc-fqkvVR gmPDkV sc-imWYAI btBFct sc-imWYAI btBFct"
+>
+  <div
+    class="sc-fqkvVR lngbYD"
+  >
+    <span
+      class="sc-aXZVg brTLRl"
+    >
+      top text
+    </span>
+    <div
+      class="sc-dhKdcB epSUyG"
+    >
+      <div
+        class="sc-fqkvVR bSAsig sc-jXbUNg gvoOLc sc-jXbUNg gvoOLc"
+      >
+        <div
+          class="sc-fqkvVR bSAsig"
+        >
+          <span
+            aria-hidden="false"
+            class="sc-gsFSXq gaHINk"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="false"
+            class="sc-iGgWBj bsAFgr"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+        <span
+          aria-hidden="false"
+          class="sc-dcJsrY gLgXAK"
+          data-testid="rateText"
+        >
+          /month
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr
+    class="sc-eqUAAy ddEfPq"
+  />
+  <span>
+    <span
+      class="sc-aXZVg sc-dAlyuH brTLRl fTObjr"
+    >
+      bottom text
+    </span>
+    <span
+      class="sc-aXZVg sc-kpDqfm geBklx bRzPdo"
+    />
+  </span>
+</div>
+`;

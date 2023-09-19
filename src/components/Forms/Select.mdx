@@ -1,0 +1,71 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as SelectStories from "./Select.stories";
+
+<Meta of={SelectStories} />
+<Title />
+
+`import { Select } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Usage criteria
+
+- Include a `placeholder` to provide instructions such as "Please select…" as an unselectable option (recommended)
+- Use when options are between 7-15 (recommended)
+- For options are 6 and under, use `Radio` groups or `ButtonGroup`.
+- For options 15 and above, look for alternatives (e.g grouping into categories, or input field with auto-complete etc.)
+
+### Controlled Select
+
+If it is required that the state of the `Select` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `Select`. If the `Select` should not be changed by user input, a `readOnly` prop must be provided.
+
+<Canvas of={SelectStories.SelectWithFeedback} />
+
+### Uncontrolled Select
+
+If it is not necessary to control `Select` state. You can create an `Select` without a `value` prop, in this case the `Select` will act as an HTML `select`. Its value can be accessed by referencing the element via a `ref`.
+
+#### Default values
+
+Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default state for your uncontrolled `Select`, you can use the `defaultValue` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
+<Canvas of={SelectStories.MinimalUsage} />
+
+### Getting feedback for entered values
+
+#### Usage criteria for feedback
+
+- Keep `error` text as brief as possible, **should be limited to text and links**
+  - Developers can use `React.Fragment` or `<span>` when supplying custom content to the `error` prop
+  - Note that the `div` tag is not valid in a `p` tag
+
+Use the `feedback` attribute to give the user feedback regarding their selection. You can affirm that the user's selection
+was correct, or highlight errors that must be corrected.
+
+<Canvas of={SelectStories.SelectWithFeedback} />
+
+### Using Tooltip
+
+When a more in-depth explanation is needed to fill out a `Select` properly, a `Tooltip` may be provided to the `tooltip` prop.
+
+<Canvas of={SelectStories.SelectWithTooltip} />
+
+### Grouping options
+
+`Select` supports option groups. By passing an array of options to a top-level `options` key, the component will render
+an `<optgroup>` element along with its respective options.
+
+<Canvas of={SelectStories.Grouped} />

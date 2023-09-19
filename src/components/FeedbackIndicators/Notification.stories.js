@@ -4,7 +4,7 @@ import Notification from "../../core/core-notification/Notification";
 import Text from "../../core/core-text/Text";
 
 export default {
-  title: "Feedback Indicators/Notification ",
+  title: "Core components/Feedback Indicators/Notification ",
   component: Notification,
 };
 
@@ -17,9 +17,14 @@ const Template = (args) => {
       onExit={args.onExit}
     >
       <Text bold>Help us improve this website.</Text> We’d love to hear your
-      feedback. <Link href="http://nds_core.com/feedback">Tell us what you think</Link>
+      feedback.{" "}
+      <Link href="http://nds_core.com/feedback">Tell us what you think</Link>
     </Notification>
   );
+};
+export const Standard = Template.bind({});
+Standard.args = {
+  copy: "en",
 };
 
 export const Branded = Template.bind({});

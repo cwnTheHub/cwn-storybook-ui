@@ -33,9 +33,6 @@ const getTheme = (variant) => {
   };
 };
 
-/**
- * @version ./package.json
- */
 const IconButton = forwardRef(
   ({ a11yText, variant, onClick, tag, icon: Icon, ...rest }, ref) => {
     let color;
@@ -80,25 +77,10 @@ const IconButton = forwardRef(
 IconButton.displayName = "IconButton";
 
 IconButton.propTypes = {
-  /**
-   * A description of the icon for assistive technology.
-   */
   a11yText: PropTypes.string.isRequired,
-  /**
-   * The visual style.
-   */
   variant: PropTypes.oneOf(["default", "alternative", "inverted"]),
-  /**
-   * Pass a handler to the icon to make it interactive.
-   */
   onClick: PropTypes.func,
-  /**
-   * The tag
-   */
   tag: PropTypes.oneOf(["button", "a"]),
-  /**
-   * The icon. Can be one of either the `Add`, `Close`, `PlayVideo`, or `Subtract` icons.
-   */
   icon: PropTypes.oneOfType([
     componentWithName("Add"),
     componentWithName("Close"),

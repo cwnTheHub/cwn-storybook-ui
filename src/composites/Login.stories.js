@@ -1,8 +1,8 @@
 import React from "react";
-import Login from "../../core/core-login/Login";
+import Login from "../core/core-login/Login";
 
 export default {
-  title: "Content/ Login",
+  title: "Composite components/ Login",
   component: Login,
 };
 

@@ -6,7 +6,7 @@ import Heading from "../../core/core-heading/Heading";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Expand Collapse / Panel",
+  title: "Core components/Expand Collapse / Panel",
   component: Panel,
 };
 

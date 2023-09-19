@@ -1,0 +1,120 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+<Title />
+
+`import { Button } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+## Minimal usage
+
+Provide a function as the onClick prop to perform an action when clicked. **Avoid using a button if navigation is the primary action, as a Link is more appropriate.**
+
+## Usage criteria
+
+- Use buttons to move through a transaction
+- Aim to use only one primary button variant per page
+- Keep the text short and precise. It should fit on a single line (our recommendation is 2-24 characters for French and English)
+- Make use of the A11yContent core component to provide more written context for assistive technology users for when they navigate a page using only button landmarks
+- Make sure the button text describes an action
+- Buttons should not be disabled. Use inline (on blur) error messaging to provide feedback when the form is invalid
+
+Currently, by default, Buttons will be displayed in the Primary variant.
+
+<Primary />
+
+Specify the variant to create a button for secondary actions.
+
+<Canvas of={ButtonStories.Secondary} />
+
+### NEW Button variants and ranks
+
+New Buttons and their associated colours are meant for different purposes. Choose different variants according to their context and rank.
+
+### Ranks
+
+By default, new Button variants will be displayed in the Common rank. Use Common rank for medium to low emphasis.
+
+Use Main rank for the most emphasis and main action on a page or in a form.
+
+### StandardCommon + StandardMain
+
+Used mainly for marketing pages for commerce actions where the direct/immediate action is to purchase. It can also be used for login or registration as these will lead a user to pay their bill or add services.
+
+<Canvas of={ButtonStories.StandardMain} />
+<Canvas of={ButtonStories.StandardCommon} />
+
+### BrandCommon + BrandMain
+
+Used mainly for editorial, non-commerce-related actions where the direct/immediate action goes to a learn/info/editorial experience.
+
+<Canvas of={ButtonStories.BrandCommon} />
+<Canvas of={ButtonStories.BrandMain} />
+
+### DangerCommon
+
+Reserved for applications, native apps, and internal tools. Cancel of private/legal/monetary effect. If an action can be undone, do not use this.
+
+<Canvas of={ButtonStories.Danger} />
+
+### Sizes
+
+All buttons are inline, with a minimum width of 180px for screens larger than 768px. They will occupy 100% width of their parent's width at the small viewport (≤ 767px) and below. Resize your browser window to see this behaviour.
+
+### Placing buttons on dark backgrounds
+
+Use the inverted button on top of a dark background.
+
+Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button text is too low in the hover state.
+
+<Canvas of={ButtonStories.Inverted} />
+
+### Accessibility features
+
+The Button component includes:
+
+- High-contrast interactive states (default, active, focus) for all new button variants and ranks
+- Makes use of the button element to provide contextual feedback to assistive technology
+- Is compatible with the A11yContent core component to provide more written context to assistive technology without occupying too much visual space
+
+<Canvas
+  of={ButtonStories.StandardCommon}
+/>
+
+## Disabled buttons
+
+Buttons should not be disabled on NDS experiences. The following is a list of reasons why:
+
+- Disabled buttons fool users into thinking they can proceed with an action
+- Disabled buttons are intentionally designed to be “hard to see”; however this is visually inaccessible
+- Disabled buttons do not inherently give any feedback or reason why they are disabled
+- They give design teams a reason to rush through error handling as opposed to providing the correct feedback to guide users to their next steps
+- Disabled buttons may be cut off for low vision users who zoom-in on their devices causing confusion as to why they cannot proceed and important information to be missed
+- Disabled buttons are usually not navigable with assistive technologies like screen readers and switches. This usually means that the disabled buttons will be skipped over
+
+### What to do instead of using a disabled button:
+
+If you show the button in its disabled state with no explanation, there can be confusion as to why it is disabled. To avoid user confusion, implement full error handling and feedback to your interactive experiences.
+
+To better express to a user that they cannot proceed with form submission, show the submit Button, but perform error validation when the user clicks it, and display all errors as a group within an InputFeedback component adjacent to the submit button.
+
+This allows for clear actions laid out for the user to take and should include skip links for easy navigation to parts of the form that need action
+
+## Additional variants
+
+<Stories />

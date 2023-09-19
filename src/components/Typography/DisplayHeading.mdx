@@ -1,0 +1,28 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+} from "@storybook/blocks";
+
+import * as DisplayHeadingStories from "./DisplayHeading.stories";
+
+<Meta of={DisplayHeadingStories} />
+<Title />
+
+`import {DisplayHeading} from '@nds_core/nds'`
+
+### PROPS & METHODS
+<Controls/>
+
+Large page titles. Renders an HTML `<h1>` element.
+
+Use as an overlay on Hero, Promo or Headline blocks.
+
+<Canvas of ={DisplayHeadingStories.MinimalUsage}/>
+
+

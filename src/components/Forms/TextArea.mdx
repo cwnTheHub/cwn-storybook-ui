@@ -1,0 +1,65 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TextAreaStories from "./TextArea.stories";
+
+<Meta of={TextAreaStories} />
+<Title />
+
+`import { TextArea } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Minimal usage
+
+Use the `TextArea` component to collect long-form information such as product feedback or support queries.
+
+<Canvas of={TextAreaStories.MinimalUsage} />
+
+### Getting feedback for entered values
+
+#### Usage criteria for feedback
+
+- Keep `error` text as brief as possible, **should be limited to text and links**
+- Developers can use `React.Fragment` or `<span>` when supplying custom content to the `error` prop
+- Note that the `div` tag is not valid in a `p` tag
+
+Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
+was correct, or highlight errors that must be corrected.
+
+NDS does not perform input validations, as that is an application level concern. You will need to track the value of your
+`TextArea` fields and perform any required data validations either client side or server side, depending on the context.
+
+Here is an example. Focus on this field and unfocus. If you leave the field blank you will receive an error message. Enter text into the field to display the `success` feedback.
+
+<Canvas of={TextAreaStories.TextAreaWithFeedback} />
+### Supplying a hint
+
+#### Usage criteria for hint
+
+- `hint` can be used beside the label
+  - Label and hint text should not exceed 40 characters total
+- The `hint` should **not** be longer than 85 characters
+- The `hint` should **not** wrap more than 3 lines on all viewport sizes
+
+Use a `hint` to succinctly clarify attributes of the expected input, such as the expected format, or an indicator
+that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
+
+<Canvas of={TextAreaStories.WithHint} />
+
+### Using Tooltip
+
+When a more in-depth explanation is needed to fill out a `TextArea` properly, a `Tooltip` may be provided to the `tooltip` prop.
+
+<Canvas of={TextAreaStories.WithTooltip} />

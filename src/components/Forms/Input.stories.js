@@ -2,7 +2,7 @@ import React from "react";
 import Input from "../../core/core-input/Input";
 
 export default {
-  title: "Forms/Input",
+  title: "Core components/Forms/Input",
   component: Input,
 };
 
@@ -28,8 +28,15 @@ export const MinimalUsage = Template.bind({});
 MinimalUsage.args = {
   id: "gdfgdfg",
   label: "Name",
-  defaultValue: "Harry",
+  defaultValue: "Zeus",
 };
+export const Controlled = Template.bind({});
+Controlled.args = {
+  id: "gdfgdfg",
+  label: "Input name",
+  defaultValue: "Zeus",
+};
+
 
 export const FeedbackSuccess = Template.bind({});
 FeedbackSuccess.args = {

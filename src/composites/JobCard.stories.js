@@ -1,8 +1,8 @@
 import React from "react";
-import JobCard from "../../core/core-job-card/JobCard";
+import JobCard from "../core/core-job-card/JobCard";
 
 export default {
-    title: "Content/ JobCard",
+    title: "Composite components/ JobCard",
     component: JobCard,
   };
   

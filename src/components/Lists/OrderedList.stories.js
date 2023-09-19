@@ -2,7 +2,7 @@ import React from "react";
 import OrderedList from "../../core/core-ordered-list/OrderedList";
 
 export default {
-  title: "Lists/Ordered List",
+  title: "Core components/Lists/Ordered List",
   component: OrderedList,
 };
 

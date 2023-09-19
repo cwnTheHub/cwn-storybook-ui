@@ -1,4 +1,5 @@
 import { globalDecorators } from "./decorators";
+import "../src/styles/global.css";
 
 import {
   Title,
@@ -11,6 +12,11 @@ import {
 
 export default {
   parameters: {
+    options: {
+      storySort: {
+        order: ["Introduction", "Core components", "*"],
+      },
+    },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {

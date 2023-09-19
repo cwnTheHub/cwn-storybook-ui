@@ -1,0 +1,36 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TextStories from "./Text.stories";
+
+<Meta of={TextStories} />
+<Title />
+
+`import {Text} from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Minimal usage
+
+<Canvas of ={TextStories.MinimalUsage}/>
+
+### Usage criteria
+
+- Should only be used to modify text in `Paragraph`.
+- Never used standalone outside of a `Paragraph`.
+
+### Alternate text styles
+By default, the `Text` component will inherit font properties from `Paragraph`. Use its props to override this behaviour.
+
+<Canvas of ={TextStories.WithAlternatText}/>

@@ -57,12 +57,6 @@ const recursiveMap = (children, fn) =>
     return fn(child);
   });
 
-/**
- * A waiting indicator.
- *
- * @version ./package.json
- */
-
 class Spinner extends React.PureComponent {
   constructor() {
     super();

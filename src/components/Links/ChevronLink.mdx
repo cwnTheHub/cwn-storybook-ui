@@ -1,0 +1,59 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as ChevronLinkStories from "./ChevronLink.stories";
+
+<Meta of={ChevronLinkStories} />
+<Title />
+
+`import {ChevronLink} from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+### Minimal usage
+
+A Chevron Link is a navigational element that should only be used as a standalone call to action.
+
+By default, Chevron Links will be displayed in the `primary` variant.
+
+<Canvas of={ChevronLinkStories.Primary} />
+
+### Usage criteria
+
+- Chevron Links have a fixed font size of 1rem and it should not change
+- Due to the chevron's hover animation, provide ample whitespace so that it does not overlap with nearby elements
+- Do not place them within other paragraph text
+- They can appear below or next to [Button Links](/docs/core-components-links-button-link--documentation) as a secondary call to action
+- We recommend a character range between 2-32 characters
+
+Specify the variant to create a button for secondary actions.
+
+<Canvas of={ChevronLinkStories.Secondary} />
+
+### Placing Chevron Links on solid colours
+
+Use the inverted Chevron Link on top of any solid dark colour.
+
+<Story of={ChevronLinkStories.Inverted} />
+
+### Using Chevron Link for navigation in a multi-step operation
+
+Chevron Link can be used as a "back" button by specifying the `direction`. These are not suitable for breadcrumb navigation due to the chevron's hover animation.
+
+<Canvas of={ChevronLinkStories.WithBackNavigation} />
+
+### Using A11yContent
+
+Use the `A11yContent` component to create invisible text that is read out loud by screen readers.
+
+<Canvas of={ChevronLinkStories.WithA11yContent} />

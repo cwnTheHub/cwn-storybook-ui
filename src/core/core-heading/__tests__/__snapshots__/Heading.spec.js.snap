@@ -2,7 +2,7 @@
 
 exports[`Heading renders 1`] = `
 <h2
-  class="sc-aXZVg hFgKLd"
+  class="sc-aXZVg ctPoxE"
   data-testid="heading"
 >
   The heading

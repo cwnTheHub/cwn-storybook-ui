@@ -4,7 +4,7 @@ import ChevronLink from "../../core/core-chevron-link/ChevronLink";
 import { colorNemetonPurple } from "../../core/core-colours/colours";
 
 export default {
-  title: "Links / ChevronLink",
+  title: "Core components/Links/ChevronLink",
   component: ChevronLink,
 };
 
@@ -21,13 +21,22 @@ const Template = (args) => {
     </ChevronLink>
   );
 };
-export const PropsAndMethods = Template.bind({});
-PropsAndMethods.args = {
+export const Primary = Template.bind({});
+Primary.args = {
   variant: "primary",
   direction: "right",
   reactRouterLinkComponent: null,
   to: null,
-  href: null,
+  href: "#",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: "secondary",
+  direction: "right",
+  reactRouterLinkComponent: null,
+  to: null,
+  href: "#",
 };
 
 export const Inverted = (args) => {

@@ -5,7 +5,7 @@ import Paragraph from "../../../core/core-paragraph/Paragraph";
 import Text from "../../../core/core-text/Text";
 
 export default {
-  title: "Layout/Dividers/HairlineDivider",
+  title: "Core components/Layout/Dividers/HairlineDivider",
   component: HairlineDivider,
 };
 

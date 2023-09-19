@@ -12,7 +12,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="sc-gEvEer bWFWNI"
+        class="sc-gEvEer jblJmd"
         size="24"
       >
         <svg
@@ -50,7 +50,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="sc-gEvEer bWFWNI"
+        class="sc-gEvEer jblJmd"
         size="24"
       >
         <svg
@@ -94,7 +94,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="sc-gEvEer bWFWNI"
+        class="sc-gEvEer jblJmd"
         size="24"
       >
         <svg
@@ -132,7 +132,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="sc-gEvEer bWFWNI"
+        class="sc-gEvEer jblJmd"
         size="24"
       >
         <svg
