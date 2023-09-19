@@ -5,7 +5,7 @@ import Heading from "../../core/core-heading/Heading";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Expand Collapse / ExpandCollapse",
+  title: "Core components/Expand Collapse / ExpandCollapse",
   component: ExpandCollapse,
 };
 
@@ -31,7 +31,11 @@ const Template = (args) => {
           </Box>
         </Box>
       </ExpandCollapse.Panel>
-      <ExpandCollapse.Panel id="specs" header="Collapse menu header 2" {...args}>
+      <ExpandCollapse.Panel
+        id="specs"
+        header="Collapse menu header 2"
+        {...args}
+      >
         <Box between={3}>
           <Box between={2}>
             <Heading level="h4">Display</Heading>
@@ -57,7 +61,7 @@ const Template = (args) => {
 const TemplateWithHeader = (args) => {
   return (
     <div>
-      <Heading level="h2">Charges on this new bill</Heading>
+      <Heading level="h2">New Charges</Heading>
       {Template(args)}
     </div>
   );
@@ -78,6 +82,6 @@ WithSectionTitleAndCompactProp.args = {
   tag: "h2",
   compact: true,
   topDivider: false,
-  subtext:"subTxt 1- subTxt 2",
-  tertiaryText: "10"
+  subtext: "subTxt 1- subTxt 2",
+  tertiaryText: "10",
 };

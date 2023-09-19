@@ -5,7 +5,7 @@ import Heading from "../../core/core-heading/Heading";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Expand Collapse / Accordion",
+  title: "Core components/Expand Collapse / Accordion",
   component: Accordion,
 };
 

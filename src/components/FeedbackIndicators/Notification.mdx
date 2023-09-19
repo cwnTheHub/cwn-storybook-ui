@@ -1,17 +1,27 @@
-{/* Notification.mdx */}
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
 
-import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
-
-import * as NotificationStories from './Notification.stories';
+import * as NotificationStories from "./Notification.stories";
 
 <Meta of={NotificationStories} />
 <Title />
-	
-`` import { Notification } from '@nds_core/nds' ``
 
-A banner that highlights important messages.
+`import { Notification } from '@nds_core/nds'`
 
-### Usage criteria
+### PROPS & METHODS
+
+<Controls />
+
+**Use the "Open isolated" button above to view this component in full-width mode.**
 
 A banner that highlights important messages.
 
@@ -21,24 +31,68 @@ Notifications are used to let users know:
 - Their actions have triggered a change such as confirmation of a payment
 - Information such as letting the user know they have almost used all their data
 
-Colours help indicate the type of message. For errors use a red background. 
-For other notifications use grey. Lastly, if the message is promotional use branded colours. 
-These are reflected in code via the variant prop, and the background colour will change to match the desiered variant. 
-For example, the error variant will produce a red background.
-# Minimal implementation
+Colours help indicate the type of message. For errors use a red background. For other notifications use grey. Lastly, if the message is promotional use branded colours. These are reflected in code via the `variant` prop, and the background colour will change to match the desiered variant. For example, the `error` variant will produce a red background.
 
-<Primary />
+<Canvas of={NotificationStories.Standard} />
 
-## Inputs
+### Usage criteria
 
-The component accepts the following inputs (props):
+- The message of a notification must be text content only. You may use text-based styling such as bold text or links. Do
+  not use other complex components or paragraphs.
+- Use complete sentences, while keeping the content succinct.
+- When there are multiple notifications, the messages should be served top to bottom from most to least important. Remove any unnecessary information such as promotional messages that add to the noise.
+- Dismissible notifications should only be used for branded or general style notifications where there is no action needed from the user.
 
-<Controls />
+### Communicating with notifications
 
---- 
+Use the `variant` prop to alter the Notification's appearance.
 
-## Additional variations
+#### Branded
 
-Listed below are additional variations of the component.
+Use the `branded` variant for feedback or chat related messages.
 
-<Stories />
+<Canvas of={NotificationStories.Branded} />
+
+#### Error
+
+Use the `success` variant to provide feedback of a successful operation. **The message will include an icon to indicate meaning and importance.**
+
+<Canvas of={NotificationStories.Success} />
+
+#### Error
+
+Use the `error` variant to provide feedback of a failed operation. **The message will include an icon to indicate meaning and importance.**
+
+<Canvas of={NotificationStories.Error} />
+#### Warning
+
+Use the `warning` variant to provide feedback of a warning; users would still be able to proceed forward. **The message will include an icon to indicate meaning and importance.**
+
+<Canvas of={NotificationStories.Warning} />
+
+### Dismissible
+
+Notifications can either be passive or require action from the user. If the information is passive then it should be dismissible as indicated by an interactive close button on the far right. If the Notification requires an action then make the option(s) clear with a Chevron Link or Paragraph link style.
+
+Use the `dismissible` prop to allow users to dismiss the Notification at any time. The `dismissible` prop must be used together with the `dismissibleA11yLabel` to remain accessible. Once dismissed, the Notification is removed from the DOM.
+
+Please note:
+
+- Branded, General and Success and Instructional variants can be dismissed
+- Error and Warning variants should not be dismissed
+
+<Canvas of={NotificationStories.Dismissible} />
+
+### Using callbacks
+
+#### onDismiss
+
+Use the `onDismiss` prop to execute a function when a user clicks the dismiss button on the `Notification`. The `onDismiss` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
+
+<Canvas of={NotificationStories.OnDismiss} />
+
+#### onExit
+
+Use the `onExit` prop to execute a function at the end of the `Notification` dismiss animation, when it has fully collapsed. The `onExit` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
+
+<Canvas of={NotificationStories.OnExit} />

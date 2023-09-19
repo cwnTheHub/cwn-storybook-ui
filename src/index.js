@@ -37,6 +37,9 @@ import Select from "./core/core-select/Select";
 import TextArea from "./core/core-text-area/TextArea";
 import Tooltip from "./core/core-tooltip/Tooltip";
 import Responsive, { media } from "./core/core-responsive";
+import PriceLockup from "./core/core-price-lockup/PriceLockup";
+import Text from "./core/core-text/Text";
+import Spinner from "./core/core-spinner/Spinner";
 
 export {
   A11yContent,
@@ -79,4 +82,7 @@ export {
   Tooltip,
   media,
   Responsive,
+  PriceLockup,
+  Text,
+  Spinner,
 };

@@ -5,16 +5,22 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import A11yContent from "../../core/core-a11y-content/A11yContent";
 import Box from "../../core/core-box/Box";
 import { colorNemetonPurple } from "../../core/core-colours/colours";
+import { Download, Settings } from "../../core/core-decorative-icon";
 import {
   Delete,
+  DownloadPDF,
+  DownloadPDFs,
   Edit,
   LinkExternal,
+  Print,
+  Profile,
+  Search,
 } from "../../core/core-interactive-icon/svgs";
 import Link from "../../core/core-link/Link";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Links / Link",
+  title: "Core components/Links / Link",
   component: Link,
 };
 
@@ -33,8 +39,8 @@ const Template = (args) => {
     </Link>
   );
 };
-export const PropsAndMethods = Template.bind({});
-PropsAndMethods.args = {
+export const Primary = Template.bind({});
+Primary.args = {
   reactRouterLinkComponent: null,
   to: null,
   href: "#",
@@ -63,7 +69,7 @@ export const MinimalUsage = (args) => {
 
 export const Inverted = (args) => {
   return (
-    <div style={{ background: colorNemetonPurple , padding: 20 }}>
+    <div style={{ background: colorNemetonPurple, padding: 20 }}>
       <Box between={3} inset={3}>
         <Paragraph size="large" invert>
           <Link href="#" invert>
@@ -98,6 +104,23 @@ export const LinksWithIcons = (args) => {
         </span>
 
         <span>
+      <Link href="#" icon={Download} iconPosition="left">
+        Download records
+      </Link>
+    </span>
+
+    <span>
+      <Link href="#" icon={DownloadPDF} iconPosition="left">
+        January <A11yContent>PDF</A11yContent>
+      </Link>
+    </span>
+
+    <span>
+      <Link href="#" icon={DownloadPDFs} iconPosition="left">
+        Download all 2019 bills
+      </Link>
+    </span>
+        <span>
           <Link href="#" icon={Edit} iconPosition="left">
             Edit
           </Link>
@@ -113,6 +136,29 @@ export const LinksWithIcons = (args) => {
             Find My Device <A11yContent>Opens in a new window</A11yContent>
           </Link>
         </span>
+        <span>
+      <Link href="#" icon={Print} iconPosition="left">
+        Print
+      </Link>
+    </span>
+
+    <span>
+      <Link href="#" icon={Profile} iconPosition="left">
+        Profile
+      </Link>
+    </span>
+
+    <span>
+      <Link href="#" icon={Settings} iconPosition="left">
+        Settings
+      </Link>
+    </span>
+
+    <span>
+      <Link href="#" icon={Search} iconPosition="left">
+        Search
+      </Link>
+    </span>
       </Box>
     </div>
   );

@@ -71,9 +71,9 @@ exports[`Footnote renders closed 1`] = `
                           type="button"
                         >
                           <svg
-                            css="[object Object]"
                             focusable="false"
                             height="24px"
+                            style="background:#f7f7f8"
                             viewBox="0 0 24 24"
                             width="24px"
                             xlink="http://www.w3.org/1999/xlink"
@@ -194,9 +194,9 @@ exports[`Footnote renders opened 1`] = `
                           type="button"
                         >
                           <svg
-                            css="[object Object]"
                             focusable="false"
                             height="24px"
+                            style="background:#f7f7f8"
                             viewBox="0 0 24 24"
                             width="24px"
                             xlink="http://www.w3.org/1999/xlink"

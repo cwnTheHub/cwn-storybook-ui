@@ -1,33 +1,38 @@
 {/* Panel.mdx */}
 
-import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
 
-import * as AccordionStories from './Panel.stories';
+import * as AccordionStories from "./Panel.stories";
 
 <Meta of={AccordionStories} />
 <Title />
 
-`` import { ExpandCollapse } from '@nds_core/nds' ``
+`import { ExpandCollapse } from '@nds_core/nds'`
 
-Expandable content areas for use with the ExpandCollapse or Accordion
+#### Superscript and HTML entities
 
-This component can only be accessed as a name-spaced component: ExpandCollapse.Panel or Accordion.Panel.
+`header` accepts a templating syntax to allow for superscripts and ™ and ® HTML entities.
 
-### Usage criteria
-# Minimal implementation
+- To use superscripts, wrap the content to be superscripted with double caret (`^^`), it will be replaced with `<Text.Sup>`.
+- To use one of the supported HTML entities, use the Entity Name anywhere in the string and it will be replaced with the corresponding HTML entity.
 
-<Primary />
+| Entity Name | Sign | Description                 |
+| ----------- | ---- | --------------------------- |
+| `&trade;`   | ™    | Trademark symbol            |
+| `&reg;`     | ®    | Registered Trademark symbol |
 
-## Inputs
+Example:
 
-The component accepts the following inputs (props):
+<Canvas of={AccordionStories.MinimalUsage} />
 
-<Controls />
-
---- 
-
-## Additional variations
-
-Listed below are additional variations of the component.
-
-<Stories />
+See [`ExpandCollapse`](/docs/core-components-expand-collapse-expandcollapse--documentation) above for usage of `Panel`.

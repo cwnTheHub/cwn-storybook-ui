@@ -2,7 +2,7 @@ import React from "react";
 import UnorderedList from "../../core/core-unordered-list/UnorderedList";
 
 export default {
-  title: "Lists/Unordered List",
+  title: "Core components/Lists/Unordered List",
   component: UnorderedList,
 };
 
