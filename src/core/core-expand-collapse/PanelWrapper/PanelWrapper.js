@@ -216,7 +216,7 @@ class PanelWrapper extends React.Component {
         disabled={panelDisabled}
         aria-expanded={this.state.open}
       >
-        <Box vertical={compact ? 2 : 3}>
+        <Box vertical={compact ? 0 : 3}>
           <Box inline between={3}>
             {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
             {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}

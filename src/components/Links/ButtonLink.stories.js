@@ -4,7 +4,7 @@ import ButtonLink from "../../core/core-button-link/ButtonLink";
 import { colorNemetonPurple } from "../../core/core-colours/colours";
 
 export default {
-  title: "Links/ Button Link",
+  title: "Core components/Links/ Button Link",
   component: ButtonLink,
 };
 

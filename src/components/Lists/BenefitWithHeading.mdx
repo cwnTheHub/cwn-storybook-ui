@@ -1,0 +1,40 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as BenefitWithHeadingStories from "./BenefitWithHeading.stories";
+
+<Meta of={BenefitWithHeadingStories} />
+<Title />
+`` import {BenefitWithHeading} from '@nds_core/nds' ``
+
+### PROPS & METHODS
+
+<Controls />
+
+A list of items containing an icon and text typically used to promote ideas.
+
+#### Usage criteria
+
+- Benefit should contain 4 or fewer items in a list
+- Benefit with a heading must be used within Cards
+- Each list item should have a unique icon
+- For Business use, must use `Check` icon
+- Code: the `icon` prop must either be set in `<BenefitWithHeading />` or `<BenefitWithHeading.Item />`. If `icon` is set in both components, the one set in `<BenefitWithHeading.Item />` has priority.
+- Code: every `<BenefitWithHeading.Item />` must have a heading supplied to the `heading` prop
+
+#### Examples with individual icons
+
+<Canvas of={BenefitWithHeadingStories.WithIndividualIcons} />
+
+#### Business example with one icon set
+
+<Canvas of={BenefitWithHeadingStories.withOneIconSet} />

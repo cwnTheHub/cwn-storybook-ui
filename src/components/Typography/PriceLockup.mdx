@@ -1,0 +1,84 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as PriceLockupStories from "./PriceLockup.stories";
+
+<Meta of={PriceLockupStories} />
+<Title />
+
+`import {PriceLockup} from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Usage Criteria
+
+- `PriceLockup` is available in three different sizes:
+  - Use `small` for pricing in product catalogue pages (not in cards)
+  - Use `medium` for pricing in product compare cards
+  - Use `large` for pricing in banners and promo cards
+- Sizes refer to the relative size of text within `PriceLockup` rather than viewport
+  - The large `PriceLockup` displays responsively based on viewport
+  - Must not display `bottomText` in large `PriceLockup`
+- Must use the `price` prop to provide monetary value
+- Use `rateText` prop to provide month or year
+- Use `topText` and `bottomText` props to provide additional information
+- Align the currency sign to the right when displaying prices in French
+- Use `strikethrough` prop for price savings comparison
+  - If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
+  - `strikethrough` price must be smaller than the discounted price
+- Use `a11yText` prop to support screen reader when text is not reader-friendly
+  - Problem: if the component shows "\$25/mo.", screen reader will read: "dollar 25 slash mo"
+  - Solution: supply component with `a11yText="25 dollars per month"`. Screen reader will now read: "25 dollars per month" and ignore visual text
+
+### Strikethrough Usage Criteria
+
+- Usage: To visually show a discounted price next to a non-strikethrough price
+- Placement: Must be placed in close proximity to the product
+- If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
+- a11yText will override strikethrough price, so it must include price (ie. "was 50 dollars per month")
+
+<Canvas of={PriceLockupStories.StartingPrice} />
+
+<Canvas of={PriceLockupStories.Standard} />
+
+### Example use case for `small` strikethrough option
+
+- to be used with `medium` discounted price
+
+<Canvas of={PriceLockupStories.WithStrikeThrough} />
+
+### Example use case for `medium` strikethrough option
+
+- to be used with `large` discounted price
+- to be used in campaign banners
+- not for use in cards
+
+<Canvas of={PriceLockupStories.WithMediumStrikeThrough} />
+
+### PriceLockup with FootnoteLink
+
+**Usage criteria**
+
+- Group multiple `FootnoteLinks` together
+  - Must not display `FootnoteLinks` in both `rateText` and `bottomText`
+- `FootnoteLink` should always be the last element displayed in `PriceLockup`
+- Maximum of 3 `FootnoteLinks` may display inline with the `price` or `rateText`
+  - Display in the same line as the `price`, `rateText` or `bottomText` when there’s available space
+  - Display with `rateText` or `bottomText`, whichever is the last element
+- If there are more than 3 `FootnoteLinks`
+  - Display `FootnoteLinks` as the last element (bottom) of `PriceLockup`
+
+<Canvas of={PriceLockupStories.WithFootnoteLinkStandard} />
+<Canvas of={PriceLockupStories.WithFootnoteLink} />
+<Canvas of={PriceLockupStories.WithFootnoteLinkOtherExample} />

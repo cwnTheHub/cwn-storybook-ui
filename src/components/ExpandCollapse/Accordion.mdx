@@ -1,35 +1,34 @@
 {/* Accordion.mdx */}
 
-import {  Canvas, Meta, Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+} from "@storybook/blocks";
 
-import * as AccordionStories from './Accordion.stories';
+import * as AccordionStories from "./Accordion.stories";
 
 <Meta of={AccordionStories} />
 <Title />
-	
-`` import { Accordion } from '@nds_core/nds' ``
+`` import {Accordion} from '@nds_core/nds' ``
 
-A specialized ExpandCollapse in which only one panel can be open at a time.
-
-### Usage criteria
-The Accordion has the same design and behaviours as the ExpandCollapse, except that only one panel can be opened at a time.
-
-Note that the Accordion's open prop accepts only a single string, while the ExpandCollapse's open prop accepts an array of strings.
-
-# Minimal implementation
-
-<Primary />
-
-## Inputs
-
-The component accepts the following inputs (props):
+### PROPS & METHODS
 
 <Controls />
 
---- 
+The `Accordion` has the same design and behaviours as the `ExpandCollapse`, except that only one panel can be opened at
+a time.
 
-## Additional variations
+Note that the `Accordion`'s `open` prop accepts only a single string, while the `ExpandCollapse`'s `open` prop accepts an
+array of strings.
 
-Listed below are additional variations of the component.
+### Minimal usage
 
-<Stories />
+This example looks visually similar to the `ExpandCollapse` one above, however, only one panel can be open at a time.
+
+<Canvas of={AccordionStories.MinimalUsage} />

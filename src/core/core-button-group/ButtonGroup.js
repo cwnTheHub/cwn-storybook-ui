@@ -23,6 +23,7 @@ const ButtonGroup = React.forwardRef(
       label,
       children,
       readOnly,
+      showFieldset,
       ...rest
     },
     ref
@@ -45,7 +46,18 @@ const ButtonGroup = React.forwardRef(
     Object.keys(passedButtons).forEach((key) => {
       buttonValues.push(passedButtons[key].props.value);
     });
-
+    if (!showFieldset) {
+      return (
+        <Box between={2}>
+          <Text bold size="medium">
+            {label}
+          </Text>
+          <StyledButtonGroup between={3} inline>
+            {passedButtons}
+          </StyledButtonGroup>
+        </Box>
+      );
+    }
     return (
       <fieldset {...safeRest(rest)} name={name} ref={ref}>
         <legend>
@@ -64,37 +76,14 @@ const ButtonGroup = React.forwardRef(
 ButtonGroup.displayName = "ButtonGroup";
 
 ButtonGroup.propTypes = {
-  /**
-   * The form name of the ButtonGroup.
-   */
   name: PropTypes.string.isRequired,
-  /**
-   * The current selected value for the group.
-   */
   value: PropTypes.string,
-  /**
-   * A label to be displayed above the ButtonGroup.
-   */
   label: PropTypes.string.isRequired,
-  /**
-   * A callback function to handle changing which button is seleced. Passed into all buttons.
-   *
-   * @param {SyntheticEvent} event The React `SyntheticEvent`
-   */
   onChange: PropTypes.func,
-  /**
-   * A callback function to be invoked when a button receives focus. Passed into all buttons.
-   *
-   * @param {SyntheticEvent} event The React `SyntheticEvent`
-   */
   onFocus: PropTypes.func,
-  /**
-   * A callback function to be invoked when a button loses focus. Passed into all buttons.
-   *
-   * @param {SyntheticEvent} event The React `SyntheticEvent`
-   */
   onBlur: PropTypes.func,
   readOnly: PropTypes.bool,
+  showFieldset: PropTypes.bool,
   children: componentWithName("ButtonGroup.Item", true).isRequired,
 };
 
@@ -104,6 +93,7 @@ ButtonGroup.defaultProps = {
   onChange: undefined,
   value: undefined,
   readOnly: undefined,
+  showFieldset: false,
 };
 
 ButtonGroup.Item = ButtonGroupItem;

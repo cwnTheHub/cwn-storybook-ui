@@ -8,7 +8,7 @@ import Spinner from "../../core/core-spinner/Spinner";
 import UnorderedList from "../../core/core-unordered-list/UnorderedList";
 
 export default {
-  title: "Feedback Indicators/Spinner ",
+  title: "Core components/Feedback Indicators/Spinner ",
   component: Spinner,
 };
 

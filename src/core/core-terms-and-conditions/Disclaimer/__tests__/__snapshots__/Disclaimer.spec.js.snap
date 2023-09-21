@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Disclaimer renders 1`] = `
+Array [
+  <p
+    class="sc-aXZVg sc-gEvEer cDSFjo jokyaj"
+  />,
+  <div>
+    Some content
+  </div>,
+  <p />,
+]
+`;

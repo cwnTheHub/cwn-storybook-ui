@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch renders 1`] = `
+<ToggleSwitch
+  checked={false}
+  id="my-id-123"
+  isLoading={false}
+  label="label"
+  name="name"
+  onClick={[MockFunction]}
+  spinnerLabel="toggle"
+  toolTipCopy="en"
+  value="value"
+>
+  <StyledLabel
+    htmlFor="my-id-123"
+  >
+    <label
+      className="sc-aXZVg cFjFLv"
+      htmlFor="my-id-123"
+    >
+      <Box
+        between={2}
+        inline={true}
+        tag="div"
+      >
+        <styled.div
+          between={2}
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="sc-fUnMCh cyPPfT"
+          >
+            <Text
+              block={false}
+              bold={false}
+              id="my-id-123-label"
+              invert={false}
+              size="medium"
+            >
+              <styled.span
+                block={false}
+                bold={false}
+                id="my-id-123-label"
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="sc-dcJsrY lmzaRN"
+                  id="my-id-123-label"
+                  size="medium"
+                >
+                  label
+                </span>
+              </styled.span>
+            </Text>
+          </div>
+        </styled.div>
+      </Box>
+      <styled.div>
+        <div
+          className="sc-fqkvVR dnSkWD"
+        >
+          <Spinner
+            a11yLabel="A spinner is active. Please wait while the page completes a task."
+            dangerouslyHideVisibleLabel={false}
+            fullScreen={false}
+            inline={true}
+            label="toggle"
+            size="small"
+            spinning={false}
+            tag="span"
+            variant="primary"
+          >
+            <styled.button
+              aria-checked={false}
+              aria-labelledby="my-id-123-label"
+              data-testid="my-id-123-switch"
+              id="my-id-123"
+              name="name"
+              onClick={[Function]}
+              role="switch"
+              toolTipCopy="en"
+              value="value"
+            >
+              <button
+                aria-checked={false}
+                aria-labelledby="my-id-123-label"
+                className="sc-gEvEer cvekBU"
+                data-testid="my-id-123-switch"
+                id="my-id-123"
+                name="name"
+                onClick={[Function]}
+                role="switch"
+                value="value"
+              >
+                <styled.span
+                  pressed={false}
+                >
+                  <span
+                    className="sc-eqUAAy etkSZd"
+                  />
+                </styled.span>
+              </button>
+            </styled.button>
+          </Spinner>
+        </div>
+      </styled.div>
+    </label>
+  </StyledLabel>
+</ToggleSwitch>
+`;

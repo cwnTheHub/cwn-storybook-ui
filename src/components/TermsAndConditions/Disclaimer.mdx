@@ -1,0 +1,36 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as DisclaimerStories from "./Disclaimer.stories";
+
+<Meta of={DisclaimerStories} />
+<Title />
+
+`import { Disclaimer } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Usage criteria
+
+- Use in place of `FootnoteLink`
+- Use only when there is only one statement and the legal copy must be directly grouped with the action
+  - Ex. before unsubscribing from a product, the statement is positioned between a checkbox and submit button
+
+### Minimal usage
+
+<Canvas of={DisclaimerStories.MinimalUsage} />
+
+### Use in forms
+
+<Canvas of={DisclaimerStories.withForms} />

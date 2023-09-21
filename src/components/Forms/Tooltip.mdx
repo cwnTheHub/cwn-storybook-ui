@@ -1,0 +1,57 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TooltipStories from "./Tooltip.stories";
+
+<Meta of={TooltipStories} />
+<Title />
+
+`import { Tooltip } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+Tooltips provide a descriptive and detailed explanation or instructions to help the user fill in the form field. You may
+use one when the information is useful only to a small percentage of users (ie. tech savvy people wouldn't need this info).
+Tooltips may also be useful when vertical space is an issue.
+
+Use the `direction` prop to open the tooltip to the left or right of the trigger, so that it does not block other
+content on the page. Be careful not to let the Tooltip extend beyond the edge of the page if opening to the right though.
+
+On small screen sizes Tooltips will always open to the left to ensure they will be visible.
+
+<Canvas of={TooltipStories.WithInput} />
+
+You can also place Tooltips anywhere you like as a standalone element.
+
+<Canvas of={TooltipStories.StandaloneInBox} />
+
+You can also invert the colour to be used on a purple background.
+
+<Canvas of={TooltipStories.StandaloneWithBg} />
+
+### Accessible copy
+
+To indicate to assistive devices the purpose of the `Tooltip`, invisible copy is placed within the component. Passing `"en"` or `"fn"` to the `copy` prop will use the component's English and French text respectively. If the provided text is not sufficient, an object containing custom text may be provided.
+
+When providing custom text to `a11yText`, it is required that it contain the `%{label}` token if an input is connected to the `Tooltip`. This token will substitute in the attached input's label, and is necessary for those with assistive devices to identify which input the `Tooltip` belongs to.
+
+_To see the effects of this, use a screen reader or view the `<span>` rendered within the component that contains the accessible text._
+
+#### Standalone
+
+<Canvas of={TooltipStories.Standalone} />
+
+#### Linked
+
+<Canvas of={TooltipStories.WithInput} />

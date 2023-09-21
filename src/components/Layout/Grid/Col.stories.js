@@ -6,7 +6,7 @@ import Text from "../../../core/core-text/Text";
 import { borders } from "../../../shared-styles";
 
 export default {
-  title: "Layout/Grid/Col",
+  title: "Core components/Layout/Grid/Col",
   component: Col,
 };
 

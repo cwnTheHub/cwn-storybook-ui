@@ -64,7 +64,7 @@ const hasStrikethrough = (strikethroughValue) => {
       "&::before": {
         display: "block",
         width: "100%",
-        content: '""',
+        content: "",
         borderBottom: `2px solid ${colorGreyRaven}`,
         position: "absolute",
         top: "50%",
@@ -152,7 +152,7 @@ const StyledFootnoteLinks = styled(StyledText)(({ inline }) => ({
 const StyledBottomText = styled(StyledText)({ display: "inline-block" });
 
 const StrikehroughText = styled.s({
-  textDecoration: "none",
+  textDecoration: "line-through",
 });
 
 const renderDollarSign = (size, a11yText) => {
@@ -200,10 +200,6 @@ const renderBottomText = (size, bottomText, bottomTextRef) => {
   return undefined;
 };
 
-/**
- * A component presenting TELUS product pricing information.
- * @version ./package.json
- */
 
 const PriceLockup = ({
   size,
@@ -368,46 +364,18 @@ const PriceLockup = ({
 };
 
 PriceLockup.propTypes = {
-  /**
-   * Font Size of Labels, Price, and Signs.
-   */
   size: PropTypes.oneOf(["small", "medium", "large"]).isRequired,
-  /**
-   * Position of Dollar Sign relative to Price Value.
-   */
+
   signDirection: PropTypes.oneOf(["left", "right"]),
-  /**
-   * Statement above Price Value.
-   */
+
   topText: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  /**
-   * Statement below Price Value.
-   */
+
   bottomText: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  /**
-   * Statement right of Price Value.
-   */
+
   rateText: PropTypes.string,
-  /**
-   * Price value of component.
-   */
   price: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  /**
-   * A [FootnoteLink](/#/Terms%20and%20Conditions?id=footnotelink) component, which may include multiple footnotes.
-   *
-   * Depending on the amount of available space, and what other `PriceLockup` props are defined,
-   * `FootnoteLink`s will be automatically positioned to the most appropriate place.
-   * See [FootnoteLink with PriceLockup](#/Typography?id=pricelockupWithFootnotelink) for more details.
-   */
   footnoteLinks: componentWithName("FootnoteLink"),
-  /**
-   * Use to show price with strikethrough for savings comparison.
-   */
   strikethrough: PropTypes.bool,
-  /**
-   * Accessibility label for strikethrough pricing, as screen readers will not pick up strikethrough. *MUST be included if using
-   * strikethrough pricing.
-   */
   a11yText: PropTypes.string,
 };
 

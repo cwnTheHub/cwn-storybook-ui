@@ -1,0 +1,37 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as CardStories from "./Card.stories";
+
+<Meta of={CardStories} />
+<Title />
+
+`import { Card } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+Cards will stretch to fill the width of their container. Wrap the card in another element to apply size.
+
+<Canvas of ={CardStories.MinimalUsage}/>
+
+### Coloured variants
+
+Card also supports an 'alternative' or 'branded' `variant`. These appear flat, while the default Card appears floating.
+
+<Canvas of ={CardStories.Variants}/>
+### Cards with borders
+
+Teams can use the `defaultWithBorder` variant to add a border to the `Card` for comparison, horizontal plan, and My TELUS account overview cards.
+
+<Canvas of ={CardStories.CardWithBorder}/>

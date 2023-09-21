@@ -1,7 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 
-
 import ButtonGroup from "../ButtonGroup";
 import { toBeChecked } from "@testing-library/jest-dom/dist/matchers";
 import A11yContent from "../../core-a11y-content/A11yContent";
@@ -14,6 +13,7 @@ describe("ButtonGroup", () => {
     },
     value: "64gb",
     label: "Please select a storage size",
+    showFieldset: true,
   };
   const doShallow = (props = {}) =>
     shallow(

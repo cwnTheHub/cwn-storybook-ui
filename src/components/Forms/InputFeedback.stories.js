@@ -3,7 +3,7 @@ import InputFeedback from "../../core/core-input-feedback/InputFeedback";
 import Paragraph from "../../core/core-paragraph/Paragraph";
 
 export default {
-  title: "Forms/InputFeedback",
+  title: "Core components/Forms/InputFeedback",
   component: InputFeedback,
 };
 
