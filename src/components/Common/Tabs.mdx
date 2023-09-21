@@ -1,0 +1,33 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TabsStories from "./Tabs.stories";
+
+<Meta of={TabsStories} />
+<Title />
+
+`import {Tabs} from @nds_core/nds`
+
+<Controls />
+
+### Usage criteria
+
+Use `Tabs` according to props data
+Note that the `copy` prop must be provided at all times for the correct accessible text.
+
+<Canvas of={TabsStories.MinimalUsage} />
+
+#### Multiline Labels
+
+If the labels are long, particularly in French, you can use the optional `wrapLabels` prop to limit the maximum width of labels to 144px, wrapping as necessary. It is recommended that labels are 35 characters or fewer.
+
+<Canvas of={TabsStories.Multiline} />
