@@ -1,0 +1,42 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as FootnoteLinkStories from "./FootnoteLink.stories";
+
+<Meta of={FootnoteLinkStories} />
+<Title />
+
+`import { FootnoteLink } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Usage criteria
+
+- `FootnoteLink` inherits their parent element’s text size and colour
+- Avoid using `FootnoteLink` if there is only one annotation on a page. The annotation can be part of the content instead
+- Must wrap `FootnoteLink` in a `Text`, `Heading`, or `DisplayHeading` component
+- May be used in `PriceLockup`, see [FootnoteLink with PriceLockup](/docs/core-components-typography-pricelockup--documentation)
+
+<Canvas of={FootnoteLinkStories.MinimalUsage} />
+
+### FootnoteLink and other core components
+
+`FootnoteLink` works well with the following core components:
+
+- [PriceLockup](/docs/core-components-typography-pricelockup--documentation)
+- [DisplayHeading](/docs/core-components-typography-displayheading--documentation)
+- [Heading](/docs/core-components-typography-heading--documentation)
+- [Text](/docs/core-components-typography-text--documentation)
+
+<Canvas of={FootnoteLinkStories.withCoreComponents} />

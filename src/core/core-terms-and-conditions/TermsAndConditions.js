@@ -8,7 +8,6 @@ import Circle from "./svg/Circle";
 
 import List from "./List/List";
 
-import copyDictionary from "./termsAndConditionsText";
 import renderContent from "./renderContent";
 import { colorWhite } from "../core-colours/colours";
 import { Translate, FadeAndReveal } from "../../shared-animation";
@@ -18,6 +17,7 @@ import HairlineDivider from "../core-hairline-divider/HairlineDivider";
 import DimpleDivider from "../core-dimple-divider/DimpleDivider";
 import FlexGrid from "../core-flex-grid/FlexGrid";
 import { getCopy, safeRest } from "../../util-helpers";
+import copyDictionary from "./termsAndConditionsText";
 
 const StyledClickableHeading = styled(StyledClickable)({
   width: "100%",
