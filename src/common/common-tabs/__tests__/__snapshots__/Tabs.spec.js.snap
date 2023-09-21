@@ -1,0 +1,974 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders 1`] = `
+.c0 {
+  padding-top: 6px;
+}
+
+.c0 > div {
+  position: relative;
+}
+
+.c0 .react-tabs__tab-list {
+  padding: 2px 0 0 0;
+}
+
+.c0 .react-tabs__tab {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0 2px;
+  min-height: 45px;
+  min-width: 44px;
+  text-align: center;
+  position: relative;
+}
+
+.c0 .react-tabs__tab:active h4,
+.c0 .react-tabs__tab.react-tabs__tab--selected h4 {
+  text-shadow: 0px 0px 1px #2a2c2e;
+}
+
+.c0 .react-tabs__tab:focus {
+  outline: none;
+}
+
+.c0 .react-tabs__tab-panel {
+  display: none;
+}
+
+.c0 .react-tabs__tab-panel.react-tabs__tab-panel--selected {
+  display: block;
+  margin-top: 0;
+}
+
+.c4 {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.c6 {
+  position: relative;
+  -webkit-transition: 0.9s all ease;
+  transition: 0.9s all ease;
+  padding-right: 24px;
+  -webkit-transform: translate(0px);
+  -ms-transform: translate(0px);
+  transform: translate(0px);
+  white-space: nowrap;
+}
+
+.c9 {
+  position: absolute;
+  top: 0;
+  padding: 2px 0;
+  z-index: 10;
+  height: calc(100% - 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: pointer;
+  right: 0;
+  padding-left: 7px;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c9:focus div {
+  box-shadow: 0 0 0 2px #979797;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.c10 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid #d8d8d8;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background: none;
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 10px;
+  position: relative;
+  border: solid 2px transparent;
+  border-radius: 6px;
+}
+
+.c8 > h4:focus {
+  outline: none;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:focus > h4:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #979797;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.c8:active {
+  outline: none;
+}
+
+.c8::-moz-focus-inner {
+  border: 0;
+}
+
+.react-tabs__tab:not([aria-selected="true"]) .c7:hover::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #d8d8d8;
+}
+
+.react-tabs__tab:not([aria-selected="true"]) .c7:active::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+}
+
+.react-tabs__tab[aria-selected="true"] .c7::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  border-top: solid 4px #71757b;
+}
+
+.c13 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c14 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  height: 32px;
+  background-image: radial-gradient(ellipse at top,rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+}
+
+.c11 {
+  fill: #2a2c2e;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+}
+
+.c12 {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c12:hover,
+.c12:focus,
+.c12:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c3 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c15 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c2 {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .c0 .react-tabs__tab {
+    margin: 0 6px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c12 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c12 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:575px) {
+  .c3 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c3 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c3 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c3 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  .c15 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c15 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c15 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c15 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c1 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 36rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 48rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 62rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    max-width: 75rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<Tabs
+  copy="en"
+  leftArrowLabel="Move menu to the left"
+  onOpen={[MockFunction]}
+  open="1"
+  rightArrowLabel="Move menu to the right"
+  wrapLabels={false}
+>
+  <styled.div
+    copy="en"
+    wrapLabels={false}
+  >
+    <div
+      className="c0"
+    >
+      <FlexGrid
+        gutter={false}
+        limitWidth={true}
+        outsideGutter={true}
+      >
+        <styled.div
+          limitWidth={true}
+          outsideGutter={true}
+          reverseLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+        >
+          <div
+            className="c1"
+          >
+            <Row>
+              <styled.div
+                reverseLevel={
+                  Array [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                  ]
+                }
+              >
+                <div
+                  className="c2"
+                >
+                  <Col
+                    xs={12}
+                  >
+                    <styled.div
+                      gutter={false}
+                      hiddenLevel={
+                        Array [
+                          12,
+                          12,
+                          12,
+                          12,
+                          12,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                        ]
+                      }
+                      xs={12}
+                    >
+                      <div
+                        className="c3"
+                      >
+                        <Tabs
+                          onSelect={[Function]}
+                          selectedIndex={0}
+                        >
+                          <UncontrolledTabs
+                            disableLeftRightKeys={false}
+                            disableUpDownKeys={false}
+                            environment={null}
+                            focus={false}
+                            forceRenderTabPanel={false}
+                            onSelect={[Function]}
+                            selectedIndex={0}
+                          >
+                            <div
+                              className="react-tabs"
+                              data-rttabs={true}
+                              onClick={[Function]}
+                              onKeyDown={[Function]}
+                            >
+                              <styled.div
+                                key=".0"
+                              >
+                                <div
+                                  className="c4"
+                                >
+                                  <styled.div
+                                    key=".1"
+                                  >
+                                    <div
+                                      className="c5"
+                                    >
+                                      <styled.div
+                                        key=".0"
+                                        positionToMove={0}
+                                        wrapLabels={false}
+                                      >
+                                        <div
+                                          className="c6"
+                                        >
+                                          <TabList
+                                            key=".0"
+                                            style={
+                                              Object {
+                                                "width": "0",
+                                              }
+                                            }
+                                          >
+                                            <ul
+                                              className="react-tabs__tab-list"
+                                              role="tablist"
+                                              style={
+                                                Object {
+                                                  "width": "0",
+                                                }
+                                              }
+                                            >
+                                              <Tab
+                                                aria-label="Label 1"
+                                                focus={false}
+                                                id=":r0:0"
+                                                key=".$0"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onKeyUp={[Function]}
+                                                selected={true}
+                                                tabIndex="-1"
+                                                tabRef={[Function]}
+                                              >
+                                                <li
+                                                  aria-controls="panel:r0:0"
+                                                  aria-disabled="false"
+                                                  aria-label="Label 1"
+                                                  aria-selected="true"
+                                                  className="react-tabs__tab react-tabs__tab--selected"
+                                                  data-rttab={true}
+                                                  id="tab:r0:0"
+                                                  onBlur={[Function]}
+                                                  onClick={[Function]}
+                                                  onKeyUp={[Function]}
+                                                  role="tab"
+                                                  tabIndex="-1"
+                                                >
+                                                  <styled.button>
+                                                    <button
+                                                      className="c7 c8"
+                                                    >
+                                                      <styled.h4
+                                                        tabIndex="-1"
+                                                        wrapLabel={false}
+                                                      >
+                                                        <h4
+                                                          className=""
+                                                          tabIndex="-1"
+                                                        >
+                                                          Label 1
+                                                        </h4>
+                                                      </styled.h4>
+                                                    </button>
+                                                  </styled.button>
+                                                </li>
+                                              </Tab>
+                                              <Tab
+                                                aria-label="Label 2"
+                                                focus={false}
+                                                id=":r0:1"
+                                                key=".$177556"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onKeyUp={[Function]}
+                                                selected={false}
+                                                tabIndex="-1"
+                                                tabRef={[Function]}
+                                              >
+                                                <li
+                                                  aria-controls="panel:r0:1"
+                                                  aria-disabled="false"
+                                                  aria-label="Label 2"
+                                                  aria-selected="false"
+                                                  className="react-tabs__tab"
+                                                  data-rttab={true}
+                                                  id="tab:r0:1"
+                                                  onBlur={[Function]}
+                                                  onClick={[Function]}
+                                                  onKeyUp={[Function]}
+                                                  role="tab"
+                                                  tabIndex="-1"
+                                                >
+                                                  <styled.button>
+                                                    <button
+                                                      className="c7 c8"
+                                                    >
+                                                      <styled.h4
+                                                        tabIndex="-1"
+                                                        wrapLabel={false}
+                                                      >
+                                                        <h4
+                                                          className=""
+                                                          tabIndex="-1"
+                                                        >
+                                                          Label 2
+                                                        </h4>
+                                                      </styled.h4>
+                                                    </button>
+                                                  </styled.button>
+                                                </li>
+                                              </Tab>
+                                              <Tab
+                                                aria-label="Label 3"
+                                                focus={false}
+                                                id=":r0:2"
+                                                key=".$177559"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onKeyUp={[Function]}
+                                                selected={false}
+                                                tabIndex="-1"
+                                                tabRef={[Function]}
+                                              >
+                                                <li
+                                                  aria-controls="panel:r0:2"
+                                                  aria-disabled="false"
+                                                  aria-label="Label 3"
+                                                  aria-selected="false"
+                                                  className="react-tabs__tab"
+                                                  data-rttab={true}
+                                                  id="tab:r0:2"
+                                                  onBlur={[Function]}
+                                                  onClick={[Function]}
+                                                  onKeyUp={[Function]}
+                                                  role="tab"
+                                                  tabIndex="-1"
+                                                >
+                                                  <styled.button>
+                                                    <button
+                                                      className="c7 c8"
+                                                    >
+                                                      <styled.h4
+                                                        tabIndex="-1"
+                                                        wrapLabel={false}
+                                                      >
+                                                        <h4
+                                                          className=""
+                                                          tabIndex="-1"
+                                                        >
+                                                          Label 3
+                                                        </h4>
+                                                      </styled.h4>
+                                                    </button>
+                                                  </styled.button>
+                                                </li>
+                                              </Tab>
+                                            </ul>
+                                          </TabList>
+                                        </div>
+                                      </styled.div>
+                                    </div>
+                                  </styled.div>
+                                  <styled.div
+                                    aria-label="Move menu to the right"
+                                    direction="right"
+                                    key=".2"
+                                    onClick={[Function]}
+                                    onKeyUp={[Function]}
+                                    tabIndex="0"
+                                  >
+                                    <div
+                                      aria-label="Move menu to the right"
+                                      className="c9"
+                                      direction="right"
+                                      onClick={[Function]}
+                                      onKeyUp={[Function]}
+                                      tabIndex="0"
+                                    >
+                                      <styled.div
+                                        direction="right"
+                                        key=".0"
+                                      >
+                                        <div
+                                          className="c10"
+                                          direction="right"
+                                        >
+                                          <ChevronRight
+                                            key=".0"
+                                            variant="basic"
+                                          >
+                                            <Limited
+                                              size={24}
+                                              variant="basic"
+                                            >
+                                              <Component
+                                                size={24}
+                                                theme={
+                                                  Object {
+                                                    "backgroundColor": "transparent",
+                                                    "iconColor": "#2a2c2e",
+                                                  }
+                                                }
+                                              >
+                                                <Styled(styled.svg)
+                                                  animationDirection="right"
+                                                  variant="basic"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <svg
+                                                    className="c11 c12"
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+                                                    />
+                                                  </svg>
+                                                </Styled(styled.svg)>
+                                              </Component>
+                                            </Limited>
+                                          </ChevronRight>
+                                        </div>
+                                      </styled.div>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </styled.div>
+                              <HairlineDivider
+                                gradient={false}
+                                key=".1"
+                                vertical={false}
+                              >
+                                <styled.hr
+                                  gradient={false}
+                                  vertical={false}
+                                >
+                                  <hr
+                                    className="c13"
+                                  />
+                                </styled.hr>
+                              </HairlineDivider>
+                              <DimpleDivider
+                                key=".2"
+                              >
+                                <styled.hr>
+                                  <hr
+                                    className="c14"
+                                  />
+                                </styled.hr>
+                              </DimpleDivider>
+                              <TabPanel
+                                id=":r0:0"
+                                key=".3:$0"
+                                selected={true}
+                              >
+                                <div
+                                  aria-labelledby="tab:r0:0"
+                                  className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+                                  id="panel:r0:0"
+                                  role="tabpanel"
+                                >
+                                  <FlexGrid
+                                    gutter={true}
+                                    limitWidth={true}
+                                    outsideGutter={true}
+                                  >
+                                    <styled.div
+                                      limitWidth={true}
+                                      outsideGutter={true}
+                                      reverseLevel={
+                                        Array [
+                                          false,
+                                          false,
+                                          false,
+                                          false,
+                                          false,
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="c1"
+                                      >
+                                        <Row>
+                                          <styled.div
+                                            reverseLevel={
+                                              Array [
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                              ]
+                                            }
+                                          >
+                                            <div
+                                              className="c2"
+                                            >
+                                              <Col
+                                                tabIndex="0"
+                                                xs={12}
+                                              >
+                                                <styled.div
+                                                  gutter={true}
+                                                  hiddenLevel={
+                                                    Array [
+                                                      12,
+                                                      12,
+                                                      12,
+                                                      12,
+                                                      12,
+                                                    ]
+                                                  }
+                                                  horizontalAlignLevel={
+                                                    Array [
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                    ]
+                                                  }
+                                                  tabIndex="0"
+                                                  xs={12}
+                                                >
+                                                  <div
+                                                    className="c15"
+                                                    tabIndex="0"
+                                                  >
+                                                    <Panel
+                                                      copy="en"
+                                                    >
+                                                      <div
+                                                        copy="en"
+                                                      >
+                                                        <Panel
+                                                          heading="Label 1"
+                                                          id="1"
+                                                        >
+                                                          <div
+                                                            heading="Label 1"
+                                                            id="1"
+                                                          >
+                                                            Content 1
+                                                          </div>
+                                                        </Panel>
+                                                      </div>
+                                                    </Panel>
+                                                  </div>
+                                                </styled.div>
+                                              </Col>
+                                            </div>
+                                          </styled.div>
+                                        </Row>
+                                      </div>
+                                    </styled.div>
+                                  </FlexGrid>
+                                </div>
+                              </TabPanel>
+                              <TabPanel
+                                id=":r0:1"
+                                key=".3:$177556"
+                                selected={false}
+                              >
+                                <div
+                                  aria-labelledby="tab:r0:1"
+                                  className="react-tabs__tab-panel"
+                                  id="panel:r0:1"
+                                  role="tabpanel"
+                                />
+                              </TabPanel>
+                              <TabPanel
+                                id=":r0:2"
+                                key=".3:$177559"
+                                selected={false}
+                              >
+                                <div
+                                  aria-labelledby="tab:r0:2"
+                                  className="react-tabs__tab-panel"
+                                  id="panel:r0:2"
+                                  role="tabpanel"
+                                />
+                              </TabPanel>
+                            </div>
+                          </UncontrolledTabs>
+                        </Tabs>
+                      </div>
+                    </styled.div>
+                  </Col>
+                </div>
+              </styled.div>
+            </Row>
+          </div>
+        </styled.div>
+      </FlexGrid>
+    </div>
+  </styled.div>
+</Tabs>
+`;
