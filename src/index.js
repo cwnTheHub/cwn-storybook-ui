@@ -40,6 +40,12 @@ import Responsive, { media } from "./core/core-responsive";
 import PriceLockup from "./core/core-price-lockup/PriceLockup";
 import Text from "./core/core-text/Text";
 import Spinner from "./core/core-spinner/Spinner";
+import {
+  TermsAndConditions,
+  Footnote,
+  FootnoteLink,
+  Disclaimer,
+} from "./core/core-terms-and-conditions";
 
 export {
   A11yContent,
@@ -85,4 +91,8 @@ export {
   PriceLockup,
   Text,
   Spinner,
+  TermsAndConditions,
+  Footnote,
+  FootnoteLink,
+  Disclaimer,
 };
