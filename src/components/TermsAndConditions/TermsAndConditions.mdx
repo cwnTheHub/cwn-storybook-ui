@@ -1,0 +1,28 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TermsAndConditionsStories from "./TermsAndConditions.stories";
+
+<Meta of={TermsAndConditionsStories} />
+<Title />
+
+`import { TermsAndConditions } from '@nds_core/nds'`
+
+### PROPS & METHODS
+
+<Controls />
+
+### Usage criteria
+
+- Appears directly before the page footer, with the exception of call-to-action callback cards
+
+<Canvas of ={TermsAndConditionsStories.MinimalUsage} />

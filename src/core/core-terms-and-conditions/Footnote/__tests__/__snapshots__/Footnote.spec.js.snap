@@ -21,7 +21,7 @@ exports[`Footnote renders closed 1`] = `
   </button>
   <div>
     <div
-      class="sc-jlZhew xxQgZ"
+      class="sc-jlZhew OAfcx"
     >
       <div
         aria-label="modal dialog"
@@ -144,7 +144,7 @@ exports[`Footnote renders opened 1`] = `
   </button>
   <div>
     <div
-      class="sc-jlZhew fmGktm"
+      class="sc-jlZhew epziYK"
     >
       <div
         aria-label="modal dialog"
