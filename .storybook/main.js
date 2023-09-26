@@ -1,4 +1,3 @@
-import remarkGfm from "remark-gfm";
 export default {
   stories: [
     "../src/components/Introduction.mdx",
@@ -14,9 +13,11 @@ export default {
     {
       name: "@storybook/addon-docs",
       options: {
+        csfPluginOptions: null,
+        jsxOptions: {},
         mdxPluginOptions: {
           mdxCompileOptions: {
-            remarkPlugins: [remarkGfm],
+            remarkPlugins: [],
           },
         },
       },
@@ -27,8 +28,6 @@ export default {
     options: {},
   },
   docs: {
-    // autodocs: true
-
     autodocs: "tag",
     defaultName: "Documentation",
   },
