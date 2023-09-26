@@ -23,7 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /public
-/.storybook
 /.github
 .npmrc
 build-storybook.log
