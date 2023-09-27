@@ -93,7 +93,7 @@ export default {
       link: "/?path=/docs/core-components-typography-text--documentation",
     },
   ],
-  expancollapse: [
+  expandcollapse: [
     {
       title: "Accordion",
       link: "/?path=/docs/core-components-expand-collapse-accordion--documentation",
@@ -137,6 +137,20 @@ export default {
     {
       title: "Unordered List",
       link: "/?path=/docs/core-components-lists-unordered-list--documentation",
+    },
+  ],
+  feedback: [
+    {
+      title: "Notification",
+      link: "/?path=/docs/core-components-feedback-indicators-notification--documentation",
+    },
+    {
+      title: "Spinner",
+      link: "/?path=/docs/core-components-feedback-indicators-spinner--documentation",
+    },
+    {
+      title: "Step tracker",
+      link: "/?path=/docs/core-components-feedback-indicators-step-tracker--documentation",
     },
   ],
 };

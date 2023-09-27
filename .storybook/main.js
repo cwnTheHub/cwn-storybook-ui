@@ -1,6 +1,8 @@
 export default {
   stories: [
-    "../src/components/Introduction.mdx",
+    "../src/stories/Introduction.mdx",
+    "../src/stories/Installation.mdx",
+    "../src/stories/Upgrading.mdx",
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
   ],

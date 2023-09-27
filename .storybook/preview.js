@@ -14,7 +14,7 @@ export default {
   parameters: {
     options: {
       storySort: {
-        order: ["Introduction", "Core components", "*"],
+        order: ["Introduction","Installation","ChangeLog", "Core components", "*"],
       },
     },
     actions: { argTypesRegex: "^on[A-Z].*" },

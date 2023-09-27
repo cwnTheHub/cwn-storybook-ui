@@ -46,6 +46,7 @@ import {
   FootnoteLink,
   Disclaimer,
 } from "./core/core-terms-and-conditions";
+import StepTracker from "./core/core-step-tracker/StepTracker";
 
 export {
   A11yContent,
@@ -95,4 +96,5 @@ export {
   Footnote,
   FootnoteLink,
   Disclaimer,
+  StepTracker,
 };
