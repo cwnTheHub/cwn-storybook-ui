@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders 1`] = `
+<Header
+  heading="Mock text"
+  headingLevel="h3"
+  subHeading=""
+  subHeadingSize="medium"
+>
+  <Box
+    between={3}
+    inline={false}
+    tabIndex={0}
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={false}
+      tabIndex={0}
+      tag="div"
+    >
+      <div
+        className="sc-gEvEer lbtBnH"
+        tabIndex={0}
+      >
+        <Box
+          between={3}
+          inline={false}
+          tag="div"
+        >
+          <styled.div
+            between={3}
+            inline={false}
+            tag="div"
+          >
+            <div
+              className="sc-gEvEer lbtBnH"
+            >
+              <Heading
+                invert={false}
+                level="h3"
+              >
+                <styled.h1
+                  as="h3"
+                  data-testid="heading"
+                  invert={false}
+                  level="h3"
+                >
+                  <h3
+                    className="sc-aXZVg gXGMtO"
+                    data-testid="heading"
+                  >
+                    Mock text
+                  </h3>
+                </styled.h1>
+              </Heading>
+            </div>
+          </styled.div>
+        </Box>
+      </div>
+    </styled.div>
+  </Box>
+</Header>
+`;

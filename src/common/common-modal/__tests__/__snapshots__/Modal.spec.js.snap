@@ -1,0 +1,421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders 1`] = `
+<Modal
+  bodyText="Are you sure?"
+  cancelButtonType="linkWithoutIcon"
+  cancelCTAText=""
+  confirmButtonVariant="standard"
+  confirmCTAText="I am sure"
+  focusElementAfterClose={Object {}}
+  heading="A heading"
+  headingLevel="h3"
+  isOpen={true}
+  onClose={[Function]}
+  onConfirm={[Function]}
+  showFooterHairlineDivider={true}
+  showHeaderDimpleDivider={false}
+  showHeaderHairlineDivider={true}
+  subHeading=""
+  subHeadingSize="medium"
+  width={570}
+>
+  <WithFocusTrap
+    a11yText="modal dialog"
+    autofocus={true}
+  >
+    <div
+      aria-label="modal dialog"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        onFocus={[Function]}
+        tabIndex={0}
+      />
+      <div>
+        <div>
+          <styled.div
+            data-testid="tds-modal-overlay"
+            isOpen={true}
+          >
+            <div
+              className="sc-aXZVg bwuYrh"
+              data-testid="tds-modal-overlay"
+            >
+              <styled.div
+                width={570}
+              >
+                <div
+                  className="sc-gEvEer PaRMi"
+                  width={570}
+                >
+                  <styled.div>
+                    <div
+                      className="sc-fqkvVR gigAUD"
+                    >
+                      <Box
+                        between={4}
+                        inline={false}
+                        inset={4}
+                        tag="div"
+                      >
+                        <styled.div
+                          between={4}
+                          inline={false}
+                          inset={4}
+                          tag="div"
+                        >
+                          <div
+                            className="sc-dAlyuH gtcDkh"
+                          >
+                            <div
+                              tabIndex="0"
+                            >
+                              <styled.div
+                                id="header-wrapper"
+                              >
+                                <div
+                                  className="sc-dcJsrY"
+                                  id="header-wrapper"
+                                >
+                                  <Box
+                                    between={3}
+                                    inline={false}
+                                    tag="div"
+                                  >
+                                    <styled.div
+                                      between={3}
+                                      inline={false}
+                                      tag="div"
+                                    >
+                                      <div
+                                        className="sc-dAlyuH iCtgGE"
+                                      >
+                                        <Header
+                                          heading="A heading"
+                                          headingLevel="h3"
+                                          subHeading=""
+                                          subHeadingSize="medium"
+                                        >
+                                          <Box
+                                            between={3}
+                                            inline={false}
+                                            tabIndex={0}
+                                            tag="div"
+                                          >
+                                            <styled.div
+                                              between={3}
+                                              inline={false}
+                                              tabIndex={0}
+                                              tag="div"
+                                            >
+                                              <div
+                                                className="sc-dAlyuH iCtgGE"
+                                                tabIndex={0}
+                                              >
+                                                <Box
+                                                  between={3}
+                                                  inline={false}
+                                                  tag="div"
+                                                >
+                                                  <styled.div
+                                                    between={3}
+                                                    inline={false}
+                                                    tag="div"
+                                                  >
+                                                    <div
+                                                      className="sc-dAlyuH iCtgGE"
+                                                    >
+                                                      <Heading
+                                                        invert={false}
+                                                        level="h3"
+                                                      >
+                                                        <styled.h1
+                                                          as="h3"
+                                                          data-testid="heading"
+                                                          invert={false}
+                                                          level="h3"
+                                                        >
+                                                          <h3
+                                                            className="sc-fUnMCh faAGFb"
+                                                            data-testid="heading"
+                                                          >
+                                                            A heading
+                                                          </h3>
+                                                        </styled.h1>
+                                                      </Heading>
+                                                    </div>
+                                                  </styled.div>
+                                                </Box>
+                                              </div>
+                                            </styled.div>
+                                          </Box>
+                                        </Header>
+                                        <HairlineDivider
+                                          gradient={false}
+                                          vertical={false}
+                                        >
+                                          <styled.hr
+                                            gradient={false}
+                                            vertical={false}
+                                          >
+                                            <hr
+                                              className="sc-hzhJZQ bYYjPt"
+                                            />
+                                          </styled.hr>
+                                        </HairlineDivider>
+                                      </div>
+                                    </styled.div>
+                                  </Box>
+                                </div>
+                              </styled.div>
+                            </div>
+                            <styled.div
+                              offsetHeight={0}
+                              showFooter={true}
+                              showHeaderDivider={true}
+                              tabIndex="0"
+                            >
+                              <div
+                                className="sc-iGgWBj bSiLVt"
+                                tabIndex="0"
+                              >
+                                <Paragraph
+                                  align="left"
+                                  bold={false}
+                                  invert={false}
+                                  size="medium"
+                                >
+                                  <styled.p
+                                    align="left"
+                                    bold={false}
+                                    invert={false}
+                                    size="medium"
+                                  >
+                                    <p
+                                      className="sc-hmdomO QqZSy"
+                                      size="medium"
+                                    >
+                                      Are you sure?
+                                    </p>
+                                  </styled.p>
+                                </Paragraph>
+                              </div>
+                            </styled.div>
+                            <styled.div
+                              id="footer-wrapper"
+                            >
+                              <div
+                                className="sc-kAyceB bwvfZC"
+                                id="footer-wrapper"
+                              >
+                                <Box
+                                  between={3}
+                                  inline={false}
+                                  tag="div"
+                                >
+                                  <styled.div
+                                    between={3}
+                                    inline={false}
+                                    tag="div"
+                                  >
+                                    <div
+                                      className="sc-dAlyuH iCtgGE"
+                                    >
+                                      <styled.div
+                                        decreaseMargin={true}
+                                      >
+                                        <div
+                                          className="sc-imWYAI blhuUU"
+                                        >
+                                          <HairlineDivider
+                                            gradient={false}
+                                            vertical={false}
+                                          >
+                                            <styled.hr
+                                              gradient={false}
+                                              vertical={false}
+                                            >
+                                              <hr
+                                                className="sc-hzhJZQ bYYjPt"
+                                              />
+                                            </styled.hr>
+                                          </HairlineDivider>
+                                        </div>
+                                      </styled.div>
+                                      <Footer
+                                        cancelButtonText=""
+                                        cancelButtonType="linkWithoutIcon"
+                                        confirmButtonText="I am sure"
+                                        confirmButtonVariant="standard"
+                                        handleClose={[Function]}
+                                        handleConfirm={[Function]}
+                                      >
+                                        <Box
+                                          between={3}
+                                          inline={
+                                            Object {
+                                              "md": true,
+                                              "xs": false,
+                                            }
+                                          }
+                                          tag="div"
+                                        >
+                                          <styled.div
+                                            between={3}
+                                            inline={
+                                              Object {
+                                                "md": true,
+                                                "xs": false,
+                                              }
+                                            }
+                                            tag="div"
+                                          >
+                                            <div
+                                              className="sc-dAlyuH bbYkxz"
+                                            >
+                                              <Button
+                                                data-testid="confirm-button"
+                                                onClick={[Function]}
+                                                rank="main"
+                                                tabIndex={0}
+                                                type="button"
+                                                variant="standard"
+                                              >
+                                                <styled.button
+                                                  data-testid="confirm-button"
+                                                  onClick={[Function]}
+                                                  rank="main"
+                                                  tabIndex={0}
+                                                  type="button"
+                                                  variant="standard"
+                                                >
+                                                  <button
+                                                    className="sc-dhKdcB ixhkeY"
+                                                    data-testid="confirm-button"
+                                                    onClick={[Function]}
+                                                    tabIndex={0}
+                                                    type="button"
+                                                  >
+                                                    <styled.span
+                                                      isOldButton={false}
+                                                    >
+                                                      <span
+                                                        className="sc-kpDqfm LxRVz"
+                                                      >
+                                                        I am sure
+                                                      </span>
+                                                    </styled.span>
+                                                  </button>
+                                                </styled.button>
+                                              </Button>
+                                            </div>
+                                          </styled.div>
+                                        </Box>
+                                      </Footer>
+                                    </div>
+                                  </styled.div>
+                                </Box>
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </Box>
+                      <styled.div>
+                        <div
+                          className="sc-eqUAAy llxxdl"
+                        >
+                          <IconButton
+                            a11yText="Close"
+                            icon={[Function]}
+                            onClick={[Function]}
+                            tabIndex="0"
+                            tag="button"
+                            variant="default"
+                          >
+                            <Component
+                              theme={
+                                Object {
+                                  "hoverBackgroundColor": "#d8d8d8",
+                                }
+                              }
+                            >
+                              <Styled(styled.button)
+                                as="button"
+                                onClick={[Function]}
+                                tabIndex="0"
+                                variant="default"
+                              >
+                                <button
+                                  className="sc-jEACwC sc-feUZmu geehxc jkjwdf"
+                                  onClick={[Function]}
+                                  tabIndex="0"
+                                >
+                                  <A11yContent>
+                                    <styled.span>
+                                      <span
+                                        className="sc-dAbbOL hPvcyx"
+                                      >
+                                        Close
+                                      </span>
+                                    </styled.span>
+                                  </A11yContent>
+                                  <styled.span>
+                                    <span
+                                      className="sc-cPiKLX iYPRBq"
+                                    />
+                                  </styled.span>
+                                  <Dependent
+                                    color="greyShark"
+                                  >
+                                    <Dependent
+                                      color="greyShark"
+                                    >
+                                      <styled.svg
+                                        color="greyShark"
+                                        data-testid="dependentSvg"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                      >
+                                        <svg
+                                          aria-hidden={true}
+                                          className="sc-ikkxIA iKFLyt"
+                                          color="greyShark"
+                                          data-testid="dependentSvg"
+                                          focusable={false}
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          width="24"
+                                        >
+                                          <path
+                                            d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                                            fillRule="nonzero"
+                                          />
+                                        </svg>
+                                      </styled.svg>
+                                    </Dependent>
+                                  </Dependent>
+                                </button>
+                              </Styled(styled.button)>
+                            </Component>
+                          </IconButton>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </div>
+      <div
+        onFocus={[Function]}
+        tabIndex={0}
+      />
+    </div>
+  </WithFocusTrap>
+</Modal>
+`;

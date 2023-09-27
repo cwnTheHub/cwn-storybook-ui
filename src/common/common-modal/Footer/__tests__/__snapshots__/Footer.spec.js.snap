@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders 1`] = `
+<Footer
+  cancelButtonText="Cancel"
+  cancelButtonType="linkWithoutIcon"
+  confirmButtonText="Confirm"
+  confirmButtonVariant="standard"
+  handleClose={[MockFunction]}
+  handleConfirm={[MockFunction]}
+>
+  <Box
+    between={3}
+    inline={
+      Object {
+        "md": true,
+        "xs": false,
+      }
+    }
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={
+        Object {
+          "md": true,
+          "xs": false,
+        }
+      }
+      tag="div"
+    >
+      <div
+        className="sc-dAlyuH bbYkxz"
+      >
+        <Button
+          data-testid="confirm-button"
+          onClick={[MockFunction]}
+          rank="main"
+          tabIndex={0}
+          type="button"
+          variant="standard"
+        >
+          <styled.button
+            data-testid="confirm-button"
+            onClick={[MockFunction]}
+            rank="main"
+            tabIndex={0}
+            type="button"
+            variant="standard"
+          >
+            <button
+              className="sc-dhKdcB ixhkeY"
+              data-testid="confirm-button"
+              onClick={[MockFunction]}
+              tabIndex={0}
+              type="button"
+            >
+              <styled.span
+                isOldButton={false}
+              >
+                <span
+                  className="sc-kpDqfm LxRVz"
+                >
+                  Confirm
+                </span>
+              </styled.span>
+            </button>
+          </styled.button>
+        </Button>
+        <styled.div
+          tabIndex="0"
+        >
+          <div
+            className="sc-gsFSXq keiUPk"
+            tabIndex="0"
+          >
+            <WithForwardedRef(Link)
+              data-testid="cancel-link"
+              onClick={[MockFunction]}
+            >
+              <Link
+                data-testid="cancel-link"
+                forwardedRef={null}
+                href={null}
+                iconPosition="left"
+                onClick={[MockFunction]}
+                reactRouterLinkComponent={null}
+                to={null}
+              >
+                <styled.a
+                  as="a"
+                  context={
+                    Object {
+                      "inheritColor": undefined,
+                    }
+                  }
+                  data-testid="cancel-link"
+                  hasIcon={false}
+                  href={null}
+                  onClick={[MockFunction]}
+                  to={null}
+                >
+                  <a
+                    className="sc-jXbUNg dCmDeY"
+                    data-testid="cancel-link"
+                    href={null}
+                    onClick={[MockFunction]}
+                    to={null}
+                  >
+                    Cancel
+                  </a>
+                </styled.a>
+              </Link>
+            </WithForwardedRef(Link)>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </Box>
+</Footer>
+`;
