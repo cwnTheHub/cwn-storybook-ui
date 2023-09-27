@@ -1,5 +1,5 @@
 import React from "react";
-import Tabs from "../../common/common-tabs/Tabs";
+import {Tabs} from "../../common";
 
 export default {
   title: "Common components/Tabs",

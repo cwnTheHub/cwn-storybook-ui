@@ -26,7 +26,7 @@ export default create({
   textInverseColor: "#ffffff",
 
   // Toolbar default and active colors
-  barTextColor: "#000",
+  barTextColor: "#fff",
   barSelectedColor: "#fff",
   barBg: "#0077b6",
 
