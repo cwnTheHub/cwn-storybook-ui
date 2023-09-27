@@ -1,10 +1,11 @@
 // .storybook/manager.js
 
 import { addons } from "@storybook/manager-api";
-import NewTheme from "./NdsTheme";
+import Theme from "./Theme";
+import "../src/styles/global.css";
 
 addons.setConfig({
-  theme: NewTheme,
+  theme: Theme,
   sidebar: {
     showRoots: false,
   },

@@ -107,7 +107,7 @@ const Introduction = () => {
                   </FlexGrid.Row>
                   <Heading level="h3">Expand Collapse</Heading>
                   <FlexGrid.Row>
-                    {data?.expancollapse?.map((item, index) => (
+                    {data?.expandcollapse?.map((item, index) => (
                       <FlexGrid.Col xs={4} md={2} key={index}>
                         <UnorderedList.Item>
                           <ChevronLink href={item?.link}>
@@ -132,6 +132,19 @@ const Introduction = () => {
                   <Heading level="h3">Lists</Heading>
                   <FlexGrid.Row>
                     {data?.lists?.map((item, index) => (
+                      <FlexGrid.Col xs={4} md={3} key={index}>
+                        <UnorderedList.Item>
+                          <ChevronLink href={item?.link}>
+                            {item?.title}
+                          </ChevronLink>
+                        </UnorderedList.Item>
+                      </FlexGrid.Col>
+                    ))}
+                  </FlexGrid.Row>
+
+                  <Heading level="h3">Feedback Indicators</Heading>
+                  <FlexGrid.Row>
+                    {data?.feedback?.map((item, index) => (
                       <FlexGrid.Col xs={4} md={3} key={index}>
                         <UnorderedList.Item>
                           <ChevronLink href={item?.link}>
