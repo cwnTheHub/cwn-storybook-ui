@@ -541,11 +541,17 @@ exports[`Tabs renders 1`] = `
                         className="c3"
                       >
                         <Tabs
+                          defaultFocus={false}
+                          defaultIndex={null}
+                          disableUpDownKeys={false}
+                          environment={null}
+                          focusTabOnClick={true}
+                          forceRenderTabPanel={false}
                           onSelect={[Function]}
                           selectedIndex={0}
                         >
                           <UncontrolledTabs
-                            disableLeftRightKeys={false}
+                            className="react-tabs"
                             disableUpDownKeys={false}
                             environment={null}
                             focus={false}
@@ -580,6 +586,7 @@ exports[`Tabs renders 1`] = `
                                           className="c6"
                                         >
                                           <TabList
+                                            className="react-tabs__tab-list"
                                             key=".0"
                                             style={
                                               Object {
@@ -598,24 +605,28 @@ exports[`Tabs renders 1`] = `
                                             >
                                               <Tab
                                                 aria-label="Label 1"
+                                                className="react-tabs__tab"
+                                                disabledClassName="react-tabs__tab--disabled"
                                                 focus={false}
-                                                id=":r0:0"
+                                                id="react-tabs-0"
                                                 key=".$0"
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
                                                 onKeyUp={[Function]}
+                                                panelId="react-tabs-1"
                                                 selected={true}
+                                                selectedClassName="react-tabs__tab--selected"
                                                 tabIndex="-1"
                                                 tabRef={[Function]}
                                               >
                                                 <li
-                                                  aria-controls="panel:r0:0"
+                                                  aria-controls="react-tabs-1"
                                                   aria-disabled="false"
                                                   aria-label="Label 1"
                                                   aria-selected="true"
                                                   className="react-tabs__tab react-tabs__tab--selected"
                                                   data-rttab={true}
-                                                  id="tab:r0:0"
+                                                  id="react-tabs-0"
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
                                                   onKeyUp={[Function]}
@@ -643,24 +654,28 @@ exports[`Tabs renders 1`] = `
                                               </Tab>
                                               <Tab
                                                 aria-label="Label 2"
+                                                className="react-tabs__tab"
+                                                disabledClassName="react-tabs__tab--disabled"
                                                 focus={false}
-                                                id=":r0:1"
+                                                id="react-tabs-2"
                                                 key=".$177556"
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
                                                 onKeyUp={[Function]}
+                                                panelId="react-tabs-3"
                                                 selected={false}
+                                                selectedClassName="react-tabs__tab--selected"
                                                 tabIndex="-1"
                                                 tabRef={[Function]}
                                               >
                                                 <li
-                                                  aria-controls="panel:r0:1"
+                                                  aria-controls="react-tabs-3"
                                                   aria-disabled="false"
                                                   aria-label="Label 2"
                                                   aria-selected="false"
                                                   className="react-tabs__tab"
                                                   data-rttab={true}
-                                                  id="tab:r0:1"
+                                                  id="react-tabs-2"
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
                                                   onKeyUp={[Function]}
@@ -688,24 +703,28 @@ exports[`Tabs renders 1`] = `
                                               </Tab>
                                               <Tab
                                                 aria-label="Label 3"
+                                                className="react-tabs__tab"
+                                                disabledClassName="react-tabs__tab--disabled"
                                                 focus={false}
-                                                id=":r0:2"
+                                                id="react-tabs-4"
                                                 key=".$177559"
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
                                                 onKeyUp={[Function]}
+                                                panelId="react-tabs-5"
                                                 selected={false}
+                                                selectedClassName="react-tabs__tab--selected"
                                                 tabIndex="-1"
                                                 tabRef={[Function]}
                                               >
                                                 <li
-                                                  aria-controls="panel:r0:2"
+                                                  aria-controls="react-tabs-5"
                                                   aria-disabled="false"
                                                   aria-label="Label 3"
                                                   aria-selected="false"
                                                   className="react-tabs__tab"
                                                   data-rttab={true}
-                                                  id="tab:r0:2"
+                                                  id="react-tabs-4"
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
                                                   onKeyUp={[Function]}
@@ -825,14 +844,18 @@ exports[`Tabs renders 1`] = `
                                 </styled.hr>
                               </DimpleDivider>
                               <TabPanel
-                                id=":r0:0"
+                                className="react-tabs__tab-panel"
+                                forceRender={false}
+                                id="react-tabs-1"
                                 key=".3:$0"
                                 selected={true}
+                                selectedClassName="react-tabs__tab-panel--selected"
+                                tabId="react-tabs-0"
                               >
                                 <div
-                                  aria-labelledby="tab:r0:0"
+                                  aria-labelledby="react-tabs-0"
                                   className="react-tabs__tab-panel react-tabs__tab-panel--selected"
-                                  id="panel:r0:0"
+                                  id="react-tabs-1"
                                   role="tabpanel"
                                 >
                                   <FlexGrid
@@ -933,26 +956,34 @@ exports[`Tabs renders 1`] = `
                                 </div>
                               </TabPanel>
                               <TabPanel
-                                id=":r0:1"
+                                className="react-tabs__tab-panel"
+                                forceRender={false}
+                                id="react-tabs-3"
                                 key=".3:$177556"
                                 selected={false}
+                                selectedClassName="react-tabs__tab-panel--selected"
+                                tabId="react-tabs-2"
                               >
                                 <div
-                                  aria-labelledby="tab:r0:1"
+                                  aria-labelledby="react-tabs-2"
                                   className="react-tabs__tab-panel"
-                                  id="panel:r0:1"
+                                  id="react-tabs-3"
                                   role="tabpanel"
                                 />
                               </TabPanel>
                               <TabPanel
-                                id=":r0:2"
+                                className="react-tabs__tab-panel"
+                                forceRender={false}
+                                id="react-tabs-5"
                                 key=".3:$177559"
                                 selected={false}
+                                selectedClassName="react-tabs__tab-panel--selected"
+                                tabId="react-tabs-4"
                               >
                                 <div
-                                  aria-labelledby="tab:r0:2"
+                                  aria-labelledby="react-tabs-4"
                                   className="react-tabs__tab-panel"
-                                  id="panel:r0:2"
+                                  id="react-tabs-5"
                                   role="tabpanel"
                                 />
                               </TabPanel>
