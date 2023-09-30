@@ -2,7 +2,7 @@ import babel from "rollup-plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
-import commonjs from "rollup-plugin-commonjs";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default [
   {
@@ -28,8 +28,10 @@ export default [
         presets: ["@babel/preset-react"],
       }),
       external(),
-      resolve(),
-
+      resolve({ preferBuiltins: true, mainFields: ["browser"] }),
+      commonjs({
+        exclude: "src/**",
+      }),
     ],
   },
 ];
