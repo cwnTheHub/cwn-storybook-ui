@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: | 
           npm ci
-          npm run build-storybook
+          npm run build-nds
 
       - name: Release
         env:
