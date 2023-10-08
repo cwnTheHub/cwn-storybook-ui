@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Box from "../core-box/Box";
 import Button from "../core-button/Button";
@@ -8,14 +8,14 @@ import FlexGrid from "../core-flex-grid/FlexGrid";
 import HairlineDivider from "../core-hairline-divider/HairlineDivider";
 import Heading from "../core-heading/Heading";
 import Input from "../core-input/Input";
-import Link from "../core-link/Link";
 import Paragraph from "../core-paragraph/Paragraph";
 import Text from "../core-text/Text";
 import { Requirements } from "./requirements/Requirements";
 import { getCopy, safeRest } from "../../util-helpers";
 import copyDictionary from "./LoginText";
-import Spinner from "../core-spinner/Spinner";
+import { pwdRequirementsCopy } from "./requirementText";
 import Notification from "../core-notification/Notification";
+import TextButton from "../core-text-button/TextButton";
 
 const Login = ({
   variantType,
@@ -25,11 +25,15 @@ const Login = ({
   send2FALoginData,
   sendSignUPData,
   copy,
-  policies,
   fullHeight,
   spacing,
+  contentFootnote,
+
   ...rest
 }) => {
+  const [allowAccontCreation, setAllowAccountCreation] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
   const [username, setUsername] = useState("");
   const [userExists, setUserExists] = useState(false);
   const [usernameIsCkecked, setUsernameIsChecked] = useState(false);
@@ -47,52 +51,45 @@ const Login = ({
   const [statusSecureCode, setStatusSecureCode] = useState(undefined);
   const [errorSecureCode, setErrorSecureCode] = useState(undefined);
 
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(undefined);
   const [statusEmail, setStatusEmail] = useState(undefined);
   const [errorEmail, setErrorEmail] = useState(undefined);
 
-  const [has2FALoading, setHas2FALoading] = useState(false);
+  const [hasErrorOnSignUp, setHasErrorOnSignUp] = useState(false);
   const [has2FA, setHas2FA] = useState(false);
 
   const [userNotExistAndContinueToRegister, setNextStep] = useState(false);
+  const [accountCreationHasFailed, setAccountCreationHasFailed] =
+    useState(false);
+  const [accountCreationHasSucceed, setAccountCreationHasSucceed] =
+    useState(false);
 
-  const [isLoginComplete, setIsLoginComplete] = useState(false);
+  const [loginHasFailed, setLoginHasFailed] = useState(false);
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
 
   const content = getCopy(copyDictionary, copy);
-  const contentPolicies = getCopy(policies, copy);
 
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-  const passwordRequirements = [
-    {
-      text: "Must be at least 8 characters",
-      validator: (val) => val.length >= 8,
-    },
-    {
-      text: "Must contain at least one number",
-      validator: (val) => /\d/g.test(val),
-    },
-    {
-      text: "Must contain at least one lower-case letter",
-      validator: (val) => /[a-z]/g.test(val),
-    },
-    {
-      text: "Must contain at least one upper-case letter",
-      validator: (val) => /[A-Z]/g.test(val),
-    },
-    {
-      text: "Must contain at least one special character (@$%!#)",
-      validator: (val) => /[@$%!#]/g.test(val),
-    },
-  ];
+  const { passwordRequirements } = getCopy(pwdRequirementsCopy, copy);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 10000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [has2FA, setHas2FA]);
 
   const onDataFilling = (e) => {
     let text = e?.target?.name;
     switch (text) {
       case "username":
+        setUsernameIsChecked(false);
         setUsername(e.target.value);
         if (username.length > 3) {
           setError(undefined);
@@ -138,30 +135,24 @@ const Login = ({
         } else {
           setError(undefined);
           setStatus(undefined);
+          setUsernameIsChecked(false);
           const response = checkUsernameOrEmailExists(username);
 
-          if (response?.success || response?.error) {
-            setUsernameIsChecked(true);
-          }
-          if (response?.success) {
-            setUserExists(true);
-            setStatus("success");
-          }
-          if (variantType != "regular" && response?.error) {
-            setSuccessMessage(null);
-            setErrorMessage({
-              ...response?.error,
-              message: content?.companyOREmployeeIDNotFoundTxt,
-            });
-          } else {
-            setErrorMessage(null);
+          setUserExists(response);
+          if (allowAccontCreation) {
+            if (response) {
+              setStatus("error");
+            } else {
+              setStatus("success");
+              setUsernameIsChecked(true);
+            }
           }
         }
         break;
       case "email":
         if (!emailPattern.test(email)) {
           setStatusEmail("error");
-          setErrorEmail("Incorect email formatting !");
+          setErrorEmail(content?.emailErrorTxt);
         } else {
           setStatusEmail(undefined);
           setErrorEmail(undefined);
@@ -177,17 +168,27 @@ const Login = ({
         }
         break;
       case "confirmPassword":
-        if (confirmPassword != password) {
+        if (confirmPassword != password || confirmPassword?.length < 8) {
           setStatusConfirmPwd("error");
         } else {
           setStatusConfirmPwd("success");
         }
         break;
+      case "secureCode":
+        if (secureCode?.length != 6) {
+          setStatusSecureCode("error");
+          setErrorSecureCode(content?.incorrectLengthSecureCodeTxt);
+        } else {
+          setStatusSecureCode(undefined);
+          setErrorSecureCode(undefined);
+        }
+
+        break;
       default:
     }
   };
 
-  const continueCTA = (e) => {
+  const onContinueCTA = (e) => {
     e.preventDefault();
     setSuccessMessage(null);
     setErrorMessage(null);
@@ -206,14 +207,17 @@ const Login = ({
       !userExists
     ) {
       const response = sendSignUPData({ username, email, password });
-      if (response?.success) {
-        setIsLoginComplete(true);
-        console.log("We are here", response);
-        setSuccessMessage(response?.success);
+      const { data, success, error } = response;
+      if (success) {
+        //set success
+        setAccountCreationHasSucceed(!accountCreationHasSucceed);
       }
-      if (response?.error) {
-        setErrorMessage(response?.error);
+      if (error) {
+        //set Error
+        setAccountCreationHasFailed(!accountCreationHasFailed);
       }
+    } else {
+      setHasErrorOnSignUp(!hasErrorOnSignUp);
     }
   };
 
@@ -225,213 +229,319 @@ const Login = ({
     if (password.length < 1) {
       setErrorPwd(content?.emptyField);
       setStatusPwd("error");
-    } else if (username.length && password.length) {
-      setHas2FALoading(true);
+    } else if (username?.length < 3) {
+      setError(content?.emptyField);
+      setStatus("error");
+    } else {
       const response = sendLoginData({ username, password });
-      if (response?.success) {
-        setHas2FALoading(false);
+      const has2FAActive = response?.data?.has2FA;
 
-        setSuccessMessage(response?.success);
-
-        setStatus(undefined);
-        if (response?.data?.has2FA) {
-          setHas2FA(true);
-        } else {
-          setIsLoginComplete(true);
-        }
+      if (has2FAActive) {
+        // display secure code
+        setHas2FA(true);
+        setIsVisible(true);
+        setLoginHasFailed(false);
       }
       if (response?.error) {
-        setHas2FALoading(false);
-        setErrorMessage(response?.error);
-        setStatusPwd("error");
-        setPassword("");
-        setStatus(undefined);
+        //set Error
+        setLoginHasFailed(true);
       }
     }
   };
-
-  const renderGeneralError = () => {
-    if (successMessage?.status >= 200 && successMessage?.status <= 299) {
-      return (
-        <Notification
-          variant="success"
-          copy={copy}
-          data-testid="notification-success"
-        >
-          <Text small> {successMessage?.message}</Text>
-        </Notification>
-      );
-    } else if (errorMessage?.status >= 400 && errorMessage?.status <= 499) {
-      return (
-        <Notification
-          variant="error"
-          copy={copy}
-          data-testid="notification-error"
-        >
-          <Text small> {errorMessage?.message}</Text>
-        </Notification>
-      );
-    } else {
-      return (
-        <Notification
-          variant="warning"
-          copy={copy}
-          data-testid="notification-warning"
-        >
-          <Text small> {content?.error500}</Text>
-        </Notification>
-      );
-    }
-  };
-
   const submitSecureCodeCTA = (e) => {
     e.preventDefault();
     setSuccessMessage(null);
     setErrorMessage(null);
 
-    if (secureCode.length < 6 && secureCode > 6) {
-      setErrorSecureCode("Code invalid");
-      setStatusSecureCode("error");
+    const response = send2FALoginData({
+      username,
+      password,
+      secureCode,
+    });
+    const { error } = response;
+    if (error) {
+      // display error
+      setLoginHasFailed(true);
     } else {
-      const response = send2FALoginData({
-        username,
-        password,
-        secureCode,
-      });
-      if (response?.success) {
-        setErrorSecureCode(undefined);
-        setStatusSecureCode("success");
-        setSuccessMessage(response?.success);
-        setIsLoginComplete(true);
-      } else if (response?.error) {
-        setErrorSecureCode(undefined);
-        setStatusSecureCode("error");
-        setErrorMessage(response?.error);
-      }
+      setLoginHasFailed(false);
     }
   };
 
-  return (
-    <FlexGrid>
-      <FlexGrid.Row>
-        <FlexGrid.Col xs={12} md={8}>
-          <Card
-            variant={cardVariant}
-            {...safeRest(rest)}
-            fullHeight={fullHeight}
-          >
-            <Box between={3}>
-              {(errorMessage || successMessage) &&
-              isLoginComplete &&
-              userNotExistAndContinueToRegister
-                ? renderGeneralError()
-                : null}
-              {!has2FA &&
-              variantType == "regular" &&
-              !userNotExistAndContinueToRegister ? (
-                !userExists ? (
-                  <>
-                    <Heading level="h3">{content?.heading}</Heading>
-                    <Text size="medium">{content?.subtext}</Text>
-                  </>
-                ) : (
-                  <>
-                    <Heading level="h3">{content?.onSuccessHeading}</Heading>
-                  </>
-                )
-              ) : null}
-              {!userNotExistAndContinueToRegister && (
+  const renderGeneralError = () => {
+    return (
+      <Notification
+        variant="error"
+        copy={copy}
+        data-testid="notification-error"
+      >
+        <Text small> {content?.errorOnSecureCodeTxt}</Text>
+      </Notification>
+    );
+  };
+
+  const renderExistingAccount = () => {
+    return (
+      <Notification
+        variant="warning"
+        copy={copy}
+        data-testid="account-existing-warning"
+      >
+        <Text small> {content?.onSuccessHeading}</Text>
+      </Notification>
+    );
+  };
+  const renderEmailSentToUser = () => {
+    return (
+      <Notification
+        variant="success"
+        copy={copy}
+        data-testid="email-sent-notification"
+      >
+        <Text small> {content?.emailSentTxt}</Text>
+      </Notification>
+    );
+  };
+  const renderErrorOnSignUp = () => {
+    return (
+      <Notification
+        variant="error"
+        copy={copy}
+        data-testid="account-creation-error"
+      >
+        <Text small> {content?.signUpError}</Text>
+      </Notification>
+    );
+  };
+  const renderGeneralErrorOnCreation = () => {
+    return (
+      <Notification
+        variant="error"
+        copy={copy}
+        data-testid="notification-error"
+      >
+        <Text small> {content?.onAccountCreatedFailed}</Text>
+      </Notification>
+    );
+  };
+
+  const allowAccontCreationCTA = (e) => {
+    e.preventDefault();
+    setAllowAccountCreation(!allowAccontCreation);
+    setError(undefined);
+    setStatus(undefined);
+    setErrorPwd(undefined);
+    setStatusPwd(undefined);
+  };
+
+  if (accountCreationHasSucceed) {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
+                <Notification
+                  variant="success"
+                  copy={copy}
+                  data-testid="account-createion-success"
+                >
+                  <Text small> {content?.onAccountCreatedSuccess}</Text>
+                </Notification>
+              </Box>
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+
+  if (has2FA) {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
                 <>
-                  {variantType == "regular" && !has2FA ? (
-                    <>
-                      <Paragraph>{content?.paragraph}</Paragraph>
-                      <Box inline between={4}>
-                        {contentPolicies?.map((policy, index) => (
-                          <Paragraph size="small" key={index}>
-                            <Link href={policy?.linkTo}>{policy?.text}</Link>
-                          </Paragraph>
-                        ))}
-                      </Box>
-                      <HairlineDivider />
-                    </>
-                  ) : null}
-                  {errorMessage || successMessage ? renderGeneralError() : null}
-                  {!isLoginComplete ? (
-                    !has2FA ? (
-                      <>
-                        <Input
-                          type={"text"}
-                          hintPosition={"below"}
-                          label={
-                            variantType != "regular"
-                              ? content?.employeeId
-                              : content?.username
-                          }
-                          name="username"
-                          autocomplete={true}
-                          onChange={onDataFilling}
-                          onBlur={validate}
-                          value={username}
-                          feedback={status}
-                          error={error}
-                          data-testid="username"
-                        />
-                        {userExists && (
-                          <Input
-                            type={"password"}
-                            hintPosition={"below"}
-                            label={content?.password}
-                            name="password"
-                            autocomplete={false}
-                            onChange={onDataFilling}
-                            onBlur={validate}
-                            value={password}
-                            feedback={statusPwd}
-                            error={errorPwd}
-                            data-testid="pwd"
-                          />
-                        )}
-                      </>
-                    ) : (
-                      <Input
-                        type={"number"}
-                        hintPosition={"below"}
-                        label={content?.secureCode}
-                        name="secureCode"
-                        autocomplete={true}
-                        onChange={onDataFilling}
-                        onBlur={validate}
-                        value={secureCode}
-                        feedback={statusSecureCode}
-                        error={errorSecureCode}
-                        data-testid="secure-code-input"
-                      />
-                    )
+                  {loginHasFailed ? renderGeneralError() : null}
+                  {isVisible ? renderEmailSentToUser() : null}
+                </>
+                <>
+                  <Input
+                    type={"number"}
+                    hintPosition={"below"}
+                    label={content?.secureCode}
+                    name="secureCode"
+                    autocomplete={true}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={secureCode}
+                    feedback={statusSecureCode}
+                    error={errorSecureCode}
+                    data-testid="secure-code-input"
+                  />
+                  {secureCode?.length == 6 ? (
+                    <Button
+                      onClick={submitSecureCodeCTA}
+                      variant="primary"
+                      data-testid="sign-in-with-code-button"
+                    >
+                      {content?.submitSecureCodeCTATxt}
+                    </Button>
                   ) : null}
                 </>
-              )}
-              {!isLoginComplete &&
-              !userExists &&
-              userNotExistAndContinueToRegister &&
-              variantType == "regular" ? (
+                <Box data-testid="resend-code">
+                  <TextButton onClick={signInCTA}>
+                    {content?.resendSecureCodeTxt}
+                  </TextButton>
+                </Box>
+                <div data-testid="create-a-ticket">
+                  <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                </div>
+              </Box>
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+  if (!allowAccontCreation && variantType == "regular") {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
                 <>
-                  {errorMessage || successMessage ? renderGeneralError() : null}
+                  <Heading level="h3">{content?.heading}</Heading>
+                  <Text size="medium">{content?.subtext}</Text>
+                  <Box inline between={2}>
+                    <Paragraph
+                      size={"small"}
+                      data-testid="set-up-a-new-account"
+                    >
+                      {content?.doNotHaveAccountTxt}{" "}
+                      <TextButton onClick={allowAccontCreationCTA}>
+                        {content?.createAccountTxt}
+                      </TextButton>
+                    </Paragraph>
+                  </Box>
+
+                  {loginHasFailed ? renderGeneralError() : null}
+                  <HairlineDivider />
+                </>
+                <>
                   <Input
-                    type={"email"}
+                    type={"text"}
                     hintPosition={"below"}
+                    label={content?.username}
+                    name="username"
+                    autocomplete={true}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={username}
+                    feedback={status}
+                    error={error}
+                    data-testid="username"
+                  />
+                  <Input
+                    type={"password"}
+                    hintPosition={"below"}
+                    label={content?.password}
+                    name="password"
+                    autocomplete={false}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={password}
+                    feedback={statusPwd}
+                    error={errorPwd}
+                    data-testid="pwd"
+                  />
+
+                  <Button
+                    onClick={signInCTA}
+                    variant="primary"
+                    data-testid="sign-in-button"
+                  >
+                    {content?.signInCTA}
+                  </Button>
+                  <Box inline between={4}>
+                    <div data-testid="link-pwd-forgot">
+                      <ChevronLink href="#">
+                        {content?.pwdForgotTxt}
+                      </ChevronLink>
+                    </div>
+                    <span>|</span>
+                    <div data-testid="link-username-forgot">
+                      <ChevronLink href="#">
+                        {content?.usernameForgotTxt}
+                      </ChevronLink>
+                    </div>
+                  </Box>
+                </>
+                <div data-testid="create-a-ticket">
+                  <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                </div>
+              </Box>
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+  if (
+    allowAccontCreation &&
+    variantType == "regular" &&
+    userNotExistAndContinueToRegister
+  ) {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
+                <>
+                  {hasErrorOnSignUp ? (
+                    <>
+                      {renderErrorOnSignUp()} <HairlineDivider />
+                    </>
+                  ) : null}
+                  {accountCreationHasFailed ? (
+                    <>
+                      {renderGeneralErrorOnCreation()} <HairlineDivider />
+                    </>
+                  ) : null}
+                  <Input
+                    type="email"
+                    hintPosition={"below"}
+                    hint={content?.fieldRequiered}
                     label={content?.email}
                     name="email"
                     onChange={onDataFilling}
                     onBlur={validate}
                     value={email}
                     feedback={statusEmail}
+                    autocomplete={true}
                     error={errorEmail}
                     data-testid="email-input"
                   />
-                  {!userExists &&
-                  usernameIsCkecked &&
-                  password?.length &&
-                  !isValid ? (
+                  {usernameIsCkecked && password?.length && !isValid ? (
                     <Requirements
                       value={password}
                       requirements={passwordRequirements}
@@ -441,6 +551,7 @@ const Login = ({
                   <Input
                     type={"password"}
                     hintPosition={"below"}
+                    hint={content?.fieldRequiered}
                     label={content?.password}
                     name="password"
                     onChange={onDataFilling}
@@ -463,104 +574,155 @@ const Login = ({
                     data-testid="confirm-pwd-input"
                   />
                 </>
-              ) : null}
-              {!isLoginComplete ? (
+                <Button
+                  onClick={signUpCTA}
+                  variant="primary"
+                  data-testid="sign-up-button"
+                >
+                  {content?.signUpCTA}
+                </Button>
+                <div data-testid="create-a-ticket">
+                  <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                </div>
+              </Box>
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+  if (allowAccontCreation && variantType == "regular") {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
                 <>
-                  {!userExists &&
-                  usernameIsCkecked &&
-                  !userNotExistAndContinueToRegister &&
-                  variantType == "regular" ? (
+                  <Heading level="h3">{content?.heading}</Heading>
+                  <Text size="medium">{content?.subtext}</Text>
+                  <Paragraph size={"small"}>{content?.paragraph}</Paragraph>
+                  <Box inline between={2}>
+                    <Paragraph
+                      size={"small"}
+                      data-testid="set-up-a-new-account"
+                    >
+                      {content?.haveAccountTxt}{" "}
+                      <TextButton
+                        data-testid="create-text-button"
+                        onClick={allowAccontCreationCTA}
+                      >
+                        {content?.connexionTxt}
+                      </TextButton>
+                    </Paragraph>
+                  </Box>
+                  {userExists ? renderExistingAccount() : null}
+                  <HairlineDivider />
+                </>
+                <>
+                  <Input
+                    type={"text"}
+                    hintPosition={"below"}
+                    label={content?.username}
+                    name="username"
+                    autocomplete={true}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={username}
+                    feedback={status}
+                    error={error}
+                    data-testid="username"
+                  />
+
+                  {!userExists && status !== "error" && usernameIsCkecked ? (
                     <Button
-                      onClick={continueCTA}
+                      onClick={onContinueCTA}
                       variant="primary"
                       data-testid="create-account-button"
                     >
                       {content?.continueCTA}
                     </Button>
-                  ) : !userExists &&
-                    usernameIsCkecked &&
-                    userNotExistAndContinueToRegister ? (
-                    <Button
-                      onClick={signUpCTA}
-                      variant="primary"
-                      data-testid="sign-up-button"
-                    >
-                      {content?.signUpCTA}
-                    </Button>
-                  ) : !userNotExistAndContinueToRegister &&
-                    userExists &&
-                    usernameIsCkecked & !has2FA ? (
-                    <Spinner
-                      label="Loading user"
-                      size="small"
-                      spinning={has2FALoading}
-                      inline
-                    >
-                      <Button
-                        onClick={signInCTA}
-                        variant="primary"
-                        data-testid="sign-in-button"
-                      >
-                        {content?.signInCTA}
-                      </Button>
-                    </Spinner>
-                  ) : !userNotExistAndContinueToRegister &&
-                    userExists &&
-                    usernameIsCkecked & has2FA ? (
-                    <Spinner
-                      label="Loading user"
-                      size="small"
-                      spinning={has2FALoading}
-                      inline
-                    >
-                      <Button
-                        onClick={submitSecureCodeCTA}
-                        variant="primary"
-                        data-testid="sign-in-with-code-button"
-                      >
-                        {content?.submitSecureCodeCTATxt}
-                      </Button>
-                    </Spinner>
                   ) : null}
                 </>
-              ) : null}
-              <Box between={1} vertical={3}>
-                {!isLoginComplete
-                  ? variantType != "inHouse" && (
-                      <>
-                        {userExists && !has2FA && (
-                          <div data-testid="link-pwd-forgot">
-                            <ChevronLink href="#">
-                              {content?.pwdForgotTxt}
-                            </ChevronLink>
-                          </div>
-                        )}
-                        {!userExists &&
-                          !usernameIsCkecked &&
-                          !userNotExistAndContinueToRegister && (
-                            <div data-testid="link-username-forgot">
-                              <ChevronLink href="#">
-                                {content?.usernameForgotTxt}
-                              </ChevronLink>
-                            </div>
-                          )}
-                      </>
-                    )
-                  : null}
-                <div>
+                <div data-testid="create-a-ticket">
                   <ChevronLink href="#">{content?.createTicket}</ChevronLink>
                 </div>
               </Box>
-            </Box>
-          </Card>
-        </FlexGrid.Col>
-      </FlexGrid.Row>
-    </FlexGrid>
-  );
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+
+  if (variantType == "inHouse") {
+    return (
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={8}>
+            <Card
+              variant={cardVariant}
+              {...safeRest(rest)}
+              fullHeight={fullHeight}
+            >
+              <Box between={3}>
+                <>{userExists ? renderExistingAccount() : null}</>
+                <>
+                  <Input
+                    type={"text"}
+                    hintPosition={"below"}
+                    label={content?.employeeId}
+                    name="username"
+                    autocomplete={true}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={username}
+                    feedback={status}
+                    error={error}
+                    data-testid="username"
+                  />
+
+                  <Input
+                    type={"password"}
+                    hintPosition={"below"}
+                    label={content?.password}
+                    name="password"
+                    autocomplete={false}
+                    onChange={onDataFilling}
+                    onBlur={validate}
+                    value={password}
+                    feedback={statusPwd}
+                    error={errorPwd}
+                    data-testid="pwd"
+                  />
+
+                  <Button
+                    onClick={signInCTA}
+                    variant="primary"
+                    data-testid="sign-in-button"
+                  >
+                    {content?.signInCTA}
+                  </Button>
+                </>
+                <div data-testid="create-a-ticket">
+                  <ChevronLink href="#">{content?.createTicket}</ChevronLink>
+                </div>
+              </Box>
+            </Card>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    );
+  }
+  return null;
 };
 
 Login.propTypes = {
-  variantType: PropTypes.oneOf(["regular", "inHouse", "Company"]).isRequired,
+  variantType: PropTypes.oneOf(["regular", "inHouse"]).isRequired,
   cardVariant: PropTypes.oneOf([
     "white",
     "lavender",
@@ -575,7 +737,7 @@ Login.propTypes = {
   sendLoginData: PropTypes.func,
   send2FALoginData: PropTypes.func,
   sendSignUPData: PropTypes.func,
-
+  contentFootnote: PropTypes.array,
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(["en", "fr"]),
     PropTypes.shape({
@@ -617,144 +779,5 @@ Login.defaultProps = {
   cardVariant: "defaultWithBorder",
   copy: "en",
   fullHeight: false,
-  checkUsernameOrEmailExists: (user) => {
-    const username = ["moderator", "admin"];
-    if (username?.includes(user)) {
-      return {
-        error: null,
-        data: true,
-        success: {
-          status: 200,
-          message: "We have sent you a code to your email address! ",
-        },
-      };
-    }
-    return {
-      success: null,
-      data: false,
-      error: {
-        status: 404,
-        message: "User does not exist! Create an account. ",
-      },
-    };
-  },
-  sendLoginData: (userData) => {
-    const { username, password } = userData;
-    const name = ["moderator", "admin"];
-    const pwd = "password";
-
-    if (name.includes(username) && username == "moderator" && password == pwd) {
-      return {
-        error: null,
-        data: { has2FA: true },
-        success: {
-          status: 200,
-          message: "We have sent you a security code to your email address.",
-        },
-      };
-    } else if (
-      name.includes(username) &&
-      username == "admin" &&
-      password == pwd
-    ) {
-      return {
-        error: null,
-        data: { has2FA: false },
-        success: {
-          status: 200,
-          message: "For more security activate the 2FA ",
-        },
-      };
-    } else if (
-      name.includes(username) &&
-      (username == "moderator" || username == "admin") &&
-      password != pwd
-    ) {
-      return { data: false, error: { status: 401, message: "Login failed!" } };
-    }
-    return null;
-  },
-  send2FALoginData: (userData) => {
-    const { username, secureCode } = userData;
-    const name = ["moderator", "admin"];
-    const secure = 123456;
-
-    console.log("test .. ", { username, secureCode });
-
-    if (
-      name.includes(username) &&
-      username == "moderator" &&
-      secureCode == secure
-    ) {
-      return {
-        error: null,
-        data: true,
-        success: { status: 200, message: "Loading user params . . ." },
-      };
-    } else if (
-      name.includes(username) &&
-      username == "moderator" &&
-      secureCode != secure
-    ) {
-      return {
-        success: null,
-        data: false,
-        error: { status: 401, message: "Code incorrect" },
-      };
-    }
-  },
-  sendSignUPData: (userData) => {
-    const { username, email, password } = userData;
-    const emails = [];
-    if (emails.includes(email)) {
-      return {
-        success: null,
-        data: null,
-        error: {
-          status: 401,
-          message: "Email already exists !",
-        },
-      };
-    }
-    return {
-      error: null,
-      data: { username, email, password },
-      success: {
-        status: 200,
-        message:
-          "Thanks for registering! Please check your email for an activation link",
-      },
-    };
-  },
-  policies: {
-    en: [
-      {
-        text: "Terms",
-        linkTo: "#",
-      },
-      {
-        text: "Cookie",
-        linkTo: "#",
-      },
-      {
-        text: "Privacy",
-        linkTo: "#",
-      },
-    ],
-    fr: [
-      {
-        text: "Conditions",
-        linkTo: "#",
-      },
-      {
-        text: " Cookies",
-        linkTo: "#",
-      },
-      {
-        text: "Confidentialité",
-        linkTo: "#",
-      },
-    ],
-  },
 };
 export default Login;

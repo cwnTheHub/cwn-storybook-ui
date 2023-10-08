@@ -32,7 +32,7 @@ export const MinimalUsage = () => {
     </Card>
   );
 };
-export const withCoreComponents = () => {
+export const WithCoreComponents = () => {
   return (
     <FlexGrid>
       <FlexGrid.Row>

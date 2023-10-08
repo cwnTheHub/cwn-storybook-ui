@@ -1,6 +1,6 @@
 {
   "name": "@nds_core/nds",
-  "version": "1.8.3",
+  "version": "1.8.5",
   "private": false,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
