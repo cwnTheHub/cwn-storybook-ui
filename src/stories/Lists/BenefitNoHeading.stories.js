@@ -38,7 +38,7 @@ export const WithIndividualIcons = () => {
   );
 };
 
-export const withOneIconSet = () => {
+export const WithOneIconSet = () => {
   return (
     <BenefitNoHeading icon={Check}>
       <BenefitNoHeading.Item>

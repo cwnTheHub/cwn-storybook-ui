@@ -9,7 +9,7 @@ import {
   Stories,
   Story,
 } from "@storybook/blocks";
-import {version} from '../../package.json';
+import packageInfo from '../../package.json';
 
 
 <Meta title="ChangeLog" />
@@ -40,7 +40,7 @@ import {version} from '../../package.json';
 
 ----
 
-> September , 26 2023  -- @version {version}
+> September , 26 2023  -- @version {packageInfo?.version}
 
 ### Removed components:
 ` No Changes.`
