@@ -46,7 +46,7 @@ export const WithIndividualIcons = () => {
   );
 };
 
-export const withOneIconSet = () => {
+export const WithOneIconSet = () => {
   return (
     <BenefitWithHeading icon={Check}>
       <BenefitWithHeading.Item heading="Benefit list">

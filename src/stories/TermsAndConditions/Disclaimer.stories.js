@@ -19,7 +19,7 @@ MinimalUsage.args = {
   children: "This is fine print",
 };
 
-export const withForms = () => {
+export const WithForms = () => {
   return (
     <Box between={3}>
       <Box between={1}>
