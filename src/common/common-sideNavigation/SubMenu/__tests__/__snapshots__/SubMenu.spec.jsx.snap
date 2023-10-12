@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavigation.SubMenu renders 1`] = `
+<SubMenu
+  active={true}
+  id="Three"
+  isOpen={false}
+  label="Threefdsfdsfds"
+  onClick={[MockFunction]}
+>
+  <styled.button
+    aria-expanded={false}
+    id="Three"
+    isOpen={false}
+    onClick={[Function]}
+  >
+    <button
+      aria-expanded={false}
+      className="sc-dAbbOL cVAvwL"
+      id="Three"
+      onClick={[Function]}
+    >
+      <Styled(Box)
+        horizontal={2}
+        inline={true}
+        vertical={3}
+      >
+        <Box
+          className="sc-feUZmu fSNjsT"
+          horizontal={2}
+          inline={true}
+          tag="div"
+          vertical={3}
+        >
+          <styled.div
+            className="sc-feUZmu fSNjsT"
+            horizontal={2}
+            inline={true}
+            tag="div"
+            vertical={3}
+          >
+            <div
+              className="sc-aXZVg biTbUz sc-feUZmu fSNjsT sc-feUZmu fSNjsT"
+            >
+              <ColoredTextProvider
+                tag="div"
+              >
+                <div>
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="medium"
+                  >
+                    <styled.span
+                      block={false}
+                      bold={false}
+                      inheritColor={true}
+                      invert={false}
+                      size="medium"
+                    >
+                      <span
+                        className="sc-gEvEer jfLwQb"
+                        size="medium"
+                      >
+                        Threefdsfdsfds
+                      </span>
+                    </styled.span>
+                  </Text>
+                </div>
+              </ColoredTextProvider>
+              <CaretDown
+                size={16}
+              >
+                <Limited
+                  size={16}
+                  variant="default"
+                >
+                  <Component
+                    size={16}
+                    theme={
+                      Object {
+                        "backgroundColor": "transparent",
+                        "iconColor": "#2B8000",
+                      }
+                    }
+                  >
+                    <Styled(styled.svg)
+                      animationDirection="down"
+                      size={16}
+                      viewBox="0 0 24 24"
+                    >
+                      <svg
+                        className="sc-kpDqfm sc-dAlyuH eZjCvP cSGzSW"
+                        size={16}
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                        />
+                      </svg>
+                    </Styled(styled.svg)>
+                  </Component>
+                </Limited>
+              </CaretDown>
+            </div>
+          </styled.div>
+        </Box>
+      </Styled(Box)>
+    </button>
+  </styled.button>
+  <FadeAndReveal
+    duration={500}
+    height={0}
+    in={false}
+    timeout={0}
+  >
+    <CSSTransition
+      classNames=""
+      duration={500}
+      in={false}
+      timeout={
+        Object {
+          "appear": 0,
+          "enter": 0,
+          "exit": 0,
+        }
+      }
+    >
+      <Transition
+        appear={false}
+        duration={500}
+        enter={true}
+        exit={true}
+        in={false}
+        mountOnEnter={false}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={
+          Object {
+            "appear": 0,
+            "enter": 0,
+            "exit": 0,
+          }
+        }
+        unmountOnExit={false}
+      >
+        <styled.div
+          aria-hidden={true}
+          style={
+            Object {
+              "height": "0px",
+              "opacity": 0,
+              "overflow": "hidden",
+              "transition": "height 0ms ease-in-out, opacity 0ms ease-in-out, visibility 0ms 0ms",
+              "visibility": "hidden",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            className="sc-dhKdcB eWnRTw"
+            style={
+              Object {
+                "height": "0px",
+                "opacity": 0,
+                "overflow": "hidden",
+                "transition": "height 0ms ease-in-out, opacity 0ms ease-in-out, visibility 0ms 0ms",
+                "visibility": "hidden",
+              }
+            }
+          >
+            <styled.ul>
+              <ul
+                className="sc-ikkxIA bwjfn"
+              >
+                <Link
+                  active={false}
+                  href="#"
+                  reactRouterLinkComponent={null}
+                  subMenuLink={true}
+                  to={null}
+                >
+                  <styled.a
+                    href="#"
+                    to={null}
+                  >
+                    <a
+                      className="sc-gsFSXq cUsfYh"
+                      href="#"
+                      to={null}
+                    >
+                      <Styled(Box)
+                        active={0}
+                      >
+                        <Box
+                          active={0}
+                          className="sc-fqkvVR fVEmfX"
+                          inline={false}
+                          tag="div"
+                        >
+                          <styled.div
+                            active={0}
+                            className="sc-fqkvVR fVEmfX"
+                            inline={false}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-aXZVg hGJiZM sc-fqkvVR fVEmfX sc-fqkvVR fVEmfX"
+                            >
+                              <Styled(Box)
+                                active={0}
+                                submenulink={1}
+                                vertical={3}
+                              >
+                                <Box
+                                  active={0}
+                                  className="sc-eqUAAy cZDVVr"
+                                  inline={false}
+                                  submenulink={1}
+                                  tag="div"
+                                  vertical={3}
+                                >
+                                  <styled.div
+                                    active={0}
+                                    className="sc-eqUAAy cZDVVr"
+                                    inline={false}
+                                    submenulink={1}
+                                    tag="div"
+                                    vertical={3}
+                                  >
+                                    <div
+                                      className="sc-aXZVg hkJkBk sc-eqUAAy cZDVVr sc-eqUAAy cZDVVr"
+                                    >
+                                      <Styled(Box)
+                                        active={0}
+                                        horizontal={3}
+                                        submenulink={1}
+                                      >
+                                        <Box
+                                          active={0}
+                                          className="sc-dcJsrY iusGSD"
+                                          horizontal={3}
+                                          inline={false}
+                                          submenulink={1}
+                                          tag="div"
+                                        >
+                                          <styled.div
+                                            active={0}
+                                            className="sc-dcJsrY iusGSD"
+                                            horizontal={3}
+                                            inline={false}
+                                            submenulink={1}
+                                            tag="div"
+                                          >
+                                            <div
+                                              className="sc-aXZVg dqHBiP sc-dcJsrY iusGSD sc-dcJsrY iusGSD"
+                                            >
+                                              <Styled(ColoredTextProvider)
+                                                active={false}
+                                              >
+                                                <ColoredTextProvider
+                                                  active={false}
+                                                  className="sc-iGgWBj bgLOkg"
+                                                  tag="div"
+                                                >
+                                                  <div
+                                                    className="sc-iGgWBj bgLOkg"
+                                                  >
+                                                    <Text
+                                                      block={false}
+                                                      bold={false}
+                                                      invert={false}
+                                                      size="small"
+                                                    >
+                                                      <styled.span
+                                                        block={false}
+                                                        bold={false}
+                                                        inheritColor={true}
+                                                        invert={false}
+                                                        size="small"
+                                                      >
+                                                        <span
+                                                          className="sc-gEvEer fhUkVo"
+                                                          size="small"
+                                                        >
+                                                          Option 1
+                                                        </span>
+                                                      </styled.span>
+                                                    </Text>
+                                                  </div>
+                                                </ColoredTextProvider>
+                                              </Styled(ColoredTextProvider)>
+                                            </div>
+                                          </styled.div>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </div>
+                                  </styled.div>
+                                </Box>
+                              </Styled(Box)>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </Styled(Box)>
+                    </a>
+                  </styled.a>
+                </Link>
+                <Link
+                  active={false}
+                  href="#"
+                  reactRouterLinkComponent={null}
+                  subMenuLink={true}
+                  to={null}
+                >
+                  <styled.a
+                    href="#"
+                    to={null}
+                  >
+                    <a
+                      className="sc-gsFSXq cUsfYh"
+                      href="#"
+                      to={null}
+                    >
+                      <Styled(Box)
+                        active={0}
+                      >
+                        <Box
+                          active={0}
+                          className="sc-fqkvVR fVEmfX"
+                          inline={false}
+                          tag="div"
+                        >
+                          <styled.div
+                            active={0}
+                            className="sc-fqkvVR fVEmfX"
+                            inline={false}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-aXZVg hGJiZM sc-fqkvVR fVEmfX sc-fqkvVR fVEmfX"
+                            >
+                              <Styled(Box)
+                                active={0}
+                                submenulink={1}
+                                vertical={3}
+                              >
+                                <Box
+                                  active={0}
+                                  className="sc-eqUAAy cZDVVr"
+                                  inline={false}
+                                  submenulink={1}
+                                  tag="div"
+                                  vertical={3}
+                                >
+                                  <styled.div
+                                    active={0}
+                                    className="sc-eqUAAy cZDVVr"
+                                    inline={false}
+                                    submenulink={1}
+                                    tag="div"
+                                    vertical={3}
+                                  >
+                                    <div
+                                      className="sc-aXZVg hkJkBk sc-eqUAAy cZDVVr sc-eqUAAy cZDVVr"
+                                    >
+                                      <Styled(Box)
+                                        active={0}
+                                        horizontal={3}
+                                        submenulink={1}
+                                      >
+                                        <Box
+                                          active={0}
+                                          className="sc-dcJsrY iusGSD"
+                                          horizontal={3}
+                                          inline={false}
+                                          submenulink={1}
+                                          tag="div"
+                                        >
+                                          <styled.div
+                                            active={0}
+                                            className="sc-dcJsrY iusGSD"
+                                            horizontal={3}
+                                            inline={false}
+                                            submenulink={1}
+                                            tag="div"
+                                          >
+                                            <div
+                                              className="sc-aXZVg dqHBiP sc-dcJsrY iusGSD sc-dcJsrY iusGSD"
+                                            >
+                                              <Styled(ColoredTextProvider)
+                                                active={false}
+                                              >
+                                                <ColoredTextProvider
+                                                  active={false}
+                                                  className="sc-iGgWBj bgLOkg"
+                                                  tag="div"
+                                                >
+                                                  <div
+                                                    className="sc-iGgWBj bgLOkg"
+                                                  >
+                                                    <Text
+                                                      block={false}
+                                                      bold={false}
+                                                      invert={false}
+                                                      size="small"
+                                                    >
+                                                      <styled.span
+                                                        block={false}
+                                                        bold={false}
+                                                        inheritColor={true}
+                                                        invert={false}
+                                                        size="small"
+                                                      >
+                                                        <span
+                                                          className="sc-gEvEer fhUkVo"
+                                                          size="small"
+                                                        >
+                                                          Option 2
+                                                        </span>
+                                                      </styled.span>
+                                                    </Text>
+                                                  </div>
+                                                </ColoredTextProvider>
+                                              </Styled(ColoredTextProvider)>
+                                            </div>
+                                          </styled.div>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </div>
+                                  </styled.div>
+                                </Box>
+                              </Styled(Box)>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </Styled(Box)>
+                    </a>
+                  </styled.a>
+                </Link>
+                <Link
+                  active={false}
+                  href="#"
+                  reactRouterLinkComponent={null}
+                  subMenuLink={true}
+                  to={null}
+                >
+                  <styled.a
+                    href="#"
+                    to={null}
+                  >
+                    <a
+                      className="sc-gsFSXq cUsfYh"
+                      href="#"
+                      to={null}
+                    >
+                      <Styled(Box)
+                        active={0}
+                      >
+                        <Box
+                          active={0}
+                          className="sc-fqkvVR fVEmfX"
+                          inline={false}
+                          tag="div"
+                        >
+                          <styled.div
+                            active={0}
+                            className="sc-fqkvVR fVEmfX"
+                            inline={false}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-aXZVg hGJiZM sc-fqkvVR fVEmfX sc-fqkvVR fVEmfX"
+                            >
+                              <Styled(Box)
+                                active={0}
+                                submenulink={1}
+                                vertical={3}
+                              >
+                                <Box
+                                  active={0}
+                                  className="sc-eqUAAy cZDVVr"
+                                  inline={false}
+                                  submenulink={1}
+                                  tag="div"
+                                  vertical={3}
+                                >
+                                  <styled.div
+                                    active={0}
+                                    className="sc-eqUAAy cZDVVr"
+                                    inline={false}
+                                    submenulink={1}
+                                    tag="div"
+                                    vertical={3}
+                                  >
+                                    <div
+                                      className="sc-aXZVg hkJkBk sc-eqUAAy cZDVVr sc-eqUAAy cZDVVr"
+                                    >
+                                      <Styled(Box)
+                                        active={0}
+                                        horizontal={3}
+                                        submenulink={1}
+                                      >
+                                        <Box
+                                          active={0}
+                                          className="sc-dcJsrY iusGSD"
+                                          horizontal={3}
+                                          inline={false}
+                                          submenulink={1}
+                                          tag="div"
+                                        >
+                                          <styled.div
+                                            active={0}
+                                            className="sc-dcJsrY iusGSD"
+                                            horizontal={3}
+                                            inline={false}
+                                            submenulink={1}
+                                            tag="div"
+                                          >
+                                            <div
+                                              className="sc-aXZVg dqHBiP sc-dcJsrY iusGSD sc-dcJsrY iusGSD"
+                                            >
+                                              <Styled(ColoredTextProvider)
+                                                active={false}
+                                              >
+                                                <ColoredTextProvider
+                                                  active={false}
+                                                  className="sc-iGgWBj bgLOkg"
+                                                  tag="div"
+                                                >
+                                                  <div
+                                                    className="sc-iGgWBj bgLOkg"
+                                                  >
+                                                    <Text
+                                                      block={false}
+                                                      bold={false}
+                                                      invert={false}
+                                                      size="small"
+                                                    >
+                                                      <styled.span
+                                                        block={false}
+                                                        bold={false}
+                                                        inheritColor={true}
+                                                        invert={false}
+                                                        size="small"
+                                                      >
+                                                        <span
+                                                          className="sc-gEvEer fhUkVo"
+                                                          size="small"
+                                                        >
+                                                          Option 3
+                                                        </span>
+                                                      </styled.span>
+                                                    </Text>
+                                                  </div>
+                                                </ColoredTextProvider>
+                                              </Styled(ColoredTextProvider)>
+                                            </div>
+                                          </styled.div>
+                                        </Box>
+                                      </Styled(Box)>
+                                    </div>
+                                  </styled.div>
+                                </Box>
+                              </Styled(Box)>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </Styled(Box)>
+                    </a>
+                  </styled.a>
+                </Link>
+              </ul>
+            </styled.ul>
+          </div>
+        </styled.div>
+      </Transition>
+    </CSSTransition>
+  </FadeAndReveal>
+</SubMenu>
+`;
