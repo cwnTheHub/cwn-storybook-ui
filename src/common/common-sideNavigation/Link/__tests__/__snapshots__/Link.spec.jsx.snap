@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavigation.Link renders 1`] = `
+<Link
+  active={false}
+  href="#"
+  reactRouterLinkComponent={null}
+  subMenuLink={false}
+  to={null}
+>
+  <styled.a
+    href="#"
+    to={null}
+  >
+    <a
+      className="sc-gsFSXq cUsfYh"
+      href="#"
+      to={null}
+    >
+      <Styled(Box)
+        active={0}
+      >
+        <Box
+          active={0}
+          className="sc-fqkvVR fVEmfX"
+          inline={false}
+          tag="div"
+        >
+          <styled.div
+            active={0}
+            className="sc-fqkvVR fVEmfX"
+            inline={false}
+            tag="div"
+          >
+            <div
+              className="sc-gEvEer ePtzlQ sc-fqkvVR fVEmfX sc-fqkvVR fVEmfX"
+            >
+              <Styled(Box)
+                active={0}
+                submenulink={0}
+                vertical={3}
+              >
+                <Box
+                  active={0}
+                  className="sc-eqUAAy DcrvN"
+                  inline={false}
+                  submenulink={0}
+                  tag="div"
+                  vertical={3}
+                >
+                  <styled.div
+                    active={0}
+                    className="sc-eqUAAy DcrvN"
+                    inline={false}
+                    submenulink={0}
+                    tag="div"
+                    vertical={3}
+                  >
+                    <div
+                      className="sc-gEvEer ctrhyc sc-eqUAAy DcrvN sc-eqUAAy DcrvN"
+                    >
+                      <Styled(Box)
+                        active={0}
+                        horizontal={3}
+                        submenulink={0}
+                      >
+                        <Box
+                          active={0}
+                          className="sc-dcJsrY gWUlBV"
+                          horizontal={3}
+                          inline={false}
+                          submenulink={0}
+                          tag="div"
+                        >
+                          <styled.div
+                            active={0}
+                            className="sc-dcJsrY gWUlBV"
+                            horizontal={3}
+                            inline={false}
+                            submenulink={0}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-gEvEer fjEyRr sc-dcJsrY gWUlBV sc-dcJsrY gWUlBV"
+                            >
+                              <Styled(ColoredTextProvider)
+                                active={false}
+                              >
+                                <ColoredTextProvider
+                                  active={false}
+                                  className="sc-iGgWBj bgLOkg"
+                                  tag="div"
+                                >
+                                  <div
+                                    className="sc-iGgWBj bgLOkg"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={false}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <styled.span
+                                        block={false}
+                                        bold={false}
+                                        inheritColor={true}
+                                        invert={false}
+                                        size="medium"
+                                      >
+                                        <span
+                                          className="sc-aXZVg hHumNX"
+                                          size="medium"
+                                        >
+                                          Home
+                                        </span>
+                                      </styled.span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </Styled(ColoredTextProvider)>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </Styled(Box)>
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </div>
+          </styled.div>
+        </Box>
+      </Styled(Box)>
+    </a>
+  </styled.a>
+</Link>
+`;
+
+exports[`SideNavigation.Link renders with active styles 1`] = `
+<Link
+  active={true}
+  href="#"
+  reactRouterLinkComponent={null}
+  subMenuLink={false}
+  to={null}
+>
+  <styled.a
+    href="#"
+    to={null}
+  >
+    <a
+      className="sc-gsFSXq cUsfYh"
+      href="#"
+      to={null}
+    >
+      <Styled(Box)
+        active={1}
+      >
+        <Box
+          active={1}
+          className="sc-fqkvVR cCpvdT"
+          inline={false}
+          tag="div"
+        >
+          <styled.div
+            active={1}
+            className="sc-fqkvVR cCpvdT"
+            inline={false}
+            tag="div"
+          >
+            <div
+              className="sc-gEvEer ePtzlQ sc-fqkvVR cCpvdT sc-fqkvVR cCpvdT"
+            >
+              <Styled(Box)
+                active={1}
+                submenulink={0}
+                vertical={3}
+              >
+                <Box
+                  active={1}
+                  className="sc-eqUAAy HXupj"
+                  inline={false}
+                  submenulink={0}
+                  tag="div"
+                  vertical={3}
+                >
+                  <styled.div
+                    active={1}
+                    className="sc-eqUAAy HXupj"
+                    inline={false}
+                    submenulink={0}
+                    tag="div"
+                    vertical={3}
+                  >
+                    <div
+                      className="sc-gEvEer ctrhyc sc-eqUAAy HXupj sc-eqUAAy HXupj"
+                    >
+                      <Styled(Box)
+                        active={1}
+                        horizontal={3}
+                        submenulink={0}
+                      >
+                        <Box
+                          active={1}
+                          className="sc-dcJsrY gWUlBV"
+                          horizontal={3}
+                          inline={false}
+                          submenulink={0}
+                          tag="div"
+                        >
+                          <styled.div
+                            active={1}
+                            className="sc-dcJsrY gWUlBV"
+                            horizontal={3}
+                            inline={false}
+                            submenulink={0}
+                            tag="div"
+                          >
+                            <div
+                              className="sc-gEvEer fjEyRr sc-dcJsrY gWUlBV sc-dcJsrY gWUlBV"
+                            >
+                              <Styled(ColoredTextProvider)
+                                active={true}
+                              >
+                                <ColoredTextProvider
+                                  active={true}
+                                  className="sc-iGgWBj jjAtFT"
+                                  tag="div"
+                                >
+                                  <div
+                                    className="sc-iGgWBj jjAtFT"
+                                  >
+                                    <Text
+                                      block={false}
+                                      bold={true}
+                                      invert={false}
+                                      size="medium"
+                                    >
+                                      <styled.span
+                                        block={false}
+                                        bold={true}
+                                        inheritColor={true}
+                                        invert={false}
+                                        size="medium"
+                                      >
+                                        <span
+                                          className="sc-aXZVg jXIAfW"
+                                          size="medium"
+                                        >
+                                          Home
+                                        </span>
+                                      </styled.span>
+                                    </Text>
+                                  </div>
+                                </ColoredTextProvider>
+                              </Styled(ColoredTextProvider)>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </Styled(Box)>
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </div>
+          </styled.div>
+        </Box>
+      </Styled(Box)>
+    </a>
+  </styled.a>
+</Link>
+`;
