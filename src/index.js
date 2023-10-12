@@ -28,7 +28,6 @@ import OrderedList, {
 } from "./core/core-ordered-list/OrderedList";
 import Paragraph from "./core/core-paragraph/Paragraph";
 import Card from "./core/core-card/Card";
-import Login from "./core/core-login/Login";
 import * as Colours from "./core/core-colours/colours";
 import * as SVGs from "./core/core-decorative-icon/svgs";
 import TextButton from "./core/core-text-button/TextButton";
@@ -49,7 +48,6 @@ import {
 import StepTracker from "./core/core-step-tracker/StepTracker";
 
 import CSSReset, { fonts, GlobalFlexMain } from "./core/core-css-reset";
-
 
 export * from "./common";
 export {
@@ -84,7 +82,6 @@ export {
   StyledOrderedItem,
   Paragraph,
   Card,
-  Login,
   Colours,
   SVGs,
   TextButton,
