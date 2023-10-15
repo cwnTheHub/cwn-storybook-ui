@@ -49,7 +49,12 @@ import StepTracker from "./core/core-step-tracker/StepTracker";
 
 import CSSReset, { fonts, GlobalFlexMain } from "./core/core-css-reset";
 
+
+
 export * from "./common";
+export * from "./shared-hocs";
+export * from "./util-helpers";
+export * from "./util-prop-types";
 
 export {
   A11yContent,

@@ -1,0 +1,188 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as TagsStories from "./Tags.stories";
+
+<Meta of={TagsStories} />
+<Title />
+
+`import {Tags} from @nds_core/nds`
+
+<Controls />
+
+### Usage Criteria
+
+- `Tags` are self-described and are meant to filter only one criterion or category of data per Tag
+- Application must control toggled state
+- Must use level 3 Box spacing between `Tags` (inline and vertical)
+- May use multiple `Tags`
+
+**Minimal example**
+
+<Canvas of={TagsStories.MinimalUse}/>
+
+
+### Accessibility features
+
+- `Tags` use HTML buttons to indicate they're interactive and perform an immediate action, they use the 'switch' role
+- Each Tag button makes use of `aria-label` to display their label to assistive technology. See [Content Guidelines](#tds-tags-content-guidelines) below for more information
+- `aria-checked` to represent its toggled state to assisstive technology
+- `Tags` forwards React refs, allowing you to set focus to it
+
+### Accessibility guide
+
+The following must be fulfilled in order to ensure an accessible experience is delivered to customers.
+
+- Provide an accessible label to Tag in order for assisstive technology to read a label with each individual option
+- Provide a visual label above your group of Tags, either as a heading or using medium bold text
+- For asynchronous content, follow the [Using Tags with asynchronous content](#using-tags-with-async-content) example below
+
+### <a id="tds-tags-content-guidelines">Content guidelines</a>
+
+- Recommend to limit text within a Tag to a maximum of 15 characters
+- The `Tags` component includes built-in English and French copy to help communicate its filtering capabilities to assistive technology
+
+| Key                    | `copy` language | Default copy                             |
+| ---------------------- | --------------- | ---------------------------------------- |
+| `a11yLabel`            | `en`            | Filter products by `tag`                |
+|                        | `fr`            | Produits de la catégorie `tag`          |
+| `a11yDescriptionSet`   | `en`            | Products currently filtered by `tags`   |
+|                        | `fr`            | Produits des catégories `tags`          |
+| `a11yDescriptionUnset` | `en`            | No product filters currently applied     |
+|                        | `fr`            | Aucun filtre de recherche n’est appliqué |
+
+The above copy can be set by the Tags component’s `copy` prop by choosing either `copy="en"` or `copy="fr"`
+
+By consuming the component like this:
+
+
+```jsx static
+<Tags copy="en">
+  <Tags.Item>Blackberry</Tags.Item>
+  <Tags.Item>Jolla</Tags.Item>
+</Tags>
+```
+
+It will render all final copy like this:
+
+```html static
+<div id="descriptionbox" class="screen-reader-only">
+  <!--
+    the a11yDescriptionUnset and a11yDescriptionSet keys
+    correspond to the copy in this div
+  -->
+  No product filters currently applied
+</div>
+<div class="box-styles">
+  <!-- the a11yLabel key corresponds to the value for aria-label here -->
+  <button aria-label="Filter by Blackberry" aria-describedby="descriptionbox">
+    Blackberry
+  </button>
+  <button aria-label="Filter by Jolla" aria-describedby="descriptionbox">
+    Jolla
+  </button>
+</div>
+```
+
+### React consumption options
+
+The `Tags` component provides two React interfaces to build a list of Tags: as a set of child components, or as a JS collection passed to the `tags` prop.
+
+#### Using the `children` prop
+
+<Canvas of={TagsStories.ChildrenOptions}/>
+
+```jsx
+const [initialState, setState] = useState({
+    tags: [
+      {
+        children: "Palm",
+        isSelected: false,
+        isLoading: false,
+      },
+      {
+        children: "Jolla",
+        isSelected: false,
+        isLoading: false,
+      },
+      {
+        children: "Blackberry",
+        isSelected: false,
+        isLoading: false,
+      },
+    ],
+  });
+
+  const handleClick = (name) => {
+    const tags = initialState.tags.map((tag) => {
+      if (name === tag.children) {
+        return {
+          ...tag,
+          isSelected: !tag.isSelected,
+        };
+      }
+      return tag;
+    });
+    setState({ tags });
+  };
+
+  return (
+    
+    <Tags copy="en" onClick={handleClick}>
+      {initialState.tags.map((tag) => (
+        <Tags.Item key={tag.children} {...tag} />
+      ))}
+    </Tags>
+  );
+
+```
+
+#### Using the `tags` prop
+
+<Canvas of={TagsStories.TagsOptions}/>
+
+```jsx
+const [initialState, setState] = useState({
+    tags: [
+      {
+        children: "Palm",
+        isSelected: false,
+        isLoading: false,
+      },
+      {
+        children: "Jolla",
+        isSelected: false,
+        isLoading: false,
+      },
+      {
+        children: "Blackberry",
+        isSelected: false,
+        isLoading: false,
+      },
+    ],
+  });
+
+  const handleClick = (name) => {
+    const tags = initialState.tags.map((tag) => {
+      if (name === tag.children) {
+        return {
+          ...tag,
+          isSelected: !tag.isSelected,
+        };
+      }
+      return tag;
+    });
+    setState({ tags });
+  };
+
+  return <Tags copy="fr" tags={initialState.tags} onClick={handleClick} />;
+```
