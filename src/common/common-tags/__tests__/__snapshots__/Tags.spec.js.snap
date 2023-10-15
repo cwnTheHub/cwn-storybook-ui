@@ -1,0 +1,761 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags renders 1`] = `
+<Tags
+  copy="en"
+  onClick={[Function]}
+  tags={
+    Array [
+      Object {
+        "children": "Android",
+        "isLoading": false,
+        "isSelected": false,
+      },
+      Object {
+        "children": "iOS",
+        "isLoading": false,
+        "isSelected": false,
+      },
+    ]
+  }
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags1"
+    >
+      <styled.span
+        aria-live="assertive"
+        id="tags1"
+      >
+        <span
+          aria-live="assertive"
+          className="sc-aXZVg kNIMGd"
+          id="tags1"
+        >
+          No product filters currently applied
+        </span>
+      </styled.span>
+    </A11yContent>
+    <Styled(Box)
+      between={3}
+      inline={true}
+    >
+      <Box
+        between={3}
+        className="sc-jEACwC kKLqfE"
+        inline={true}
+        tag="div"
+      >
+        <styled.div
+          between={3}
+          className="sc-jEACwC kKLqfE"
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="sc-gEvEer jARwmw sc-jEACwC kKLqfE sc-jEACwC kKLqfE"
+          >
+            <TagItem
+              aria-describedby="tags1"
+              aria-label="Filter products by Android"
+              isLoading={false}
+              isSelected={false}
+              key="Android"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={false}
+                aria-describedby="tags1"
+                aria-label="Filter products by Android"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={false}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={false}
+                  aria-describedby="tags1"
+                  aria-label="Filter products by Android"
+                  between={2}
+                  className="sc-jlZhew gxCYOI"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={false}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={false}
+                    aria-describedby="tags1"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    className="sc-jlZhew gxCYOI"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      aria-describedby="tags1"
+                      aria-label="Filter products by Android"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gxCYOI sc-jlZhew gxCYOI"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          Android
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="nemetonPurple"
+                      >
+                        <Dependent
+                          color="nemetonPurple"
+                        >
+                          <styled.svg
+                            color="nemetonPurple"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm gslfrA"
+                              color="nemetonPurple"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+            <TagItem
+              aria-describedby="tags1"
+              aria-label="Filter products by iOS"
+              isLoading={false}
+              isSelected={false}
+              key="iOS"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={false}
+                aria-describedby="tags1"
+                aria-label="Filter products by iOS"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={false}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={false}
+                  aria-describedby="tags1"
+                  aria-label="Filter products by iOS"
+                  between={2}
+                  className="sc-jlZhew gxCYOI"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={false}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={false}
+                    aria-describedby="tags1"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    className="sc-jlZhew gxCYOI"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      aria-describedby="tags1"
+                      aria-label="Filter products by iOS"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gxCYOI sc-jlZhew gxCYOI"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          iOS
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="nemetonPurple"
+                      >
+                        <Dependent
+                          color="nemetonPurple"
+                        >
+                          <styled.svg
+                            color="nemetonPurple"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm gslfrA"
+                              color="nemetonPurple"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+          </div>
+        </styled.div>
+      </Box>
+    </Styled(Box)>
+  </div>
+</Tags>
+`;
+
+exports[`Tags renders isSelected 1`] = `
+<Tags
+  copy="en"
+  onClick={[Function]}
+  tags={
+    Array [
+      Object {
+        "children": "Android",
+        "isLoading": false,
+        "isSelected": false,
+      },
+      Object {
+        "children": "iOS",
+        "isLoading": false,
+        "isSelected": true,
+      },
+    ]
+  }
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags3"
+    >
+      <styled.span
+        aria-live="assertive"
+        id="tags3"
+      >
+        <span
+          aria-live="assertive"
+          className="sc-aXZVg kNIMGd"
+          id="tags3"
+        >
+          Products currently filtered by iOS
+        </span>
+      </styled.span>
+    </A11yContent>
+    <Styled(Box)
+      between={3}
+      inline={true}
+    >
+      <Box
+        between={3}
+        className="sc-jEACwC kKLqfE"
+        inline={true}
+        tag="div"
+      >
+        <styled.div
+          between={3}
+          className="sc-jEACwC kKLqfE"
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="sc-gEvEer jARwmw sc-jEACwC kKLqfE sc-jEACwC kKLqfE"
+          >
+            <TagItem
+              aria-describedby="tags3"
+              aria-label="Filter products by Android"
+              isLoading={false}
+              isSelected={false}
+              key="Android"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={false}
+                aria-describedby="tags3"
+                aria-label="Filter products by Android"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={false}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={false}
+                  aria-describedby="tags3"
+                  aria-label="Filter products by Android"
+                  between={2}
+                  className="sc-jlZhew gxCYOI"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={false}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={false}
+                    aria-describedby="tags3"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    className="sc-jlZhew gxCYOI"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      aria-describedby="tags3"
+                      aria-label="Filter products by Android"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gxCYOI sc-jlZhew gxCYOI"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          Android
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="nemetonPurple"
+                      >
+                        <Dependent
+                          color="nemetonPurple"
+                        >
+                          <styled.svg
+                            color="nemetonPurple"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm gslfrA"
+                              color="nemetonPurple"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+            <TagItem
+              aria-describedby="tags3"
+              aria-label="Filter products by iOS"
+              isLoading={false}
+              isSelected={true}
+              key="iOS"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={true}
+                aria-describedby="tags3"
+                aria-label="Filter products by iOS"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={true}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={true}
+                  aria-describedby="tags3"
+                  aria-label="Filter products by iOS"
+                  between={2}
+                  className="sc-jlZhew gHsmSG"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={true}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={true}
+                    aria-describedby="tags3"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    className="sc-jlZhew gHsmSG"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={true}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={true}
+                      aria-describedby="tags3"
+                      aria-label="Filter products by iOS"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gHsmSG sc-jlZhew gHsmSG"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          iOS
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="white"
+                      >
+                        <Dependent
+                          color="white"
+                        >
+                          <styled.svg
+                            color="white"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm iwUDTy"
+                              color="white"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 12.707l-4.147 4.146a.498.498 0 0 1-.707 0 .5.5 0 0 1 0-.707L11.293 12 7.146 7.853a.5.5 0 0 1 .707-.707L12 11.293l4.146-4.147a.5.5 0 0 1 .707.707L12.707 12l4.146 4.146a.5.5 0 0 1-.707.707L12 12.707zM12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+          </div>
+        </styled.div>
+      </Box>
+    </Styled(Box)>
+  </div>
+</Tags>
+`;
+
+exports[`Tags renders when using the children prop 1`] = `
+<Tags
+  copy="en"
+  onClick={[Function]}
+>
+  <div>
+    <A11yContent
+      aria-live="assertive"
+      id="tags2"
+    >
+      <styled.span
+        aria-live="assertive"
+        id="tags2"
+      >
+        <span
+          aria-live="assertive"
+          className="sc-aXZVg kNIMGd"
+          id="tags2"
+        >
+          No product filters currently applied
+        </span>
+      </styled.span>
+    </A11yContent>
+    <Styled(Box)
+      between={3}
+      inline={true}
+    >
+      <Box
+        between={3}
+        className="sc-jEACwC kKLqfE"
+        inline={true}
+        tag="div"
+      >
+        <styled.div
+          between={3}
+          className="sc-jEACwC kKLqfE"
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="sc-gEvEer jARwmw sc-jEACwC kKLqfE sc-jEACwC kKLqfE"
+          >
+            <TagItem
+              aria-describedby="tags2"
+              aria-label="Filter products by Android"
+              isLoading={false}
+              isSelected={false}
+              key=".$android"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={false}
+                aria-describedby="tags2"
+                aria-label="Filter products by Android"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={false}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={false}
+                  aria-describedby="tags2"
+                  aria-label="Filter products by Android"
+                  between={2}
+                  className="sc-jlZhew gxCYOI"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={false}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={false}
+                    aria-describedby="tags2"
+                    aria-label="Filter products by Android"
+                    between={2}
+                    className="sc-jlZhew gxCYOI"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      aria-describedby="tags2"
+                      aria-label="Filter products by Android"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gxCYOI sc-jlZhew gxCYOI"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          Android
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="nemetonPurple"
+                      >
+                        <Dependent
+                          color="nemetonPurple"
+                        >
+                          <styled.svg
+                            color="nemetonPurple"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm gslfrA"
+                              color="nemetonPurple"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+            <TagItem
+              aria-describedby="tags2"
+              aria-label="Filter products by iOS"
+              isLoading={false}
+              isSelected={false}
+              key=".$ios"
+              onClick={[Function]}
+            >
+              <Styled(Box)
+                aria-checked={false}
+                aria-describedby="tags2"
+                aria-label="Filter products by iOS"
+                between={2}
+                inline={true}
+                isLoading={false}
+                isSelected={false}
+                onClick={[Function]}
+                role="switch"
+                tag="button"
+              >
+                <Box
+                  aria-checked={false}
+                  aria-describedby="tags2"
+                  aria-label="Filter products by iOS"
+                  between={2}
+                  className="sc-jlZhew gxCYOI"
+                  inline={true}
+                  isLoading={false}
+                  isSelected={false}
+                  onClick={[Function]}
+                  role="switch"
+                  tag="button"
+                >
+                  <styled.div
+                    aria-checked={false}
+                    aria-describedby="tags2"
+                    aria-label="Filter products by iOS"
+                    between={2}
+                    className="sc-jlZhew gxCYOI"
+                    inline={true}
+                    isLoading={false}
+                    isSelected={false}
+                    onClick={[Function]}
+                    role="switch"
+                    tag="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      aria-describedby="tags2"
+                      aria-label="Filter products by iOS"
+                      className="sc-gEvEer kwHvtq sc-jlZhew gxCYOI sc-jlZhew gxCYOI"
+                      onClick={[Function]}
+                      role="switch"
+                    >
+                      <styled.span>
+                        <span
+                          className="sc-cwHptR knYjUu"
+                        >
+                          iOS
+                        </span>
+                      </styled.span>
+                      <Dependent
+                        color="nemetonPurple"
+                      >
+                        <Dependent
+                          color="nemetonPurple"
+                        >
+                          <styled.svg
+                            color="nemetonPurple"
+                            data-testid="dependentSvg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="sc-kpDqfm gslfrA"
+                              color="nemetonPurple"
+                              data-testid="dependentSvg"
+                              focusable={false}
+                              height="24"
+                              viewBox="0 0 24 24"
+                              width="24"
+                            >
+                              <path
+                                d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.957C5.958 1.043 1.043 5.958 1.043 12c0 6.042 4.915 10.957 10.957 10.957 6.042 0 10.957-4.915 10.957-10.957 0-6.042-4.915-10.957-10.957-10.957zm-.697 11.654l-5.7-.176A.632.632 0 0 1 5 11.892v.21c0-.332.27-.605.602-.605h5.697v-.1l.178-5.791a.64.64 0 0 1 .63-.606h-.209c.334 0 .605.267.605.602v5.895h5.895c.335 0 .602.27.602.605v-.21a.64.64 0 0 1-.606.63l-5.79.178-.101.001v5.697a.605.605 0 0 1-.605.602h.21a.632.632 0 0 1-.63-.603l-.175-5.7z"
+                                fillRule="nonzero"
+                              />
+                            </svg>
+                          </styled.svg>
+                        </Dependent>
+                      </Dependent>
+                    </button>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </TagItem>
+          </div>
+        </styled.div>
+      </Box>
+    </Styled(Box)>
+  </div>
+</Tags>
+`;
