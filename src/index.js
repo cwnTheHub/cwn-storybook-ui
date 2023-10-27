@@ -56,9 +56,6 @@ export * as UtilHelpers from "./util-helpers";
 export * as UtilPropTypes from "./util-prop-types";
 
 export {
-  SharedHocs,
-  UtilHelpers,
-  UtilPropTypes,
   A11yContent,
   BenefitNoHeading,
   BenefitWithHeading,
@@ -109,5 +106,4 @@ export {
   CSSReset,
   fonts,
   GlobalFlexMain,
-  Common,
 };
