@@ -123,13 +123,30 @@ describe("<Login/>", () => {
     });
 
     describe("story one: handling errors", () => {
-      const mockUsernameVerification = jest.fn().mockImplementation((user) => {
+      const mockUsernameVerification = jest.fn();
+
+      const res = () => {
         const username = ["moderator", "admin"];
         if (username?.includes(user)) {
-          return true;
+          return {
+            error: null,
+            data: { has2FA: true },
+            success: {
+              status: 200,
+              message:
+                "We have sent you a security code to your email address.",
+            },
+          };
         }
-        return false;
-      });
+        return {
+          error: {
+            status: 404,
+            message: "Not found",
+          },
+          data: null,
+          success: null,
+        };
+      };
       const mockSendData = jest.fn().mockImplementation((userData) => {
         return {
           error: null,
@@ -145,8 +162,10 @@ describe("<Login/>", () => {
         const { getByTestId, queryByTestId, getByText } = doRender({
           variantType: "regular",
           copy: "en",
+          allowUsernameCheck: true,
           checkUsernameOrEmailExists: mockUsernameVerification,
           sendLoginData: mockSendData,
+          response: res,
         });
 
         const username = getByTestId("username");
@@ -180,19 +199,22 @@ describe("<Login/>", () => {
       });
 
       it("displays error when create account ", () => {
-        const mockUsernameVerification = jest
-          .fn()
-          .mockImplementation((user) => {
-            const username = ["moderator", "admin"];
-            if (username?.includes(user)) {
-              return true;
-            }
-            return false;
-          });
+        const mockUsernameVerification = jest.fn();
+
+        const res = {
+          error: null,
+          data: { has2FA: true },
+          success: {
+            status: 200,
+            message: "We have sent you a security code to your email address.",
+          },
+        };
         const { getByTestId, queryByTestId } = doRender({
           variantType: "regular",
           copy: "en",
           checkUsernameOrEmailExists: mockUsernameVerification,
+          allowUsernameCheck: true,
+          response: res,
         });
         let warning;
         const textButton = screen.getAllByText(/Create account/i)[0];
@@ -207,17 +229,77 @@ describe("<Login/>", () => {
         fireEvent.change(username, { target: { value: "moderator" } });
         fireEvent.blur(username);
 
-        warning = getByTestId("account-existing-warning");
+        warning = queryByTestId("account-existing-warning");
         expect(warning).toBeInTheDocument();
+        /* 
+        fireEvent.change(username, { target: { value: "" } });
 
         fireEvent.focus(username);
-        fireEvent.change(username, { target: { value: "moderat" } });
+        fireEvent.change(username, { target: { value: "moderatests" } });
+        fireEvent.blur(username);
+
+        warning = queryByTestId("account-existing-warning");
+        //expect(warning).not.toBeInTheDocument();
+
+        const createAccount = queryByTestId("create-account-button");
+        expect(createAccount).toBeInTheDocument();
+
+        fireEvent.click(createAccount);
+
+        const emailInput = getByTestId("email-input");
+        expect(emailInput).toBeInTheDocument();
+
+        const pwdInput = getByTestId("password-input");
+        expect(pwdInput).toBeInTheDocument();
+
+        const confirmpwdInput = getByTestId("confirm-pwd-input");
+        expect(confirmpwdInput).toBeInTheDocument();
+
+        expect(username).not.toBeInTheDocument();
+
+        const signUpCTA = getByTestId("sign-up-button");
+        expect(signUpCTA).toBeInTheDocument();
+
+        fireEvent.click(signUpCTA);
+        const errorDisplay = getByTestId("account-creation-error");
+        expect(errorDisplay).toBeInTheDocument(); */
+      });
+
+      it("after error when create account ", () => {
+        const mockUsernameVerification = jest.fn();
+
+        const res = {
+          error: {
+            status: 404,
+            message: "Not found",
+          },
+          data: null,
+          success: null,
+        };
+        const { getByTestId, queryByTestId } = doRender({
+          variantType: "regular",
+          copy: "en",
+          checkUsernameOrEmailExists: mockUsernameVerification,
+          allowUsernameCheck: true,
+          response: res,
+        });
+        let warning;
+        const textButton = screen.getAllByText(/Create account/i)[0];
+        fireEvent.click(textButton);
+        const username = getByTestId("username");
+        expect(username).toBeInTheDocument();
+
+        const password = queryByTestId("pwd");
+        expect(password).not.toBeInTheDocument();
+
+        fireEvent.focus(username);
+        fireEvent.change(username, { target: { value: "tests" } });
         fireEvent.blur(username);
 
         warning = queryByTestId("account-existing-warning");
         expect(warning).not.toBeInTheDocument();
 
-        const createAccount = getByTestId("create-account-button");
+        const createAccount = queryByTestId("create-account-button");
         expect(createAccount).toBeInTheDocument();
 
         fireEvent.click(createAccount);

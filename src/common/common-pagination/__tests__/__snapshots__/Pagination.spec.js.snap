@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders 1`] = `
+<Pagination
+  copy="en"
+>
+  <styled.div>
+    <div
+      className="sc-aXZVg dBktHr"
+    >
+      <Panel>
+        <div>
+          <Panel>
+            <div>
+              Content 1
+            </div>
+          </Panel>
+        </div>
+      </Panel>
+      <styled.div>
+        <div
+          className="sc-gEvEer btollf"
+        >
+          <Styled(styled.p)
+            showPrevious={false}
+          >
+            <p
+              className="sc-eqUAAy sc-fqkvVR NoGIw IwrEj"
+            >
+              <styled.button
+                aria-label="Go to previous panel"
+                onClick={[Function]}
+                value={0}
+              >
+                <button
+                  aria-label="Go to previous panel"
+                  className="sc-iGgWBj dnISBW"
+                  onClick={[Function]}
+                  value={0}
+                >
+                  <styled.span>
+                    <span
+                      className="sc-gsFSXq gouJAG"
+                    >
+                      Prev
+                    </span>
+                  </styled.span>
+                </button>
+              </styled.button>
+            </p>
+          </Styled(styled.p)>
+          <styled.ul>
+            <ul
+              className="sc-kAyceB jiWaOm"
+            >
+              <Styled(styled.li)
+                key="193359721"
+              >
+                <li
+                  className="sc-dhKdcB sc-dAlyuH cOnoUs eDvJwP"
+                >
+                  1
+                  <A11yContent>
+                    <styled.span>
+                      <span
+                        className="sc-cwHptR eIwkYZ"
+                      >
+                        (current)
+                      </span>
+                    </styled.span>
+                  </A11yContent>
+                </li>
+              </Styled(styled.li)>
+              <styled.li
+                key="193361898"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 2"
+                    onClick={[Function]}
+                    value={2}
+                  >
+                    <button
+                      aria-label="Go to panel number 2"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={2}
+                    >
+                      2
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+              <styled.li
+                key="193361897"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 3"
+                    onClick={[Function]}
+                    value={3}
+                  >
+                    <button
+                      aria-label="Go to panel number 3"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={3}
+                    >
+                      3
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+              <styled.li
+                key="193361896"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 4"
+                    onClick={[Function]}
+                    value={4}
+                  >
+                    <button
+                      aria-label="Go to panel number 4"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={4}
+                    >
+                      4
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+              <Styled(styled.li)
+                key="193354536"
+              >
+                <li
+                  className="sc-dhKdcB sc-kpDqfm cOnoUs iJlWtC"
+                >
+                  ...
+                </li>
+              </Styled(styled.li)>
+              <styled.li
+                key="193361891"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 9"
+                    onClick={[Function]}
+                    value={9}
+                  >
+                    <button
+                      aria-label="Go to panel number 9"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={9}
+                    >
+                      9
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+            </ul>
+          </styled.ul>
+          <styled.ul>
+            <ul
+              className="sc-imWYAI cMZbdR"
+            >
+              <Styled(styled.li)
+                key="193359721"
+              >
+                <li
+                  className="sc-dhKdcB sc-dAlyuH cOnoUs eDvJwP"
+                >
+                  1
+                  <A11yContent>
+                    <styled.span>
+                      <span
+                        className="sc-cwHptR eIwkYZ"
+                      >
+                        (current)
+                      </span>
+                    </styled.span>
+                  </A11yContent>
+                </li>
+              </Styled(styled.li)>
+              <styled.li
+                key="193361898"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 2"
+                    onClick={[Function]}
+                    value={2}
+                  >
+                    <button
+                      aria-label="Go to panel number 2"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={2}
+                    >
+                      2
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+              <Styled(styled.li)
+                key="193354542"
+              >
+                <li
+                  className="sc-dhKdcB sc-kpDqfm cOnoUs iJlWtC"
+                >
+                  ...
+                </li>
+              </Styled(styled.li)>
+              <styled.li
+                key="193361891"
+              >
+                <li
+                  className="sc-dhKdcB cOnoUs"
+                >
+                  <styled.button
+                    aria-label="Go to panel number 9"
+                    onClick={[Function]}
+                    value={9}
+                  >
+                    <button
+                      aria-label="Go to panel number 9"
+                      className="sc-jXbUNg empAkr"
+                      onClick={[Function]}
+                      value={9}
+                    >
+                      9
+                    </button>
+                  </styled.button>
+                </li>
+              </styled.li>
+            </ul>
+          </styled.ul>
+          <Styled(styled.p)
+            showNext={true}
+          >
+            <p
+              className="sc-eqUAAy sc-dcJsrY NoGIw"
+            >
+              <styled.button
+                aria-label="Go to next panel"
+                onClick={[Function]}
+                value={2}
+              >
+                <button
+                  aria-label="Go to next panel"
+                  className="sc-iGgWBj dnISBW"
+                  onClick={[Function]}
+                  value={2}
+                >
+                  <styled.span>
+                    <span
+                      className="sc-gsFSXq gouJAG"
+                    >
+                      Next
+                    </span>
+                  </styled.span>
+                </button>
+              </styled.button>
+            </p>
+          </Styled(styled.p)>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Pagination>
+`;

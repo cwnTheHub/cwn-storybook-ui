@@ -20,6 +20,7 @@ import TextButton from "../core-text-button/TextButton";
 const Login = ({
   variantType,
   cardVariant,
+  allowUsernameCheck,
   checkUsernameOrEmailExists,
   sendLoginData,
   send2FALoginData,
@@ -28,6 +29,7 @@ const Login = ({
   fullHeight,
   spacing,
   contentFootnote,
+  response,
 
   ...rest
 }) => {
@@ -126,21 +128,24 @@ const Login = ({
   const validate = (event) => {
     const value = event.target.value;
     let text = event?.target?.name;
+
     switch (text) {
       case "username":
         if (value.length <= 3) {
           setError(content?.emptyField);
           setStatus("error");
           setUserExists(false);
-        } else {
+        } else if (allowUsernameCheck) {
           setError(undefined);
           setStatus(undefined);
           setUsernameIsChecked(false);
-          const response = checkUsernameOrEmailExists(username);
-
-          setUserExists(response);
+          checkUsernameOrEmailExists(username);
+          const { data, error } = response;
+          if (!error) {
+            setUserExists(true);
+          }
           if (allowAccontCreation) {
-            if (response) {
+            if (!error) {
               setStatus("error");
             } else {
               setStatus("success");
@@ -206,9 +211,9 @@ const Login = ({
       !errorEmail &&
       !userExists
     ) {
-      const response = sendSignUPData({ username, email, password });
+      sendSignUPData({ username, email, password });
       const { data, success, error } = response;
-      if (success) {
+      if (success && data) {
         //set success
         setAccountCreationHasSucceed(!accountCreationHasSucceed);
       }
@@ -233,8 +238,10 @@ const Login = ({
       setError(content?.emptyField);
       setStatus("error");
     } else {
-      const response = sendLoginData({ username, password });
-      const has2FAActive = response?.data?.has2FA;
+      sendLoginData({ username, password });
+
+      const { data, error, success } = response;
+      const has2FAActive = data?.has2FARegistered;
 
       if (has2FAActive) {
         // display secure code
@@ -242,7 +249,7 @@ const Login = ({
         setIsVisible(true);
         setLoginHasFailed(false);
       }
-      if (response?.error) {
+      if (error) {
         //set Error
         setLoginHasFailed(true);
       }
@@ -253,7 +260,7 @@ const Login = ({
     setSuccessMessage(null);
     setErrorMessage(null);
 
-    const response = send2FALoginData({
+    send2FALoginData({
       username,
       password,
       secureCode,
@@ -620,7 +627,7 @@ const Login = ({
                       </TextButton>
                     </Paragraph>
                   </Box>
-                  {userExists ? renderExistingAccount() : null}
+                  {userExists && renderExistingAccount()}
                   <HairlineDivider />
                 </>
                 <>
@@ -733,10 +740,22 @@ Login.propTypes = {
     "defaultWithBorder",
     "defaultOnlyBorder",
   ]),
+  allowUsernameCheck: PropTypes.bool,
   checkUsernameOrEmailExists: PropTypes.func,
   sendLoginData: PropTypes.func,
   send2FALoginData: PropTypes.func,
   sendSignUPData: PropTypes.func,
+  response: PropTypes.shape({
+    data: PropTypes.object || null,
+    error: PropTypes.shape({
+      status: PropTypes.number,
+      message: PropTypes.string,
+    }),
+    success: PropTypes.shape({
+      status: PropTypes.number,
+      message: PropTypes.string,
+    }),
+  }),
   contentFootnote: PropTypes.array,
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(["en", "fr"]),
@@ -756,20 +775,7 @@ Login.propTypes = {
       createTicket: PropTypes.string,
     }),
   ]).isRequired,
-  policies: PropTypes.shape({
-    en: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-        linkTo: PropTypes.string,
-      })
-    ),
-    fr: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-        linkTo: PropTypes.string,
-      })
-    ),
-  }),
+
   fullHeight: PropTypes.bool,
   spacing: PropTypes.oneOf(["default", "narrow", "compact", "intermediate"]),
 };
