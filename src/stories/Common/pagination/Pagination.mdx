@@ -1,0 +1,35 @@
+import {
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+
+import * as PaginationStories from "./Pagination.stories";
+
+<Meta of={PaginationStories} />
+<Title />
+
+`import {Pagination} from @nds_core/nds/Common`
+
+<Controls />
+
+### Usage Criteria
+
+- `Pagination` can be used in content heavy pages to divide content and present in a limited and digestible manner
+- The component can take any content as children inside a Panel
+- Any number of panels can be used to paginate
+- Style your content within Panel however you wish
+
+### Pagination usage and length
+
+Depending on the viewport and the amount of panels, the `Pagination` component may render elipsis if there are many pages. The below two examples demonstrate this on both desktop and mobile.
+
+Note that the `copy` prop must be provided at all times for the correct accessible text.
+
+<Canvas of={PaginationStories.Usage} />

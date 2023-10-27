@@ -9,20 +9,40 @@ import {
   Stories,
   Story,
 } from "@storybook/blocks";
-import packageInfo from '../../package.json';
-
+import packageInfo from "../../package.json";
 
 <Meta title="ChangeLog" />
 
-> October , 15 2023  -- @version 2.x.x
+> October , 15 2023 -- @version 1.11.0
 
 ### Removed components:
-   ` No Changes.`
+
+` No Changes.`
 
 ### New components:
+
+    - Pagination component
+    - MiniExpandable component for navigation bar mostly or else
+
+### Components with breaking changes:
+
+    - Login component will now take a response
+    - re-organize component to be accessible via  `nds_core/nds` or `nds_core/nds/Commun`
+
+---
+
+> October , 15 2023 -- @version 1.10.0
+
+### Removed components:
+
+` No Changes.`
+
+### New components:
+
     - Add  Tags component
 
 ### Components with breaking changes:
+
     - Migrate to react@18.2.0
     - Migrate Enzyme-adapter from 16 to 18
     - Migrate REact-dom to @18.2.0
@@ -30,50 +50,60 @@ import packageInfo from '../../package.json';
     - Expose utils/helpers components
     - Expose /util-prop-types components
 
-----
+---
 
-> October , 12 2023  -- @version 1.9.x
+> October , 12 2023 -- @version 1.9.0
 
 ### Removed components:
+
     - Remove Login from component listings
 
 ### New components:
+
     - Add sideNavigation component
 
 ### Components with breaking changes:
+
     ` No Changes.`
 
-----
+---
 
-> September , 29 2023  -- @version 1.8.x
+> September , 29 2023 -- @version 1.8.x
 
 ### Removed components:
+
     - Downgrade React and React-dom to correct peer-depencies issues
 
 ### New components:
+
     - Css Reset - to standardize default styling of HTML5 elements across browsers.
 
 ### Components with breaking changes:
+
     ` No Changes.`
 
-----
+---
 
-> September , 28 2023  -- @version 1.7.x
+> September , 28 2023 -- @version 1.7.x
 
 ### Removed components:
+
 ` No Changes.`
 
 ### New components:
-    ` No Changes.` 
 
-### Components with breaking changes:
     ` No Changes.`
 
-----
+### Components with breaking changes:
 
-> September , 26 2023  -- @version {packageInfo?.version}
+    ` No Changes.`
+
+---
+
+> September , 26 2023 -- @version {packageInfo?.version}
 
 ### Removed components:
+
 ` No Changes.`
 
 ### New components:
@@ -84,4 +114,5 @@ import packageInfo from '../../package.json';
       - ToggleSwitch - control that allows users to quickly switch between two states, often used for binary choices.
 
 ### Components with breaking changes:
+
     ` No Changes.`
