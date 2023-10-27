@@ -19,7 +19,8 @@ import {
 } from "./core/core-flex-grid";
 import HairlineDivider from "./core/core-hairline-divider/HairlineDivider";
 import Heading from "./core/core-heading/Heading";
-import { Input, FeedbackIcon } from "./core/core-input";
+import Input from "./core/core-input/Input";
+import FeedbackIcon from "./core/core-input/FeedbackIcon";
 import InputFeedback from "./core/core-input-feedback/InputFeedback";
 import Link from "./core/core-link/Link";
 import Notification from "./core/core-notification/Notification";
@@ -49,14 +50,15 @@ import StepTracker from "./core/core-step-tracker/StepTracker";
 
 import CSSReset, { fonts, GlobalFlexMain } from "./core/core-css-reset";
 
-
-
-export * from "./common";
-export * from "./shared-hocs";
-export * from "./util-helpers";
-export * from "./util-prop-types";
+export * as Common from "./common";
+export * as SharedHocs from "./shared-hocs";
+export * as UtilHelpers from "./util-helpers";
+export * as UtilPropTypes from "./util-prop-types";
 
 export {
+  SharedHocs,
+  UtilHelpers,
+  UtilPropTypes,
   A11yContent,
   BenefitNoHeading,
   BenefitWithHeading,
@@ -107,4 +109,5 @@ export {
   CSSReset,
   fonts,
   GlobalFlexMain,
+  Common,
 };
