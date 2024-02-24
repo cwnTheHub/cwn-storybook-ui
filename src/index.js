@@ -19,7 +19,7 @@ import {
 } from "./core/core-flex-grid";
 import HairlineDivider from "./core/core-hairline-divider/HairlineDivider";
 import Heading from "./core/core-heading/Heading";
-import Input from "./core/core-input/Input";
+import Input from "./core/core-input";
 import FeedbackIcon from "./core/core-input/FeedbackIcon";
 import InputFeedback from "./core/core-input-feedback/InputFeedback";
 import Link from "./core/core-link/Link";

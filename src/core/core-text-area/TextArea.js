@@ -143,10 +143,6 @@ const renderHelper = (helper, helperId, feedback, value) => {
     </InputFeedback>
   );
 };
-
-/**
- * @version ./package.json
- */
 const TextArea = React.forwardRef(
   (
     { id, value, label, hint, feedback, error, helper, tooltip, ...rest },
