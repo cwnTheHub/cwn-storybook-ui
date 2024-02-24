@@ -20,7 +20,7 @@ import {
 import HairlineDivider from "./core/core-hairline-divider/HairlineDivider";
 import Heading from "./core/core-heading/Heading";
 import Input from "./core/core-input";
-import FeedbackIcon from "./core/core-input/FeedbackIcon";
+import FeedbackIcon from "./core/core-input";
 import InputFeedback from "./core/core-input-feedback/InputFeedback";
 import Link from "./core/core-link/Link";
 import Notification from "./core/core-notification/Notification";
