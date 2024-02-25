@@ -1,7 +1,17 @@
-export { default as ToggleSwitch } from "./common-toggleSwitch/ToggleSwitch";
-export { default as Tabs } from "./common-tabs/Tabs";
-export { default as DatePicker } from "./common-datepicker/DatePicker";
-export { default as Modal } from "./common-modal/Modal";
-export { default as SideNavigation } from "./common-sideNavigation/SideNavigation";
-export { default as Tags } from "./common-tags/Tags";
-export { default as Pagination} from "./common-pagination/Pagination";
+import ToggleSwitch from "./common-toggleSwitch/ToggleSwitch";
+import Tabs from "./common-tabs/Tabs";
+import DatePicker from "./common-datepicker/DatePicker";
+import Modal from "./common-modal/Modal";
+import SideNavigation from "./common-sideNavigation/SideNavigation";
+import Tags from "./common-tags/Tags";
+import Pagination from "./common-pagination/Pagination";
+
+export default {
+  ToggleSwitch,
+  DatePicker,
+  Modal,
+  Pagination,
+  SideNavigation,
+  Tabs,
+  Tags,
+};
