@@ -50,15 +50,7 @@ import StepTracker from "./core/core-step-tracker/StepTracker";
 
 import CSSReset, { fonts, GlobalFlexMain } from "./core/core-css-reset";
 
-import {
-  DatePicker,
-  Modal,
-  SideNavigation,
-  Tabs,
-  Tags,
-  ToggleSwitch,
-  Pagination,
-} from "./common";
+export * as Common from "./common";
 export * as SharedHocs from "./shared-hocs";
 export * as UtilHelpers from "./util-helpers";
 export * as UtilPropTypes from "./util-prop-types";
@@ -114,11 +106,4 @@ export {
   CSSReset,
   fonts,
   GlobalFlexMain,
-  DatePicker,
-  Modal,
-  SideNavigation,
-  Tabs,
-  Tags,
-  ToggleSwitch,
-  Pagination,
 };
