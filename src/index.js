@@ -19,7 +19,6 @@ import {
 } from "./core/core-flex-grid";
 import HairlineDivider from "./core/core-hairline-divider/HairlineDivider";
 import Heading from "./core/core-heading/Heading";
-import FeedbackIcon from "./core/core-input";
 import InputFeedback from "./core/core-input-feedback/InputFeedback";
 import Notification from "./core/core-notification/Notification";
 import OrderedList, {
