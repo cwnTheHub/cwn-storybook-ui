@@ -1,2 +1,5 @@
-export { default as FeedbackIcon } from "./FeedbackIcon";
-export { default } from "./Input";
+import Input from "./Input";
+
+import FeedbackIcon from "./FeedbackIcon";
+export { FeedbackIcon };
+export default Input;

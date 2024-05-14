@@ -6,12 +6,13 @@ import SideNavigation from "./common-sideNavigation/SideNavigation";
 import Tags from "./common-tags/Tags";
 import Pagination from "./common-pagination/Pagination";
 
-export default {
+export {
   ToggleSwitch,
   DatePicker,
-  Modal,
   Pagination,
   SideNavigation,
   Tabs,
   Tags,
 };
+
+export default Modal;
