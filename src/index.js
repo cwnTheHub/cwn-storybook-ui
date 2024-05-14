@@ -19,10 +19,8 @@ import {
 } from "./core/core-flex-grid";
 import HairlineDivider from "./core/core-hairline-divider/HairlineDivider";
 import Heading from "./core/core-heading/Heading";
-import Input from "./core/core-input";
 import FeedbackIcon from "./core/core-input";
 import InputFeedback from "./core/core-input-feedback/InputFeedback";
-import Link from "./core/core-link/Link";
 import Notification from "./core/core-notification/Notification";
 import OrderedList, {
   StyledOrderedItem,
@@ -47,10 +45,18 @@ import {
   Disclaimer,
 } from "./core/core-terms-and-conditions";
 import StepTracker from "./core/core-step-tracker/StepTracker";
-
+import Input, { FeedbackIcon } from "./core/core-input";
 import CSSReset, { fonts, GlobalFlexMain } from "./core/core-css-reset";
+import Link from "./core/core-link";
+import Modal, {
+  ToggleSwitch,
+  DatePicker,
+  Pagination,
+  SideNavigation,
+  Tabs,
+  Tags,
+} from "./common";
 
-export * as Common from "./common";
 export * as SharedHocs from "./shared-hocs";
 export * as UtilHelpers from "./util-helpers";
 export * as UtilPropTypes from "./util-prop-types";
@@ -106,4 +112,11 @@ export {
   CSSReset,
   fonts,
   GlobalFlexMain,
+  ToggleSwitch,
+  DatePicker,
+  Pagination,
+  SideNavigation,
+  Tabs,
+  Tags,
+  Modal,
 };

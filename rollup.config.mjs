@@ -26,7 +26,7 @@ export default [
       }),
       babel({
         exclude: ["node_modules/**", "storybook-static/**"],
-        presets: ["@babel/preset-react"],
+        presets: ["@babel/preset-react", "@babel/plugin-syntax-jsx"],
       }),
       external(),
       resolve({ preferBuiltins: true, mainFields: ["browser"] }),
