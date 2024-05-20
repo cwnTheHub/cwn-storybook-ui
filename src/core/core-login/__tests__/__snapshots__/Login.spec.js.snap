@@ -44,7 +44,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -53,9 +52,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -67,11 +66,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -319,7 +317,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -480,7 +478,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -939,7 +937,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -948,9 +945,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -962,11 +959,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -1214,7 +1210,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -1375,7 +1371,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 2`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -1834,7 +1830,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -1843,9 +1838,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -1857,11 +1852,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -2109,7 +2103,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -2270,7 +2264,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 3`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -2729,7 +2723,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -2738,9 +2731,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -2752,11 +2745,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -3004,7 +2996,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -3165,7 +3157,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 4`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -3624,7 +3616,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -3633,9 +3624,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -3647,11 +3638,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -3899,7 +3889,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -4060,7 +4050,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 5`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -4519,7 +4509,6 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -4528,9 +4517,9 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -4542,11 +4531,10 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -4794,7 +4782,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -4955,7 +4943,7 @@ exports[`<Login/> can be presented as one of the allowed card variants 6`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -5382,7 +5370,7 @@ Object {
           class="sc-dAbbOL WHwBZ"
         >
           <div
-            class="sc-ikkxIA bJfcxL"
+            class="sc-ikkxIA dBimQp"
           >
             <div
               class="sc-aXZVg hgmtPE sc-gsFSXq cGRQzy sc-gsFSXq cGRQzy"
@@ -5443,7 +5431,7 @@ Object {
                     </div>
                   </div>
                   <div
-                    style="position: relative;"
+                    css="[object Object]"
                   >
                     <input
                       aria-invalid="false"
@@ -5482,7 +5470,7 @@ Object {
                     </div>
                   </div>
                   <div
-                    style="position: relative;"
+                    css="[object Object]"
                   >
                     <input
                       aria-invalid="false"
@@ -5624,7 +5612,7 @@ Object {
         class="sc-dAbbOL WHwBZ"
       >
         <div
-          class="sc-ikkxIA bJfcxL"
+          class="sc-ikkxIA dBimQp"
         >
           <div
             class="sc-aXZVg hgmtPE sc-gsFSXq cGRQzy sc-gsFSXq cGRQzy"
@@ -5685,7 +5673,7 @@ Object {
                   </div>
                 </div>
                 <div
-                  style="position: relative;"
+                  css="[object Object]"
                 >
                   <input
                     aria-invalid="false"
@@ -5724,7 +5712,7 @@ Object {
                   </div>
                 </div>
                 <div
-                  style="position: relative;"
+                  css="[object Object]"
                 >
                   <input
                     aria-invalid="false"
@@ -5956,7 +5944,6 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -5965,9 +5952,9 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -5979,11 +5966,10 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -6231,7 +6217,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -6392,7 +6378,7 @@ exports[`<Login/> spacing renders compact spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -6852,7 +6838,6 @@ exports[`<Login/> spacing renders default spacing 1`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -6861,9 +6846,9 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -6875,11 +6860,10 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -7127,7 +7111,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -7288,7 +7272,7 @@ exports[`<Login/> spacing renders default spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -7748,7 +7732,6 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -7757,9 +7740,9 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -7771,11 +7754,10 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -8023,7 +8005,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -8184,7 +8166,7 @@ exports[`<Login/> spacing renders intermediate spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -8644,7 +8626,6 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
               className="sc-dAbbOL WHwBZ"
             >
               <Col
-                md={8}
                 xs={12}
               >
                 <styled.div
@@ -8653,9 +8634,9 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                     Array [
                       12,
                       12,
-                      8,
-                      8,
-                      8,
+                      12,
+                      12,
+                      12,
                     ]
                   }
                   horizontalAlignLevel={
@@ -8667,11 +8648,10 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                       "inherit",
                     ]
                   }
-                  md={8}
                   xs={12}
                 >
                   <div
-                    className="sc-ikkxIA bJfcxL"
+                    className="sc-ikkxIA dBimQp"
                   >
                     <Card
                       fullHeight={false}
@@ -8919,7 +8899,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
@@ -9080,7 +9060,7 @@ exports[`<Login/> spacing renders narrow spacing 1`] = `
                                                 </Box>
                                               </div>
                                               <div
-                                                style={
+                                                css={
                                                   Object {
                                                     "position": "relative",
                                                   }
