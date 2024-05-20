@@ -24,7 +24,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
     </div>
   </div>
   <div
-    style="position:relative"
+    css="[object Object]"
   >
     <input
       aria-invalid="false"
@@ -179,7 +179,7 @@ Object {
             </Box>
           </div>
           <div
-            style={
+            css={
               Object {
                 "position": "relative",
               }
@@ -335,7 +335,7 @@ exports[`Input renders 1`] = `
     </div>
   </div>
   <div
-    style="position:relative"
+    css="[object Object]"
   >
     <input
       aria-invalid="false"
@@ -374,7 +374,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </div>
   </div>
   <div
-    style="position:relative"
+    css="[object Object]"
   >
     <input
       aria-invalid="true"
