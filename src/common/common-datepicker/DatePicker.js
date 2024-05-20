@@ -34,8 +34,8 @@ const getResponsiveDaySize = (inline) => () => {
 
 const getIcon = (type) => (
   <>
-    {type === "leftChevron" && <ChevronLeft size={16}  />}
-    {type === "chevron" && <ChevronRight size={16}  />}
+    {type === "leftChevron" && <ChevronLeft size={16} />}
+    {type === "chevron" && <ChevronRight size={16} />}
   </>
 );
 const DatePicker = ({
@@ -57,7 +57,7 @@ const DatePicker = ({
     return () => {
       window.removeEventListener("resize", getResponsiveDaySize(inline));
     };
-  });
+  }, [inline]);
 
   useEffect(() => {
     if (!isFocused) {
