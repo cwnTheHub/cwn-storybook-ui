@@ -344,7 +344,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}
@@ -370,7 +370,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}
@@ -424,7 +424,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}
@@ -516,7 +516,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}
@@ -602,7 +602,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}
@@ -670,7 +670,7 @@ const Login = ({
     return (
       <FlexGrid>
         <FlexGrid.Row>
-          <FlexGrid.Col xs={12} md={8}>
+          <FlexGrid.Col xs={12} >
             <Card
               variant={cardVariant}
               {...safeRest(rest)}

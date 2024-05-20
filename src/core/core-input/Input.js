@@ -124,7 +124,7 @@ const Input = React.forwardRef(
         )}
         {helper && renderHelper(helper, helperId, feedback, value)}
         {error && renderError(error, errorId)}
-        <div style={{ position: "relative" }}>
+        <div css={{ position: 'relative' }}>
           <StyledInput
             {...safeRest(rest)}
             type={type}
