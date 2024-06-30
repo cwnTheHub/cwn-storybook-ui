@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "../../common";
+import  Modal  from "../../common";
 import Box from "../../core/core-box/Box";
 import Button from "../../core/core-button/Button";
 import Heading from "../../core/core-heading/Heading";
